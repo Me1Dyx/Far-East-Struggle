@@ -1,0 +1,23 @@
+state={
+	id=237
+	name="STATE_237"
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = SOV
+		add_core_of = KAL
+		add_core_of = ZHO
+		victory_points = {
+			11724 1
+		}
+	}
+	provinces={
+		481 618 759 3413 3435 3439 3461 3475 3487 3597 3726 3774 6463 6486 6516 6620 6794 9426 9440 9442 9455 9594 11416 11429 11566 11579 11724 
+	}
+	manpower=169620
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

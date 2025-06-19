@@ -1,0 +1,70 @@
+ideas = {
+    country = {
+        Anarhiya_mama_2 = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = Anarhiya_mama_2
+
+			modifier = {
+				conscription = 0.05
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.05
+				stability_factor = 0.1
+				war_support_factor = 0.15
+			}
+		}
+		druhyi_raz_vyide = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = druhyi_raz_vyide
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.1
+				war_support_factor = -0.1
+			}
+		}
+		Marhinaly_i_vbyvci = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = Marhinaly_i_vbyvci
+
+			modifier = {
+				stability_factor = -0.25
+				political_power_factor = -0.10
+			}
+		}
+		vysokyi_avtorytet_Petrychenka = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = vysokyi_avtorytet_Petrychenka
+
+			modifier = {
+				stability_factor = 0.20
+				war_support_factor = 0.15
+				neutrality_drift = 0.15
+				army_morale_factor = 0.05
+			}
+		}
+    }
+}

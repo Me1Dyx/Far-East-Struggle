@@ -1,0 +1,180 @@
+music = {
+    name = "black_clouds"
+    file = "black_clouds.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "event_in_Uman"
+    file = "event_in_Uman.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "finland_war"
+    file = "finland_war.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "France_theme"
+    file = "France_theme.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "German_theme"
+    file = "German_theme.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Hava_Nagila"
+    file = "Hava_Nagila.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "marsh"
+    file = "marsh.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "my_smilo_v_bii_pidem"
+    file = "my_smilo_v_bii_pidem.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "ne_pora"
+    file = "ne_pora.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "no_reason_war"
+    file = "no_reason_war.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "oboroncyam_ukrainy"
+    file = "oboroncyam_ukrainy.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "pahonya"
+    file = "pahonya.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "polish_war"
+    file = "polish_war.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "preludya"
+    file = "preludya.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "prysaha"
+    file = "prysaha.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Rage_tyrans"
+    file = "Rage_tyrans.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Rozpryhaite_hlopci_konei"
+    file = "Rozpryhaite_hlopci_konei.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Shevchenkos_theme"
+    file = "Shevchenkos_theme.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "sich_rifleman_marsh"
+    file = "sich_rifleman_marsh.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "soviet_theme"
+    file = "soviet_theme.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "spadschyna_UNR"
+    file = "spadschyna_UNR.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Styah"
+    file = "Styah.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "the_siren_song_call_of_death"
+    file = "the_siren_song_call_of_death.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "ty_zh_mene_pidmanula"
+    file = "ty_zh_mene_pidmanula.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "vid_synyoho_donu_do_syvyh_karpat"
+    file = "vid_synyoho_donu_do_syvyh_karpat.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "war"
+    file = "war.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "we_are_number_one"
+    file = "we_are_number_one.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "z_pid_vrazhoyi_ohrany"
+    file = "z_pid_vrazhoyi_ohrany.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "zabutyi_duh"
+    file = "zabutyi_duh.ogg"
+    volume = 0.65
+}
+
+music = {
+    name = "Zaporizhian_marsh"
+    file = "Zaporizhian_marsh.ogg"
+    volume = 0.65
+}
+

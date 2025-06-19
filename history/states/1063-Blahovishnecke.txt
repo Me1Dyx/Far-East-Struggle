@@ -1,0 +1,24 @@
+state={
+	id=1063
+	name="STATE_1063"
+	history={
+		victory_points = {
+			11409 2
+		}
+		owner = SOV
+		buildings = {
+			infrastructure = 3 #was: 5
+		}
+		add_core_of = SOV
+		add_claim_by = ANR
+		add_core_of = UKR
+		add_core_of = JEW
+	}
+	provinces={
+		434 11409 
+	}
+	manpower=66536
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

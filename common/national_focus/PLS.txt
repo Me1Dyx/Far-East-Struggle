@@ -1,0 +1,98 @@
+focus_tree = {
+	id = PLS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PLS
+		}
+	}
+	default = no
+	focus = {
+		id = PLS_prohnaty_yevreiv
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 25
+		y = 0
+
+	}
+	focus = {
+		id = PLS_dzhyhad
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = PLS_prohnaty_yevreiv
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = PLS_dobrovolci_musulmany
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = PLS_prohnaty_yevreiv
+		}
+		x = 25
+		y = 1
+
+	}
+	focus = {
+		id = PLS_vidkryti_boi
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = PLS_dzhyhad
+		}
+		prerequisite = {
+			focus = PLS_dobrovolci_musulmany
+		}
+		mutually_exclusive = {
+			focus = PLS_pidpilya
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = PLS_nastup_na_yevreiv
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = PLS_prohnaty_yevreiv
+		}
+		x = 27
+		y = 1
+
+	}
+	focus = {
+		id = PLS_pidpilya
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = PLS_nastup_na_yevreiv
+		}
+		prerequisite = {
+			focus = PLS_dobrovolci_musulmany
+		}
+		mutually_exclusive = {
+			focus = PLS_vidkryti_boi
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = PLS_peremoha_nad_yevreyamy
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = PLS_pidpilya
+			focus = PLS_vidkryti_boi
+		}
+		x = 25
+		y = 3
+
+	}
+}

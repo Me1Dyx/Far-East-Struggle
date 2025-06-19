@@ -1,0 +1,25 @@
+state={
+	id=1032
+	name="STATE_1032"
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 2
+			air_base = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			6232 1
+		}
+		add_core_of = SOV
+		add_core_of = BLR
+		add_core_of = UKR
+	}
+	provinces={
+		9288 9342 
+	}
+	manpower=1253122
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

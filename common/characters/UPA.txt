@@ -1,0 +1,567 @@
+characters = {
+	UPA_Yevhen_Konovalets = {
+        name = UPA_Yevhen_Konovalets
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Yevhen_Konovalets_advisor
+                large = GFX_UPA_Yevhen_Konovalets
+            }
+			
+        }
+        country_leader = {
+			ideology = fascism_ideology
+			expire = "1938.1.1"
+			id = -1
+			traits = { }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = UPA_Yevhen_Konovalets
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				has_country_leader = {
+					character = UPA_Yevhen_Konovalets
+					ruling_only = yes
+				}
+
+
+			}
+			traits = {
+				fascist_demagogue
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	UPA_Andryi_Melnyk = {
+        name = UPA_Andryi_Melnyk
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Andryi_Melnyk_advisor
+                large = GFX_UPA_Andryi_Melnyk
+            }
+			
+        }
+        country_leader = {
+			ideology = fascism_ideology
+			expire = "1938.1.1"
+			id = -1
+			traits = { }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = UPA_Andryi_Melnyk
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						character = UPA_Yevhen_Konovalets
+						ruling_only = yes
+					}
+				}
+				NOT = {
+					has_country_leader = {
+						character = UPA_Stepan_Bandera
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				fascist_demagogue
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	UPA_Stepan_Bandera = {
+        name = UPA_Stepan_Bandera
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Stepan_Bandera_advisor
+                large = GFX_UPA_Stepan_Bandera
+            }
+			
+        }
+        country_leader = {
+			ideology = fascism_ideology
+			expire = "1938.1.1"
+			id = -1
+			traits = { }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = UPA_Stepan_Bandera
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				NOT = {
+					has_country_leader = {
+						character = UPA_Yevhen_Konovalets
+						ruling_only = yes
+					}
+				}
+				NOT = {
+					has_country_leader = {
+						character = UPA_Andryi_Melnyk
+						ruling_only = yes
+					}
+				}
+			}
+			traits = {
+				fascist_demagogue
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	UPA_Roman_Shukhevych = {
+        name = UPA_Roman_Shukhevych
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Roman_Shukhevych_advisor
+                large = GFX_UPA_Roman_Shukhevych
+            }
+			
+        }
+		field_marshal={
+			traits={ politically_connected scavenger harsh_leader trickster guerilla_fighter }
+			skill = 6
+            attack_skill = 6
+            defense_skill = 5
+            planning_skill = 5
+            logistics_skill = 5
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = UPA_Roman_Shukhevych
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	UPA_Dmytro-Roman_Klyachkivskyi = {
+        name = UPA_Dmytro-Roman_Klyachkivskyi
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Dmytro-Roman_Klyachkivskyi_advisor
+                large = GFX_UPA_Dmytro-Roman_Klyachkivskyi
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = UPA_Dmytro-Roman_Klyachkivskyi
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				agrarian_nationalist silent_workhorse
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster guerilla_fighter }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 5
+            
+        }
+    }
+	UPA_Oleksa_Hasyn = {
+        name = UPA_Oleksa_Hasyn
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Oleksa_Hasyn_advisor
+                large = GFX_UPA_Oleksa_Hasyn
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = UPA_Oleksa_Hasyn
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				economist prince_of_terror
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { harsh_leader trickster guerilla_fighter }
+            skill = 4
+            attack_skill = 7
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 5
+            
+        }
+    }
+	UPA_Mykhailo_Duda = {
+        name = UPA_Mykhailo_Duda
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Mykhailo_Duda_advisor
+                large = GFX_UPA_Mykhailo_Duda
+            }
+        }
+		advisor= {
+		    cost = 175
+			slot = political_advisor
+			idea_token = UPA_Mykhailo_Duda
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				propaganda_expert national_propagandist
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster guerilla_fighter  }
+            skill = 6
+            attack_skill = 7
+			defense_skill = 8
+			planning_skill = 5
+			logistics_skill = 6
+            
+        }
+    }
+	UPA_Ivan_Lytvynenko = {
+        name = UPA_Ivan_Lytvynenko
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Ivan_Lytvynenko_advisor
+                large = GFX_UPA_Ivan_Lytvynenko
+            }
+        }
+		advisor= {
+		    cost = 100
+			slot = theorist
+			idea_token = UPA_Ivan_Lytvynenko
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				mass_assault_expert
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { harsh_leader trickster infantry_officer war_hero }
+            skill = 5
+            attack_skill = 2
+			defense_skill = 7
+			planning_skill = 7
+			logistics_skill = 3
+            
+        }
+    }
+	UPA_Mykola_Tverdohlib = {
+        name = UPA_Mykola_Tverdohlib
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Mykola_Tverdohlib_advisor
+                large = GFX_UPA_Mykola_Tverdohlib
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = UPA_Oleksyi_Chubenko
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_logistics_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster infantry_officer guerilla_fighter }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 4
+            
+        }
+    }
+	UPA_Oleksandr_Lutskyi = {
+        name = UPA_Oleksandr_Lutskyi
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Oleksandr_Lutskyi_advisor
+                large = GFX_UPA_Oleksandr_Lutskyi
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = UPA_Oleksandr_Lutskyi
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_infantry_2 veteran_guerrilla_fighter
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster guerilla_fighter }
+            skill = 4
+            attack_skill = 7
+			defense_skill = 8
+			planning_skill = 2
+			logistics_skill = 5
+            
+        }
+    }
+	UPA_Roman_Mats = {
+        name = UPA_Roman_Mats
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Roman_Mats_advisor
+                large = GFX_UPA_Roman_Mats
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = UPA_Roman_Mats
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster infantry_officer guerilla_fighter }
+            skill = 6
+            attack_skill = 2
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+            
+        }
+    }
+	UPA_Stepan_Stebelskyi = {
+        name = UPA_Stepan_Stebelskyi
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Stepan_Stebelskyi_advisor
+                large = GFX_UPA_Stepan_Stebelskyi
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = UPA_Stepan_Stebelskyi
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster guerilla_fighter }
+            skill = 5
+            attack_skill = 1
+			defense_skill = 7
+			planning_skill = 2
+			logistics_skill = 1
+            
+        }
+    }
+	UPA_Vasyl_Ivahiv = {
+        name = UPA_Vasyl_Ivahiv
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Vasyl_Ivahiv_advisor
+                large = GFX_UPA_Vasyl_Ivahiv
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = UPA_Vasyl_Ivahiv
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_cavalry_2 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer guerilla_fighter }
+            skill = 8
+            attack_skill = 5
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 2
+            
+        }
+    }
+	UPA_Vasyl_Kuk = {
+        name = UPA_Vasyl_Kuk
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Vasyl_Kuk_advisor
+                large = GFX_UPA_Vasyl_Kuk
+            }
+        }
+		advisor= {
+		    cost = 175
+			slot = high_command
+			idea_token = UPA_Vasyl_Kuk
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_entrenchment_3 army_armored_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster harsh_leader guerilla_fighter }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 9
+			planning_skill = 1
+			logistics_skill = 2
+            
+        }
+    }
+	UPA_Petro_Olyinkyk = {
+        name = UPA_Petro_Olyinkyk
+        portraits = {
+            civilian = {
+				small = GFX_UPA_Petro_Olyinkyk_advisor
+                large = GFX_UPA_Petro_Olyinkyk
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = UPA_Petro_Olyinkyk
+			allowed = {
+				original_tag = UPA
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_organizational_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		field_marshal = {
+            traits = { trait_reckless trickster harsh_leader infantry_officer guerilla_fighter }
+            skill = 7
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 3
+            
+        }
+    }
+	
+	
+}
+	

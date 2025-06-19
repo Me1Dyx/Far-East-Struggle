@@ -1,0 +1,547 @@
+characters = {
+	DYR_Symon_Petlura = {
+		name = DYR_Symon_Petlura
+		portraits = {
+			civilian = {
+				large = GFX_DYR_Symon_Petlura
+				small = GFX_DYR_Symon_Petlura_advisor
+			}
+			army={
+				large = GFX_DYR_Symon_Petlura_military
+				
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		field_marshal={
+			traits={ politically_connected harsh_leader war_hero infantry_officer organisational_leader infantry_leader infantry_expert }
+			skill = 7
+            attack_skill = 4
+            defense_skill = 6
+            planning_skill = 2
+            logistics_skill = 5
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = DYR_Symon_Petlura
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				DYR_Holovnyi_Otaman
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	DYR_Roman_Dashkevych = {
+		name = DYR_Roman_Dashkevych
+		portraits = {
+			civilian = {
+				large = GFX_DYR_Roman_Dashkevych
+				small = GFX_DYR_Roman_Dashkevych_advisor
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		field_marshal={
+			traits={ politically_connected harsh_leader war_hero infantry_officer organisational_leader infantry_leader infantry_expert }
+			skill = 7
+            attack_skill = 4
+            defense_skill = 6
+            planning_skill = 2
+            logistics_skill = 5
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = DYR_Roman_Dashkevych
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				fascist_demagogue national_socialist_sympathizer 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	DYR_Volodymyr_Vynnychenko = {
+		name = DYR_Volodymyr_Vynnychenko
+		portraits = {
+			civilian = {
+				large = GFX_DYR_Volodymyr_Vynnychenko
+				small = GFX_DYR_Volodymyr_Vynnychenko_advisor
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = DYR_Volodymyr_Vynnychenko
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				democratic_reformer social_reformer
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	DYR_Vasyl_Ellan_Blakytnyi = {
+		name = DYR_Vasyl_Ellan_Blakytnyi
+		portraits = {
+			civilian = {
+				large = GFX_DYR_Vasyl_Ellan_Blakytnyi
+				small = GFX_DYR_Vasyl_Ellan_Blakytnyi_advisor
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = DYR_Vasyl_Ellan_Blakytnyi
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				communist_revolutionary defender_of_the_peasantry
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	DYR_Mykhailo_Omelyanovych_Pavlenko = {
+		name = DYR_Mykhailo_Omelyanovych_Pavlenko
+		portraits = {
+			army={
+				large = GFX_DYR_Mykhailo_Omelyanovych_Pavlenko
+				small = GFX_DYR_Mykhailo_Omelyanovych_Pavlenko_advisor
+			}
+		}
+		field_marshal = {
+            traits = { brilliant_strategist war_hero infantry_officer trait_reckless }
+            skill = 6
+            attack_skill = 5
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 7
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = DYR_Mykhailo_Omelyanovych_Pavlenko
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_morale_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	DYR_Pavlo_Shandruk = {
+		name = DYR_Pavlo_Shandruk
+		portraits = {
+			army={
+				large = GFX_DYR_Pavlo_Shandruk
+				small = GFX_DYR_Pavlo_Shandruk_advisor
+			}
+		}
+		field_marshal = {
+            traits = { war_hero armor_officer panzer_leader trickster trait_reckless }
+            skill = 5
+            attack_skill = 7
+			defense_skill = 1
+			planning_skill = 7
+			logistics_skill = 4
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = DYR_Pavlo_Shandruk
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_offensive_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	DYR_Oleksandr_Hrekiv = {
+		name = DYR_Oleksandr_Hrekiv
+		portraits = {
+			army={
+				large = GFX_DYR_Oleksandr_Hrekiv
+				small = GFX_DYR_Oleksandr_Hrekiv_advisor
+			}
+		}
+		corps_commander = {
+            traits = { infantry_officer infantry_leader war_hero inflexible_strategist }
+            skill = 5
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = theorist
+			idea_token = DYR_Oleksandr_Hrekiv
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+				
+			}
+			traits = {
+				mass_assault_expert 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	DYR_Andryi_Vovk = {
+		name = DYR_Andryi_Vovk
+		portraits = {
+			army={
+				large = GFX_DYR_Andryi_Vovk
+			}
+			civilian = {
+			    small = GFX_DYR_Andryi_Vovk_advisor
+			}
+		}
+		corps_commander = {
+            traits = { cavalry_officer cavalry_leader war_hero brilliant_strategist }
+            skill = 4
+            attack_skill = 3
+			defense_skill = 5
+			planning_skill = 6
+			logistics_skill = 5
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = DYR_Andryi_Vovk
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+				
+			}
+			traits = {
+				silent_workhorse propaganda_expert
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	DYR_Borys_Paliy_Neilo = {
+		name = DYR_Borys_Paliy_Neilo
+		portraits = {
+			army={
+				large = GFX_DYR_Borys_Paliy_Neilo
+			}
+			civilian = {
+			    small = GFX_DYR_Borys_Paliy_Neilo_advisor
+			}
+		}
+		corps_commander = {
+            traits = { infantry_officer infantry_expert war_hero trait_cautious expert_improviser }
+            skill = 7
+            attack_skill = 6
+			defense_skill = 8
+			planning_skill = 3
+			logistics_skill = 3
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = DYR_Borys_Paliy_Neilo
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+				
+			}
+			traits = {
+				industry_magnate veteran_guerrilla_fighter
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	DYR_Oleksandr_Udovychenko = {
+		name = DYR_Oleksandr_Udovychenko
+		portraits = {
+			army={
+				large = GFX_DYR_Oleksandr_Udovychenko
+				small = GFX_DYR_Oleksandr_Udovychenko_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero infantry_officer infantry_leader infantry_expert }
+            skill = 8
+            attack_skill = 8
+			defense_skill = 5
+			planning_skill = 1
+			logistics_skill = 6
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = DYR_Oleksandr_Udovychenko
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_infantry_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	DYR_Petro_Dyachenko = {
+		name = DYR_Petro_Dyachenko
+		portraits = {
+			army={
+				large = GFX_DYR_Petro_Dyachenko
+				small = GFX_DYR_Petro_Dyachenko_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero cavalry_leader cavalry_officer trait_reckless trickster guerilla_fighter }
+            skill = 5
+            attack_skill = 6
+			defense_skill = 2
+			planning_skill = 7
+			logistics_skill = 7
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = DYR_Petro_Dyachenko
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_cavalry_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	DYR_Naum_Nykoniv = {
+		name = DYR_Naum_Nykoniv
+		portraits = {
+			army={
+				large = GFX_DYR_Naum_Nykoniv
+				small = GFX_DYR_Naum_Nykoniv_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero trait_cautious trickster  }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 6
+			planning_skill = 4
+			logistics_skill = 8
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = DYR_Naum_Nykoniv
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_logistics_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	DYR_Volodymyr_Sinkler = {
+		name = DYR_Volodymyr_Sinkler
+		portraits = {
+			army={
+				large = GFX_DYR_Volodymyr_Sinkler
+				small = GFX_DYR_Volodymyr_Sinkler_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero infantry_officer guerilla_fighter trickster }
+            skill = 6
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 6
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = DYR_Volodymyr_Sinkler
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	DYR_Vsevolod_Petriv = {
+		name = DYR_Vsevolod_Petriv
+		portraits = {
+			army={
+				large = GFX_DYR_Vsevolod_Petriv
+				small = GFX_DYR_Vsevolod_Petriv_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero trait_cautious cavalry_leader cavalry_officer infantry_officer infantry_leader  }
+            skill = 8
+            attack_skill = 8
+			defense_skill = 7
+			planning_skill = 3
+			logistics_skill = 7
+            
+        }
+		advisor= {
+		    cost = 250
+			slot = high_command
+			idea_token = DYR_Vsevolod_Petriv
+			allowed = {
+				original_tag = DYR
+			}
+			available = {
+				
+			}
+			traits = {
+				DYR_vyiskovyi_commisar
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+}
+	

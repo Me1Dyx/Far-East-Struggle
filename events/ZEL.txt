@@ -1,0 +1,2696 @@
+add_namespace = ZEL
+
+country_event = {
+    id = ZEL.1
+    title = ZEL.1.t
+    desc = ZEL.1.d
+	picture = GFX_report_event_manchukuo_army
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.1.a
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {	country_event = { id = ZEL.2 } }
+	}
+	
+	option = {
+        name = ZEL.1.b
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {	country_event = { id = ZEL.3 } }    
+		
+	}
+	
+}
+country_event = {
+    id = ZEL.2
+    title = ZEL.2.t
+    desc = ZEL.2.d
+    picture = GFX_report_event_DEN_danish_politics
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+}
+
+    option = {
+        name = ZEL.2.a
+		ZEL = {
+		    transfer_state = 761
+			transfer_state = 714
+			transfer_state = 717
+		}
+		
+    }
+}
+country_event = {
+    id = ZEL.3
+    title = ZEL.3.t
+    desc = ZEL.3.d
+    picture = GFX_report_event_SWE_defense_act
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+}
+
+    option = {
+        name = ZEL.3.a
+		create_wargoal = {
+			type = take_core_state
+			target = MAN
+		}
+		every_country = {
+			set_country_flag = super_event_war_with_japan
+		}
+    }
+	 
+}
+country_event = {
+    id = ZEL.4
+    title = ZEL.4.t
+    desc = ZEL.4.d
+	picture = GFX_report_event_japanese_transport_soldiers
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.4.a
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {	country_event = { id = ZEL.5 } }
+	}
+	
+	option = {
+        name = ZEL.4.b
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {	country_event = { id = ZEL.6 } }    
+		
+	}
+	
+}
+country_event = {
+    id = ZEL.5
+    title = ZEL.5.t
+    desc = ZEL.5.d
+    picture = GFX_report_event_DEN_danish_politics
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+}
+
+    option = {
+        name = ZEL.5.a
+		ZEL = {
+		    transfer_state = 655
+			transfer_state = 537
+		}
+		
+    }
+}
+country_event = {
+    id = ZEL.6
+    title = ZEL.6.t
+    desc = ZEL.6.d
+    picture = GFX_report_event_SWE_defense_act
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+}
+
+    option = {
+        name = ZEL.6.a
+		create_wargoal = {
+			type = take_core_state
+			target = MAN
+		}
+		every_country = {
+			set_country_flag = super_event_war_with_japan
+		}
+    }
+	 
+}
+
+country_event = {
+    id = ZEL.7
+    title = ZEL.7.t
+    desc = ZEL.7.d
+	picture = GFX_report_event_soviet_finnish_pact
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.7.a
+		ai_chance = {
+			factor = 99
+		}
+		ZEL = {	country_event = { id = ZEL.8 } }
+	}
+	
+	option = {
+        name = ZEL.7.b
+		ai_chance = {
+			factor = 1
+		}
+		ZEL = {	country_event = { id = ZEL.9 } }    
+		
+	}
+	
+}
+country_event = {
+    id = ZEL.8
+    title = ZEL.8.t
+    desc = ZEL.8.d
+    picture = GFX_report_event_DEN_danish_politics
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+}
+
+    option = {
+        name = ZEL.8.a
+		ZEL = {
+		    transfer_state = 562
+			transfer_state = 574
+			transfer_state = 877
+			transfer_state = 644
+			transfer_state = 822
+			transfer_state = 874 
+			transfer_state = 875
+			transfer_state = 565
+			transfer_state = 564
+			transfer_state = 637
+			transfer_state = 563
+			transfer_state = 561
+			transfer_state = 1018
+			transfer_state = 1024
+			transfer_state = 1023
+		}
+		
+    }
+}
+country_event = {
+    id = ZEL.9
+    title = ZEL.9.t
+    desc = ZEL.9.d
+    picture = GFX_report_event_SWE_defense_act
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+}
+
+    option = {
+        name = ZEL.9.a
+		create_wargoal = {
+			type = take_core_state
+			target = SOV
+		}
+    }
+	 
+}
+
+country_event = {
+    id = ZEL.10
+    title = ZEL.10.t
+    desc = ZEL.10.d
+	picture = GFX_report_klyns
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.10.a
+		ai_chance = {
+			factor = 80
+		}
+		ZEL = {	country_event = { id = ZEL.11 } }
+	}
+	
+	option = {
+        name = ZEL.7.b
+		ai_chance = {
+			factor = 20
+		}
+		ZEL = {	country_event = { id = ZEL.12 } }    
+		
+	}
+	
+}
+country_event = {
+    id = ZEL.11
+    title = ZEL.11.t
+    desc = ZEL.11.d
+    picture = GFX_report_event_DEN_danish_politics
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+}
+
+    option = {
+        name = ZEL.11.a
+		ZEL = {
+		    transfer_state = 571
+			transfer_state = 570
+			transfer_state = 40
+			transfer_state = 882
+			transfer_state = 583
+			transfer_state = 590
+			transfer_state = 401
+			transfer_state = 250
+			transfer_state = 239
+			transfer_state = 829
+			transfer_state = 265
+			transfer_state = 251
+			transfer_state = 237
+			transfer_state = 217
+			transfer_state = 236
+			transfer_state = 245
+			transfer_state = 218
+			transfer_state = 238
+			transfer_state = 235
+			transfer_state = 233
+			transfer_state = 234
+			transfer_state = 1025
+			transfer_state = 1048
+			transfer_state = 1030
+			transfer_state = 1029
+			transfer_state = 1028
+			transfer_state = 1051
+			transfer_state = 1052
+			transfer_state = 827
+			transfer_state = 1082
+			transfer_state = 1084
+			transfer_state = 1081
+			transfer_state = 1083
+			
+			
+		}
+		ZEL = {
+		    add_state_core = 571
+			add_state_core = 570
+			add_state_core = 40
+			add_state_core = 882
+			add_state_core = 583
+			add_state_core = 590
+			add_state_core = 401
+			add_state_core = 250
+			add_state_core = 239
+			add_state_core = 829
+			add_state_core = 265
+			add_state_core = 251
+			add_state_core = 237
+			add_state_core = 217
+			add_state_core = 236
+			add_state_core = 245
+			add_state_core = 218
+			add_state_core = 238
+			add_state_core = 235
+			add_state_core = 233
+			add_state_core = 234
+			add_state_core = 1025
+			add_state_core = 1048
+			add_state_core = 1030
+			add_state_core = 1029
+			add_state_core = 1028
+			add_state_core = 1051
+			add_state_core = 1052
+			add_state_core = 1054
+			add_state_core = 1055
+			add_state_core = 1056
+			add_state_core = 1057
+			add_state_core = 1058
+			add_state_core = 827
+			add_state_core = 1082
+			add_state_core = 1084
+			add_state_core = 1081
+			
+			add_state_core = 1083
+		}
+		MLN = {
+			every_unit_leader = {
+				set_nationality = ZEL
+			}
+		}
+		SIR = {
+			every_unit_leader = {
+				set_nationality = ZEL
+			}
+		}
+		ZHO = {
+			every_unit_leader = {
+				set_nationality = ZEL
+			}
+		}
+		
+    }
+}
+country_event = {
+    id = ZEL.12
+    title = ZEL.12.t
+    desc = ZEL.12.d
+    picture = GFX_report_event_SWE_defense_act
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+}
+
+    option = {
+        name = ZEL.12.a
+		create_wargoal = {
+			type = take_core_state
+			target = SOV
+		}
+    }
+	 
+}
+
+country_event = {
+    id = ZEL.13
+    title = ZEL.13.t
+    desc = ZEL.13.d
+	picture = GFX_report_klyns
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.13.a
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {	country_event = { id = ZEL.14 } }
+	}
+	
+	option = {
+        name = ZEL.13.b
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {	country_event = { id = ZEL.15 } }    
+		
+	}
+	
+}
+country_event = {
+    id = ZEL.14
+    title = ZEL.14.t
+    desc = ZEL.14.d
+    picture = GFX_report_event_DEN_danish_politics
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+}
+
+    option = {
+        name = ZEL.14.a
+		ZEL = {
+		    transfer_state = 137 
+			transfer_state = 196
+			transfer_state = 200
+			transfer_state = 227
+			transfer_state = 228 
+			transfer_state = 221
+			transfer_state = 226
+			transfer_state = 197
+			transfer_state = 192
+			transfer_state = 834
+			transfer_state = 198
+			transfer_state = 199
+			transfer_state = 201
+			transfer_state = 202
+			transfer_state = 203
+			transfer_state = 259 
+			transfer_state = 193
+			transfer_state = 225
+			transfer_state = 1027
+			transfer_state = 194
+			transfer_state = 240
+			transfer_state = 220
+			transfer_state = 260
+			transfer_state = 1031
+			transfer_state = 1026
+			transfer_state = 1047
+			transfer_state = 1033
+			transfer_state = 1032
+			transfer_state = 1051
+			transfer_state = 1049
+			transfer_state = 1062
+			transfer_state = 1063
+			transfer_state = 1064
+			transfer_state = 1054
+			transfer_state = 1055
+			transfer_state = 1056
+			transfer_state = 1057
+			transfer_state = 1058
+			transfer_state = 1053
+			transfer_state = 1070
+			transfer_state = 1069
+			transfer_state = 1066
+			add_state_core = 1070
+			add_state_core = 1069
+			add_state_core = 1066
+			transfer_state = 1075
+			transfer_state = 1076
+			transfer_state = 1077
+			transfer_state = 1078
+			transfer_state = 1079
+			transfer_state = 1080
+		}
+		UKR = {
+			every_unit_leader = {
+				set_nationality = ZEL
+			}
+		}
+		
+    }
+}
+country_event = {
+    id = ZEL.15
+    title = ZEL.15.t
+    desc = ZEL.15.d
+    picture = GFX_report_event_SWE_defense_act
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+}
+
+    option = {
+        name = ZEL.15.a
+		create_wargoal = {
+			type = take_core_state
+			target = SOV
+		}
+    }
+	 
+}
+
+country_event = {
+    id = ZEL.16
+    title = ZEL.16.t
+    desc = ZEL.16.d
+    picture = GFX_report_event_bul_partisans_plovdiv
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.16.a
+		ANR = {
+			transfer_state = 200
+			transfer_state = 197
+			transfer_state = 203
+			transfer_state = 259
+			transfer_state = 221
+			transfer_state = 228
+			transfer_state = 227
+			transfer_state = 226
+			transfer_state = 196
+			transfer_state = 1031
+			transfer_state = 1053
+			transfer_state = 1055
+			transfer_state = 1056
+			transfer_state = 1057
+			transfer_state = 1058
+			transfer_state = 1062
+			transfer_state = 1063
+			transfer_state = 1064
+			transfer_state = 1070
+			transfer_state = 1069
+			transfer_state = 1066
+		}
+		ANR = {
+			load_oob = ANR_1936 	    
+		}
+		ANR = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		every_country = { 
+			set_country_flag = super_event_makhnovci_come_back
+		}
+
+    }
+	option = {
+        name = ZEL.16.b
+		ANR = { change_tag_from = SOV }
+		ANR = {
+			transfer_state = 200
+			transfer_state = 197
+			transfer_state = 203
+			transfer_state = 259
+			transfer_state = 221
+			transfer_state = 228
+			transfer_state = 227
+			transfer_state = 226
+			transfer_state = 196
+			transfer_state = 1031
+			transfer_state = 1053
+			transfer_state = 1055
+			transfer_state = 1056
+			transfer_state = 1057
+			transfer_state = 1058
+			transfer_state = 1062
+			transfer_state = 1063
+			transfer_state = 1064
+			transfer_state = 1070
+			transfer_state = 1069
+			transfer_state = 1066
+		}
+		ANR = {
+			load_oob = ANR_1936 	    
+		}
+		ANR = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		every_country = { 
+			set_country_flag = super_event_makhnovci_come_back
+		}
+
+		
+    }
+	 
+}
+country_event = {
+    id = ZEL.17
+    title = ZEL.17.t
+    desc = ZEL.17.d
+    picture = GFX_report_jews
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.17.a
+		JEW = {
+			transfer_state = 834
+			transfer_state = 192
+			transfer_state = 1047
+		}
+		JEW = {
+			load_oob = JEW_1936 	    
+		}
+		JEW = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		every_country = { 
+			set_country_flag = super_event_jews_uprising
+		}
+
+    }
+	option = {
+        name = ZEL.17.b
+		JEW = { change_tag_from = SOV }
+		JEW = {
+			transfer_state = 834
+			transfer_state = 192
+			transfer_state = 1047
+		}
+		JEW = {
+			load_oob = JEW_1936 	    
+		}
+		JEW = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		every_country = { 
+			set_country_flag = super_event_jews_uprising
+		}
+
+		
+    }
+	 
+}
+country_event = {
+    id = ZEL.40
+    title = ZEL.40.t
+    desc = ZEL.40.d
+    picture = GFX_report_cri
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.40.a
+		CRI = {
+			transfer_state = 137
+			
+		}
+		CRI = {
+			load_oob = CRI_1936 	
+			add_manpower = 75000
+		}
+		CRI = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		every_country = {
+			set_country_flag = super_event_crimea_independent
+		}
+
+    }
+	option = {
+        name = ZEL.40.b
+		CRI = { change_tag_from = SOV }
+		CRI = {
+			transfer_state = 137
+			
+		}
+		CRI = {
+			load_oob = CRI_1936 	
+			add_manpower = 75000
+		}
+		CRI = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		every_country = {
+			set_country_flag = super_event_crimea_independent
+		}
+		
+    }
+	 
+}
+
+country_event = {
+    id = ZEL.18
+    title = ZEL.18.t
+    desc = ZEL.18.d
+    picture = GFX_report_upa
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.18.a
+		UPA = {
+			transfer_state = 91
+			transfer_state = 1035
+			transfer_state = 93
+			transfer_state = 89
+			transfer_state = 1039
+			transfer_state = 1040
+		}
+		UPA = {
+			load_oob = UPA_1936 	    
+		}
+		UPA = {
+			declare_war_on = {
+				target = POL
+				type = independence_wargoal
+			}
+		}
+		every_country = { 
+			set_country_flag = super_event_upa_uprising
+		}
+
+    }
+	option = {
+        name = ZEL.18.b
+		UPA = { change_tag_from = POL }
+		UPA = {
+			transfer_state = 91
+			transfer_state = 1035
+			transfer_state = 93
+			transfer_state = 89
+			transfer_state = 1039
+			transfer_state = 1040
+		}
+		UPA = {
+			load_oob = UPA_1936 	    
+		}
+		UPA = {
+			declare_war_on = {
+				target = POL
+				type = independence_wargoal
+			}
+		}
+		every_country = { 
+			set_country_flag = super_event_upa_uprising
+		}
+
+		
+    }
+	 
+}
+country_event = {
+    id = ZEL.19
+    title = ZEL.19.t
+    desc = ZEL.19.d
+	picture = GFX_report_oun_and_manchuriya
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.19.a
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {	country_event = { id = ZEL.20 } }
+	}
+	
+	option = {
+        name = ZEL.19.b
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {	country_event = { id = ZEL.21 } }    
+		
+	}
+	
+}
+
+country_event = {
+    id = ZEL.20
+    title = ZEL.20.t
+    desc = ZEL.20.d
+	picture = GFX_report_oun_and_manchuriya
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.20.a
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {
+			complete_national_focus = ZEL_zakluchyty_souz
+		}
+	}
+	
+
+	
+}
+
+country_event = {
+    id = ZEL.21
+    title = ZEL.21.t
+    desc = ZEL.21.d
+	picture = GFX_report_oun_and_manchuriya
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.21.a
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {
+			complete_national_focus = ZEL_vymahaty_nac_terytorii
+		}
+		
+	}
+}
+
+country_event = {
+    id = ZEL.22
+    title = ZEL.22.t
+    desc = ZEL.22.d
+	picture = GFX_report_oun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.22.a
+		ai_chance = {
+			factor = 75
+		}
+		ZEL = {	country_event = { id = ZEL.23 } }
+	}
+	
+	option = {
+        name = ZEL.22.b
+		ai_chance = {
+			factor = 25
+		}
+		ZEL = {	country_event = { id = ZEL.24 } }    
+		
+	}
+	
+}
+country_event = {
+    id = ZEL.23
+    title = ZEL.23.t
+    desc = ZEL.23.d
+	picture = GFX_report_oun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.23.a
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {
+			complete_national_focus = ZEL_perenesty_stab_OUN_v_Habarovsk
+		}
+	}
+	
+
+	
+}
+
+country_event = {
+    id = ZEL.24
+    title = ZEL.24.t
+    desc = ZEL.24.d
+	picture = GFX_report_oun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.24.a
+		ai_chance = {
+			factor = 50
+		}
+		ZEL = {
+			complete_national_focus = ZEL_zalyshyty_Faidu
+		}
+		
+	}
+}
+
+country_event = {
+    id = ZEL.25
+    title = ZEL.25.t
+    desc = ZEL.25.d
+	picture = GFX_report_oun
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.25.a
+		ai_chance = {
+			factor = 33
+		}
+		ZEL = {
+			complete_national_focus = ZEL_Konovalets
+		}
+		
+	}
+	option = {
+        name = ZEL.25.b
+		ai_chance = {
+			factor = 33
+		}
+		ZEL = {
+			complete_national_focus = ZEL_Melnyk
+		}
+		
+	}
+	option = {
+        name = ZEL.25.c
+		ai_chance = {
+			factor = 34
+		}
+		ZEL = {
+			complete_national_focus = ZEL_Bandera
+		}
+		
+	}
+}
+country_event = {
+    id = ZEL.26
+    title = ZEL.26.t
+    desc = ZEL.26.d
+	picture = GFX_report_klyns
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.26.a
+		ai_chance = {
+			factor = 100
+		}
+		ZEL = {
+			annex_country = {
+				target = MLN
+				transfer_troops = yes
+			}
+			MLN = {
+				every_unit_leader = {
+					set_nationality = ZEL
+				}
+			}
+			
+			
+		}
+		ZEL = {
+		    add_state_core = 571
+			add_state_core = 570
+			add_state_core = 40
+			add_state_core = 882
+			add_state_core = 583
+			add_state_core = 590
+			add_state_core = 401
+			add_state_core = 250
+			add_state_core = 239
+			add_state_core = 829
+			add_state_core = 265
+			add_state_core = 251
+			add_state_core = 237
+			add_state_core = 217
+			add_state_core = 236
+			add_state_core = 245
+			add_state_core = 218
+			add_state_core = 238
+			add_state_core = 235
+			add_state_core = 233
+			add_state_core = 234
+			add_state_core = 1025
+			add_state_core = 1048
+			add_state_core = 1030
+			add_state_core = 1029
+			add_state_core = 1028
+			add_state_core = 1051
+			add_state_core = 1052
+			add_state_core = 1054
+			add_state_core = 1055
+			add_state_core = 1056
+			add_state_core = 1057
+			add_state_core = 1058
+			add_state_core = 827
+			add_state_core = 1082
+			add_state_core = 1084
+			add_state_core = 1081
+			add_state_core = 1070
+			add_state_core = 1069
+			add_state_core = 1066
+		}
+	}
+	
+	option = {
+        name = ZEL.26.b
+		ai_chance = {
+			factor = 0
+		}
+		ZEL = {
+			create_wargoal = {
+				type = take_core_state
+				target = MLN
+			}
+		}
+		ZEL = {
+		    add_state_core = 571
+			add_state_core = 570
+			add_state_core = 40
+			add_state_core = 882
+			add_state_core = 583
+			add_state_core = 590
+			add_state_core = 401
+			add_state_core = 250
+			add_state_core = 239
+			add_state_core = 829
+			add_state_core = 265
+			add_state_core = 251
+			add_state_core = 237
+			add_state_core = 217
+			add_state_core = 236
+			add_state_core = 245
+			add_state_core = 218
+			add_state_core = 238
+			add_state_core = 235
+			add_state_core = 233
+			add_state_core = 234
+			add_state_core = 1025
+			add_state_core = 1048
+			add_state_core = 1030
+			add_state_core = 1029
+			add_state_core = 1028
+			add_state_core = 1051
+			add_state_core = 1052
+			add_state_core = 1054
+			add_state_core = 1055
+			add_state_core = 1056
+			add_state_core = 1057
+			add_state_core = 1058
+			add_state_core = 827
+			add_state_core = 1082
+			add_state_core = 1084
+			add_state_core = 1081
+			add_state_core = 1070
+			add_state_core = 1069
+			add_state_core = 1066
+		}
+		
+		
+	}
+	
+	
+}
+country_event = {
+    id = ZEL.42
+    title = ZEL.42.t
+    desc = ZEL.42.d
+	picture = GFX_report_klyns
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.42.a
+		ai_chance = {
+			factor = 100
+		}
+		ZEL = {
+			annex_country = {
+				target = ZHO
+				transfer_troops = yes
+			}
+			ZHO = {
+				every_unit_leader = {
+					set_nationality = ZEL
+				}
+			}
+			
+		}
+		ZEL = {
+		    add_state_core = 571
+			add_state_core = 570
+			add_state_core = 40
+			add_state_core = 882
+			add_state_core = 583
+			add_state_core = 590
+			add_state_core = 401
+			add_state_core = 250
+			add_state_core = 239
+			add_state_core = 829
+			add_state_core = 265
+			add_state_core = 251
+			add_state_core = 237
+			add_state_core = 217
+			add_state_core = 236
+			add_state_core = 245
+			add_state_core = 218
+			add_state_core = 238
+			add_state_core = 235
+			add_state_core = 233
+			add_state_core = 234
+			add_state_core = 1025
+			add_state_core = 1048
+			add_state_core = 1030
+			add_state_core = 1029
+			add_state_core = 1028
+			add_state_core = 1051
+			add_state_core = 1052
+			add_state_core = 1054
+			add_state_core = 1055
+			add_state_core = 1056
+			add_state_core = 1057
+			add_state_core = 1058
+			add_state_core = 827
+			add_state_core = 1082
+			add_state_core = 1084
+			add_state_core = 1081
+			add_state_core = 1070
+			add_state_core = 1069
+			add_state_core = 1066
+		}
+	}
+	
+	option = {
+        name = ZEL.42.b
+		ai_chance = {
+			factor = 0
+		}
+		ZEL = {
+			create_wargoal = {
+				type = take_core_state
+				target = ZHO
+			}
+		}
+		ZEL = {
+		    add_state_core = 571
+			add_state_core = 570
+			add_state_core = 40
+			add_state_core = 882
+			add_state_core = 583
+			add_state_core = 590
+			add_state_core = 401
+			add_state_core = 250
+			add_state_core = 239
+			add_state_core = 829
+			add_state_core = 265
+			add_state_core = 251
+			add_state_core = 237
+			add_state_core = 217
+			add_state_core = 236
+			add_state_core = 245
+			add_state_core = 218
+			add_state_core = 238
+			add_state_core = 235
+			add_state_core = 233
+			add_state_core = 234
+			add_state_core = 1025
+			add_state_core = 1048
+			add_state_core = 1030
+			add_state_core = 1029
+			add_state_core = 1028
+			add_state_core = 1051
+			add_state_core = 1052
+			add_state_core = 1054
+			add_state_core = 1055
+			add_state_core = 1056
+			add_state_core = 1057
+			add_state_core = 1058
+			add_state_core = 827
+			add_state_core = 1082
+			add_state_core = 1084
+			add_state_core = 1081
+			add_state_core = 1070
+			add_state_core = 1069
+			add_state_core = 1066
+		}
+		
+		
+	}
+	
+	
+}
+country_event = {
+    id = ZEL.43
+    title = ZEL.43.t
+    desc = ZEL.43.d
+	picture = GFX_report_klyns
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.43.a
+		ai_chance = {
+			factor = 100
+		}
+		ZEL = {
+			annex_country = {
+				target = SIR
+				transfer_troops = yes
+			}
+			SIR = {
+				every_unit_leader = {
+					set_nationality = ZEL
+				}
+			}
+			
+		}
+		ZEL = {
+		    add_state_core = 571
+			add_state_core = 570
+			add_state_core = 40
+			add_state_core = 882
+			add_state_core = 583
+			add_state_core = 590
+			add_state_core = 401
+			add_state_core = 250
+			add_state_core = 239
+			add_state_core = 829
+			add_state_core = 265
+			add_state_core = 251
+			add_state_core = 237
+			add_state_core = 217
+			add_state_core = 236
+			add_state_core = 245
+			add_state_core = 218
+			add_state_core = 238
+			add_state_core = 235
+			add_state_core = 233
+			add_state_core = 234
+			add_state_core = 1025
+			add_state_core = 1048
+			add_state_core = 1030
+			add_state_core = 1029
+			add_state_core = 1028
+			add_state_core = 1051
+			add_state_core = 1052
+			add_state_core = 1054
+			add_state_core = 1055
+			add_state_core = 1056
+			add_state_core = 1057
+			add_state_core = 1058
+			add_state_core = 827
+			add_state_core = 1082
+			add_state_core = 1084
+			add_state_core = 1081
+			add_state_core = 1070
+			add_state_core = 1069
+			add_state_core = 1066
+		}
+	}
+	
+	option = {
+        name = ZEL.43.b
+		ai_chance = {
+			factor = 0
+		}
+		ZEL = {
+			create_wargoal = {
+				type = take_core_state
+				target = SIR
+			}
+		}
+		ZEL = {
+		    add_state_core = 571
+			add_state_core = 570
+			add_state_core = 40
+			add_state_core = 882
+			add_state_core = 583
+			add_state_core = 590
+			add_state_core = 401
+			add_state_core = 250
+			add_state_core = 239
+			add_state_core = 829
+			add_state_core = 265
+			add_state_core = 251
+			add_state_core = 237
+			add_state_core = 217
+			add_state_core = 236
+			add_state_core = 245
+			add_state_core = 218
+			add_state_core = 238
+			add_state_core = 235
+			add_state_core = 233
+			add_state_core = 234
+			add_state_core = 1025
+			add_state_core = 1048
+			add_state_core = 1030
+			add_state_core = 1029
+			add_state_core = 1028
+			add_state_core = 1051
+			add_state_core = 1052
+			add_state_core = 1054
+			add_state_core = 1055
+			add_state_core = 1056
+			add_state_core = 1057
+			add_state_core = 1058
+			add_state_core = 827
+			add_state_core = 1082
+			add_state_core = 1084
+			add_state_core = 1081
+			add_state_core = 1070
+			add_state_core = 1069
+			add_state_core = 1066
+		}
+		
+		
+	}
+	
+	
+}
+country_event = {
+    id = ZEL.27
+    title = ZEL.27.t
+    desc = ZEL.27.d
+	picture = GFX_report_klyns
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+	   
+	}
+
+    option = {
+        name = ZEL.27.a
+		ai_chance = {
+			factor = 100
+		}
+		ZEL = {
+			transfer_state = 469
+			transfer_state = 467
+			ROOT = {
+				every_unit_leader = {
+					set_nationality = ZEL
+				}
+			}
+			complete_national_focus = ZEL_Edyne_Ukrainstvo
+			
+		}
+	}
+	
+	option = {
+        name = ZEL.27.b
+		ai_chance = {
+			factor = 0
+		}
+		ZEL = {
+			create_wargoal = {
+				type = take_core_state
+				target = ROOT
+			}
+		}
+		
+	}
+	
+}
+
+country_event = {
+	id = ZEL.28
+	title = ZEL.28.t
+	desc = ZEL.28.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.28.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+				NOT = { is_in_faction_with = FROM }
+				OR = {
+					any_other_country = {
+						is_major = yes
+						NOT = { tag = ZEL }
+						OR = {
+							is_in_faction_with = POL 
+							has_guaranteed = POL
+						}
+					}
+					
+				}
+			}
+			modifier = {
+				factor = 0.1
+				is_historical_focus_on = no
+			}
+		}
+		FROM = {
+			country_event = { id = ZEL.29 }
+		}
+	}
+
+	option = { 
+		name = ZEL.28.b
+			factor = 50
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				is_in_faction = yes
+				NOT = { is_in_faction_with = FROM }
+			}
+
+			modifier = {
+				add = 100
+				has_war_with = FROM
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				NOT = {has_war_with = FROM}
+				factor = 0
+			}
+			
+		}
+		FROM = {
+			country_event = { id = ZEL.30 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_core_state
+					target = ROOT
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.29
+	title = ZEL.29.t
+	desc = ZEL.29.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.29.a
+		
+		ROOT = { 
+			if = { 
+				limit = {
+					91 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 91
+			}
+			if = {
+				limit = {
+					89 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 89
+			}
+			if = {
+				limit = {
+					93 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 93
+			}
+			if = { 
+				limit = {
+					94 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 94
+			}
+			if = {
+				limit = {
+					1037 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1037
+			}
+			if = {
+				limit = {
+					1036 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1036
+			}
+			if = { 
+				limit = {
+					1034 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1034
+			}
+			if = {
+				limit = {
+					1035 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1035
+			}
+			if = {
+				limit = {
+					1038 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1038
+			}
+			if = {
+				limit = {
+					1039 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1039
+			}
+			if = { 
+				limit = {
+					1042 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1042
+			}
+			if = {
+				limit = {
+					1041 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1041
+			}
+			if = {
+				limit = {
+					1040 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1040
+			}
+			if = {
+				limit = {
+					1061 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1061
+			}
+			if = {
+				limit = {
+					1073 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1073
+			}
+			if = {
+				limit = {
+					1074 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1074
+			}
+			
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.30
+	title = ZEL.30.t
+	desc = ZEL.30.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.30.a
+		create_wargoal = {
+			type = take_core_state
+			target = FROM
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.31
+	title = ZEL.31.t
+	desc = ZEL.31.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.31.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+				NOT = { is_in_faction_with = FROM }
+				OR = {
+					any_other_country = {
+						is_major = yes
+						NOT = { tag = ZEL }
+						OR = {
+							is_in_faction_with = CZE 
+							has_guaranteed = CZE
+						}
+					}
+					
+				}
+			}
+			
+		}
+		FROM = {
+			country_event = { id = ZEL.32 }
+		}
+	}
+
+	option = { 
+		name = ZEL.31.b
+		
+		ai_chance = {
+			factor = 50
+			base = 0
+			modifier = {
+				add = 10
+				is_in_faction = yes
+				NOT = { is_in_faction_with = FROM }
+			}
+
+			modifier = {
+				add = 100
+				has_war_with = FROM
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				NOT = {has_war_with = FROM}
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = FROM
+			}
+		}
+		FROM = {
+			country_event = { id = ZEL.33 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_core_state
+					target = ROOT
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.32
+	title = ZEL.32.t
+	desc = ZEL.32.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.32.a
+		
+		ROOT = { 
+			if = { 
+				limit = {
+					73 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 73
+			}
+			if = {
+				limit = {
+					1043 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1043
+			}
+			if = {
+				limit = {
+					1071 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1071
+			}
+			
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.33
+	title = ZEL.33.t
+	desc = ZEL.33.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.33.a
+		create_wargoal = {
+			type = take_core_state
+			target = FROM
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.34
+	title = ZEL.34.t
+	desc = ZEL.34.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.34.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+				NOT = { is_in_faction_with = FROM }
+				OR = {
+					any_other_country = {
+						is_major = yes
+						NOT = { tag = ZEL }
+						OR = {
+							is_in_faction_with = CRI 
+							has_guaranteed = CRI
+						}
+					}
+					
+				}
+			}
+			
+		}
+		FROM = {
+			country_event = { id = ZEL.35 }
+		}
+	}
+
+	option = { 
+		name = ZEL.34.b
+		
+		ai_chance = {
+			factor = 50
+			base = 0
+			modifier = {
+				add = 10
+				is_in_faction = yes
+				NOT = { is_in_faction_with = FROM }
+			}
+
+			modifier = {
+				add = 100
+				has_war_with = FROM
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				NOT = {has_war_with = FROM}
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = FROM
+			}
+		}
+		FROM = {
+			country_event = { id = ZEL.36 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_core_state
+					target = ROOT
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.35
+	title = ZEL.35.t
+	desc = ZEL.35.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.35.a
+		
+		ROOT = { 
+			if = { 
+				limit = {
+					137 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 137
+			}
+			
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.36
+	title = ZEL.36.t
+	desc = ZEL.36.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.36.a
+		create_wargoal = {
+			type = take_core_state
+			target = FROM
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.37
+	title = ZEL.37.t
+	desc = ZEL.37.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.37.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_war_with = FROM
+				NOT = { is_in_faction_with = FROM }
+				OR = {
+					any_other_country = {
+						is_major = yes
+						NOT = { tag = ZEL }
+						OR = {
+							is_in_faction_with = ROM 
+							has_guaranteed = ROM
+						}
+					}
+					
+				}
+			}
+			
+		}
+		FROM = {
+			country_event = { id = ZEL.38 }
+		}
+	}
+
+	option = { 
+		name = ZEL.37.b
+		
+		ai_chance = {
+			factor = 50
+			base = 0
+			modifier = {
+				add = 10
+				is_in_faction = yes
+				NOT = { is_in_faction_with = FROM }
+			}
+
+			modifier = {
+				add = 100
+				has_war_with = FROM
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				NOT = {has_war_with = FROM}
+				factor = 0
+			}
+			modifier = {
+				factor = 0
+				is_in_faction_with = FROM
+			}
+		}
+		FROM = {
+			country_event = { id = ZEL.39 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_core_state
+					target = ROOT
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.38
+	title = ZEL.38.t
+	desc = ZEL.38.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.38.a
+		
+		ROOT = { 
+			if = { 
+				limit = {
+					1044 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1044
+			}
+			if = { 
+				limit = {
+					1045 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1045
+			}
+			if = { 
+				limit = {
+					1046 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1046
+			}
+			if = { 
+				limit = {
+					1050 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1050
+			}
+			if = { 
+				limit = {
+					766 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 766
+			}
+			if = { 
+				limit = {
+					80 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 80
+			}
+			if = { 
+				limit = {
+					1067 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1067
+			}
+			if = { 
+				limit = {
+					1068 = { is_owned_and_controlled_by = FROM }
+				}
+				transfer_state = 1068
+			}
+			
+		}
+	}
+}
+
+country_event = {
+	id = ZEL.39
+	title = ZEL.39.t
+	desc = ZEL.39.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ZEL.39.a
+		create_wargoal = {
+			type = take_core_state
+			target = FROM
+		}
+	}
+}
+
+country_event = {
+    id = ZEL.41
+    title = ZEL.41.t
+    desc = ZEL.41.d
+    picture = GFX_report_BNR
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.41.a
+		BLR = {
+			transfer_state = 207
+			transfer_state = 206
+			transfer_state = 204
+		}
+		if = { 
+			limit = {
+				96 = { is_owned_and_controlled_by = SOV }
+			}
+			BLR = {
+				transfer_state = 96
+			}
+			
+		}
+		if = { 
+			limit = {
+				95 = { is_owned_and_controlled_by = SOV }
+			}
+			BLR = {
+				transfer_state = 95
+			}
+			
+		}
+		if = { 
+			limit = {
+				97 = { is_owned_and_controlled_by = SOV }
+			}
+			BLR = {
+				transfer_state = 97
+			}
+		}
+		BLR = {
+			load_oob = BLR_1936 	    
+		}
+		BLR = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		every_country = { 
+			set_country_flag = super_event_bnr_free
+		}
+
+    }
+	option = {
+        name = ZEL.41.b
+		BLR = { change_tag_from = SOV }
+		BLR = {
+			transfer_state = 207
+			transfer_state = 206
+			transfer_state = 204
+		}
+		if = { 
+			limit = {
+				96 = { is_owned_and_controlled_by = SOV }
+			}
+			BLR = {
+				transfer_state = 96
+			}
+			
+		}
+		if = { 
+			limit = {
+				95 = { is_owned_and_controlled_by = SOV }
+			}
+			BLR = {
+				transfer_state = 95
+			}
+			
+		}
+		if = { 
+			limit = {
+				97 = { is_owned_and_controlled_by = SOV }
+			}
+			BLR = {
+				transfer_state = 97
+			}
+		}
+		BLR = {
+			load_oob = BLR_1936 	    
+		}
+		BLR = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		every_country = { 
+			set_country_flag = super_event_bnr_free
+		}
+
+		
+    }
+	 
+}
+
+country_event = {
+    id = ZEL.44
+    title = ZEL.44.t
+    desc = ZEL.44.d
+    picture = GFX_report_matrosy
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.44.a
+		MAT = {
+			transfer_state = 213
+			transfer_state = 215
+			transfer_state = 214
+		}
+		MAT = {
+			load_oob = MAT_1936 	    
+		}
+		MAT = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		ANR = {
+			ANR_Stepan_Petrychenko = {	
+				remove_unit_leader_role = yes
+			}
+		}
+		every_country = { 
+			set_country_flag = super_event_sailors
+		}
+		MAT = {	country_event = { id = ZEL.45 days = 5 } }
+
+    }
+	option = {
+        name = ZEL.44.b
+		MAT = { change_tag_from = SOV }
+		MAT = {
+			transfer_state = 213
+			transfer_state = 215
+			transfer_state = 214
+		}
+		MAT = {
+			load_oob = MAT_1936 	    
+		}
+		MAT = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		ANR = {
+			ANR_Stepan_Petrychenko = {	
+				remove_unit_leader_role = yes
+			}
+		}
+		every_country = { 
+			set_country_flag = super_event_sailors
+		}
+		MAT = {	country_event = { id = ZEL.45 days = 5 } }
+		
+    }
+	 
+}
+
+country_event = {
+    id = ZEL.45
+    title = ZEL.45.t
+    desc = ZEL.45.d
+    picture = GFX_report_kronshtadt
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.45.a
+		MAT = {
+			transfer_state = 1065
+		}
+		MAT = {
+			add_corps_commander_role = {
+				Character = MAT_Anatolii_Zheleznyakov
+				traits = { trait_reckless trickster war_hero guerilla_fighter }
+				skill = 5
+				attack_skill = 1
+				defense_skill = 7
+				planning_skill = 9
+				logistics_skill = 9
+            }
+		}
+		MAT = {
+			division_template = {
+				name = "Matrosy Kronshtadta"			
+				division_names_group = MAT_INF_02
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+				}
+				support = {
+					
+				}
+			}
+			1065 = {
+				create_unit = {
+				division = "name=\"Matrosy Kronshtadta\"division_template=\"Matrosy Kronshtadta\"start_experience_factor=5 start_equipment_factor=5"
+					owner = MAT
+				}
+				create_unit = {
+					division = "name=\"Matrosy Kronshtadta\"division_template=\"Matrosy Kronshtadta\"start_experience_factor=5 start_equipment_factor=5"
+					owner = MAT
+				}
+				create_unit = {
+					division = "name=\"Matrosy Kronshtadta\"division_template=\"Matrosy Kronshtadta\"start_experience_factor=5 start_equipment_factor=5"
+					owner = MAT
+				}
+			}
+		}
+		
+    }
+}
+
+country_event = {
+    id = ZEL.46
+    title = ZEL.46.t
+    desc = ZEL.46.d
+    picture = 
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.46.a
+		
+
+    }
+	option = {
+        name = ZEL.46.b
+		
+		
+    }
+	 
+}
+
+country_event = {
+    id = ZEL.47
+    title = ZEL.47.t
+    desc = ZEL.47.d
+    picture = 
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.47.a
+		add_ideas = political_intelehenciya
+
+    }
+	option = {
+        name = ZEL.47.b
+		add_ideas = military_intelehenciya
+		
+    }
+	option = {
+        name = ZEL.47.с
+		add_ideas = economy_intelehenciya 
+		
+    }
+}
+
+country_event = {
+    id = ZEL.48
+    title = ZEL.48.t
+    desc = ZEL.48.d
+    picture = 
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.48.a
+		complete_national_focus = JEW_vilnyi_Assrael
+
+    }
+	option = {
+        name = ZEL.48.b
+		complete_national_focus = JEW_vozrodyty_OSR
+		
+    }
+	option = {
+        name = ZEL.48.с
+		complete_national_focus = JEW_Asrael_ponad_use
+		
+    }
+	option = {
+        name = ZEL.48.d
+		complete_national_focus = JEW_prodovzhuvaty_voennyi_stan
+		
+    }
+}
+
+country_event = {
+    id = ZEL.49
+    title = ZEL.49.t
+    desc = ZEL.49.d
+    picture = 
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.49.a
+		add_stability = 0.25
+    }
+	
+}
+
+country_event = {
+    id = ZEL.50
+    title = ZEL.50.t
+    desc = ZEL.50.d
+    picture = 
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.50.a
+		add_war_suppor = 0.25
+    }
+	
+}
+
+country_event = {
+    id = ZEL.51
+    title = ZEL.51.t
+    desc = ZEL.51.d
+    picture = 
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.51.a
+		EGY = {
+			transfer_state = 552
+			transfer_state = 446
+			transfer_state = 453
+			transfer_state = 456
+			transfer_state = 447
+			transfer_state = 907
+			transfer_state = 457
+			transfer_state = 452
+		}
+		EGY = {
+			load_oob = EGY_1936
+		}
+		IF = {
+			JOR = {
+				is_puppet = yes
+			}	
+			ENG = {
+				end_puppet = JOR
+			}
+		}
+		IF = {
+			JOR = {
+				is_in_faction_with = ENG
+			}
+			ENG = {
+				remove_from_faction = JOR
+			}
+		}
+		IF = {
+			LEB = {
+				is_puppet = yes
+			}	
+			FRA = {
+				end_puppet = LEB
+			}
+		}
+		IF = {
+			LEB = {
+				is_in_faction_with = FRA
+			}
+			FRA = {
+				remove_from_faction = LEB
+			}
+		}
+		IF = {
+			SYR = {
+				is_puppet = yes
+			}	
+			FRA = {
+				end_puppet = SYR
+			}
+		}
+		IF = {
+			SYR = {
+				is_in_faction_with = FRA
+			}
+			FRA = {
+				remove_from_faction = SYR
+			}
+		}
+		LEB = {
+			load_oob = LEB_1936
+		}
+		SYR = {
+			load_oob = SYR_1936
+		}
+		JOR = {
+			load_oob = JOR_1936
+		}
+		JEW = { country_event = { id = ZEL.52 } }
+    }
+	
+	
+}
+
+
+country_event = {
+    id = ZEL.52
+    title = ZEL.52.t
+    desc = ZEL.52.d
+    picture = 
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.52.a
+		JEW = {
+			transfer_state = 1087
+			transfer_state = 454
+			transfer_state = 1085
+			transfer_state = 1088
+			transfer_state = 1089
+			transfer_state = 1086
+		}
+		JEW = {
+			add_state_core = 1086
+			add_state_core = 1087
+			add_state_core = 454
+			add_state_core = 1085
+			add_state_core = 1088
+			add_state_core = 1089
+			add_state_core = 1086
+		}
+		JEW = {
+			set_capital = {
+				state = 1088
+				remember_old_capital = no
+			}
+		}
+    }
+	
+}
+
+country_event = {
+    id = ZEL.53
+    title = ZEL.53.t
+    desc = ZEL.53.d
+    picture = GFX_report_petlura
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+
+	
+    trigger = {
+	
+	}
+
+    option = {
+        name = ZEL.53.a
+		DYR = {
+			transfer_state = 201
+			transfer_state = 198
+			transfer_state = 199
+		}
+		DYR = {
+			load_oob = DYR_1936 	    
+		}
+		DYR = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		every_country = { 
+			set_country_flag = 
+		}
+
+    }
+	option = {
+        name = ZEL.53.b
+		DYR = { change_tag_from = SOV }
+		DYR = {
+			transfer_state = 201
+			transfer_state = 198
+			transfer_state = 199
+		}
+		DYR = {
+			load_oob = DYR_1936 	    
+		}
+		DYR = {
+			declare_war_on = {
+				target = SOV
+				type = independence_wargoal
+			}
+		}
+		every_country = { 
+			set_country_flag = 
+		}
+
+		
+    }
+	 
+}

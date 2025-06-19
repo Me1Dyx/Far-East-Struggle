@@ -1,0 +1,23 @@
+state={
+	id=1023
+	name="STATE_1023"
+	history = {
+		owner = SOV
+		
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			arms_factory = 2
+		}
+		add_core_of = SOV
+		add_core_of = FER
+		add_core_of = ZEL
+	}
+	provinces={
+		4719 12622 
+	}
+	manpower=53172
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+}

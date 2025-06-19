@@ -1,0 +1,278 @@
+soundeffect = {
+	name = makhnovci_come_back_superevent
+	loop = no
+	sounds = {
+		sound = makhnovci_come_back_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+
+soundeffect = {
+	name = canadian_ukraine_almost_loose_superevent
+	loop = no
+	sounds = {
+		sound = canadian_ukraine_almost_loose_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = canadian_ukraine_independent_superevent
+	loop = no
+	sounds = {
+		sound = canadian_ukraine_independent_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = german_loosing_war_superevent
+	loop = no
+	sounds = {
+		sound = german_loosing_war_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = german_start_war_with_poland_superevent
+	loop = no
+	sounds = {
+		sound = german_start_war_with_poland_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = japan_take_vladivostok_superevent
+	loop = no
+	sounds = {
+		sound = japan_take_vladivostok_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = jews_uprising_superevent
+	loop = no
+	sounds = {
+		sound = jews_uprising_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = klyns_uprising_superevent
+	loop = no
+	sounds = {
+		sound = klyns_uprising_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = klyns_win_superevent
+	loop = no
+	sounds = {
+		sound = klyns_win_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = malynovyi_klyn_superevent
+	loop = no
+	sounds = {
+		sound = malynovyi_klyn_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = siryi_klyn_superevent
+	loop = no
+	sounds = {
+		sound = siryi_klyn_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = soviet_union_almost_loose_superevent
+	loop = no
+	sounds = {
+		sound = soviet_union_almost_loose_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = soviet_union_start_war_with_klyn_superevent
+	loop = no
+	sounds = {
+		sound = soviet_union_start_war_with_klyn_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = soviet_union_take_khabarovsk_superevent
+	loop = no
+	sounds = {
+		sound = soviet_union_take_khabarovsk_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = spain_civil_war_superevent
+	loop = no
+	sounds = {
+		sound = spain_civil_war_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = ukraine_unite_fascist_communist_superevent
+	loop = no
+	sounds = {
+		sound = ukraine_unite_fascist_communist_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = ukraine_unite_neutral_democratic_superevent
+	loop = no
+	sounds = {
+		sound = ukraine_unite_neutral_democratic_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = upa_uprising_superevent
+	loop = no
+	sounds = {
+		sound = upa_uprising_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = war_with_japan_superevent
+	loop = no
+	sounds = {
+		sound = war_with_japan_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = zhovty_klyn_superevent
+	loop = no
+	sounds = {
+		sound = zhovty_klyn_superevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+
+soundeffect = {
+	name = ukraine_united_all
+	loop = no
+	sounds = {
+		sound = ukraine_united_all_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = bnr_free
+	loop = no
+	sounds = {
+		sound = bnr_free_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = crimea_independent
+	loop = no
+	sounds = {
+		sound = crimea_independent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = sailors
+	loop = no
+	sounds = {
+		sound = sailors_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+soundeffect = {
+	name = jews
+	loop = no
+	sounds = {
+		sound = jews_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 4.5
+}
+

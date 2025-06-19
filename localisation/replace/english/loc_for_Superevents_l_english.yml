@@ -1,0 +1,100 @@
+﻿l_english:
+  SE_makhnovci_come_back_T:0 "The Makhnovists are back!"
+  SE_makhnovci_come_back_D:0 "Power breeds parasites - long live anarchy! \n- Nestor Makhno"
+  SE_makhnovci_come_back_A:0 "Anarchists are a cheerful people"
+  
+  SE_canadian_ukraine_almost_loose_T:0 "The collapse of the Canadian-Ukraine."
+  SE_canadian_ukraine_almost_loose_D:0 "We will not allow the rays of freedom of all nations to shine on our slave shackles: we will break them before the sun of freedom rises! \n- Mykola Mihnovskyi"
+  SE_canadian_ukraine_almost_loose_A:0 "Very bad"
+  
+  SE_canadian_ukraine_independent_T:0 "Canadian-Ukraine independent"
+  SE_canadian_ukraine_independent_D:0 "Big people seem like that to us, because we stand before them on our knees.. \n- Dmytro Dontsov"
+  SE_canadian_ukraine_independent_A:0 "This is our land - this is our field!"
+  
+  SE_german_loosing_war_T:0 "Germany Loses"
+  SE_german_loosing_war_D:0 "Mark my words, comrade, one day everything will change! The battles will be fought on their land, their people will suffer, their blood will flow! \n- Viktor Reznov"
+  SE_german_loosing_war_A:0 "To Victory!"
+  
+  SE_german_start_war_with_poland_T:0 "The Second World War"
+  SE_german_start_war_with_poland_D:0 "The war is won, but the peace is not. \n- Albert Einstein"
+  SE_german_start_war_with_poland_A:0 "Oh humanity!"
+  
+  SE_japan_take_vladivostok_T:0 "Japanese in Vladivostok!"
+  SE_japan_take_vladivostok_D:0 "The fruits of victory are tumbling into our mouths too quickly.\n- Emperor Hirohito"
+  SE_japan_take_vladivostok_A:0 "Oh..."
+  
+  SE_jews_uprising_T:0 "Jewish Uprising"
+  SE_jews_uprising_D:0 "I never think about the future. It comes quickly enough. \n- Albert Einstein"
+  SE_jews_uprising_A:0 "Let's rejoice, people!"
+  
+  SE_klyns_uprising_T:0 "Uprising of the Klyns"
+  SE_klyns_uprising_D:0 "The path of liberation of every nation is thickly sprinkled with blood. \n- Symon Petliura"
+  SE_klyns_uprising_A:0 "Forward, forward!"
+  
+  SE_klyns_win_T:0 "The Klyns win!"
+  SE_klyns_win_D:0 "Blood spilled for a great cause never dries. \n- Symon Petliura"
+  SE_klyns_win_A:0 "We greet you"
+  
+  SE_malynovyi_klyn_T:0 ""
+  SE_malynovyi_klyn_D:0 ""
+  SE_malynovyi_klyn_A:0 ""
+  
+  SE_siryi_klyn_T:0 ""
+  SE_siryi_klyn_D:0 ""
+  SE_siryi_klyn_A:0 ""
+  
+  SE_zhovty_klyn_T:0 ""
+  SE_zhovty_klyn_D:0 ""
+  SE_zhovty_klyn_A:0 ""
+  
+  SE_soviet_union_almost_loose_T:0 "The USSR is losing"
+  SE_soviet_union_almost_loose_D:0 "Experience has shown that our troops do not know how to attack... \n- Joseph Stalin"
+  SE_soviet_union_almost_loose_A:0 "No step back!"
+  
+  SE_soviet_union_start_war_with_klyn_T:0 "War with Klyns"
+  SE_soviet_union_start_war_with_klyn_D:0 "Real "freedoms" for the exploited do not and cannot exist under capitalism... \n- Joseph Stalin"
+  SE_soviet_union_start_war_with_klyn_A:0 "Oh..."
+  
+  SE_soviet_union_take_khabarovsk_T:0 "USSR in Khabarovsk!"
+  SE_soviet_union_take_khabarovsk_D:0 "What you fear... will happen not because of your belief, but because of your fear. \n- Volodymyr Vynnychenko"
+  SE_soviet_union_take_khabarovsk_A:0 "Very bad"
+  
+  SE_spain_civil_war_T:0 "Civil War in Spain"
+  SE_spain_civil_war_D:0 "Rich or poor, don't forget you're a Spanish! \n- Francisco Franco"
+  SE_spain_civil_war_A:0 "¡Venga!, ¡venga!"
+  
+  SE_ukraine_unite_fascist_communist_T:0 "Ukraine has reunited"
+  SE_ukraine_unite_fascist_communist_D:0 "The freedom of the Ukrainian people to an independent life will not be destroyed by enemy prisons or exile, because Ukraine is a mining bastion of heroes and fighters. \n- Yevhen Konovalets"
+  SE_ukraine_unite_fascist_communist_A:0 "Fight, fight!"
+  
+  SE_ukraine_unite_neutral_democratic_T:0 "Ukraine has reunited"
+  SE_ukraine_unite_neutral_democratic_D:0 "As long as the people live, so does their speech. \n- Mykhailo Hrushevskyi"
+  SE_ukraine_unite_neutral_democratic_A:0 "Let's gather abundant flowers from our native fields"
+  
+  SE_upa_uprising_T:0 "UPA Uprising"
+  SE_upa_uprising_D:0 "Going further with unwavering test, OUN and the whole liberation front of the Ukrainian people must reach the great goal, the liberation of Ukraine. \n- Stepan Bandera"
+  SE_upa_uprising_A:0 "We were born!"
+  
+  SE_war_with_japan_T:0 "War with Japan"
+  SE_war_with_japan_D:0 "It's good to trust others, but, not to do so is much better.\n- Benito Mussolini"
+  SE_war_with_japan_A:0 "Let's go!"
+  
+  SE_ukraine_unite_all_T:0 "Ukrainians are united!"
+  SE_ukraine_unite_all_D:0 "And free peoples, like good brothers, will rush to the sun, to the goal of happiness!"
+  SE_ukraine_unite_all_A:0 "Glory to the United Ukraine!!"
+  
+  SE_bnr_free_T:0 "Belarus is independent"
+  SE_bnr_free_D:0 "I hate communists, I'm just Belarusian, but we need to win our land for the people, and we need to use everything for this. \n- Michal Vituška"
+  SE_bnr_free_A:0 "Glory to Belarus"
+  
+  SE_crimea_independent_T:0 "Crimea is independent"
+  SE_crimea_independent_D:0 "The national cause is sacred. To die for the nation is the greatest honor, the greatest respect... \n- Noman Çelebicihan"
+  SE_crimea_independent_A:0 "Qırımğa şuretler olsun!"
+   
+  SE_sailors_T:0 "The Sailors' Revolt"
+  SE_sailors_D:0 "There are no parties... but there are groups of charlatans who, in the name of personal gain and thrills... destroy the working people. \n- Nestor Makhno"
+  SE_sailors_A:0 "Death to the bourgeoisie!"
+  
+  SE_jews_T:0 "The Jews Have Reunited"
+  SE_jews_D:0 "If you will it – it is no dream. \n- Theodor Herzl (visionary of the Jewish state)"
+  SE_jews_A:0 "Rejoice, people!"

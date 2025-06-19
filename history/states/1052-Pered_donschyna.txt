@@ -1,0 +1,30 @@
+state={
+	id=1052
+	name="STATE_1052"
+	history =  {
+
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = MLN
+
+		buildings = {
+			infrastructure = 3 #was: 5
+
+			# Tsimlyanskoye Hydroelectric Station
+			#6490 = { dam = 1 }
+			
+		}
+		
+		victory_points = {
+			449 5
+		}
+
+	}
+	provinces={
+		449 484 500 9565 11476 
+	}
+	manpower=356262
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

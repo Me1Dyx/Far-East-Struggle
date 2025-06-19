@@ -1,0 +1,291 @@
+characters = {
+
+	ZHO_Volodymyr_Naumenko = {
+		name = ZHO_Volodymyr_Naumenko
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZHO_Volodymyr_Naumenko
+				small = GFX_ZHO_Volodymyr_Naumenko_advisor
+			}
+			
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1980.3.1"
+			id = -1
+			traits = { }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZHO_Volodymyr_Naumenko
+			allowed = {
+				original_tag = ZHO
+			}
+			available = {
+				
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+
+	ZHO_Andryi_Nikovskyi = {
+		name = ZHO_Andryi_Nikovskyi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZHO_Andryi_Nikovskyi
+				small = GFX_ZHO_Andryi_Nikovskyi_advisor
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1970.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZHO_Andryi_Nikovskyi
+			allowed = {
+				original_tag = ZHO
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+
+	ZHO_Mykola_Sciborskyi = {
+		name = ZHO_Mykola_Sciborskyi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZHO_Mykola_Sciborskyi
+				small = GFX_ZHO_Mykola_Sciborskyi_advisor
+			}
+			army = {
+			    large = GFX_portrait_ZHO_Mykola_Sciborskyi_military
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1953.3.1"
+			id = -1
+			traits = {  }
+		}
+		corps_commander = {
+            traits = { war_hero infantry_officer politically_connected }
+            skill = 5
+            attack_skill = 2
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 6
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZHO_Mykola_Sciborskyi
+			allowed = {
+				original_tag = ZHO
+			}
+			available = {
+				
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	
+	ZHO_Ivan_Poltavec_Ostryanycya = {
+		name = ZHO_Ivan_Poltavec_Ostryanycya
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZHO_Ivan_Poltavec_Ostryanycya
+				small = GFX_ZHO_Ivan_Poltavec_Ostryanycya_advisor
+			}
+			army = {
+			    large = GFX_portrait_ZHO_Ivan_Poltavec_Ostryanycya
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1"
+			id = -1
+			traits = {  }
+		}
+		field_marshal = {
+            traits = { harsh_leader cavalry_officer war_hero }
+            skill = 6
+            attack_skill = 6
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 8
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZHO_Ivan_Poltavec_Ostryanycya
+			allowed = {
+				original_tag = ZHO
+			}
+			available = {
+				
+			}
+			traits = {
+				social_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	ZHO_Ivan_Tsapko = {
+		name = ZHO_Ivan_Tsapko
+		portraits = {
+			army={
+				large = GFX_portrait_ZHO_Ivan_Tsapko
+				small = GFX_ZHO_Ivan_Tsapko_advisor
+			}
+		}
+		field_marshal = {
+            traits = { organisational_leader cavalry_officer war_hero }
+            skill = 5
+            attack_skill = 3
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+            
+        }
+		advisor= {
+		    cost = 100
+			slot = army_chief
+			idea_token = ZHO_Ivan_Tsapko
+			allowed = {
+				original_tag = ZHO
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_organizational_2 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZHO_Viktor_Dyachenko = {
+		name = ZHO_Viktor_Dyachenko
+		portraits = {
+			army={
+				large = GFX_portrait_ZHO_Viktor_Dyachenko
+				small = GFX_ZHO_Viktor_Dyachenko_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero cavalry_officer }
+            skill = 4
+            attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 6
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = ZHO_Viktor_Dyachenko
+			allowed = {
+				original_tag = ZHO
+			}
+			available = {
+				
+			}
+			traits = {
+				army_cavalry_2 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZHO_Antin_Kuschynskyi = {
+		name = ZHO_Antin_Kuschynskyi
+		portraits = {
+			army={
+				large = GFX_portrait_ZHO_Antin_Kuschynskyi
+				small = GFX_ZHO_Antin_Kuschynskyi_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero cavalry_officer }
+            skill = 3
+            attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = theorist
+			idea_token = ZHO_Antin_Kuschynskyi
+			allowed = {
+				original_tag = ZHO
+			}
+			available = {
+				
+			}
+			traits = {
+				mass_assault_expert 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	
+}
+	

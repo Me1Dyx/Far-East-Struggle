@@ -1,0 +1,272 @@
+music_station = "iw_test_station"
+music = {
+    song = "black_clouds"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "Zaporizhian_marsh"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "event_in_Uman"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "finland_war"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "France_theme"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "German_theme"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "Hava_Nagila"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "marsh"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "my_smilo_v_bii_pidem"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "ne_pora"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "no_reason_war"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "oboroncyam_ukrainy"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "pahonya"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "polish_war"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "preludya"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "prysaha"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "Rage_tyrans"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "Rozpryhaite_hlopci_konei"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "Shevchenkos_theme"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "sich_rifleman_marsh"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "soviet_theme"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "spadschyna_UNR"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "Styah"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "the_siren_song_call_of_death"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "ty_zh_mene_pidmanula"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "vid_synyoho_donu_do_syvyh_karpat"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "war"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "we_are_number_one"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "z_pid_vrazhoyi_ohrany"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+music = {
+    song = "zabutyi_duh"
+    chance = {
+		factor = 25
+		modifier = {
+			factor = 100
+		}
+	}
+}
+

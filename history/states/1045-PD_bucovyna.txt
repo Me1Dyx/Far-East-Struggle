@@ -1,0 +1,30 @@
+state={
+	id=1045
+	name="STATE_1045"
+	history=
+	{
+		owner = ROM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 2
+		}
+		victory_points = {
+			9716 1 
+		}
+		victory_points = {
+			6706 1 
+		}
+		add_core_of = ROM
+		add_core_of = MOL
+		add_core_of = UKR
+		add_core_of = UPA
+	}
+	provinces={
+		6761 11689 
+	}
+	manpower=336426
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

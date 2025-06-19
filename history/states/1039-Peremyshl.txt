@@ -1,0 +1,30 @@
+state={
+	id=1039
+	name="STATE_1039"
+	history={
+		victory_points = {
+			11411 1
+		}
+		victory_points = {
+			3434 2
+		}
+		owner = POL
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = POL
+		add_core_of = UKR
+		add_core_of = UPA
+
+	}
+	provinces={
+		3434 9494 
+	}
+	manpower=254135
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

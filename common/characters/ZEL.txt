@@ -1,0 +1,973 @@
+characters = {
+
+	ZEL_Yuryi_Hlushko_Mova = {
+		name = ZEL_Yuryi_Hlushko_Mova
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZEL_Yuryi_Hlushko_Mova
+				small = GFX_ZEL_Yuryi_Hlushko_advisor
+			}
+			army={
+				large = GFX_ZEL_Yuryi_Hlushko_Mova
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1980.3.1"
+			id = -1
+			traits = { ZEL_Batko_Dalekoho_Shodu }
+		}
+		field_marshal={
+			traits={ politically_connected infantry_officer organisational_leader war_hero }
+			skill = 4
+            attack_skill = 5
+            defense_skill = 3
+            planning_skill = 4
+            logistics_skill = 1
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Yuryi_Hlushko_Mova
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+			    NOT = {
+				    has_completed_focus = ZEL_my_znaem_do_choho_ce_pryvelo
+				}
+				
+			}
+			traits = {
+				democratic_firebrand social_reformer
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+
+	ZEL_Kost_Soplyak = {
+		name = ZEL_Kost_Soplyak
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZEL_Kost_Soplyak
+				small = GFX_ZEL_Kost_Soplyak_advisor
+			}
+			army={
+				large = GFX_ZEL_Kost_Soplyak
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1970.3.1"
+			id = -1
+			traits = { ZEL_socialist_writer }
+		}
+		corps_commander = {
+            traits = { trait_reckless politically_connected trickster }
+            skill = 2
+            attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Kost_Soplyak
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+			    OR = {
+					NOT = {
+						has_completed_focus = ZEL_prydushyty_radykaliv	
+						has_completed_focus = ZEL_prydushyty_comunistiv
+				    }
+				}
+				
+			}
+			traits = {
+				socialist_writer ICE_trade_unionist
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+
+	ZEL_Hryhoriy_Faida = {
+		name = ZEL_Hryhoriy_Faida
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZEL_Hryhoriy_Faida
+				small = GFX_ZEL_Hryhoriy_Faida_advisor
+			}
+			army={
+				large = GFX_ZEL_Hryhoriy_Faida
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1953.3.1"
+			id = -1
+			traits = { ZEL_OUN_member }
+		}
+		corps_commander = {
+            traits = { trait_reckless politically_connected trickster guerilla_fighter ranger  }
+            skill = 1
+            attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Hryhoriy_Faida
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				NOT = {
+					has_completed_focus = ZEL_prydushyty_radykaliv	
+				}
+			}
+			traits = {
+				national_socialist_sympathizer nationalist_journalist
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	
+	ZEL_Kost_Andruschenko = {
+		name = ZEL_Kost_Andruschenko
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ZEL_Kost_Andruschenko
+				small = GFX_ZEL_Kost_Andruschenko_advisor
+			}
+			army={
+				large = GFX_ZEL_Kost_Andruschenko
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1"
+			id = -1
+			traits = { ZEL_member_of_Prosvita }
+		}
+		corps_commander = {
+            traits = { politically_connected trait_cautious expert_improviser }
+            skill = 4
+            attack_skill = 3
+			defense_skill = 6
+			planning_skill = 2
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Kost_Andruschenko
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				NOT = {
+				    has_completed_focus = ZEL_obmezhyty_vplyv_Prosvity
+				}
+			}
+			traits = {
+				ZEL_holova_of_Prosvita 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Borys_Khreschatytskyi = {
+		name = ZEL_Borys_Khreschatytskyi
+		portraits = {
+			army={
+				large = GFX_ZEL_Borys_Khreschatytskyi
+				small = GFX_ZEL_Borys_Khreschatytskyi_advisor
+			}
+		}
+		field_marshal = {
+            traits = { brilliant_strategist war_hero infantry_officer }
+            skill = 7
+            attack_skill = 4
+			defense_skill = 7
+			planning_skill = 2
+			logistics_skill = 4
+            
+        }
+		advisor= {
+		    cost = 125
+			slot = army_chief
+			idea_token = ZEL_Borys_Khreschatytskyi
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Dmytro_Danylyshyn = {
+		name = ZEL_Dmytro_Danylyshyn
+		portraits = {
+			army={
+				large = GFX_ZEL_Dmytro_Danylyshyn
+				small = GFX_ZEL_Dmytro_Danylyshyn_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected trait_reckless  }
+            skill = 3
+            attack_skill = 1
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 75
+			slot = high_command
+			idea_token = ZEL_Dmytro_Danylyshyn
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				NOT = {
+					has_completed_focus = ZEL_prydushyty_radykaliv	
+				}
+			}
+			traits = {
+				army_infantry_2	
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Petro_Tverdovsky = {
+		name = ZEL_Petro_Tverdovsky
+		portraits = {
+			army={
+				large = GFX_ZEL_Petro_Tverdovsky
+				small = GFX_ZEL_Petro_Tverdovsky_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected war_hero cavalry_officer }
+            skill = 5
+            attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 2
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = ZEL_Petro_Tverdovsky
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Vasyl_Bilas = {
+		name = ZEL_Vasyl_Bilas
+		portraits = {
+			army={
+				large = GFX_ZEL_Vasyl_Bilas
+			}
+			civilian = {
+			    small = GFX_ZEL_Vasyl_Bilas_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected trait_reckless infantry_officer }
+            skill = 2
+            attack_skill = 4
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Vasyl_Bilas
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				NOT = {
+					has_completed_focus = ZEL_prydushyty_radykaliv	
+				}
+			}
+			traits = {
+				fascist_demagogue
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Vasyl_Avramenko = {
+		name = ZEL_Vasyl_Avramenko
+		portraits = {
+			army={
+				large = GFX_ZEL_Vasyl_Avramenko
+			}
+			civilian = {
+			    small = GFX_ZEL_Vasyl_Avramenko_advisor
+			}
+		}
+		corps_commander = {
+            traits = { infantry_officer war_hero }
+            skill = 4
+            attack_skill = 3
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 250
+			slot = political_advisor
+			idea_token = ZEL_Vasyl_Avramenko
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				OR = {
+				    has_completed_focus = ZEL_pidtrymka_narodu
+					has_completed_focus = ZEL_Naciya
+					has_completed_focus = ZEL_da_bude_Ukraina
+					has_completed_focus = ZEL_reformvaty_znanya_pro_svoi_korni
+				}
+			}
+			traits = {
+				ZEL_batko_ukrainskoho_tancyu
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	ZEL_Yahno_Pavlo = {
+		name = ZEL_Yahno_Pavlo
+		portraits = {
+			army={
+				large = GFX_ZEL_Yahno_Pavlo
+				small = GFX_ZEL_Yahno_Pavlo_advisor
+			}
+			
+		}
+		corps_commander = {
+            traits = { }
+            skill = 2
+            attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 100
+			slot = air_chief
+			idea_token = ZEL_Yahno_Pavlo
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				has_completed_focus = ZEL_aviaciya_ZEL
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Fedir_Steshko = {
+		name = ZEL_Fedir_Steshko
+		portraits = {
+			army={
+				large = GFX_ZEL_Fedir_Steshko
+				small = GFX_ZEL_Fedir_Steshko_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero infantry_officer politically_connected }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = ZEL_Fedir_Steshko
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				
+			}
+			traits = {
+				army_logistics_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Ivan_Bozhko = {
+		name = ZEL_Ivan_Bozhko
+		portraits = {
+			army={
+				large = GFX_ZEL_Ivan_Bozhko
+				small = GFX_ZEL_Ivan_Bozhko_advisor
+			}
+		}
+		corps_commander = {
+            traits = { harsh_leader politically_connected }
+            skill = 2
+            attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = ZEL_Ivan_Bozhko
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Venedykt_Yakovenko = {
+		name = ZEL_Venedykt_Yakovenko
+		portraits = {
+			army={
+				large = GFX_ZEL_Venedykt_Yakovenko
+				small = GFX_ZEL_Venedykt_Yakovenko_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected brilliant_strategist }
+            skill = 5
+            attack_skill = 3
+			defense_skill = 6
+			planning_skill = 2
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = ZEL_Venedykt_Yakovenko
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				
+			}
+			traits = {
+				army_artillery_1 veteran_guerrilla_fighter
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Ivan_Gadzaman = {
+		name = ZEL_Ivan_Gadzaman
+		portraits = {
+			army={
+				large = GFX_ZEL_Ivan_Gadzaman
+				small = GFX_ZEL_Ivan_Gadzaman_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected infantry_officer }
+            skill = 3
+            attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+            
+        }
+		advisor= {
+		    cost = 200
+			slot = theorist
+			idea_token = ZEL_Ivan_Gadzaman
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				NOT = {
+				    has_idea = Nestacha_officeriv
+				}
+			}
+			traits = {
+				mass_assault_expert 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Yuriy_Tutunnik = {
+		name = ZEL_Yuriy_Tutunnik
+		portraits = {
+			army={
+				large = GFX_ZEL_Yuriy_Tutunnik
+				small = GFX_ZEL_Yuriy_Tutunnik_advisor
+			}
+		}
+		corps_commander = {
+            traits = { cavalry_officer cavalry_leader war_hero brilliant_strategist cavalry_expert scavenger jaeger trickster winter_specialist ranger commando inflexible_strategist harsh_leader }
+            skill = 9
+            attack_skill = 8
+			defense_skill = 5
+			planning_skill = 9
+			logistics_skill = 8
+            
+        }
+		advisor= {
+		    cost = 500
+			slot = army_chief
+			idea_token = ZEL_Yuriy_Tutunnik
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				OR = {
+					has_completed_focus = ZEL_nova_armiya
+					is_country_leader = yes
+				}	
+				
+			}
+			traits = {
+				army_chief_offensive_3 ZEL_orhanizator_zymovyh_pohodiv
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	ZEL_Volodymyr_Savchenko_Bilskyi = { 
+		name = ZEL_Volodymyr_Savchenko_Bilskyi
+		portraits = {
+			army={
+				large = GFX_ZEL_Volodymyr_Savchenko_Bilskyi
+				small = GFX_ZEL_Volodymyr_Savchenko_Bilskyi_advisor
+			}
+		}
+		navy_leader = {
+			traits = { old_guard spotter superior_tactician lancer search_pattern_expert }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 5
+			coordination_skill = 1
+		}
+		advisor= {
+		    cost = 75
+			slot = navy_chief
+			idea_token = ZEL_Volodymyr_Savchenko_Bilskyi
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				has_completed_focus = ZEL_reformovana_taktyka
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	ZEL_Ivan_Bahranyi_advisor = { 
+		name = ZEL_Ivan_Bahranyi_advisor
+		portraits = {
+			civilian ={
+				small = GFX_ZEL_Ivan_Bahranyi_advisor
+			}
+		}
+		advisor= {
+		    cost = 200
+			slot = political_advisor
+			idea_token = ZEL_Ivan_Bahranyi_advisor
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				
+			}
+			traits = {
+				ZEL_pysmennyk_far_east
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+		
+	}
+	ZEL_Ivan_Paslavskyi_advisor = { 
+		name = ZEL_Ivan_Paslavskyi_advisor
+		portraits = {
+			civilian ={
+				small = GFX_ZEL_Ivan_Paslavskyi_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Ivan_Paslavskyi_advisor
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				NOT = {
+				    has_completed_focus = ZEL_my_znaem_do_choho_ce_pryvelo
+				}
+			}
+			traits = {
+				liberal_journalist
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+		
+	}
+	ZEL_Ivan_Svit_advisor = { 
+		name = ZEL_Ivan_Svit_advisor
+		portraits = {
+			civilian ={
+				small = GFX_ZEL_Ivan_Svit_advisor
+			}
+		}
+		advisor= {
+		    cost = 300
+			slot = political_advisor
+			idea_token = ZEL_Ivan_Svit_advisor
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+			    OR = {
+					has_completed_focus = ZEL_pobuduvaty_universytet_v_Khabarovsku
+					has_completed_focus = ZEL_intehruvaty_Prosvitu
+				}
+				
+			}
+			traits = {
+				ZEL_scientist_far_east
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+		
+	}
+	ZEL_Lukyan_Hlybotskyi_advisor = { 
+		name = ZEL_Lukyan_Hlybotskyi_advisor
+		portraits = {
+			civilian ={
+				small = GFX_ZEL_Lukyan_Hlybotskyi_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Lukyan_Hlybotskyi_advisor
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				NOT = {
+				    has_completed_focus = ZEL_my_znaem_do_choho_ce_pryvelo
+				}
+			}
+			traits = {
+				democratic_reformer
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+		
+	}
+	ZEL_Mykolai_Levonyuk_advisor = { 
+		name = ZEL_Mykolai_Levonyuk_advisor
+		portraits = {
+			civilian ={
+				small = GFX_ZEL_Mykolai_Levonyuk_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Mykolai_Levonyuk_advisor
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				
+			}
+			traits = {
+				social_revolutionary
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+		
+	}
+	ZEL_Pavlo_Romanenko_advisor = { 
+		name = ZEL_Pavlo_Romanenko_advisor
+		portraits = {
+			civilian ={
+				small = GFX_ZEL_Pavlo_Romanenko_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Pavlo_Romanenko_advisor
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				OR = {
+					NOT = {
+						has_completed_focus = ZEL_prydushyty_radykaliv	
+						has_completed_focus = ZEL_prydushyty_comunistiv
+				    }
+				}
+			}
+			traits = {
+				communist_revolutionary
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+		
+	}
+	ZEL_Petro_Gorovyi_advisor = { 
+		name = ZEL_Petro_Gorovyi_advisor
+		portraits = {
+			civilian ={
+				small = GFX_ZEL_Petro_Gorovyi_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Petro_Gorovyi_advisor
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				
+			}
+			traits = {
+				silent_workhorse propaganda_expert
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+		
+	}
+	ZEL_Volodymyr_Halchenko_advisor = { 
+		name = ZEL_Volodymyr_Halchenko_advisor
+		portraits = {
+			civilian ={
+				small = GFX_ZEL_Volodymyr_Halchenko_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Volodymyr_Halchenko_advisor
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				NOT = {
+				    has_completed_focus = ZEL_my_znaem_do_choho_ce_pryvelo
+				}
+			}
+			traits = {
+				defender_of_the_peasantry
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+		
+	}
+	ZEL_Yevhen_Gayevskyi_advisor = { 
+		name = ZEL_Yevhen_Gayevskyi_advisor
+		portraits = {
+			civilian ={
+				small = GFX_ZEL_Yevhen_Gayevskyi_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ZEL_Yevhen_Gayevskyi_advisor
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				
+			}
+			traits = {
+				industry_magnate
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+		
+	}
+	
+
+
+
+
+}
+	

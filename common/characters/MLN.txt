@@ -1,0 +1,471 @@
+characters = {
+
+	MLN_Mykola_Ryabovil = {
+		name = MLN_Mykola_Ryabovil
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MLN_Mykola_Ryabovil
+				small = GFX_MLN_Mykola_Ryabovil_advisor
+			}
+			
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1980.3.1"
+			id = -1
+			traits = { }
+		}
+		field_marshal = {
+            traits = { politically_connected war_hero cavalry_officer }
+            skill = 7
+            attack_skill = 6
+			defense_skill = 5
+			planning_skill = 9
+			logistics_skill = 7
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MLN_Mykola_Ryabovil
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+
+	MLN_Kuzma_Bezkrovnyi = {
+		name = MLN_Kuzma_Bezkrovnyi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MLN_Kuzma_Bezkrovnyi
+				small = GFX_MLN_Kuzma_Bezkrovnyi_advisor
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1970.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MLN_Kuzma_Bezkrovnyi
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+
+	MLN_Stepan_Manzhula = {
+		name = MLN_Stepan_Manzhula
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MLN_Stepan_Manzhula
+				small = GFX_MLN_Stepan_Manzhula_advisor
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1953.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MLN_Stepan_Manzhula
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	
+	MLN_Luka_Bych = {
+		name = MLN_Luka_Bych
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MLN_Luka_Bych
+				small = GFX_MLN_Luka_Bych_advisor
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MLN_Mykola_Novoselskyi
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				social_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	MLN_Vasyl_Ivanys = {
+		name = MLN_Vasyl_Ivanys
+		portraits = {
+			civilian = {
+				small = GFX_MLN_Vasyl_Ivanys_advisor
+			}
+			army = {
+			    large = GFX_portrait_MLN_Vasyl_Ivanys
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected cavalry_officer }
+            skill = 4
+            attack_skill = 2
+			defense_skill = 5
+			planning_skill = 1
+			logistics_skill = 3
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MLN_Vasyl_Ivanys
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				silent_workhorse 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	MLN_Antin_Chornyi = {
+		name = MLN_Antin_Chornyi
+		portraits = {
+			civilian = {
+				small = GFX_MLN_Antin_Chornyi_advisor
+			}
+			army = {
+			    large = GFX_portrait_MLN_Antin_Chornyi
+			}
+		}
+		corps_commander = {
+            traits = { harsh_leader cavalry_officer  }
+            skill = 3
+            attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MLN_Antin_Chornyi
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				MLN_banduryst_Ukrainy 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	MLN_Oleksandr_Filimonov = {
+		name = MLN_Oleksandr_Filimonov
+		portraits = {
+			army={
+				large = GFX_portrait_MLN_Oleksandr_Filimonov
+				small = GFX_MLN_Oleksandr_Filimonov_advisor
+			}
+		}
+		field_marshal = {
+            traits = { cavalry_officer }
+            skill = 5
+            attack_skill = 7
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 6
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = MLN_Oleksandr_Filimonov
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	MLN_Hrytsko_Sidelnik = {
+		name = MLN_Hrytsko_Sidelnik
+		portraits = {
+			army={
+				large = GFX_portrait_MLN_Hrytsko_Sidelnik
+				small = GFX_MLN_Hrytsko_Sidelnik_advisor
+			}
+		}
+		corps_commander = {
+            traits = { cavalry_officer }
+            skill = 3
+            attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 6
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = MLN_Hrytsko_Sidelnik
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				army_logistics_1 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	MLN_Oleksiy_Balabas = {
+		name = MLN_Oleksiy_Balabas
+		portraits = {
+			army={
+				large = GFX_portrait_MLN_Oleksiy_Balabas
+				small = GFX_MLN_Oleksiy_Balabas_advisor
+			}
+		}
+		corps_commander = {
+            traits = { cavalry_officer war_hero  }
+            skill = 5
+            attack_skill = 5
+			defense_skill = 7
+			planning_skill = 3
+			logistics_skill = 2
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = MLN_Oleksiy_Balabas
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				army_cavalry_2 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	MLN_Vyacheslav_Naumenko = {
+		name = MLN_Vyacheslav_Naumenko
+		portraits = {
+			army={
+				large = GFX_portrait_MLN_Vyacheslav_Naumenko
+				small = GFX_MLN_Vyacheslav_Naumenko_advisor
+			}
+		}
+		corps_commander = {
+            traits = { cavalry_officer }
+            skill = 4
+            attack_skill = 1
+			defense_skill = 5
+			planning_skill = 8
+			logistics_skill = 2
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = MLN_Vyacheslav_Naumenko
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_2 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	MLN_Pavlo_Kurhanskyi = {
+		name = MLN_Pavlo_Kurhanskyi
+		portraits = {
+			army={
+				large = GFX_portrait_MLN_Pavlo_Kurhanskyi
+				small = GFX_MLN_Pavlo_Kurhanskyi_advisor
+			}
+		}
+		corps_commander = {
+            traits = { cavalry_officer }
+            skill = 5
+            attack_skill = 2
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 2
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = theorist
+			idea_token = MLN_Pavlo_Kurhanskyi
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				mass_assault_expert 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	MLN_Oleksandr_Gadd = { 
+		name = MLN_Oleksandr_Gadd
+		portraits = {
+			army={
+				large = GFX_portrait_MLN_Oleksandr_Gadd
+				small = GFX_MLN_Oleksandr_Gadd_advisor
+			}
+		}
+		navy_leader = {
+			traits = { old_guard spotter superior_tactician lancer search_pattern_expert }
+			skill = 5
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 5
+			coordination_skill = 1
+		}
+		advisor= {
+		    cost = 125
+			slot = navy_chief
+			idea_token = MLN_Oleksandr_Gadd
+			allowed = {
+				original_tag = MLN
+			}
+			available = {
+				
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+}
+	

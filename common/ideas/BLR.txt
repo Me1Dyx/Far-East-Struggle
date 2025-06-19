@@ -1,0 +1,55 @@
+ideas = {
+    country = {
+        armiya_BNR = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = armiya_BNR
+
+			modifier = {
+				army_attack_factor = 0.1
+		        army_defence_factor = 0.1
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				conscription = 0.1
+				war_support_factor = 0.10
+			}
+		}
+		nezalezhna_bilorus = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = nezalezhna_bilorus
+
+			modifier = {
+				stability_factor = 0.25
+				political_power_factor = 0.15
+			}
+		}
+		mala_samoidentych = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = mala_samoidentych
+
+			modifier = {
+				stability_factor = -0.20
+				war_support_factor = -0.15
+				conscription = -0.15
+				mobilization_speed = -0.25
+			}
+		}
+    }
+}

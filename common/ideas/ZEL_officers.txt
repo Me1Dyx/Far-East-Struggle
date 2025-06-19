@@ -1,0 +1,24 @@
+ideas = {
+    country = {
+        Nestacha_officeriv = {
+		     
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = Officers
+
+			modifier = {
+				high_command_cost_factor = 0.45
+		        air_chief_cost_factor = 0.45
+		        army_chief_cost_factor = 0.45
+		        navy_chief_cost_factor = 0.45
+				max_planning = -0.25
+				experience_gain_army = -0.10
+			}
+		}
+    }
+}

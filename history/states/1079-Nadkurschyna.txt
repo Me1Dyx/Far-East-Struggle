@@ -1,0 +1,23 @@
+state={
+	id=1079
+	name="STATE_1079"
+	history={
+		owner = SOV
+		victory_points = {
+			11244 3
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			air_base = 1
+		}
+		add_core_of = SOV
+		add_core_of = UKR
+	}
+	provinces={
+		457 3554 6304 9260 9579 11244 
+	}
+	manpower=235454
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

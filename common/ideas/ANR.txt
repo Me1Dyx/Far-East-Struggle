@@ -1,0 +1,39 @@
+ideas = {
+    country = {
+        Anarhiya_mama = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = Anarhiya_mama
+
+			modifier = {
+				conscription = 0.1
+				army_core_defence_factor = 0.15
+				army_morale_factor = 0.10
+				stability_factor = 0.15
+				war_support_factor = 0.25
+			}
+		}
+		Duh_Makhna = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = Duh_Makhna
+
+			modifier = {
+				cavalry_attack_factor = 0.10
+				cavalry_defence_factor = 0.10
+				stability_factor = 0.20
+				war_support_factor = 0.25
+			}
+		}
+    }
+}

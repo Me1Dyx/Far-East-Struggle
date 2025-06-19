@@ -1,0 +1,23 @@
+state={
+	id=239
+	name="STATE_239"
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 1
+		}
+		victory_points = {
+			3578 5 
+		}
+		add_core_of = SOV
+		add_core_of = ZHO
+	}
+	provinces={
+		433 483 578 3426 3578 6450 9460 9564 11408 11551 
+	}
+	manpower=1226088
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

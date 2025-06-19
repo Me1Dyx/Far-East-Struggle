@@ -1,0 +1,226 @@
+﻿division_template = {
+	name = "Partysanska Armiya Ukrainy"			
+	division_names_group = UPA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }		
+	}
+}
+
+
+
+units = {
+
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11479
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11479
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11479
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 422
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 11441
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9520
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11479
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 474
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 6435
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 11543
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 536
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 11479
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 9494
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 3434
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 466
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 3410
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 6557
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 11411
+		division_template = "Partysanska Armiya Ukrainy"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1.1
+
+	}
+
+}
+
+
+

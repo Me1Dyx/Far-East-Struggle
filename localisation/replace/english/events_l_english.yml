@@ -1,0 +1,204 @@
+﻿l_english:
+ ZEL.1.t:0 "Green Ukraine Demands Manchuria!"
+ ZEL.1.d:0 "Green Ukraine has laid claims to our territories."
+ ZEL.1.a:0 "Fine, so be it."
+ ZEL.1.b:0 "No way!"
+
+ ZEL.2.t:0 "Japan Agreed"
+ ZEL.2.d:0 " "
+ ZEL.2.a:0 "Well, that's good."
+
+ ZEL.3.t:0 "Japan Refused"
+ ZEL.3.d:0 " "
+ ZEL.3.a:0 "Those scoundrels!"
+
+ ZEL.4.t:0 "Green Ukraine Demands Sakhalin!"
+ ZEL.4.d:0 "Green Ukraine has laid claims to our territories."
+ ZEL.4.a:0 "Fine, so be it."
+ ZEL.4.b:0 "No way!"
+
+ ZEL.5.t:0 "Japan Agreed"
+ ZEL.5.d:0 " "
+ ZEL.5.a:0 "Well, that's good."
+
+ ZEL.6.t:0 "Japan Refused"
+ ZEL.6.d:0 " "
+ ZEL.6.a:0 "Those scoundrels!"
+
+ ZEL.7.t:0 "Green Ukraine Requests the Russian Far East"
+ ZEL.7.d:0 " "
+ ZEL.7.a:0 "Alright."
+ ZEL.7.b:0 "No!" 
+
+ ZEL.8.t:0 "The Soviet Union Agreed"
+ ZEL.8.d:0 " "
+ ZEL.8.a:0 "Well, that's good."
+
+ ZEL.9.t:0 "The Soviet Union Refused"
+ ZEL.9.d:0 " "
+ ZEL.9.a:0 "Those scoundrels!"
+
+ ZEL.10.t:0 "Green Ukraine Requests the Klyns"
+ ZEL.10.d:0 " "
+ ZEL.10.a:0 "Alright."
+ ZEL.10.b:0 "Over my dead body!"
+
+ ZEL.11.t:0 "The Soviet Union Agreed"
+ ZEL.11.d:0 " "
+ ZEL.11.a:0 "Well, that's good."
+
+ ZEL.12.t:0 "The Soviet Union Refused"
+ ZEL.12.d:0 " "
+ ZEL.12.a:0 "Those scoundrels!"
+
+ ZEL.13.t:0 "Green Ukraine Requests Ukrainian Territory"
+ ZEL.13.d:0 " "
+ ZEL.13.a:0 "Alright."
+ ZEL.13.b:0 "They're asking for too much."
+
+ ZEL.14.t:0 "The Soviet Union Agreed"
+ ZEL.14.d:0 " "
+ ZEL.14.a:0 "Well, that's good."
+
+ ZEL.15.t:0 "The Soviet Union Refused"
+ ZEL.15.d:0 " "
+ ZEL.15.a:0 "Those scoundrels!"
+ 
+ ZEL.16.t:0 "The Makhnovists are back!"
+ ZEL.16.d:0 "Since 1920 the Makhnovists had been destroyed, but most of them were still active as partisans in the southeastern Ukraine. Now we have news that they have taken the administrative centers of Dnepropetrovsk, Zaporozhye, Stalino, Voroshilovograd, Kharkov, Nikolaev, Kirovograd and Poltava."
+ ZEL.16.a:0 "We will deal with them."
+ ZEL.16.b:0 "For Freedom! For Anarchy!"
+ 
+ ZEL.17.t:0 "Revolt of the Jews"
+ ZEL.17.d:0 "Even from the time when the so-called "Ukrainian People's Republic" existed, in response to Jewish pogroms, the Petliurites and Petliura himself created the Jewish Combat Kuren as part of the 1st Corps of the Ukrainian Galician Army. But as it turned out, most of them were underground in Odessa. Today we received a message that 100 thousand rebels have risen in the territory of Odessa and Balta with Tiraspol."
+ ZEL.17.a:0 "We will suppress them later"
+ ZEL.17.b:0 "Long live the free Jewish state!"
+ 
+ ZEL.18.t:0 "UPA uprising"
+ ZEL.18.d:0 "After the defeat of the UNR Directory, we captured Western Ukraine, but Ukrainian partisans and OUN nationalists were active in these territories. Today we were told that most of the Ukrainian partisans took up arms and captured our important cities, such as Lviv, Brest-Litovsk and others."
+ ZEL.18.a:0 "We will suppress them later"
+ ZEL.18.b:0 "Long live Ukraine!"
+ 
+ ZEL.19.t:0 "Proposal of Cooperation from Green Ukraine"
+ ZEL.19.d:0 "Today we received a message that Green Ukraine wants to cooperate with us."
+ ZEL.19.a:0 "Why not."
+ ZEL.19.b:0 "No way."
+
+ ZEL.20.t:0 "Japan Agreed"
+ ZEL.20.d:0 "Japan has agreed to start cooperation."
+ ZEL.20.a:0 "Hooray!"
+
+ ZEL.21.t:0 "Japan Refused"
+ ZEL.21.d:0 "Japan refused to start cooperation."
+ ZEL.21.a:0 "Bastards."
+
+ ZEL.22.t:0 "OUN Members Request Our Help"
+ ZEL.22.d:0 "Hryhorii Fayda – the head of the OUN in the Far East of Ukraine – is requesting our assistance."
+ ZEL.22.a:0 "We will help our Ukrainian brothers!"
+ ZEL.22.b:0 "Unfortunately, we cannot help them."
+
+ ZEL.23.t:0 "They Agreed to Move the OUN Headquarters to Khabarovsk"
+ ZEL.23.d:0 "The head of the OUN has agreed to move the headquarters to Khabarovsk."
+ ZEL.23.a:0 "Glory to Ukraine!"
+
+ ZEL.24.t:0 "They Refused"
+ ZEL.24.d:0 "The head of the OUN has refused to move the headquarters to Khabarovsk."
+ ZEL.24.a:0 "And they call themselves freedom fighters..."
+
+ ZEL.25.t:0 "New Head of the OUN in Green Ukraine"
+ ZEL.25.d:0 "We need to choose a new head of the OUN. The first candidate is Yevhen Konovalets – founder of the OUN and former commander of the Ukrainian Sich Riflemen. The second is Andriy Melnyk – with clearly very radical views, also a former commander. The last is Stepan Bandera – a completely new member of the OUN but a skilled politician."
+ ZEL.25.a:0 "Yevhen Konovalets is the perfect candidate."
+ ZEL.25.b:0 "Andriy Melnyk will lead us to prosperity."
+ ZEL.25.c:0 "Our father is Bandera."
+
+ ZEL.26.t:0 "Unification with the Green Klyn"
+ ZEL.26.d:0 " "
+ ZEL.26.a:0 "Glory to the United and Indivisible Ukraine!"
+ ZEL.26.b:0 "We have no goal to unite yet"
+
+ ZEL.27.t:0 "Unification with the Green Klyn"
+ ZEL.27.d:0 " "
+ ZEL.27.a:0 "Glory to the United and Indivisible Ukraine!"
+ ZEL.27.b:0 "We have no goal to unite yet"
+
+ ZEL.28.t:0 "Claim on Galicia"
+ ZEL.28.d:0 " "
+ ZEL.28.a:0 "We don't have the strength to fight them"
+ ZEL.28.b:0 "They'll get nothing from us!"
+
+ ZEL.29.t:0 "Galicia is Ours!"
+ ZEL.29.d:0 " "
+ ZEL.29.a:0 "Glory to Ukraine!"
+
+ ZEL.30.t:0 "They Refused"
+ ZEL.30.d:0 " "
+ ZEL.30.a:0 "They will regret this"
+
+ ZEL.31.t:0 "Claim on Carpathian Ruthenia"
+ ZEL.31.d:0 " "
+ ZEL.31.a:0 "We don't have the strength to fight them"
+ ZEL.31.b:0 "They'll get nothing from us!"
+
+ ZEL.32.t:0 "Carpathian Ruthenia is Ours!"
+ ZEL.32.d:0 " "
+ ZEL.32.a:0 "Glory to Ukraine!"
+
+ ZEL.33.t:0 "They Refused"
+ ZEL.33.d:0 " "
+ ZEL.33.a:0 "They will regret this"
+
+ ZEL.34.t:0 "Claim on Crimea"
+ ZEL.34.d:0 " "
+ ZEL.34.a:0 "We don't have the strength to fight them"
+ ZEL.34.b:0 "They'll get nothing from us!"
+
+ ZEL.35.t:0 "Crimea is Ours!"
+ ZEL.35.d:0 " "
+ ZEL.35.a:0 "Glory to Ukraine!"
+
+ ZEL.36.t:0 "They Refused"
+ ZEL.36.d:0 " "
+ ZEL.36.a:0 "They will regret this"
+
+ ZEL.37.t:0 "Claim on Bukovina and Maramureș"
+ ZEL.37.d:0 " "
+ ZEL.37.a:0 "We don't have the strength to fight them"
+ ZEL.37.b:0 "They'll get nothing from us!"
+
+ ZEL.38.t:0 "Bukovina and Maramureș are Ours!"
+ ZEL.38.d:0 " "
+ ZEL.38.a:0 "Glory to Ukraine!"
+
+ ZEL.39.t:0 "They Refused"
+ ZEL.39.d:0 " "
+ ZEL.39.a:0 "They will regret this"
+ 
+ ZEL.40.d:0 "During the revolution, the countries in Crimea were constantly changing. First the Russian Empire, then the Crimean Regional Government of Sulkevich, then the communists, Germans, Ukrainians, the Crimean People's Republic, the Makhnovists and again the communists. But today the majority of Crimean Tatars took up arms and started a coup in Crimea."
+ ZEL.40.a:0 "That's all we need..."
+ ZEL.40.b:0 "Яшасын азат Къырым!"
+ 
+ ZEL.41.t:0 "Belarus declared independence!"
+ ZEL.41.d:0 "During the revolution, Belarus tried to gain independence by all means, but they were captured by the Germans, the Poles, and the communists. And today, a 150,000-strong Belarusian rebel army captured Minsk, Babruisk, and Vitebsk. And Jan Sierada declared the creation of the Belarusian People's Republic"
+ ZEL.41.a:0 "Damn Belarusians"
+ ZEL.41.b:0 "Niachaj žyvie Bielaruś i jaje narod!"
+
+ ZEL.42.t:0 "Unification with the Green Klyn"
+ ZEL.42.d:0 " "
+ ZEL.42.a:0 "Glory to the United and Indivisible Ukraine!"
+ ZEL.42.b:0 "We have no goal to unite yet"
+ 
+ ZEL.43.t:0 "Unification with the Green Klyn"
+ ZEL.43.d:0 " "
+ ZEL.43.a:0 "Glory to the United and Indivisible Ukraine!"
+ ZEL.43.b:0 "We have no goal to unite yet"
+ 
+ ZEL.44.t:0 "Uprising of Sailors in the North"
+ ZEL.44.d:0 "During the revolution in 1917-1920, there were many anarchist groups in Russia, including sailors with their slogan "Death to the bourgeoisie." And so the damned Stepan Petrichenko went north again and gathered rebels for another uprising."
+ ZEL.44.a:0 "Didn't they have enough that time?"
+ ZEL.44.b:0 "We're anarchists, Cheerful people. For us, Freedom is dear!"
+ 
+ ZEL.45.t:0 "The Fourth Kronstadt Uprising"
+ ZEL.45.d:0 ""
+ ZEL.45.a:0 "This time we will definitely be lucky."
+
+

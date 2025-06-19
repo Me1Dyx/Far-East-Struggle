@@ -1,0 +1,24 @@
+﻿
+units= {
+
+	
+	fleet = {
+		name = "Flot Zelenoho Klynu"		
+		naval_base = 957 
+		task_force = {				
+			name = "Flot Zelenoho Klynu"			
+			location = 957 
+			ship = { name = "Pancernyk "Kozak"" pride_of_the_fleet = yes definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ZEL version_name = "Tyhookeanskiy Class" } } }
+			ship = { name = "Strilec" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ZEL version_name = "Tyhookeanskiy Class" } } }
+			ship = { name = "Chumak" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ZEL version_name = "Tyhookeanskiy Class" } } }
+			ship = { name = "Universal" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ZEL version_name = "Tyhookeanskiy Class" } } }
+			ship = { name = "Hlushko" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ZEL version_name = "Tyhookeanskiy Class" } } }
+
+			ship = { name = "Chaika" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ZEL version_name = "Tyhookeanskiy Class" } } }				
+			ship = { name = "Oko" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ZEL version_name = "Tyhookeanskiy Class" } } }				
+			ship = { name = "Ruinivnyk" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ZEL version_name = "Tyhookeanskiy Class" } } }				
+			ship = { name = "Rus" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ZEL version_name = "Tyhookeanskiy Class" } } }				
+		}				
+	}
+} 
+

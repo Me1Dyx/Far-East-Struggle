@@ -1,0 +1,102 @@
+﻿l_russian:
+  SE_makhnovci_come_back_T:0 "Махновцы вернулись!"
+  SE_makhnovci_come_back_D:0 "Власть порождает паразитов – да здравствует анархия! \n- Нестор Махно"
+  SE_makhnovci_come_back_A:0 "Анархисты – народ веселый"
+  
+  SE_canadian_ukraine_almost_loose_T:0 "Крах Канадских-укр."
+  SE_canadian_ukraine_almost_loose_D:0 "Мы не попустим, чтобы лучи свободы всех наций заблестели на наших рабских оковах: мы разобьем их до восхода солнца свободы! \n- Николай Михновский"
+  SE_canadian_ukraine_almost_loose_A:0 "Плохо дело"
+  
+  SE_canadian_ukraine_independent_T:0 "Канадские-укр. независимые"
+  SE_canadian_ukraine_independent_D:0 "Большие кажутся нам такими, потому что мы стоим перед ними на коленях.. \n- Дмитрий Донцов"
+  SE_canadian_ukraine_independent_A:0 "Це наша земля - це наше поле!"
+  
+  SE_german_loosing_war_T:0 "Германия проигрывает"
+  SE_german_loosing_war_D:0 "Попомни мои слова, товарищ, когда-нибудь всё изменится! Бои будут вестись на их земле, страдать будет их народ, литься будет их кровь! \n- Виктор Резнов"
+  SE_german_loosing_war_A:0 "К победе!"
+  
+  SE_german_start_war_with_poland_T:0 "Вторая Мировая Война"
+  SE_german_start_war_with_poland_D:0 "Война выиграна, но мир — нет \n- Альберт Эйнштейн"
+  SE_german_start_war_with_poland_A:0 "О человечество!"
+  
+  SE_japan_take_vladivostok_T:0 "Японцы во Владивостоке!"
+  SE_japan_take_vladivostok_D:0 "Мы слишком быстро вкусили плоды победы.\n- Император Хирохито"
+  SE_japan_take_vladivostok_A:0 "Ох как"
+  
+  SE_jews_uprising_T:0 "Еврейское восстание"
+  SE_jews_uprising_D:0 "Я никогда не думаю о будущем. Оно наступает достаточно быстро. \n- Альберт Эйнштейн"
+  SE_jews_uprising_A:0 "Радуемся люди!"
+  
+  SE_klyns_uprising_T:0 "Восстание Клинов"
+  SE_klyns_uprising_D:0 "Путь освобождения каждой нации густо кропится кровью. \n- Симон Петлюра"
+  SE_klyns_uprising_A:0 "Вперед-вперед!"
+  
+  SE_klyns_win_T:0 "Клины побеждают!"
+  SE_klyns_win_D:0 "Кровь, пролитая для великой цели, не засыхает. \n- Симон Петлюра"
+  SE_klyns_win_A:0 "Приветствуем"
+  
+  SE_malynovyi_klyn_T:0 ""
+  SE_malynovyi_klyn_D:0 ""
+  SE_malynovyi_klyn_A:0 ""
+  
+  SE_siryi_klyn_T:0 ""
+  SE_siryi_klyn_D:0 ""
+  SE_siryi_klyn_A:0 ""
+  
+  SE_zhovty_klyn_T:0 ""
+  SE_zhovty_klyn_D:0 ""
+  SE_zhovty_klyn_A:0 ""
+  
+  SE_soviet_union_almost_loose_T:0 "СССР проигрывает"
+  SE_soviet_union_almost_loose_D:0 "Опыт показал, что наши войска не умеют наступать... \n- Иосиф Сталин"
+  SE_soviet_union_almost_loose_A:0 "Ни шагу назад!"
+  
+  SE_soviet_union_start_war_with_klyn_T:0 "Война с Клинамы"
+  SE_soviet_union_start_war_with_klyn_D:0 "Не бывает и не может быть при капитализме действительных "свобод" для эксплуатируемых... \n- Иосиф Сталин"
+  SE_soviet_union_start_war_with_klyn_A:0 "Ох как"
+  
+  SE_soviet_union_take_khabarovsk_T:0 "СССР в Хабаровске!"
+  SE_soviet_union_take_khabarovsk_D:0 "То, чего ты боишься… произойдет не от твоей веры, а от страха твоего. \n- Владимир Винниченко"
+  SE_soviet_union_take_khabarovsk_A:0 "Плохо дело"
+  
+  SE_spain_civil_war_T:0 "Гражданка в Испании"
+  SE_spain_civil_war_D:0 "Богатый или бедный, не забудь, что ты испанец! \n- Франсиско Франко"
+  SE_spain_civil_war_A:0 "¡Venga!, ¡venga!"
+  
+  SE_ukraine_unite_fascist_communist_T:0 "Украина воссоединилась"
+  SE_ukraine_unite_fascist_communist_D:0 "Свободы украинского народа к самостоятельной жизни не уничтожат ни вражеские тюрьмы, ни ссылки, потому что Украина является добывающим бастионом героев и борцов. \n- Евген Коновалец"
+  SE_ukraine_unite_fascist_communist_A:0 "Биймось-биймось!"
+  
+  SE_ukraine_unite_neutral_democratic_T:0 "Украина воссоединилась"
+  SE_ukraine_unite_neutral_democratic_D:0 "Пока народ живет, живет и его речь. \n- Михаил Грушевский"
+  SE_ukraine_unite_neutral_democratic_A:0 "Соберем с поля родного цветы обильные"
+  
+  SE_upa_uprising_T:0 "Восстание УПА"
+  SE_upa_uprising_D:0 "Идя дальше непоколебимым испытанием, ОУН и целый освободительный фронт украинского народа должны данные дойти до великой цели, до освобождения Украины. \n- Степан Бандера"
+  SE_upa_uprising_A:0 "Зродились ми!"
+  
+  SE_war_with_japan_T:0 "Война с Японией"
+  SE_war_with_japan_D:0 "Доверять другим — это хорошо, но гораздо лучше не доверять.\n- Бенито Муссолини"
+  SE_war_with_japan_A:0 "Поперли!"
+  
+  SE_ukraine_unite_all_T:0 "Українці єдині!"
+  SE_ukraine_unite_all_D:0 "И вольные народы, как добрые братья, устремятся к солнцу, к счастью цели!"
+  SE_ukraine_unite_all_A:0 "Слава Єдиній Україні!!"
+  
+  SE_bnr_free_T:0 "Беларусь незалежная"
+  SE_bnr_free_D:0 "Я ненавіджу камуністаў, я проста беларус, але трэба адваяваць сваю зямлю для народа, і трэба выкарыстоўваць для гэтага ўсё. \n- Міхал Вітушка"
+  SE_bnr_free_A:0 "Слава Беларусі"
+  
+  SE_crimea_independent_T:0 "Крым независим"
+  SE_crimea_independent_D:0 "Национальное дело священно. Умереть за нацию — это величайшая честь, величайшее уважение... \n- Номан Челебиджихан"
+  SE_crimea_independent_A:0 "Къырымгъа шуретлер олсун!"
+  
+  SE_sailors_T:0 "Восстание Матросов"
+  SE_sailors_D:0 "Нет партий... а есть кучки шарлатанов, которые во имя личных выгод и острых ощущений... уничтожают трудовой народ. \n- Нестор Махно"
+  SE_sailors_A:0 "Смерть буржуям!"
+  
+  SE_jews_T:0 "Евреи воссоединились"
+  SE_jews_D:0 "Если вы захотите – это не будет сказкой. \n- Теодор Герцль(провозвестник еврейского государства)"
+  SE_jews_A:0 "Радуемся люди!"
+  
+  

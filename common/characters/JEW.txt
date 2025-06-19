@@ -1,0 +1,693 @@
+characters = {
+	JEW_Solomon_Lyaimberg = {
+        name = JEW_Solomon_Lyaimberg
+        portraits = {
+            civilian = {
+				small = GFX_JEW_Solomon_Lyaimberg_advisor
+                large = GFX_JEW_Solomon_Lyaimberg
+            }
+			
+        }
+        country_leader = {
+			ideology = despotism
+			expire = "1980.3.1"
+			id = -1
+			traits = { JEW_batko_odesy JEW_spasytel_jews }
+		}
+		field_marshal={
+			traits={ politically_connected scavenger harsh_leader trickster war_hero }
+			skill = 4
+            attack_skill = 5
+            defense_skill = 2
+            planning_skill = 6
+            logistics_skill = 3
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = JEW_Solomon_Lyaimberg
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				social_revolutionary
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	JEW_Abram_Ioffe = {
+        name = JEW_Abram_Ioffe
+        portraits = {
+            civilian = {
+				small = GFX_JEW_Abram_Ioffe_advisor
+                large = GFX_JEW_Abram_Ioffe
+            }
+        }
+        country_leader = {
+			ideology = marxism
+			expire = "1980.3.1"
+			id = -1
+			traits = { JEW_socialist_publicier }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = JEW_Abram_Ioffe
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	JEW_Volodymyr_Yudovskyi = {
+        name = JEW_Volodymyr_Yudovskyi
+        portraits = {
+            civilian = {
+                large = GFX_JEW_Volodymyr_Yudovskyi
+            }
+        }
+        country_leader = {
+			ideology = leninism
+			expire = "1980.3.1"
+			id = -1
+			traits = { JEW_old_revolutioner JEW_odesyt }
+		}
+    }
+	JEW_Golda_Meyir = {
+        name = JEW_Golda_Meyir
+        portraits = {
+            civilian = {
+				small = GFX_JEW_Golda_Meyir_advisor
+                large = GFX_JEW_Golda_Meyir
+            }
+        }
+        country_leader = {
+			ideology = rexism
+			expire = "1980.3.1"
+			id = -1
+			traits = { JEW_mother_of_people }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = JEW_Golda_Meyir
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				nationalist_journalist fascist_demagogue
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		field_marshal={
+			traits={ politically_connected }
+			skill = 4
+            attack_skill = 2
+            defense_skill = 6
+            planning_skill = 5
+            logistics_skill = 2
+		
+		}
+    }
+	JEW_Osip_Mykyta = {
+        name = JEW_Osip_Mykyta
+        portraits = {
+            civilian = {
+				small = GFX_JEW_Osip_Mykyta_advisor
+                large = GFX_JEW_Osip_Mykyta
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = JEW_Osip_Mykyta
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_offensive_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		field_marshal={
+			traits={ war_hero harsh_leader brilliant_strategist }
+			skill = 6
+            attack_skill = 6
+            defense_skill = 5
+            planning_skill = 7
+            logistics_skill = 3
+		
+		}
+    }
+	JEW_Solomon_Goldelman = {
+		name = JEW_Solomon_Goldelman
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Solomon_Goldelman
+				small = GFX_JEW_Solomon_Goldelman_advisor
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1980.3.1"
+			id = -1
+			traits = { JEW_old_politician }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = JEW_Solomon_Goldelman
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	JEW_Aisler = {
+		name = JEW_Aisler
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Aisler
+				small = GFX_JEW_Aisler_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = JEW_Aisler
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				JEW_holova_policiyi 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trickster war_hero }
+            skill = 4
+            attack_skill = 4
+			defense_skill = 3
+			planning_skill = 8
+			logistics_skill = 8
+            
+        }
+	}
+	JEW_Borys_Hoslovskyi = {
+		name = JEW_Borys_Hoslovskyi
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Borys_Hoslovskyi
+				small = GFX_JEW_Borys_Hoslovskyi_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = JEW_Borys_Hoslovskyi
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				army_cavalry_2 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trickster war_hero cavalry_expert cavalry_leader cavalry_officer }
+            skill = 6
+            attack_skill = 7
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 5
+            
+        }
+	}
+	JEW_Hayim_Kahane = {
+		name = JEW_Hayim_Kahane
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Hayim_Kahane
+				small = GFX_JEW_Hayim_Kahane_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = JEW_Hayim_Kahane
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_2 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trickster war_hero harsh_leader }
+            skill = 5
+            attack_skill = 2
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 1
+            
+        }
+	}
+	JEW_Ludvik_Rozenberg = {
+		name = JEW_Ludvik_Rozenberg
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Ludvik_Rozenberg
+				small = GFX_JEW_Ludvik_Rozenberg_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = JEW_Ludvik_Rozenberg
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				army_logistics_1
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { war_hero brilliant_strategist }
+            skill = 7
+            attack_skill = 2
+			defense_skill = 5
+			planning_skill = 8
+			logistics_skill = 2
+            
+        }
+	}
+	JEW_Petro_Postoluk = {
+		name = JEW_Petro_Postoluk
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Petro_Postoluk
+				small = GFX_JEW_Petro_Postoluk_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = JEW_Petro_Postoluk
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_defensive_3 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { war_hero }
+            skill = 5
+            attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 8
+            
+        }
+	}
+	JEW_Rotenberh_Salko = {
+		name = JEW_Rotenberh_Salko
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Rotenberh_Salko
+				small = GFX_JEW_Rotenberh_Salko_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = JEW_Rotenberh_Salko
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_drill_2 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trickster war_hero brilliant_strategist cavalry_officer }
+            skill = 6
+            attack_skill = 7
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 8
+            
+        }
+	}
+	JEW_Semen_Yakerson = {
+		name = JEW_Semen_Yakerson
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Semen_Yakerson
+				small = GFX_JEW_Semen_Yakerson_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = theorist
+			idea_token = JEW_Semen_Yakerson
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				mass_assault_expert 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trickster brilliant_strategist harsh_leader war_hero }
+            skill = 8
+            attack_skill = 2
+			defense_skill = 7
+			planning_skill = 8
+			logistics_skill = 4
+            
+        }
+	}
+	JEW_Yakiv_Nass = {
+		name = JEW_Yakiv_Nass
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Yakiv_Nass
+				small = GFX_JEW_Yakiv_Nass_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = JEW_Yakiv_Nass
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				army_infantry_3 veteran_guerrilla_fighter
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { harsh_leader war_hero }
+            skill = 5
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 7
+			logistics_skill = 1
+            
+        }
+	}
+	JEW_Ludwig_von_Mises = {
+		name = JEW_Ludwig_von_Mises
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Ludwig_von_Mises
+				small = GFX_JEW_Ludwig_von_Mises_advisor
+			}
+		}
+		advisor= {
+		    cost = 125
+			slot = political_advisor
+			idea_token = JEW_Ludwig_von_Mises
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				silent_workhorse  
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	JEW_Volodymyr_Gorovyts = {
+		name = JEW_Volodymyr_Gorovyts
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Volodymyr_Gorovyts
+				small = GFX_JEW_Volodymyr_Gorovyts_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = JEW_Volodymyr_Gorovyts
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				popular_figurehead  
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	JEW_Zeyev_Zhabotynskyi = {
+		name = JEW_Zeyev_Zhabotynskyi
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Zeyev_Zhabotynskyi
+				small = GFX_JEW_Zeyev_Zhabotynskyi_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = JEW_Zeyev_Zhabotynskyi
+			allowed = {
+				original_tag = JEW
+			}
+			available = {
+				
+			}
+			traits = {
+				propaganda_expert agricultural_capitalist
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	
+	JEW_Avraam_Chuper = {
+		name = JEW_Avraam_Chuper
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Avraam_Chuper
+			}
+		}
+		corps_commander = {
+            traits = { war_hero trait_reckless }
+            skill = 3
+            attack_skill = 1
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 6
+            
+        }
+	}
+	JEW_Yelyzaveta_Neiman = {
+		name = JEW_Yelyzaveta_Neiman
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Yelyzaveta_Neiman
+			}
+		}
+		corps_commander = {
+            traits = { infantry_officer war_hero }
+            skill = 3
+            attack_skill = 1
+			defense_skill = 7
+			planning_skill = 4
+			logistics_skill = 2
+            
+        }
+	}
+	JEW_Brenes_Mane = {
+		name = JEW_Brenes_Mane
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Brenes_Mane
+			}
+		}
+		corps_commander = {
+            traits = { harsh_leader infantry_officer war_hero }
+            skill = 3
+            attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+            
+        }
+	}
+	JEW_Mavrykiy_Reben = {
+		name = JEW_Mavrykiy_Reben
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Mavrykiy_Reben
+			}
+		}
+		corps_commander = {
+            traits = { trickster war_hero }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+	}
+	JEW_Yuriy_Lindeman = {
+		name = JEW_Yuriy_Lindeman
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Yuriy_Lindeman
+			}
+		}
+		corps_commander = {
+            traits = { war_hero }
+            skill = 3
+            attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+	}
+	JEW_Natan_Liht = {
+		name = JEW_Natan_Liht
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Natan_Liht
+			}
+		}
+		corps_commander = {
+            traits = { infantry_officer war_hero }
+            skill = 3
+            attack_skill = 3
+			defense_skill = 2
+			planning_skill = 7
+			logistics_skill = 1
+            
+        }
+	}
+	JEW_Hetcel_Shvarcman = {
+		name = JEW_Hetcel_Shvarcman
+		portraits = {
+			civilian = {
+				large = GFX_JEW_Hetcel_Shvarcman
+			}
+		}
+		corps_commander = {
+            traits = { trickster guerilla_fighter trait_reckless }
+            skill = 4
+            attack_skill = 6
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+            
+        }
+	}
+}
+	

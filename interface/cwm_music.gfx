@@ -1,0 +1,107 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_radio_station_cover"
+		textureFile = "gfx/radio_station_cover.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_disabled_song_FES"
+		textureFile = "gfx/interface/disabled_song_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_music_next_button_FES"
+		textureFile = "gfx/interface/music_next_button_FES.dds"
+		noOfFrames = 2 
+	}
+	spriteType = {
+		name = "GFX_music_pause_button_FES"
+		textureFile = "gfx/interface/music_pause_button_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_music_player_entry_bg_FES"
+		textureFile = "gfx/interface/music_player_entry_bg_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_musicplayer_add_button_FES"
+		textureFile = "gfx/interface/musicplayer_add_button_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_musicplayer_bar_FES"
+		textureFile = "gfx/interface/musicplayer_bar_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_musicplayer_bottom_bar_FES"
+		textureFile = "gfx/interface/musicplayer_bottom_bar_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_musicplayer_button_FES"
+		textureFile = "gfx/interface/musicplayer_button_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_musicplayer_header_bg_FES"
+		textureFile = "gfx/interface/musicplayer_header_bg_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_musicplayer_next_button_FES"
+		textureFile = "gfx/interface/musicplayer_next_button_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_musicplayer_play_pause_button_FES"
+		textureFile = "gfx/interface/musicplayer_play_pause_button_FES.dds"
+		noOfFrames = 2 
+	}
+	spriteType = {
+		name = "GFX_musicplayer_previous_button_FES"
+		textureFile = "gfx/interface/musicplayer_previous_button_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_musicplayer_remove_button_FES"
+		textureFile = "gfx/interface/musicplayer_remove_button_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_musicplayer_stop_button_FES"
+		textureFile = "gfx/interface/musicplayer_stop_button_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_playlist_bg_FES"
+		textureFile = "gfx/interface/playlist_bg_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_playlist_button_FES"
+		textureFile = "gfx/interface/playlist_button_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_selected_song_FES"
+		textureFile = "gfx/interface/selected_song_FES.dds"
+		 
+	}
+	spriteType = {
+		name = "GFX_toggle_shuffle_buttons_FES"
+		textureFile = "gfx/interface/toggle_shuffle_buttons_FES.dds"
+		noOfFrames = 3
+	}
+	progressbartype = {
+		name = "GFX_volume_track_FES"
+		color = { 1.0 1.0 1.0 }
+		colortwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/music_vol_progress_FES.dds"
+		textureFile2 = "gfx/interface/music_vol_progress_bg_FES.dds"
+		size = { x = 75 y = 16 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	
+}

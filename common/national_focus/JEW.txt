@@ -1,0 +1,2435 @@
+focus_tree = {
+	id = JEW
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JEW
+		}
+	}
+	default = no
+	focus = {
+		id = JEW_radiymo_ludy
+		icon = GFX_focus_radiymo_ludy
+		cost = 4
+		x = 13
+		y = 0
+		available = {
+			JEW = {
+				has_war_with = SOV
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_ideas = hava_nagila
+		}
+
+	}
+	focus = {
+		id = JEW_peremoha_nad_bilshovykamy
+		icon = GFX_focus_victory
+		cost = 4
+		x = 33
+		y = 0
+		available = {
+			JEW = {
+				NOT = {
+					has_war = yes
+				}
+			}
+			has_completed_focus = JEW_nacionalna_oborona
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.15
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+			add_ideas = disarmed_nation
+			add_ideas = civilian_economy
+		}
+		
+
+	}
+	focus = {
+		id = JEW_nova_armiya
+		icon = GFX_focus_armiya_isr
+		cost = 4
+		x = 60
+		y = 0
+		available = {
+			has_completed_focus = JEW_peremoha_nad_bilshovykamy
+		}
+		completion_reward = {
+			add_ideas = armiya_asraelya
+			army_experience = 5
+						add_doctrine_cost_reduction = {
+								name = land_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = land_doctrine
+							}
+		}
+
+	}
+	focus = {
+		id = JEW_economika
+		icon = GFX_focus_economika_isr
+		cost = 4
+		x = 72
+		y = 0
+		available = {
+			has_completed_focus = JEW_peremoha_nad_bilshovykamy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_marsh_na_Kyiv
+		icon = GFX_focus_marsh_na_kyiv
+		cost = 4
+		prerequisite = {
+			focus = JEW_radiymo_ludy
+		}
+		mutually_exclusive = {
+			focus = JEW_gluha_oborona
+		}
+		x = 12
+		y = 1
+		available = {
+			JEW = {
+				has_war_with = SOV
+			}
+			SOV = {
+				controls_state = 198
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = marsh_na_sovetiv
+				days = 125
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_gluha_oborona
+		icon = GFX_focus_gluha_oborona
+		cost = 2
+		prerequisite = {
+			focus = JEW_radiymo_ludy
+		}
+		mutually_exclusive = {
+			focus = JEW_marsh_na_Kyiv
+		}
+		x = 14
+		y = 1
+		available = {
+			JEW = {
+				has_war_with = SOV
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = defense
+				days = 125
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_mobilizuvaty_goyiv
+		icon = GFX_focus_mobilizuvaty_goyiv
+		cost = 4
+		prerequisite = {
+			focus = JEW_gluha_oborona
+			focus = JEW_marsh_na_Kyiv
+		}
+		x = 13
+		y = 2
+		available = {
+			JEW = {
+				has_war_with = SOV
+			}
+		}
+		completion_reward = {
+			add_stability = -0.25
+			add_war_support = -0.10
+			add_ideas = {
+				scraping_the_barrel
+			}
+			add_timed_idea = {
+				idea = mobilization_of_goys
+				days = 100
+			}
+			add_ideas = tot_economic_mobilisation
+		}
+
+	}
+	focus = {
+		id = JEW_spivpracya_z_anarhistamy
+		icon = GFX_focus_spivpracya_z_anarhistamy
+		cost = 4
+		prerequisite = {
+			focus = JEW_mobilizuvaty_goyiv
+		}
+		x = 13
+		y = 3
+		available = {
+			JEW = {
+				has_war_with = SOV
+			}
+		}
+		available = {
+			JEW = {
+				NOT = {
+					has_war_with = ANR
+				}
+			}
+		}
+		completion_reward = {
+			ANR = {	country_event = { id = ZEL.46 days = 2 } }
+		}
+
+	}
+	focus = {
+		id = JEW_nacionalna_oborona
+		icon = GFX_focus_nac_oborona
+		cost = 4
+		available = {
+			JEW = {
+				has_war_with = SOV
+			}
+		}
+		prerequisite = {
+			focus = JEW_spivpracya_z_anarhistamy
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+			add_ideas = ter_oborona
+			JEW = {
+				division_template = {
+					name = "Terytorialna oborona"			
+					division_names_group = JEW_INF_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						
+					}
+				}
+				192 = {
+					create_unit = {
+						division = "name=\"Terytorialna oborona\"division_template=\"Terytorialna oborona\"start_experience_factor=0.01 start_equipment_factor=5"
+							owner = JEW
+						}
+					create_unit = {
+						division = "name=\"Terytorialna oborona\"division_template=\"Terytorialna oborona\"start_experience_factor=0.01 start_equipment_factor=5"
+						owner = JEW
+					}
+					create_unit = {
+						division = "name=\"Terytorialna oborona\"division_template=\"Terytorialna oborona\"start_experience_factor=0.01 start_equipment_factor=5"
+						owner = JEW
+					}
+					create_unit = {
+						division = "name=\"Terytorialna oborona\"division_template=\"Terytorialna oborona\"start_experience_factor=0.01 start_equipment_factor=5"
+							owner = JEW
+						}
+					create_unit = {
+						division = "name=\"Terytorialna oborona\"division_template=\"Terytorialna oborona\"start_experience_factor=0.01 start_equipment_factor=5"
+						owner = JEW
+					}
+					create_unit = {
+						division = "name=\"Terytorialna oborona\"division_template=\"Terytorialna oborona\"start_experience_factor=0.01 start_equipment_factor=5"
+						owner = JEW
+					}
+					create_unit = {
+						division = "name=\"Terytorialna oborona\"division_template=\"Terytorialna oborona\"start_experience_factor=0.01 start_equipment_factor=5"
+							owner = JEW
+						}
+					create_unit = {
+						division = "name=\"Terytorialna oborona\"division_template=\"Terytorialna oborona\"start_experience_factor=0.01 start_equipment_factor=5"
+						owner = JEW
+					}
+					create_unit = {
+						division = "name=\"Terytorialna oborona\"division_template=\"Terytorialna oborona\"start_experience_factor=0.01 start_equipment_factor=5"
+						owner = JEW
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_navesty_poryadok_v_mistah
+		icon = GFX_focus_cities
+		cost = 2
+		prerequisite = {
+			focus = JEW_peremoha_nad_bilshovykamy
+		}
+		x = 31
+		y = 1
+		completion_reward = {
+			add_stability = 0.10
+			add_manpower = -2500
+			swap_ideas = {
+				remove_idea = pogromy
+				add_idea = pogromy_1
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_yedina_naciya
+		icon = GFX_focus_yedyna_naciya
+		cost = 2
+		prerequisite = {
+			focus = JEW_peremoha_nad_bilshovykamy
+		}
+		x = 33
+		y = 1
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 150
+			add_ideas = edyna_naciya
+		}
+
+	}
+	focus = {
+		id = JEW_pryzvaty_jewish_intelehenciyu
+		icon = GFX_focus_jews_intlehenciya
+		cost = 3
+		prerequisite = {
+			focus = JEW_peremoha_nad_bilshovykamy
+		}
+		x = 35
+		y = 1
+		completion_reward = {
+			JEW = {	country_event = { id = ZEL.47 } }
+		}
+
+	}
+	focus = {
+		id = JEW_vibory_lidera
+		icon = GFX_focus_lider
+		cost = 1
+		prerequisite = {
+			focus = JEW_navesty_poryadok_v_mistah
+		}
+		prerequisite = {
+			focus = JEW_yedina_naciya
+		}
+		prerequisite = {
+			focus = JEW_pryzvaty_jewish_intelehenciyu
+		}
+		x = 33
+		y = 2
+		completion_reward = {
+			JEW = {	country_event = { id = ZEL.48 } }
+		}
+
+	}
+	focus = {
+		id = JEW_vilnyi_Assrael
+		icon = GFX_focus_goldelman
+		cost = 4
+		prerequisite = {
+			focus = JEW_vibory_lidera
+		}
+		mutually_exclusive = {
+			focus = JEW_vozrodyty_OSR
+			focus = JEW_Asrael_ponad_use
+			focus = JEW_prodovzhuvaty_voennyi_stan
+		}
+		x = 22
+		y = 3
+		available = {
+			always = no
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+				last_election = "1936.1.1"
+				election_frequency = 48
+			}
+			set_popularities = {
+				democratic = 50
+				neutrality = 25
+				fascism = 15
+				communism = 10
+			}
+			add_stability = 0.1
+			add_political_power = 150
+		}
+
+	}
+	focus = {
+		id = JEW_rivni_prava
+		icon = GFX_goal_generic_national_unity
+		cost = 4
+		prerequisite = {
+			focus = JEW_vilnyi_Assrael
+		}
+		x = 20
+		y = 4
+		completion_reward = {
+			add_stability = 0.15
+			add_political_power = 125
+			add_ideas = rights
+		}
+
+	}
+	focus = {
+		id = JEW_zupynyty_pogromy
+		icon = GFX_focus_pogromy
+		cost = 7
+		prerequisite = {
+			focus = JEW_vilnyi_Assrael
+		}
+		x = 24
+		y = 4
+		available = {
+			JEW = {
+				has_army_manpower = {
+					size > 100000
+				}
+			}
+		}
+		completion_reward = {
+			192 = { add_manpower = -14357}
+			834 = { add_manpower = -1044}
+			1047 = { add_manpower = -2633}
+			add_stability = 0.10
+			remove_ideas = pogromy_1
+			
+		}
+
+	}
+	focus = {
+		id = JEW_vozrodyty_OSR
+		icon = GFX_focus_Ioffe
+		cost = 2
+		prerequisite = {
+			focus = JEW_vibory_lidera
+		}
+		mutually_exclusive = {
+			focus = JEW_vilnyi_Assrael
+			focus = JEW_Asrael_ponad_use
+			focus = JEW_prodovzhuvaty_voennyi_stan
+		}
+		x = 30
+		y = 3
+		available = {
+			always = no
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = yes
+				last_election = "1936.1.1"
+				election_frequency = 48
+			}
+			set_popularities = {
+				democratic = 15
+				neutrality = 20
+				fascism = 5
+				communism = 60
+			}
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = JEW_zavody_robitnykam
+		icon = GFX_goal_generic_soviet_construction
+		cost = 2
+		prerequisite = {
+			focus = JEW_vozrodyty_OSR
+		}
+		x = 28
+		y = 4
+		completion_reward = {
+			add_stability = 0.10
+			add_popularity = {
+				ideology = communism
+				popularity = 0.10
+			}
+			add_ideas = robitnyky
+			random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = industrial_complex
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = {
+										type = industrial_complex
+										level = 1
+										instant_build = yes
+									}
+							}
+		}
+
+	}
+	focus = {
+		id = JEW_reforma_economiky
+		icon = GFX_focus_economy
+		cost = 4
+		prerequisite = {
+			focus = JEW_vozrodyty_OSR
+		}
+		x = 32
+		y = 4
+		available = {
+			has_completed_focus = JEW_stabilna_economika 
+			has_political_power > 125
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			add_political_power = -125
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = JEW_Asrael_ponad_use
+		icon = GFX_focus_Meyir
+		cost = 4
+		prerequisite = {
+			focus = JEW_vibory_lidera
+		}
+		mutually_exclusive = {
+			focus = JEW_vilnyi_Assrael
+			focus = JEW_vozrodyty_OSR
+			focus = JEW_prodovzhuvaty_voennyi_stan
+		}
+		x = 37
+		y = 3
+		available = {
+			always = no
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = yes
+				last_election = "1936.1.1"
+				election_frequency = 48
+			}
+			set_popularities = {
+				democratic = 3
+				neutrality = 20
+				fascism = 75
+				communism = 2
+			}
+			add_war_support = 0.15
+			add_political_power = 200
+		}
+
+	}
+	focus = {
+		id = JEW_naladyty_economiku
+		icon = GFX_focus_economy
+		cost = 2
+		prerequisite = {
+			focus = JEW_Asrael_ponad_use
+		}
+		x = 35
+		y = 4
+		available = {
+			has_completed_focus = JEW_stabilna_economika 
+			has_political_power > 125
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			add_political_power = -125
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = JEW_investyciyi_yevreiv
+		icon = GFX_focus_Cash_Fan
+		cost = 4
+		prerequisite = {
+			focus = JEW_naladyty_economiku
+		}
+		x = 35
+		y = 5
+		completion_reward = {
+			add_political_power = 500
+			add_stability = 0.15
+			add_ideas = investyciyi
+		}
+
+	}
+	focus = {
+		id = JEW_Asrael_tilky_dlya_Yevreiv
+		icon = GFX_focus_asrael
+		cost = 4
+		prerequisite = {
+			focus = JEW_Asrael_ponad_use
+		}
+		x = 37
+		y = 4
+		completion_reward = {
+			add_stability = -0.25
+			add_ideas = tilky_jews
+		}
+
+	}
+	focus = {
+		id = JEW_rozhromyty_pogromschykiv
+		icon = GFX_focus_pogromy
+		cost = 2
+		prerequisite = {
+			focus = JEW_Asrael_tilky_dlya_Yevreiv
+		}
+		x = 37
+		y = 5
+		available = {
+			JEW = {
+				has_army_manpower = {
+					size > 100000
+				}
+			}
+		}
+		completion_reward = {
+			192 = { add_manpower = -14357}
+			834 = { add_manpower = -1044}
+			1047 = { add_manpower = -2633}
+			add_stability = 0.10
+			remove_ideas = pogromy_1
+			
+		}
+
+	}
+	focus = {
+		id = JEW_nacionalistychna_milita
+		icon = GFX_focus_milita
+		cost = 4
+		prerequisite = {
+			focus = JEW_Asrael_ponad_use
+		}
+		x = 39
+		y = 4
+		completion_reward = {
+			add_ideas = jews_milita
+			JEW = {
+				division_template = {
+					name = "Natsionalistychna militia"			
+					division_names_group = JEW_INF_04
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						
+					}
+				}
+				192 = {
+					create_unit = {
+						division = "name=\"Natsionalistychna militia\"division_template=\"Natsionalistychna militia\"start_experience_factor=1.3 start_equipment_factor=5"
+							owner = JEW
+						}
+					create_unit = {
+						division = "name=\"Natsionalistychna militia\"division_template=\"Natsionalistychna militia\"start_experience_factor=1.3 start_equipment_factor=5"
+						owner = JEW
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_te_scho_nalezhe_nam
+		icon = GFX_focus_nashe
+		cost = 4
+		prerequisite = {
+			focus = JEW_nacionalistychna_milita
+		}
+		x = 39
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = jews_milita
+				add_idea = jews_milita_2
+			}
+			add_political_power = 125
+			add_stability = 0.10
+		}
+
+	}
+	focus = {
+		id = JEW_obydnaty_Asrael
+		icon = GFX_focus_nasha_zemlya
+		cost = 7
+		prerequisite = {
+			focus = JEW_investyciyi_yevreiv
+		}
+		prerequisite = {
+			focus = JEW_te_scho_nalezhe_nam
+		}
+		prerequisite = {
+			focus = JEW_rozhromyty_pogromschykiv
+		}
+		x = 37
+		y = 6
+		completion_reward = {
+			add_stability = 0.10
+			add_state_core = 198
+			add_state_core = 199
+			add_state_core = 201
+			add_state_core = 197
+			add_state_core = 1053
+			add_state_core = 1050
+			add_state_core = 1047
+			add_state_core = 1067 
+			add_state_core = 78 
+			add_state_core = 766
+			add_state_core = 1046
+		}
+
+	}
+	focus = {
+		id = JEW_prodovzhuvaty_voennyi_stan
+		icon = GFX_focus_Lyamberg
+		cost = 4
+		prerequisite = {
+			focus = JEW_vibory_lidera
+		}
+		mutually_exclusive = {
+			focus = JEW_vilnyi_Assrael
+			focus = JEW_vozrodyty_OSR
+			focus = JEW_Asrael_ponad_use
+		}
+		x = 45
+		y = 3
+		available = {
+			always = no
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = yes
+				last_election = "1936.1.1"
+				election_frequency = 48
+			}
+			set_popularities = {
+				democratic = 10
+				neutrality = 60
+				fascism = 20
+				communism = 10
+			}
+			add_stability = -0.2
+			add_war_support = 0.15
+			add_political_power = -50
+			add_ideas = extensive_conscription
+			add_ideas = partial_economic_mobilisation
+		}
+
+	}
+	focus = {
+		id = JEW_vyiskovi_navchanya
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 4
+		prerequisite = {
+			focus = JEW_prodovzhuvaty_voennyi_stan
+		}
+		x = 42
+		y = 4
+		completion_reward = {
+			add_ideas = navchannya
+			army_experience = 25
+		}
+
+	}
+	focus = {
+		id = JEW_pidtrymaty_economiku
+		icon = GFX_goal_generic_improve_relations
+		cost = 4
+		prerequisite = {
+			focus = JEW_prodovzhuvaty_voennyi_stan
+		}
+		x = 44
+		y = 4
+		available = {
+			has_completed_focus = JEW_stabilna_economika 
+			has_political_power > 125
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			add_political_power = -125
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = JEW_vyiskova_economika
+		icon = GFX_focus_military_eco
+		cost = 4
+		prerequisite = {
+			focus = JEW_pidtrymaty_economiku
+		}
+		prerequisite = {
+			focus = JEW_vyiskovi_navchanya
+		}
+		x = 44
+		y = 5
+		completion_reward = {
+			add_ideas = viyskova_economika
+			add_ideas = war_economy
+		}
+
+	}
+	focus = {
+		id = JEW_zahyst_mist_i_sil
+		icon = GFX_focus_pishov_nahui
+		cost = 5
+		prerequisite = {
+			focus = JEW_prodovzhuvaty_voennyi_stan
+		}
+		x = 46
+		y = 4
+		available = {
+			has_political_power > 250
+		}
+		completion_reward = {
+			add_political_power = -250
+			swap_ideas = {
+				remove_idea = pogromy_1
+				add_idea = pogromy_2
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_ni_pogromam
+		icon = GFX_focus_pogromy
+		cost = 4
+		prerequisite = {
+			focus = JEW_zahyst_mist_i_sil
+		}
+		x = 46
+		y = 5
+		available = {
+			JEW = {
+				has_army_manpower = {
+					size > 100000
+				}
+			}
+		}
+		completion_reward = {
+			192 = { add_manpower = -14357}
+			834 = { add_manpower = -1044}
+			1047 = { add_manpower = -2633}
+			add_stability = 0.10
+			remove_ideas = pogromy_2
+			
+		}
+
+	}
+	focus = {
+		id = JEW_nasha_zemlya_nasha_dolya
+		icon = GFX_focus_nasha_zemlya
+		cost = 4
+		prerequisite = {
+			focus = JEW_ni_pogromam
+		}
+		prerequisite = {
+			focus = JEW_vyiskova_economika
+		}
+		x = 45
+		y = 6
+		completion_reward = {
+			add_stability = 0.10
+			add_state_core = 198
+			add_state_core = 199
+			add_state_core = 201
+			add_state_core = 197
+			add_state_core = 1053
+			add_state_core = 1050
+			add_state_core = 1047
+			add_state_core = 1067 
+			add_state_core = 78 
+			add_state_core = 766
+			add_state_core = 1046
+		}
+
+	}
+	focus = {
+		id = JEW_pidvyshyty_officeriv
+		icon = GFX_focus_officery_jews
+		cost = 4
+		prerequisite = {
+			focus = JEW_prodovzhuvaty_voennyi_stan
+		}
+		mutually_exclusive = {
+			focus = JEW_krascha_armiya
+		}
+		x = 48
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = novi_officery
+			hidden_effect = {
+				ISR = {
+					every_unit_leader = {
+						set_nationality = JEW
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_jewish_milita
+		icon = GFX_focus_milita
+		cost = 2
+		prerequisite = {
+			focus = JEW_pidvyshyty_officeriv
+		}
+		x = 48
+		y = 5
+		completion_reward = {
+			add_ideas = milita 
+			JEW = {
+				division_template = {
+					name = "Jewish militia"			
+					division_names_group = JEW_INF_05
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+					}
+					support = {
+						
+					}
+				}
+				192 = {
+					create_unit = {
+						division = "name=\"Jewish militia\"division_template=\"Jewish militia\"start_experience_factor=1.3 start_equipment_factor=5"
+							owner = JEW
+						}
+					create_unit = {
+						division = "name=\"Jewish militia\"division_template=\"Jewish militia\"start_experience_factor=1.3 start_equipment_factor=5"
+						owner = JEW
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_krascha_armiya
+		icon = GFX_focus_krascha_armiya
+		cost = 4
+		prerequisite = {
+			focus = JEW_prodovzhuvaty_voennyi_stan
+		}
+		mutually_exclusive = {
+			focus = JEW_pidvyshyty_officeriv
+		}
+		x = 50
+		y = 4
+		available = {
+			has_political_power > 250
+		}
+		completion_reward = {
+			add_political_power = -250
+			add_ideas = krascha_armiya_asraela
+			army_experience = 120
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_elitnyi_korpus
+		icon = GFX_focus_elita
+		cost = 4
+		prerequisite = {
+			focus = JEW_krascha_armiya
+		}
+		x = 50
+		y = 5
+		available = {
+			has_army_experience > 25
+		}
+		completion_reward = {
+			army_experience = -25
+			swap_ideas = {
+				remove_idea = krascha_armiya_asraela
+				add_idea = elitna_armiya
+			}
+			JEW = {
+				division_template = {
+					name = "Elitnyi pidrozdil"			
+					division_names_group = JEW_INF_06
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+						engineer = { x = 0 y = 1 }	
+						artillery = { x = 0 y = 2 }
+					}
+				}
+				192 = {
+					create_unit = {
+						division = "name=\"Elitnyi pidrozdil\"division_template=\"Elitnyi pidrozdil\"start_experience_factor=3 start_equipment_factor=5"
+							owner = JEW
+						}
+					create_unit = {
+						division = "name=\"Elitnyi pidrozdil\"division_template=\"Elitnyi pidrozdil\"start_experience_factor=3 start_equipment_factor=5"
+						owner = JEW
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_TSAHAL
+		icon = GFX_focus_navchanist_2
+		cost = 4
+		prerequisite = {
+			focus = JEW_jewish_milita
+			focus = JEW_elitnyi_korpus
+		}
+		x = 49
+		y = 6
+		completion_reward = {
+			add_ideas = CAHAL
+		}
+
+	}
+	focus = {
+		id = JEW_chas_rozplaty
+		icon = GFX_focus_sovyets
+		cost = 4
+		prerequisite = {
+			focus = JEW_nasha_zemlya_nasha_dolya
+		}
+		prerequisite = {
+			focus = JEW_TSAHAL
+		}
+		x = 47
+		y = 7
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+			add_stability = 0.10
+			add_war_support = 0.20
+			192 = { add_manpower = -25000}
+			834 = { add_manpower = -1550}
+			1047 = { add_manpower = -739}
+		}
+
+	}
+	focus = {
+		id = JEW_pihotka
+		icon = GFX_goal_generic_small_arms
+		cost = 2
+		prerequisite = {
+			focus = JEW_nova_armiya
+		}
+		x = 57
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+								name = infantry_artillery_bonus
+								bonus = 1
+								uses = 1
+								category = infantry_weapons
+							}
+		}
+
+	}
+	focus = {
+		id = JEW_dop_osnaschenya
+		icon = GFX_goal_generic_army_artillery
+		cost = 2
+		prerequisite = {
+			focus = JEW_pihotka
+		}
+		x = 57
+		y = 2
+		completion_reward = {
+						add_tech_bonus = {
+								bonus = 0.5
+								uses = 1
+								category = night_vision
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = hospital_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = logistics_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = support_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = engineers_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = recon_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = military_police_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = logistics_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = signal_company_tech
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_art
+		icon = GFX_goal_generic_army_artillery2
+		cost = 2
+		prerequisite = {
+			focus = JEW_nova_armiya
+		}
+		x = 59
+		y = 1
+		completion_reward = {
+						add_tech_bonus = {
+								name = infantry_artillery_bonus
+								bonus = 0.5
+								uses = 2
+								category = artillery
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_tanky
+		icon = GFX_goal_generic_army_tanks
+		cost = 2
+		prerequisite = {
+			focus = JEW_art
+		}
+		x = 59
+		y = 2
+		completion_reward = {
+						add_tech_bonus = {
+								name = armor_bonus
+								bonus = 1.0
+								uses = 2
+								category = armor
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_yacheika_vyvchenya
+		icon = GFX_focus_research
+		cost = 4
+		prerequisite = {
+			focus = JEW_tanky
+		}
+		prerequisite = {
+			focus = JEW_dop_osnaschenya
+		}
+		x = 58
+		y = 3
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = JEW_doctryna_1
+		icon = GFX_goal_generic_army_doctrines
+		cost = 1
+		prerequisite = {
+			focus = JEW_nova_armiya
+		}
+		x = 61
+		y = 1
+		completion_reward = {
+						army_experience = 10
+						add_doctrine_cost_reduction = {
+								name = land_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = land_doctrine
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_doctryna_2
+		icon = GFX_goal_generic_army_doctrines
+		cost = 1
+		prerequisite = {
+			focus = JEW_doctryna_1
+		}
+		x = 61
+		y = 2
+		completion_reward = {
+						army_experience = 15
+						add_doctrine_cost_reduction = {
+								name = land_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = land_doctrine
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_doctryna_3
+		icon = GFX_goal_generic_army_doctrines
+		cost = 1
+		prerequisite = {
+			focus = JEW_doctryna_2
+		}
+		x = 61
+		y = 3
+		completion_reward = {
+						army_experience = 20
+						add_doctrine_cost_reduction = {
+								name = land_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = land_doctrine
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_navchanist_soldat
+		icon = GFX_focus_navchanist_1
+		cost = 4
+		prerequisite = {
+			focus = JEW_nova_armiya
+		}
+		x = 63
+		y = 1
+		available = {
+			has_army_experience > 35
+		}
+		completion_reward = {
+		    army_experience = -35
+			add_ideas = navchani_soldiers
+		}
+
+	}
+	focus = {
+		id = JEW_okremi_hrupy
+		icon = GFX_focus_okremi_hrupy
+		cost = 4
+		prerequisite = {
+			focus = JEW_navchanist_soldat
+		}
+		x = 63
+		y = 2
+		available = {
+			has_army_experience > 25
+		}
+		completion_reward = {
+		    army_experience = -25
+			swap_ideas = {
+				remove_idea = navchani_soldiers
+				add_idea = navchani_soldiers_2
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_relihiyna_armiya
+		icon = GFX_focus_relihiyna_armiya
+		cost = 3
+		prerequisite = {
+			focus = JEW_okremi_hrupy
+		}
+		x = 63
+		y = 3
+		available = {
+			has_army_experience > 50
+		}
+		completion_reward = {
+			army_experience = -50
+			swap_ideas = {
+				remove_idea = navchani_soldiers_2
+				add_idea = navchani_soldiers_3 
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_novitnya_armiya
+		icon = GFX_goal_rhineland
+		cost = 7
+		prerequisite = {
+			focus = JEW_relihiyna_armiya
+		}
+		prerequisite = {
+			focus = JEW_doctryna_3
+		}
+		
+		x = 62
+		y = 4
+		completion_reward = {
+			army_experience = 50
+			swap_ideas = {
+				remove_idea = armiya_asraelya
+				add_idea = nova_armiya_asraelya
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_pytanya_valuty
+		icon = GFX_focus_pytanya_valuty
+		cost = 4
+		prerequisite = {
+			focus = JEW_economika
+		}
+		x = 69
+		y = 1
+		available = {
+			has_political_power > 300
+		}
+		completion_reward = {
+			add_political_power = -300
+			remove_ideas = problema_valuty
+			add_timed_idea = {
+				idea = rozrobka_novoi_valuty
+				days = 125
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_nalahodyty_valyutu
+		icon = GFX_focus_shekel
+		cost = 4
+		prerequisite = {
+			focus = JEW_pytanya_valuty
+		}
+		x = 69
+		y = 2
+		available = {
+			NOT = {
+				has_idea = rozrobka_novoi_valuty
+			}
+		}
+		completion_reward = {
+			add_ideas = Shekel
+		}
+
+	}
+	focus = {
+		id = JEW_zarplatnya_robitnykam
+		icon = GFX_focus_zarplatnya_robitnykam
+		cost = 7
+		prerequisite = {
+			focus = JEW_economika
+		}
+		x = 71
+		y = 1
+		available = {
+			has_political_power > 250
+		}
+		completion_reward = {
+			add_stability = 0.25
+			add_political_power = -250
+		}
+
+	}
+	focus = {
+		id = JEW_nalahodyty_promyslovist
+		icon = GFX_focus_promka
+		cost = 4
+		prerequisite = {
+			focus = JEW_zarplatnya_robitnykam
+		}
+		x = 71
+		y = 2
+		available = {
+			has_political_power > 100
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = -100
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2 
+				category = industry
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_stabilna_economika
+		icon = GFX_focus_economika_isr_good
+		cost = 4
+		prerequisite = {
+			focus = JEW_nalahodyty_promyslovist
+		}
+		prerequisite = {
+			focus = JEW_nalahodyty_valyutu
+		}
+		x = 70
+		y = 3
+		completion_reward = {
+			add_political_power = 125
+			add_ideas = stability_of_economy
+		}
+
+	}
+	focus = {
+		id = JEW_zavody
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 2
+		prerequisite = {
+			focus = JEW_economika
+		}
+		x = 73
+		y = 1
+		completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = industrial_complex
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 4
+								add_building_construction = {
+										type = industrial_complex
+										level = 4
+										instant_build = yes
+									}
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_voenni_zavody
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 2
+		prerequisite = {
+			focus = JEW_zavody
+		}
+		x = 73
+		y = 2
+		completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = arms_factory
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 4
+								add_building_construction = {
+										type = arms_factory
+										level = 4
+										instant_build = yes
+									}
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_infrastructura
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 1
+		prerequisite = {
+			focus = JEW_voenni_zavody
+		}
+		x = 73
+		y = 3
+		completion_reward = {
+						834 = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 0
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 0
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 1
+										instant_build = yes
+									}
+							}
+						1047 = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 0
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 0
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 1
+										instant_build = yes
+									}
+							}
+						192 = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 1
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 1
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 2
+										instant_build = yes
+									}
+							}
+					}
+
+				bypass = {
+						custom_trigger_tooltip = {
+								tooltip = infrastructure_effort_tt
+								all_owned_state = {
+										free_building_slots = {
+												building = infrastructure
+												size < 1
+											}
+									}
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_yacheika
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 2
+		prerequisite = {
+			focus = JEW_stabilna_economika
+		}
+		prerequisite = {
+			focus = JEW_infrastructura
+		}
+		x = 72
+		y = 4
+		completion_reward = {
+			add_research_slot = 1 
+		}
+
+	}
+	focus = {
+		id = JEW_uladyty_vorozhnechu
+		icon = GFX_focus_friends
+		cost = 5
+		prerequisite = {
+			focus = JEW_rivni_prava
+		}
+		x = 20
+		y = 5
+		completion_reward = {
+			add_stability = 0.15
+			add_manpower = 5000
+		}
+
+	}
+	focus = {
+		id = JEW_novyi_shekel
+		icon = GFX_focus_valuta
+		cost = 4
+		prerequisite = {
+			focus = JEW_vilnyi_Assrael
+		}
+		x = 22
+		y = 4
+		available = {
+			has_completed_focus = JEW_nalahodyty_valyutu
+		}
+		completion_reward = {
+			add_ideas = bank_of_shekel
+		}
+
+	}
+	focus = {
+		id = JEW_stabilizuvaty_economicu
+		icon = GFX_focus_economy
+		cost = 7
+		prerequisite = {
+			focus = JEW_novyi_shekel
+		}
+		x = 22
+		y = 5
+		available = {
+			has_completed_focus = JEW_stabilna_economika 
+			has_political_power > 125
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+			add_political_power = -125
+			add_stability = 0.1
+		}
+
+	}
+	focus = {
+		id = JEW_narodne_vyhovanya
+		icon = GFX_goal_generic_improve_relations
+		cost = 4
+		prerequisite = {
+			focus = JEW_zupynyty_pogromy
+		}
+		x = 24
+		y = 5
+		completion_reward = {
+			add_research_slot = 1
+			add_ideas = vyhovanya
+		}
+
+	}
+	focus = {
+		id = JEW_vstanovyty_poryadok
+		icon = GFX_goal_generic_demand_territory
+		cost = 7
+		prerequisite = {
+			focus = JEW_vykoryty_bilshovykiv
+		}
+		prerequisite = {
+			focus = JEW_nasha_zemlya
+		}
+		x = 23
+		y = 7
+		completion_reward = {
+			add_political_power = 125
+			add_ideas = new_order
+		}
+	}
+	focus = {
+		id = JEW_nasha_zemlya
+		icon = GFX_focus_nasha_zemlya
+		cost = 2
+		prerequisite = {
+			focus = JEW_stabilizuvaty_economicu
+			focus = JEW_uladyty_vorozhnechu
+			focus = JEW_narodne_vyhovanya
+		}
+		x = 22
+		y = 6
+		completion_reward = {
+			add_stability = 0.10
+			add_state_core = 198
+			add_state_core = 199
+			add_state_core = 201
+			add_state_core = 197
+			add_state_core = 1053
+			add_state_core = 1050
+			add_state_core = 1047
+			add_state_core = 1067 
+			add_state_core = 78 
+			add_state_core = 766
+			add_state_core = 1046
+		}
+
+	}
+	focus = {
+		id = JEW_vykoryty_bilshovykiv
+		icon = GFX_focus_sovyets
+		cost = 4
+		prerequisite = {
+			focus = JEW_narodne_vyhovanya
+			focus = JEW_stabilizuvaty_economicu
+			focus = JEW_uladyty_vorozhnechu
+		}
+		x = 24
+		y = 6
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = -1
+			}
+			add_stability = 0.10
+			add_war_support = 0.20
+			192 = { add_manpower = -25000}
+			834 = { add_manpower = -1550}
+			1047 = { add_manpower = -739}
+		}
+
+	}
+	focus = {
+		id = JEW_povernuty_Uman
+		icon = GFX_focus_Uman
+		cost = 4
+		prerequisite = {
+			focus = JEW_vstanovyty_poryadok
+		}
+		x = 22
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = ANR
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_nasha_bocovina
+		icon = GFX_focus_Bessarabia
+		cost = 4
+		prerequisite = {
+			focus = JEW_vstanovyty_poryadok
+		}
+		x = 24
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = ROM
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_opolchyty_robitnychi_polky
+		icon = GFX_goal_generic_small_arms
+		cost = 4
+		prerequisite = {
+			focus = JEW_zavody_robitnykam
+		}
+		x = 28
+		y = 5
+		completion_reward = {
+						add_stability = 0.10
+						add_war_support = 0.10
+						division_template = {
+								name = "Robitnycha Dyviziya"
+								division_names_group = JEW_INF_03
+								regiments = {
+										infantry = {
+												x = 0
+												y = 0
+											}
+										infantry = {
+												x = 0
+												y = 1
+											}
+										infantry = {
+												x = 0
+												y = 2
+											}
+										infantry = {
+												x = 1
+												y = 0
+											}
+										infantry = {
+												x = 1
+												y = 1
+											}
+										infantry = {
+												x = 1
+												y = 2
+											}
+									}
+								support = {
+
+}
+							}
+						192 = {
+								create_unit = {
+										division = "name=\"Robitnycha Dyviziya\"division_template=\"Robitnycha Dyviziya\"start_experience_factor=0.5start_equipment_factor=1"
+										owner = JEW
+									}
+							}
+						192 = {
+								create_unit = {
+										division = "name=\"Robitnycha Dyviziya\"division_template=\"Robitnycha Dyviziya\"start_experience_factor=0.5start_equipment_factor=1"
+										owner = JEW
+									}
+							}
+							192 = {
+								create_unit = {
+										division = "name=\"Robitnycha Dyviziya\"division_template=\"Robitnycha Dyviziya\"start_experience_factor=0.5start_equipment_factor=1"
+										owner = JEW
+									}
+							}
+						192 = {
+								create_unit = {
+										division = "name=\"Robitnycha Dyviziya\"division_template=\"Robitnycha Dyviziya\"start_experience_factor=0.5start_equipment_factor=1"
+										owner = JEW
+									}
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_zemlya_selyanam
+		icon = GFX_goal_generic_position_armies
+		cost = 2
+		prerequisite = {
+			focus = JEW_vozrodyty_OSR
+		}
+		x = 30
+		y = 4
+		completion_reward = {
+			add_stability = 0.1
+			add_ideas = selyany
+		}
+
+	}
+	focus = {
+		id = JEW_karaty_za_pohromy
+		icon = GFX_focus_pogromy
+		cost = 4
+		prerequisite = {
+			focus = JEW_zemlya_selyanam
+		}
+		x = 30
+		y = 5
+		available = {
+			JEW = {
+				has_army_manpower = {
+					size > 100000
+				}
+			}
+		}
+		completion_reward = {
+			192 = { add_manpower = -14357}
+			834 = { add_manpower = -1044}
+			1047 = { add_manpower = -2633}
+			add_stability = 0.10
+			remove_ideas = pogromy_1
+			
+		}
+
+	}
+	focus = {
+		id = JEW_zaprosyty_Yudovskoho
+		icon = GFX_focus_yudovskyi
+		cost = 4
+		prerequisite = {
+			focus = JEW_reforma_economiky
+		}
+		x = 32
+		y = 5
+		completion_reward = {
+			promote_character = JEW_Volodymyr_Yudovskyi
+		}
+
+	}
+	focus = {
+		id = JEW_duh_Asraelya
+		icon = GFX_focus_duh
+		cost = 3
+		prerequisite = {
+			focus = JEW_nasha_bocovina
+		}
+		prerequisite = {
+			focus = JEW_povernuty_Uman
+		}
+		prerequisite = {
+			focus = JEW_zhytomyr_i_podilya
+		}
+		x = 23
+		y = 9
+		completion_reward = {
+			add_stability = 0.10
+			add_ideas = spirit_of_Asrael
+		}
+
+	}
+	focus = {
+		id = JEW_Novyi_Asrael
+		icon = GFX_focus_Hora_Asrael
+		cost = 4
+		prerequisite = {
+			focus = JEW_duh_Asraelya
+		}
+		x = 23
+		y = 10
+		available = {
+			controls_state = 192
+			controls_state = 1062
+			controls_state = 201
+			controls_state = 1067
+		}
+		completion_reward = {
+			set_cosmetic_tag = JEW_Israel_democratic
+			set_capital = {
+				state = 1088
+				remember_old_capital = no
+			}
+			every_country = {
+				set_country_flag = super_event_jews
+			}
+			load_focus_tree = {
+				tree = JEW_after_unite
+				keep_completed = yes
+			}
+			hidden_effect = {
+				ENG = { country_event = { id = ZEL.51 } }
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_pryishla_pora
+		icon = GFX_focus_nasha_zemlya
+		cost = 2
+		prerequisite = {
+			focus = JEW_opolchyty_robitnychi_polky
+		}
+		prerequisite = {
+			focus = JEW_karaty_za_pohromy
+		}
+		prerequisite = {
+			focus = JEW_zaprosyty_Yudovskoho
+		}
+		x = 30
+		y = 6
+		completion_reward = {
+			add_stability = 0.10
+			add_state_core = 198
+			add_state_core = 199
+			add_state_core = 201
+			add_state_core = 197
+			add_state_core = 1053
+			add_state_core = 1050
+			add_state_core = 1047
+			add_state_core = 1067 
+			add_state_core = 78 
+			add_state_core = 766
+			add_state_core = 1046
+		}
+
+	}
+	focus = {
+		id = JEW_povernuty_uman
+		icon = GFX_focus_Uman
+		cost = 4
+		prerequisite = {
+			focus = JEW_pryishla_pora
+		}
+		x = 30
+		y = 7
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = ANR
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_vozrodyty_Rumchedor
+		icon = GFX_focus_rumcherod
+		cost = 3
+		prerequisite = {
+			focus = JEW_povernuty_uman
+		}
+		x = 30
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = ROM
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_Novyi_socialistychnyi_souz_yeveryiv
+		icon = GFX_focus_Hora_Social_Asrael
+		cost = 4
+		prerequisite = {
+			focus = JEW_robitnychyi_zyizd
+		}
+		x = 30
+		y = 10
+		available = {
+			controls_state = 192
+			controls_state = 1062
+			controls_state = 201
+			controls_state = 1067
+		}
+		completion_reward = {
+			set_cosmetic_tag = JEW_Israel_communism
+			set_capital = {
+				state = 1088
+				remember_old_capital = no
+			}
+			every_country = {
+				set_country_flag = super_event_jews
+			}
+			load_focus_tree = {
+				tree = JEW_after_unite
+				keep_completed = yes
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_marsh_na_Uman
+		icon = GFX_focus_Uman
+		cost = 4
+		prerequisite = {
+			focus = JEW_obydnaty_Asrael
+		}
+		x = 37
+		y = 7
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = ANR
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_zahopytyt_bessarabiyu
+		icon = GFX_focus_Bessarabia
+		cost = 4
+		prerequisite = {
+			focus = JEW_marsh_na_Uman
+		}
+		x = 37
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = ROM
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_nacionalnyi_congress
+		icon = GFX_focus_congress
+		cost = 4
+		prerequisite = {
+			focus = JEW_zahopytyt_bessarabiyu
+		}
+		prerequisite = {
+			focus = JEW_nashe_podilya_i_Zhytomyr
+		}
+		x = 37
+		y = 9
+		completion_reward = {
+			JEW = { country_event = { id = ZEL.50 } }
+		}
+
+	}
+	focus = {
+		id = JEW_Yedynyi_Asrael
+		icon = GFX_focus_Hora_National_Asrael
+		cost = 4
+		prerequisite = {
+			focus = JEW_nacionalnyi_congress
+		}
+		x = 37
+		y = 10
+		available = {
+			controls_state = 192
+			controls_state = 1062
+			controls_state = 201
+			controls_state = 1067
+		}
+		completion_reward = {
+			set_cosmetic_tag = JEW_Israel_fascsim
+			set_capital = {
+				state = 1088
+				remember_old_capital = no
+			}
+			every_country = {
+				set_country_flag = super_event_jews
+			}
+			load_focus_tree = {
+				tree = JEW_after_unite
+				keep_completed = yes
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_robitnychyi_zyizd
+		icon = GFX_focus_zyizd
+		cost = 2
+		prerequisite = {
+			focus = JEW_vozrodyty_Rumchedor
+		}
+		prerequisite = {
+			focus = JEW_zahopyty_Podilya_i_Zhytomyr
+		}
+		x = 30
+		y = 9
+		completion_reward = {
+			JEW = { country_event = { id = ZEL.50 } }
+		}
+		
+
+	}
+	focus = {
+		id = JEW_atakuvaty_v_rayoni_umani
+		icon = GFX_focus_Uman
+		cost = 4
+		prerequisite = {
+			focus = JEW_chas_rozplaty
+		}
+		x = 47
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = ANR
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_atakuvaty_bocovinu
+		icon = GFX_focus_Bessarabia
+		cost = 4
+		prerequisite = {
+			focus = JEW_atakuvaty_v_rayoni_umani
+		}
+		x = 47
+		y = 9
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = ROM
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_Yedina_Kraina_Yevreiv
+		icon = GFX_focus_Hora_Asrael_2
+		cost = 4
+		prerequisite = {
+			focus = JEW_atakuvaty_bocovinu
+		}
+		prerequisite = {
+			focus = JEW_atakuvaty_petlurivciv
+		}
+		x = 47
+		y = 10
+		available = {
+			controls_state = 192
+			controls_state = 1062
+			controls_state = 201
+			controls_state = 1067
+		}
+		completion_reward = {
+			set_cosmetic_tag = JEW_Israel_neutrality
+			set_capital = {
+				state = 1088
+				remember_old_capital = no
+			}
+			every_country = {
+				set_country_flag = super_event_jews
+			}
+			load_focus_tree = {
+				tree = JEW_after_unite
+				keep_completed = yes
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_rakety
+		icon = GFX_focus_rocketry
+		cost = 4
+		prerequisite = {
+			focus = JEW_economika
+		}
+		x = 75
+		y = 1
+		completion_reward = {
+			add_tech_bonus = {
+								name = secret_bonus
+								bonus = 1.0
+								uses = 1
+								category = rocketry
+							}
+		}
+
+	}
+	focus = {
+		id = JEW_atom
+		icon = GFX_focus_wonderweapons
+		cost = 7
+		prerequisite = {
+			focus = JEW_rakety
+		}
+		x = 75
+		y = 2
+		completion_reward = {
+						add_tech_bonus = {
+								name = nuclear_bonus
+								ahead_reduction = 1
+								category = nuclear
+							}
+					}
+
+	}
+	focus = {
+		id = JEW_dobre_zroblena_economika
+		icon = GFX_focus_good_eco_isr
+		cost = 4
+		prerequisite = {
+			focus = JEW_yacheika
+		}
+		prerequisite = {
+			focus = JEW_yach
+		}
+		x = 74
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = stability_of_economy 
+				add_idea = nova_economy_of_Asrael
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_yach
+		icon = GFX_focus_research
+		cost = 4
+		prerequisite = {
+			focus = JEW_atom
+		}
+		x = 75
+		y = 3
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = JEW_zahopyty_Podilya_i_Zhytomyr
+		icon = GFX_focus_zhytomyr_podilya
+		cost = 5
+		prerequisite = {
+			focus = JEW_povernuty_uman
+		}
+		x = 32
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = DYR
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_nashe_podilya_i_Zhytomyr
+		icon = GFX_focus_zhytomyr_podilya
+		cost = 5
+		prerequisite = {
+			focus = JEW_marsh_na_Uman
+		}
+		x = 39
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = DYR
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_atakuvaty_petlurivciv
+		icon = GFX_focus_zhytomyr_podilya
+		cost = 5
+		prerequisite = {
+			focus = JEW_atakuvaty_v_rayoni_umani
+		}
+		x = 49
+		y = 9
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = DYR
+			}
+		}
+
+	}
+	focus = {
+		id = JEW_zhytomyr_i_podilya
+		icon = GFX_focus_zhytomyr_podilya
+		cost = 5
+		prerequisite = {
+			focus = JEW_vstanovyty_poryadok
+		}
+		x = 26
+		y = 8
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = DYR
+			}
+		}
+
+	}
+}

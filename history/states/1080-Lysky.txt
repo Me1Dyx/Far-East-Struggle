@@ -1,0 +1,32 @@
+state={
+	id=1080
+	name="STATE_1080"
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 3 #was: 5
+			arms_factory = 1
+			synthetic_refinery = 1 #NSB
+		}
+		victory_points = {
+			3527 2
+		}
+		add_core_of = SOV
+		add_core_of = UKR
+		1939.1.1 = {
+			buildings = {
+				9448 = {
+					air_facility = 1
+				}
+			}
+			
+		}
+	}
+	provinces={
+		437 510 3431 3504 3527 6494 6553 9464 9552 11475 
+	}
+	manpower=435787
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

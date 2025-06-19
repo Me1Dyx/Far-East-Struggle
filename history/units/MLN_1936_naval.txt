@@ -1,0 +1,24 @@
+﻿
+units= {
+
+	
+	fleet = {
+		name = "Flot Malynovoho Klynu"		
+		naval_base = 719 
+		task_force = {				
+			name = "Flot Malynovoho Klynu"			
+			location = 719
+			ship = { name = "Pancernyk "Kozak"" pride_of_the_fleet = yesdefinition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = MLN } } }
+			ship = { name = "Strilec" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = MLN } } }
+			ship = { name = "Chumak" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = MLN } } }
+			ship = { name = "Universal" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = MLN } } }
+			ship = { name = "Hlushko" definition = destroyer equipment = { destroyer_2 = { amount = 1 owner = MLN } } }
+
+			ship = { name = "Chaika" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MLN } } }				
+			ship = { name = "Oko" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MLN } } }				
+			ship = { name = "Ruinivnyk" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MLN } } }				
+			ship = { name = "Rus" definition = submarine equipment = { submarine_1 = { amount = 1 owner = MLN } } }				
+		}				
+	}
+} 
+

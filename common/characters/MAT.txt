@@ -1,0 +1,424 @@
+characters = {
+	
+	MAT_Stepan_Petrychenko = {
+        name = MAT_Stepan_Petrychenko
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Stepan_Petrychenko_advisor
+                large = GFX_MAT_Stepan_Petrychenko
+            }
+        }
+        country_leader = {
+			ideology = anarchism
+			expire = "1980.3.1"
+			id = -1
+			traits = { MAT_nepokornyi_revolucioner MAT_ukrainec_scho_keruye_rosiyanamy MAT_za_poryadok}
+		}
+		field_marshal={
+			traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero trickster guerilla_fighter }
+            skill = 6
+            attack_skill = 7
+			defense_skill = 6
+			planning_skill = 9
+			logistics_skill = 2
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MAT_Stepan_Petrychenko
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+				
+			}
+			traits = {
+				social_revolutionary
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	MAT_Danyil_Novomyrskyi = {
+        name = MAT_Danyil_Novomyrskyi
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Danyil_Novomyrskyi_advisor
+                large = GFX_MAT_Danyil_Novomyrskyi
+            }
+        }
+        country_leader = {
+			ideology = socialism
+			expire = "1980.3.1"
+			id = -1
+			traits = { }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MAT_Danyil_Novomyrskyi
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+				
+			}
+			traits = {
+				social_reformer democratic_reformer 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster war_hero }
+            skill = 1
+            attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+    }
+	MAT_Ida_Mett = {
+        name = MAT_Ida_Mett
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Ida_Mett_advisor
+                large = GFX_MAT_Ida_Mett
+            }
+        }
+        country_leader = {
+			ideology = anarchist_communism
+			expire = "1980.3.1"
+			id = -1
+			traits = { }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MAT_Ida_Mett
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary black_cross_anarchist
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster war_hero }
+            skill = 2
+            attack_skill = 4
+			defense_skill = 8
+			planning_skill = 8
+			logistics_skill = 2
+            
+        }
+    }
+	MAT_Volodymyr_Zabrezhnev = {
+        name = MAT_Volodymyr_Zabrezhnev
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Volodymyr_Zabrezhnev_advisor
+                large = GFX_MAT_Volodymyr_Zabrezhnev
+            }
+        }
+        country_leader = {
+			ideology = rexism
+			expire = "1980.3.1"
+			id = -1
+			traits = { }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MAT_Volodymyr_Zabrezhnev
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+				
+			}
+			traits = {
+				nationalist_journalist fascist_demagogue
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster war_hero }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 1
+            
+        }
+    }
+	MAT_Stepan_Romanov = {
+        name = MAT_Stepan_Romanov
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Stepan_Romanov_advisor
+                large = GFX_MAT_Stepan_Romanov
+            }
+        }
+		advisor= {
+		    cost = 125
+			slot = theorist
+			idea_token = MAT_Stepan_Romanov
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+				
+			}
+			traits = {
+				mass_assault_expert
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster war_hero }
+            skill = 7
+            attack_skill = 2
+			defense_skill = 7
+			planning_skill = 7
+			logistics_skill = 3
+            
+        }
+    }
+	MAT_Aleksandr_Kozlovskiy = {
+        name = MAT_Aleksandr_Kozlovskiy
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Aleksandr_Kozlovskiy_advisor
+                large = GFX_MAT_Aleksandr_Kozlovskiy
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = MAT_Aleksandr_Kozlovskiy
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		field_marshal = {
+            traits = { trait_reckless war_hero trickster guerilla_fighter }
+            skill = 5
+            attack_skill = 7
+			defense_skill = 8
+			planning_skill = 3
+			logistics_skill = 8
+            
+        }
+    }
+	MAT_Anatolii_Zheleznyakov = {
+        name = MAT_Anatolii_Zheleznyakov
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Anatolii_Zheleznyakov_advisor
+                large = GFX_MAT_Anatolii_Zheleznyakov
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = MAT_Anatolii_Zheleznyakov
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+				MAT = {
+					controls_state = 1065
+				}	
+			}
+			traits = {
+				army_logistics_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		#corps_commander = {
+        #    traits = { trait_reckless trickster war_hero guerilla_fighter }
+        #    skill = 5
+        #    attack_skill = 1
+		#	defense_skill = 7
+		#	planning_skill = 9
+		#	logistics_skill = 9
+        #    
+        #}
+    }
+	MAT_Georgi_Gogelia = {
+        name = MAT_Georgi_Gogelia
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Georgi_Gogelia_advisor
+                large = GFX_MAT_Georgi_Gogelia
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = MAT_Georgi_Gogelia
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+				
+			}
+			traits = {
+				army_infantry_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster war_hero guerilla_fighter }
+            skill = 5
+            attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 1
+            
+        }
+    }
+	MAT_Ivan_Markov = {
+        name = MAT_Ivan_Markov
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Ivan_Markov_advisor
+                large = GFX_MAT_Ivan_Markov
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = MAT_Ivan_Markov
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_2 veteran_guerrilla_fighter
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster war_hero }
+            skill = 5
+            attack_skill = 5
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+            
+        }
+    }
+	MAT_Nikolai_Rogdaev = {
+        name = MAT_Nikolai_Rogdaev
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Nikolai_Rogdaev_advisor
+                large = GFX_MAT_Nikolai_Rogdaev
+            }
+        }
+		advisor= {
+		    cost = 200
+			slot = political_advisor
+			idea_token = MAT_Nikolai_Rogdaev
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+				
+			}
+			traits = {
+				ANR_komandant 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster war_hero guerilla_fighter politically_connected }
+            skill = 5
+            attack_skill = 2
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+            
+        }
+    }
+	MAT_Yefym_Yarchuk = {
+        name = MAT_Yefym_Yarchuk
+        portraits = {
+            civilian = {
+				small = GFX_MAT_Yefym_Yarchuk_advisor
+                large = GFX_MAT_Yefym_Yarchuk
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = MAT_Yefym_Yarchuk
+			allowed = {
+				original_tag = MAT
+			}
+			available = {
+				
+			}
+			traits = {
+				anarchist_zeal freedom_fighter
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster war_hero }
+            skill = 6
+            attack_skill = 2
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 3
+            
+        }
+    }
+}

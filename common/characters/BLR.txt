@@ -1,0 +1,1036 @@
+characters = {
+	
+	BLR_Yan_Sereda = {
+		name = BLR_Yan_Sereda
+		portraits = {
+			civilian = {
+				large = GFX_BLR_Yan_Sereda
+				small = GFX_BLR_Yan_Sereda_advisor
+			}
+			army={
+				large = GFX_BLR_Yan_Sereda_military
+				small = GFX_BLR_Yan_Sereda_advisor
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1980.3.1"
+			id = -1
+			traits = { BLR_Backa_Vsiyei_BNR }
+		}
+		field_marshal={
+			traits={ politically_connected infantry_officer organisational_leader war_hero harsh_leader }
+			skill = 7
+            attack_skill = 5
+            defense_skill = 5
+            planning_skill = 6
+            logistics_skill = 8
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = BLR_Yan_Sereda
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+			   
+			}
+			traits = {
+				democratic_reformer democratic_firebrand
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	BLR_Vasyl_Zaharka = {
+		name = BLR_Vasyl_Zaharka
+		portraits = {
+			civilian = {
+				large = GFX_BLR_Vasyl_Zaharka
+				small = GFX_BLR_Vasyl_Zaharka_advisor
+			}
+			army={
+				large = GFX_BLR_Vasyl_Zaharka
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		field_marshal={
+			traits={ politically_connected trait_reckless war_hero brilliant_strategist }
+			skill = 5
+            attack_skill = 4
+            defense_skill = 8
+            planning_skill = 3
+            logistics_skill = 2
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = BLR_Vasyl_Zaharka
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+			   
+			}
+			traits = {
+				social_revolutionary defender_of_the_peasantry
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	BLR_Alyaksandr_Charvyakov = {
+		name = BLR_Alyaksandr_Charvyakov
+		portraits = {
+			civilian = {
+				large = GFX_BLR_Alyaksandr_Charvyakov
+				small = GFX_BLR_Alyaksandr_Charvyakov_advisor
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = BLR_Alyaksandr_Charvyakov
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+			   
+			}
+			traits = {
+				communist_revolutionary patriotic_socialist
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	BLR_Radaslav_Ostrovskyi = {
+		name = BLR_Radaslav_Ostrovskyi
+		portraits = {
+			civilian = {
+				large = GFX_BLR_Radaslav_Ostrovskyi
+				small = GFX_BLR_Radaslav_Ostrovskyi_advisor
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = BLR_Radaslav_Ostrovskyi
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+			   
+			}
+			traits = {
+				national_socialist_sympathizer fascist_demagogue
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	BLR_Andrei_Yakubetskyi = {
+		name = BLR_Andrei_Yakubetskyi
+		portraits = {
+			army={
+				large = GFX_BLR_Andrei_Yakubetskyi
+				small = GFX_BLR_Andrei_Yakubetskyi_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected infantry_officer war_hero }
+            skill = 3
+            attack_skill = 3
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = BLR_Andrei_Yakubetskyi
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+			
+			}
+			traits = {
+				conservative_grandee	
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Anton_Boryk = {
+		name = BLR_Anton_Boryk
+		portraits = {
+			army={
+				large = GFX_BLR_Anton_Boryk
+				small = GFX_BLR_Anton_Boryk_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected trait_reckless brilliant_strategist inflexible_strategist jaeger war_hero  }
+            skill = 5
+            attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 2
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = BLR_Anton_Boryk
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				SWI_diplomat popular_figurehead	
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Ivan_Yermachenka = {
+		name = BLR_Ivan_Yermachenka
+		portraits = {
+			army={
+				large = GFX_BLR_Ivan_Yermachenka
+				small = GFX_BLR_Ivan_Yermachenka_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected trait_cautious war_hero infantry_officer  }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 7
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = BLR_Ivan_Yermachenka
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				prince_of_terror	
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Jazep_Mamonka = {
+		name = BLR_Jazep_Mamonka
+		portraits = {
+			army={
+				large = GFX_BLR_Jazep_Mamonka
+				small = GFX_BLR_Jazep_Mamonka_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected war_hero  }
+            skill = 1
+            attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = BLR_Jazep_Mamonka
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				silent_workhorse
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Kastus_Yezovitov = {
+		name = BLR_Kastus_Yezovitov
+		portraits = {
+			army={
+				large = GFX_BLR_Kastus_Yezovitov
+				small = GFX_BLR_Kastus_Yezovitov_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected trait_reckless war_hero cavalry_officer cavalry_leader cavalry_expert }
+            skill = 7
+            attack_skill = 8
+			defense_skill = 6
+			planning_skill = 7
+			logistics_skill = 7
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = BLR_Kastus_Yezovitov
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				propaganda_expert war_industrialist	
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Kuzma_Tereschenko = {
+		name = BLR_Kuzma_Tereschenko
+		portraits = {
+			army={
+				large = GFX_BLR_Kuzma_Tereschenko
+				small = GFX_BLR_Kuzma_Tereschenko_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected war_hero infantry_officer cavalry_officer }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = BLR_Kuzma_Tereschenko
+			allowed = {
+				original_tag = ZEL
+			}
+			available = {
+				
+			}
+			traits = {
+				prime_minister_inonu	
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Aleksandr_Vspienski = {
+		name = BLR_Aleksandr_Vspienski
+		portraits = {
+			army={
+				large = GFX_BLR_Aleksandr_Vspienski
+				small = GFX_BLR_Aleksandr_Vspienski_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero cavalry_expert cavalry_leader cavalry_officer }
+            skill = 5
+            attack_skill = 7
+			defense_skill = 3
+			planning_skill = 6
+			logistics_skill = 3
+            
+        }
+		advisor= {
+		    cost = 200
+			slot = theorist
+			idea_token = BLR_Aleksandr_Vspienski
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				military_theorist 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Mikola_Dzyamidav = {
+		name = BLR_Mikola_Dzyamidav
+		portraits = {
+			army={
+				large = GFX_BLR_Mikola_Dzyamidav
+				small = GFX_BLR_Mikola_Dzyamidav_advisor
+			}
+		}
+		corps_commander = {
+            traits = { infantry_officer war_hero inflexible_strategist }
+            skill = 5
+            attack_skill = 5
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 8
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = theorist
+			idea_token = BLR_Mikola_Dzyamidav
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+			
+			}
+			traits = {
+				mass_assault_expert 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Vyacheslav_Razumovich = {
+		name = BLR_Vyacheslav_Razumovich
+		portraits = {
+			army={
+				large = GFX_BLR_Vyacheslav_Razumovich
+				small = GFX_BLR_Vyacheslav_Razumovich_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected infantry_officer war_hero }
+            skill = 2
+            attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 5
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = theorist
+			idea_token = BLR_Vyacheslav_Razumovich
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				air_warfare_theorist 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Aleksandr_Ruzhantsov = {
+		name = BLR_Aleksandr_Ruzhantsov
+		portraits = {
+			army={
+				large = GFX_BLR_Aleksandr_Ruzhantsov
+				small = GFX_BLR_Aleksandr_Ruzhantsov_advisor
+			}
+		}
+		field_marshal = {
+            traits = { cavalry_officer cavalry_leader war_hero brilliant_strategist cavalry_expert ranger inflexible_strategist harsh_leader }
+            skill = 7
+            attack_skill = 8
+			defense_skill = 7
+			planning_skill = 7
+			logistics_skill = 3
+            
+        }
+		advisor= {
+		    cost = 200
+			slot = army_chief
+			idea_token = BLR_Aleksandr_Ruzhantsov
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_offensive_3 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Kiprian_Kondranovych = {
+		name = BLR_Kiprian_Kondranovych
+		portraits = {
+			army={
+				large = GFX_BLR_Kiprian_Kondranovych
+				small = GFX_BLR_Kiprian_Kondranovych_advisor
+			}
+		}
+		field_marshal = {
+            traits = { infantry_officer infantry_leader war_hero infantry_expert jaeger trickster winter_specialist harsh_leader }
+            skill = 7
+            attack_skill = 5
+			defense_skill = 7
+			planning_skill = 4
+			logistics_skill = 3
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = BLR_Kiprian_Kondranovych
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Lukash_Semenyuk = {
+		name = BLR_Lukash_Semenyuk
+		portraits = {
+			army={
+				large = GFX_BLR_Lukash_Semenyuk
+				small = GFX_BLR_Lukash_Semenyuk_advisor
+			}
+		}
+		field_marshal = {
+            traits = { cavalry_officer cavalry_leader war_hero cavalry_expert scavenger trickster guerilla_fighter commando inflexible_strategist }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 9
+			logistics_skill = 9
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = BLR_Lukash_Semenyuk
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+			
+			}
+			traits = {
+				army_chief_organizational_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Stanislav_Bulak-Balachovich = {
+		name = BLR_Stanislav_Bulak-Balachovich
+		portraits = {
+			army={
+				large = GFX_BLR_Stanislav_Bulak-Balachovich
+				small = GFX_BLR_Stanislav_Bulak-Balachovich_advisor
+			}
+		}
+		field_marshal = {
+            traits = { politically_connected media_personality cavalry_officer cavalry_leader war_hero brilliant_strategist cavalry_expert scavenger trickster ranger inflexible_strategist harsh_leader }
+            skill = 9
+            attack_skill = 7
+			defense_skill = 6
+			planning_skill = 9
+			logistics_skill = 8
+            
+        }
+		advisor= {
+		    cost = 350
+			slot = army_chief
+			idea_token = BLR_Stanislav_Bulak-Balachovich
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_planning_3 army_chief_drill_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Vital_Kazlov = {
+		name = BLR_Vital_Kazlov
+		portraits = {
+			army={
+				large = GFX_BLR_Vital_Kazlov
+				small = GFX_BLR_Vital_Kazlov_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected harsh_leader war_hero }
+            skill = 4
+            attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = air_chief
+			idea_token = BLR_Vital_Kazlov
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Ales_Harun = {
+		name = BLR_Ales_Harun
+		portraits = {
+			army={
+				large = GFX_BLR_Ales_Harun
+				small = GFX_BLR_Ales_Harun_advisor
+			}
+		}
+		corps_commander = {
+            traits = { infantry_expert infantry_leader infantry_officer harsh_leader war_hero }
+            skill = 5
+            attack_skill = 5
+			defense_skill = 5
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = BLR_Ales_Harun
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_infantry_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Francishak_Kusal = {
+		name = BLR_Francishak_Kusal
+		portraits = {
+			army={
+				large = GFX_BLR_Francishak_Kusal
+				small = GFX_BLR_Francishak_Kusal_adivosr
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected inflexible_strategist armor_officer panzer_leader war_hero }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 3
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = BLR_Francishak_Kusal
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_armored_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Hasan_Kanapatski = {
+		name = BLR_Hasan_Kanapatski
+		portraits = {
+			army={
+				large = GFX_BLR_Hasan_Kanapatski
+				small = GFX_BLR_Hasan_Kanapatski_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected jaeger winter_specialist war_hero }
+            skill = 3
+            attack_skill = 2
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = BLR_Hasan_Kanapatski
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Heorhyi_Monych = {
+		name = BLR_Heorhyi_Monych
+		portraits = {
+			army={
+				large = GFX_BLR_Heorhyi_Monych
+				small = GFX_BLR_Heorhyi_Monych_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero }
+            skill = 2
+            attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = BLR_Heorhyi_Monych
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_artillery_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Makar_Kasyevych = {
+		name = BLR_Makar_Kasyevych
+		portraits = {
+			army={
+				large = GFX_BLR_Makar_Kasyevych
+				small = GFX_BLR_Makar_Kasyevych_advisor
+			}
+		}
+		corps_commander = {
+            traits = { cavalry_leader cavalry_officer harsh_leader war_hero }
+            skill = 5
+            attack_skill = 3
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = BLR_Makar_Kasyevych
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_cavalry_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Mihail_Vitushka = {
+		name = BLR_Mihail_Vitushka
+		portraits = {
+			army={
+				large = GFX_BLR_Mihail_Vitushka
+				small = GFX_BLR_Mihail_Vitushka_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected harsh_leader war_hero guerilla_fighter trickster }
+            skill = 8
+            attack_skill = 7
+			defense_skill = 7
+			planning_skill = 2
+			logistics_skill = 2
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = BLR_Vital_Kazlov
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				veteran_guerrilla_fighter BLR_Chornyi_kit
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Nikolai_Yanicki = {
+		name = BLR_Nikolai_Yanicki
+		portraits = {
+			army={
+				large = GFX_BLR_Nikolai_Yanicki
+				small = GFX_BLR_Nikolai_Yanicki_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected harsh_leader war_hero infantry_expert infantry_leader infantry_officer }
+            skill = 5
+            attack_skill = 5
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 3
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = BLR_Nikolai_Yanicki
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_maneuver_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Pavel_Zhavryd = {
+		name = BLR_Pavel_Zhavryd
+		portraits = {
+			army={
+				large = GFX_BLR_Pavel_Zhavryd
+				small = GFX_BLR_Pavel_Zhavryd_advisor
+			}
+		}
+		corps_commander = {
+            traits = { harsh_leader war_hero }
+            skill = 5
+            attack_skill = 2
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = BLR_Pavel_Zhavryd
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_entrenchment_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	BLR_Vasyliy_Muha = {
+		name = BLR_Vasyliy_Muha
+		portraits = {
+			army={
+				large = GFX_BLR_Vasyliy_Muha
+				small = GFX_BLR_Vasyliy_Muha_advisor
+			}
+		}
+		corps_commander = {
+            traits = { harsh_leader war_hero trickster guerilla_fighter }
+            skill = 2
+            attack_skill = 3
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 7
+            
+        }
+		advisor= {
+		    cost = 100
+			slot = high_command
+			idea_token = BLR_Vasyliy_Muha
+			allowed = {
+				original_tag = BLR
+			}
+			available = {
+				
+			}
+			traits = {
+				BLR_povstanskyi_otaman
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	
+}
+	

@@ -1,0 +1,72 @@
+ideas = {
+    country = {
+        dosvid_mynuloho = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = dosvid_mynuloho
+
+			modifier = {	
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
+				war_support_factor = 0.15
+				experience_gain_army = 0.15
+				max_planning = 0.25
+			}
+		}
+		vtik_i_prodavskya = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = vtik_i_prodavskya
+
+			modifier = {
+				stability_factor = -0.25
+				political_power_factor = -0.15
+			}
+		}
+		chuesh_miy_druzhe = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = chuesh_miy_druzhe
+
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = 0.1
+				conscription = 0.1
+				mobilization_speed = 0.15
+				army_core_defence_factor = 0.35
+			}
+		}
+		vidholosky_druhoho_pohodu = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = vidholosky_druhoho_pohodu
+
+			modifier = {
+				army_core_defence_factor = 0.1
+				war_support_factor = -0.15
+				stability_factor = -0.15
+				max_planning = -0.1
+			}
+		}
+    }
+}

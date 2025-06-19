@@ -1,0 +1,736 @@
+characters = {
+	
+	ANR_Viktor_Bilash = {
+        name = ANR_Viktor_Bilash
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Viktor_Bilash_advisor
+                large = GFX_ANR_Viktor_Bilash
+            }
+        }
+        country_leader = {
+			ideology = anarchism
+			expire = "1980.3.1"
+			id = -1
+			traits = { ANR_blyzka_ludyna_Batky  }
+		}
+		field_marshal={
+			traits={ politically_connected cavalry_officer cavalry_leader cavalry_expert  scavenger  harsh_leader trickster trait_reckless war_hero }
+			skill = 7
+            attack_skill = 8
+            defense_skill = 5
+            planning_skill = 2
+            logistics_skill = 8
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ANR_Viktor_Bilash
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				social_revolutionary
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	ANR_Levko_Zadov = {
+        name = ANR_Levko_Zadov
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Levko_Zadov_advisor
+                large = GFX_ANR_Levko_Zadov
+            }
+        }
+        country_leader = {
+			ideology = anarchist_communism
+			expire = "1980.3.1"
+			id = -1
+			traits = { ANR_blyzka_ludyna_Batky }
+		}
+		field_marshal={
+			traits={ politically_connected cavalry_officer cavalry_leader cavalry_expert trait_reckless war_hero }
+			skill = 5
+            attack_skill = 7
+            defense_skill = 8
+            planning_skill = 1
+            logistics_skill = 3
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ANR_Levko_Zadov
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	ANR_Petro_Arshynov = {
+        name = ANR_Petro_Arshynov
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Petro_Arshynov_advisor
+                large = GFX_ANR_Petro_Arshynov
+            }
+        }
+        country_leader = {
+			ideology = rexism
+			expire = "1980.3.1"
+			id = -1
+			traits = { ANR_blyzka_ludyna_Batky }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ANR_Petro_Arshynov
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				nationalist_journalist fascist_demagogue
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	ANR_Vsevolod_Volin = {
+		name = ANR_Vsevolod_Volin
+		portraits = {
+			civilian = {
+				large = GFX_ANR_Vsevolod_Volin
+				small = GFX_ANR_Vsevolod_Volin_advisor
+			}
+		}
+		country_leader = {
+			ideology = socialism
+			expire = "1980.3.1"
+			id = -1
+			traits = { ANR_blyzka_ludyna_Batky }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ANR_Vsevolod_Volin
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				social_reformer democratic_reformer 
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	ANR_Dmytro_Popov = {
+        name = ANR_Dmytro_Popov
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Dmytro_Popov_advisor
+                large = GFX_ANR_Dmytro_Popov
+            }
+        }
+		advisor= {
+		    cost = 100
+			slot = navy_chief
+			idea_token = ANR_Dmytro_Popov
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				navy_chief_decisive_battle_1
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer invader_ii naval_liason naval_invader war_hero }
+            skill = 6
+            attack_skill = 5
+			defense_skill = 1
+			planning_skill = 6
+			logistics_skill = 2
+            
+        }
+    }
+	ANR_Fedir_Artemenko = {
+        name = ANR_Fedir_Artemenko
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Fedir_Artemenko_advisor
+                large = GFX_ANR_Fedir_Artemenko
+            }
+        }
+		advisor= {
+		    cost = 50
+			slot = air_chief
+			idea_token = ANR_Fedir_Artemenko
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				air_chief_ground_support_1
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero guerilla_fighter }
+            skill = 7
+            attack_skill = 2
+			defense_skill = 5
+			planning_skill = 1
+			logistics_skill = 2
+            
+        }
+    }
+	ANR_Filip_Krat = {
+        name = ANR_Filip_Krat
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Filip_Krat_advisor
+                large = GFX_ANR_Filip_Krat
+            }
+        }
+		advisor= {
+		    cost = 200
+			slot = political_advisor
+			idea_token = ANR_Filip_Krat
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				ANR_komandant
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 5
+            attack_skill = 2
+			defense_skill = 7
+			planning_skill = 2
+			logistics_skill = 5
+            
+        }
+    }
+	ANR_Foma_Kozhyn = {
+        name = ANR_Foma_Kozhyn
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Foma_Kozhyn_advisor
+                large = GFX_ANR_Foma_Kozhyn
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = ANR_Foma_Kozhyn
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_cavalry_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 8
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 9
+			logistics_skill = 9
+            
+        }
+    }
+	ANR_Georg_Vedrenko = {
+        name = ANR_Georg_Vedrenko
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Georg_Vedrenko_advisor
+                large = GFX_ANR_Georg_Vedrenko
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ANR_Georg_Vedrenko
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				ICE_trade_unionist veteran_guerrilla_fighter
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 4
+            attack_skill = 6
+			defense_skill = 3
+			planning_skill = 8
+			logistics_skill = 2
+            
+        }
+    }
+	ANR_Leontyi_Hrystovskyi = {
+        name = ANR_Leontyi_Hrystovskyi
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Leontyi_Hrystovskyi_advisor
+                large = GFX_ANR_Leontyi_Hrystovskyi
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command 
+			idea_token = ANR_Leontyi_Hrystovskyi
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 5
+            attack_skill = 7
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 4
+            
+        }
+    }
+	ANR_Marusya_Nikiforova = {
+        name = ANR_Marusya_Nikiforova
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Marusya_Nikiforova_advisor
+                large = GFX_ANR_Marusya_Nikiforova
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ANR_Marusya_Nikiforova
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				ANR_maty_anarhiy
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero guerilla_fighter trickster }
+            skill = 6
+            attack_skill = 6
+			defense_skill = 6
+			planning_skill = 8
+			logistics_skill = 2
+            
+        }
+    }
+	ANR_Oleksandr_Antonov = {
+        name = ANR_Oleksandr_Antonov
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Oleksandr_Antonov_advisor
+                large = GFX_ANR_Oleksandr_Antonov
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ANR_Oleksandr_Antonov
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				defender_of_the_peasantry
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 2
+            attack_skill = 4
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 2
+            
+        }
+    }
+	ANR_Oleksandr_Taranovskyi_1 = {
+        name = ANR_Oleksandr_Taranovskyi_1
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Oleksandr_Taranovskyi_advisor
+                large = GFX_ANR_Oleksandr_Taranovskyi
+            }
+        }
+		advisor= {
+		    cost = 250
+			slot = theorist
+			idea_token = ANR_Oleksandr_Taranovskyi_1
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				mass_assault_expert ANR_tachanky
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 7
+            attack_skill = 2
+			defense_skill = 7
+			planning_skill = 7
+			logistics_skill = 3
+            
+        }
+    }
+	ANR_Oleksyi_Chubenko = {
+        name = ANR_Oleksyi_Chubenko
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Oleksyi_Chubenko_advisor
+                large = GFX_ANR_Oleksyi_Chubenko
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = ANR_Oleksyi_Chubenko
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_logistics_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 6
+            attack_skill = 4
+			defense_skill = 7
+			planning_skill = 2
+			logistics_skill = 4
+            
+        }
+    }
+	ANR_Pavlo_Petrenko_Platonov = {
+        name = ANR_Pavlo_Petrenko_Platonov
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Pavlo_Petrenko_Platonov_advisor
+                large = GFX_ANR_Pavlo_Petrenko_Platonov
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = ANR_Pavlo_Petrenko_Platonov
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				silent_workhorse
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 7
+            attack_skill = 2
+			defense_skill = 7
+			planning_skill = 8
+			logistics_skill = 4
+            
+        }
+    }
+	ANR_Semen_Karetnyk = {
+        name = ANR_Semen_Karetnyk
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Semen_Karetnyk_advisor
+                large = GFX_ANR_Semen_Karetnyk
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = ANR_Semen_Karetnyk
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		field_marshal = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 8
+            attack_skill = 8
+			defense_skill = 6
+			planning_skill = 2
+			logistics_skill = 4
+            
+        }
+    }
+	ANR_Stepan_Petrychenko = {
+        name = ANR_Stepan_Petrychenko
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Stepan_Petrychenko_advisor
+                large = GFX_ANR_Stepan_Petrychenko
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = ANR_Stepan_Petrychenko
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				NOT = {
+					MAT = {
+						has_country_leader = {
+							character = MAT_Stepan_Petrychenko
+							ruling_only = yes
+						}
+					}
+				}
+			}
+			traits = {
+				army_chief_offensive_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero trickster guerilla_fighter }
+            skill = 6
+            attack_skill = 7
+			defense_skill = 6
+			planning_skill = 9
+			logistics_skill = 2
+        }
+    }
+	ANR_Svyryd_Kotsur = {
+        name = ANR_Svyryd_Kotsur
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Svyryd_Koсur_advisor
+                large = GFX_ANR_Svyryd_Koсur
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = ANR_Svyryd_Kotsur
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 7
+            attack_skill = 3
+			defense_skill = 6
+			planning_skill = 2
+			logistics_skill = 6
+            
+        }
+    }
+	ANR_Vasyl_Kurylenko_1 = {
+        name = ANR_Vasyl_Kurylenko_1
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Vasyl_Kurylenko_advisor
+                large = GFX_ANR_Vasyl_Kurylenko
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = ANR_Vasyl_Kurylenko_1
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_artillery_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 7
+            attack_skill = 2
+			defense_skill = 7
+			planning_skill = 3
+			logistics_skill = 7
+            
+        }
+    }
+	ANR_Yevhen_Anhel_1 = {
+        name = ANR_Yevhen_Anhel_1
+        portraits = {
+            civilian = {
+				small = GFX_ANR_Yevhen_Anhel_advisor
+                large = GFX_ANR_Yevhen_Anhel
+            }
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = ANR_Yevhen_Anhel_1
+			allowed = {
+				original_tag = ANR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_entrenchment_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { trait_reckless trickster cavalry_expert cavalry_leader cavalry_officer war_hero }
+            skill = 7
+            attack_skill = 6
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 6
+            
+        }
+    }
+	
+}

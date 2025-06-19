@@ -1,0 +1,34 @@
+state={
+	id=1065
+	name="STATE_1065"
+	history={
+		owner = SOV
+		add_core_of = FIN
+		add_core_of = SOV
+		add_core_of = MAT
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+			3060 = {
+				naval_base = 4
+				coastal_bunker = 9
+			}
+			3060 = {
+				bunker = 5
+			}
+		}
+		
+		victory_points = { #Viipuri
+			3060 5 
+		}
+		
+
+	}
+	provinces={
+		3060 
+	}
+	manpower=38357
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=3.000
+}

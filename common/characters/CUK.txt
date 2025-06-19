@@ -1,0 +1,524 @@
+characters = {
+	CUK_Filip_Konowal = {
+        name = CUK_Filip_Konowal
+        portraits = {
+            civilian = {
+				small = GFX_CUK_Filip_Konowal_advisor
+                large = GFX_CUK_Filip_Konowal
+            }
+			
+        }
+        country_leader = {
+			ideology = despotism
+			expire = "1980.3.1"
+			id = -1
+			traits = { }
+		}
+		field_marshal={
+			traits={ politically_connected war_hero brilliant_strategist }
+			skill = 6
+            attack_skill = 6
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 6
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CUK_Filip_Konowal
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				social_revolutionary
+			}
+			do_effect = {
+				
+			}
+			
+		}
+    }
+	CUK_Oleksandr_Koshyts = {
+		name = CUK_Oleksandr_Koshyts
+		portraits = {
+			civilian = {
+				large = GFX_CUK_Oleksandr_Koshyts
+				small = GFX_CUK_Oleksandr_Koshyts_advisor
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1980.3.1"
+			id = -1
+			traits = { }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CUK_Oleksandr_Koshyts
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+			    
+				
+			}
+			traits = {
+				democratic_reformer
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	CUK_Stepan_Wytwycki = {
+		name = CUK_Stepan_Wytwycki
+		portraits = {
+			civilian = {
+				large = GFX_CUK_Stepan_Wytwycki
+				small = GFX_CUK_Stepan_Wytwycki_advisor
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1970.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CUK_Stepan_Wytwycki
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+
+	CUK_Dmytro_Doncov = {
+		name = CUK_Dmytro_Doncov
+		portraits = {
+			civilian = {
+				large = GFX_CUK_Dmytro_Doncov
+				small = GFX_CUK_Dmytro_Doncov_advisor
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1953.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CUK_Dmytro_Doncov
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	CUK_Mykrailo_Sadovskyi = {
+		name = CUK_Mykrailo_Sadovskyi
+		portraits = {
+			army={
+				large = GFX_CUK_Mykrailo_Sadovskyi
+				small = GFX_CUK_Mykrailo_Sadovskyi_advisor
+			}
+		}
+		field_marshal = {
+            traits = { infantry_officer harsh_leader brilliant_strategist war_hero }
+            skill = 7
+            attack_skill = 7
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 5
+            
+        }
+		advisor= {
+		    cost = 200
+			slot = army_chief
+			idea_token = CUK_Mykrailo_Sadovskyi
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_offensive_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	CUK_Volodymyr_Sikevych = {
+		name = CUK_Volodymyr_Sikevych
+		portraits = {
+			army={
+				large = GFX_CUK_Volodymyr_Sikevych
+				small = GFX_CUK_Volodymyr_Sikevych_advisor
+			}
+		}
+		field_marshal = {
+            traits = { war_hero brilliant_strategist }
+            skill = 7
+            attack_skill = 2
+			defense_skill = 8
+			planning_skill = 2
+			logistics_skill = 5
+            
+        }
+		advisor= {
+		    cost = 200
+			slot = army_chief
+			idea_token = CUK_Volodymyr_Sikevych
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	CUK_Ivan_boberskyi = {
+		name = CUK_Ivan_boberskyi
+		portraits = {
+			army={
+				large = GFX_CUK_Ivan_boberskyi
+				small = GFX_CUK_Ivan_boberskyi_advisor
+			}
+		}
+		corps_commander = {
+            traits = { war_hero infantry_officer }
+            skill = 2
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = theorist
+			idea_token = CUK_Ivan_boberskyi
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				mass_assault_expert
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	CUK_Lavrentyi_Kempe = {
+		name = CUK_Lavrentyi_Kempe
+		portraits = {
+			army={
+				large = GFX_CUK_Lavrentyi_Kempe
+				small = GFX_CUK_Lavrentyi_Kempe_advisor
+			}
+		}
+		corps_commander = {
+            traits = { cavalry_officer brilliant_strategist war_hero }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 6
+			logistics_skill = 7
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = CUK_Lavrentyi_Kempe
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				army_cavalry_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	CUK_Mykola_Urbanovych = {
+		name = CUK_Mykola_Urbanovych
+		portraits = {
+			army={
+				large = GFX_CUK_Mykola_Urbanovych
+				small = GFX_CUK_Mykola_Urbanovych_advisor
+			}
+		}
+		corps_commander = {
+            traits = { harsh_leader brilliant_strategist war_hero }
+            skill = 3
+            attack_skill = 2
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 5
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = CUK_Mykola_Urbanovych
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				army_infantry_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	CUK_Vasyl_Shumka = {
+		name = CUK_Vasyl_Shumka
+		portraits = {
+			army={
+				large = GFX_CUK_Vasyl_Shumka
+				small = GFX_CUK_Vasyl_Shumka_advisor
+			}
+		}
+		corps_commander = {
+            traits = { harsh_leader war_hero }
+            skill = 4
+            attack_skill = 7
+			defense_skill = 5
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = CUK_Vasyl_Shumka
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				army_logistics_2 veteran_guerrilla_fighter
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	CUK_Yuryi_Harasymiv = {
+		name = CUK_Yuryi_Harasymiv
+		portraits = {
+			army={
+				large = GFX_CUK_Yuryi_Harasymiv
+				small = GFX_CUK_Yuryi_Harasymiv_advisor
+			}
+		}
+		corps_commander = {
+            traits = { harsh_leader war_hero }
+            skill = 6
+            attack_skill = 4
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 2
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = CUK_Yuryi_Harasymiv
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_3
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	CUK_Volodymyr_Kysilevsky = {
+		name = CUK_Volodymyr_Kysilevsky
+		portraits = {
+			army={
+				large = GFX_CUK_Volodymyr_Kysilevsky
+				small = GFX_CUK_Volodymyr_Kysilevsky_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected brilliant_strategist }
+            skill = 4
+            attack_skill = 3
+			defense_skill = 6
+			planning_skill = 2
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 100
+			slot = air_chief
+			idea_token = CUK_Volodymyr_Kysilevsky
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	CUK_Leonid_Perfetskyi = {
+		name = CUK_Leonid_Perfetskyi
+		portraits = {
+			army={
+				large = GFX_CUK_Leonid_Perfetskyi
+				small = GFX_CUK_Leonid_Perfetskyi_advisor
+			}
+		}
+		corps_commander = {
+            traits = { politically_connected harsh_leader war_hero }
+            skill = 5
+            attack_skill = 7
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 5
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CUK_Leonid_Perfetskyi
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				popular_figurehead resistance_artist
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	CUK_Yaroslav_Rudnyckyi = {
+		name = CUK_Yaroslav_Rudnyckyi
+		portraits = {
+			army={
+				large = GFX_CUK_Yaroslav_Rudnyckyi
+				small = GFX_CUK_Yaroslav_Rudnyckyi_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CUK_Yaroslav_Rudnyckyi
+			allowed = {
+				original_tag = CUK
+			}
+			available = {
+				
+			}
+			traits = {
+				CUK_scientist 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+}
+	

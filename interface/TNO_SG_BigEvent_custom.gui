@@ -1,0 +1,2038 @@
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_makhnovci_come_back_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = makhnovci_come_back_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_makhnovci_come_back_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_makhnovci_come_back"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+
+	containerWindowType = {
+		name = "super_event_makhnovci_come_back_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_makhnovci_come_back_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_makhnovci_come_back_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_canadian_ukraine_almost_loose_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = canadian_ukraine_almost_loose_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_canadian_ukraine_almost_loose_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_CUK_independent"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_canadian_ukraine_almost_loose_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_canadian_ukraine_almost_loose_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_canadian_ukraine_almost_loose_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_canadian_ukraine_independent_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = canadian_ukraine_independent_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_canadian_ukraine_independent_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_CUK_independent"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_canadian_ukraine_independent_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_canadian_ukraine_independent_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_canadian_ukraine_independent_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_german_loosing_war_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = german_loosing_war_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_german_loosing_war_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_german_loosing"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_german_loosing_war_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_german_loosing_war_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_german_loosing_war_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_german_start_war_with_poland_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = german_start_war_with_poland_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_german_start_war_with_poland_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_german_ww2"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_german_start_war_with_poland_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_german_start_war_with_poland_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_german_start_war_with_poland_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_japan_take_vladivostok_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = japan_take_vladivostok_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_japan_take_vladivostok_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_japan_took_vladivostok"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "ssuper_event_japan_take_vladivostok_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_japan_take_vladivostok_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_japan_take_vladivostok_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_jews_uprising_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = jews_uprising_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_jews_uprising_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_jews_uprised"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_jews_uprising_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_jews_uprising_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_jews_uprising_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_klyns_uprising_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = klyns_uprising_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_klyns_uprising_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_klyns_uprised"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_klyns_uprising_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_klyns_uprising_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_klyns_uprising_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_klyns_win_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = klyns_win_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_klyns_win_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_klyns_win_and_ukr_formed"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_klyns_win_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_klyns_win_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_klyns_win_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_malynovyi_klyn_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = malynovyi_klyn_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_malynovyi_klyn_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_klyns_uprised"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_malynovyi_klyn_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_malynovyi_klyn_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_malynovyi_klyn_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_siryi_klyn_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = siryi_klyn_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_siryi_klyn_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_klyns_uprised"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_siryi_klyn_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_siryi_klyn_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_siryi_klyn_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_soviet_union_almost_loose_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = soviet_union_almost_loose_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_soviet_union_almost_loose_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_ussr_loosing"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_soviet_union_almost_loose_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_soviet_union_almost_loose_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_soviet_union_almost_loose_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_soviet_union_start_war_with_klyn_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = soviet_union_start_war_with_klyn_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_soviet_union_start_war_with_klyn_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_ussr_war"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_soviet_union_start_war_with_klyn_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_soviet_union_start_war_with_klyn_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_soviet_union_start_war_with_klyn_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_soviet_union_take_khabarovsk_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = soviet_union_take_khabarovsk_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_soviet_union_take_khabarovsk_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_ussr_took_khabarovsk"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_soviet_union_take_khabarovsk_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_soviet_union_take_khabarovsk_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_soviet_union_take_khabarovsk_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_spain_civil_war_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = spain_civil_war_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_spain_civil_war_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_spain_civilwar"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_spain_civil_war_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_spain_civil_war_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_spain_civil_war_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_ukraine_unite_fascist_communist_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = ukraine_unite_fascist_communist_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_ukraine_unite_fascist_communist_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_klyns_win_and_ukr_formed"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_ukraine_unite_fascist_communist_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_ukraine_unite_fascist_communist_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_ukraine_unite_fascist_communist_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_ukraine_unite_neutral_democratic_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = ukraine_unite_neutral_democratic_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_ukraine_unite_neutral_democratic_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_klyns_win_and_ukr_formed"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_ukraine_unite_neutral_democratic_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_ukraine_unite_neutral_democratic_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_ukraine_unite_neutral_democratic_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_upa_uprising_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = upa_uprising_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_upa_uprising_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_upa_uprised"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_upa_uprising_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_upa_uprising_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_upa_uprising_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_war_with_japan_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = war_with_japan_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_war_with_japan_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_japan_war"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_war_with_japan_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_war_with_japan_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_war_with_japan_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_zhovty_klyn_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = zhovty_klyn_superevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_zhovty_klyn_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_klyns_uprised"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_zhovty_klyn_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_zhovty_klyn_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_zhovty_klyn_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+}
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_ukraine_unite_all_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = ukraine_united_all ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_ukraine_unite_all_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_ukraine"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_ukraine_unite_all_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_ukraine_unite_all_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_ukraine_unite_all_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+	
+}
+
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_bnr_free_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = bnr_free ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_bnr_free_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_bnr_free"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_bnr_free_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_bnr_free_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_bnr_free_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+	
+}
+
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_crimea_independent_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = crimea_independent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_crimea_independent_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_crimea_independent"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_crimea_independent_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_crimea_independent_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_crimea_independent_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+	
+}
+
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_sailors_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = sailors ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_sailors_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_sailors"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_sailors_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_sailors_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_sailors_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+	
+}
+
+guiTypes = { 
+	
+	containerWindowType = {
+		name = "SE_jews_custom_window"
+		size = { width = 220 height = 128 }
+		position = { x=0 y=-210 }
+		Orientation = center
+		Origo = center
+		clipping = no
+		show_sound = jews ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_1b_no_border"
+		}
+
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 0 y = 20 }
+			font = "hoi_20bs"
+			borderSize = {x = 0 y = 0}
+			text = "SE_jews_T" ###### HERE GOES THE TITLE ########
+			maxWidth = 220
+			maxHeight = 24
+			format = centre
+		}
+
+		iconType = {
+			name ="image"
+			spriteType = "GFX_superevent_israel"
+			position = { x= -286 y = -18 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "super_event_jews_custom"
+		size = { width = 588 height = 465 }
+		position = { x=0 y=0 }
+		Orientation = center
+		Origo = center
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_bigevent_border"
+		}
+
+		buttonType = {
+			name = "Option"
+			text = "SE_jews_A"  ############## OPTION
+			shortcut = "ESCAPE"
+			position = { x = -140 y = 183 }
+			quadTextureSprite ="GFX_main_lobby_button"
+			buttonFont = "hoi_20bs"
+			Orientation = center
+		}
+
+		iconType = {
+			name ="underlay"
+			spriteType = "GFX_superevent_text_underlay_fourlines"
+			position = { x= 27 y = -182 }
+			Orientation = lower_left
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "text"
+			position = {  x= 70 y = -173 }
+			font = "hoi_20bs"
+			text = "SE_jews_D" ######## HERE GOES THE DESCRIPTION ###########
+			maxWidth = 500
+			maxHeight = 173
+			fixedsize = yes
+			format = right
+			Orientation = lower_left
+		}
+	}
+	
+}
+
+

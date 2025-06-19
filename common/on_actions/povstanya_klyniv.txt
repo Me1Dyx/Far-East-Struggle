@@ -1,0 +1,279 @@
+
+
+#on_actions = {#
+#	on_actions = {#
+#		on_war_relation_added = {#
+#			effect = {#
+#				if = {#
+#					limit = {#
+#						ROOT = { tag = ZEL }#
+#						FROM = { tag = SOV }#
+#					}#
+#					complete_national_focus = ZEL_vyzvolyty_siryi_klyn#
+#					complete_national_focus = ZEL_vyzvolyty_zhovtyi_klyn#
+#					complete_national_focus = ZEL_vyzvolyty_malynovyi_klyn#
+#				}#
+#			}#
+#		}#
+#	}#
+#} #
+
+on_actions = {
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					SOV = {
+						has_war = yes
+					}	
+				}
+				SOV = {	country_event = { id = ZEL.16 days = 10 } }
+			}
+		
+		
+		}
+
+	}
+}
+
+on_actions = {
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					SOV = {
+						has_war = yes
+					}	
+				}
+				SOV = {	country_event = { id = ZEL.44 days = 20 } }
+			}
+		
+		
+		}
+
+	}
+}
+on_actions = {
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					POL = {
+						has_war = yes
+					}	
+				}
+				POL = {	country_event = { id = ZEL.18 days = 10 } }
+			}
+		
+		
+		}
+
+	}
+}
+on_actions = {
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					SOV = {
+						has_war = yes
+					}	
+				}
+				SOV = {	country_event = { id = ZEL.17 days = 30 } }
+			}
+		
+		
+		}
+
+	}
+}
+on_actions = {
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					SOV = {
+						has_war = yes
+					}	
+				}
+				SOV = {	country_event = { id = ZEL.40 days = 40 } }
+			}
+		
+		
+		}
+
+	}
+}
+on_actions = {
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					SOV = {
+						has_war = yes
+					}	
+				}
+				SOV = {	country_event = { id = ZEL.41 days = 50 } }
+			}
+		
+		
+		}
+
+	}
+}
+
+on_actions = {
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					JAP = {
+						has_war_with = ZEL
+					}
+					
+				}
+				every_country = { 
+					
+				}
+			}
+		
+		
+		}
+
+	}
+}
+
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 408
+					}
+					FROM = {
+						original_tag = ZEL
+					}
+					JAP = { 
+						NOT = { original_tag = ZEL }
+					}
+				}
+				every_country = { 
+					set_country_flag = super_event_japan_take_vladivostok
+				}
+			}
+		}
+	}
+}
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 409
+					}
+					FROM = {
+						original_tag = ZEL
+					}
+					SOV = { 
+						NOT = { original_tag = ZEL }
+					}
+				}
+				every_country = { 
+					set_country_flag = super_event_soviet_union_take_khabarovsk
+				}
+			}
+		}
+	}
+}
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 219
+					}
+					FROM = {
+						original_tag = SOV
+					}
+					every_possible_country = { 
+						NOT = { original_tag = SOV }
+					}
+					SOV = {
+						has_war = yes
+					}
+					
+				}
+				every_country = { 
+					set_country_flag = super_event_soviet_union_almost_loose
+				}
+			}
+		}
+	}
+	
+}
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 409
+					}
+					FROM = {
+						original_tag = ZEL
+					}
+					SOV = { 
+						NOT = { original_tag = ZEL }
+					}
+				}
+				every_country = { 
+					set_country_flag = super_event_soviet_union_take_khabarovsk
+				}
+			}
+		}
+	}
+}
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM.FROM = {
+						state = 469
+					}
+					FROM = {
+						original_tag = CUK
+					}
+					CAN = { 
+						NOT = { original_tag = CUK }
+					}
+				}
+				
+			}
+		}
+	}
+}
+
+
+#on_actions = {
+#	on_capitulation = {
+#		effect = { 
+#			if = {
+#				limit = {
+#					CUK = {
+#						has_capitulated = yes
+#					}
+#				}
+#			}
+#			every_country = { 
+#					set_country_flag = super_event_canadian_ukraine_almost_loose
+#				}
+#		}
+#	}
+#}
+CUK = { country_event = { id = ZEL.26 } }
+
+

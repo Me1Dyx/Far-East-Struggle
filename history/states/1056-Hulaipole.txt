@@ -1,0 +1,41 @@
+state={
+	id=1056
+	name="STATE_1056"
+	history = {
+
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = UKR
+		add_core_of = ANR
+		add_core_of = CRI
+
+		victory_points = {
+			11405 1 # Zaporozhe
+		}
+		victory_points = {
+			3767 5 
+		}
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			air_base = 3
+			industrial_complex = 2
+			# Dnieprostroi Hydroelectric Station
+			11405 = { dam = 1 }
+			
+		}
+		
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+			}
+		}
+	}
+	provinces={
+		3767 6596 9571 9729 11700 
+	}
+	manpower=652361
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

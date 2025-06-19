@@ -1,0 +1,36 @@
+state={
+	id=196
+	name="STATE_196"
+	resources={
+		chromium=15.000
+	}
+	history = {
+
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = UKR
+		add_core_of = CRI
+		add_claim_by = ANR
+
+		victory_points = {
+			721 1 # Kherson
+		}
+		
+		buildings = {
+			infrastructure = 3 #was: 5
+			air_base = 3
+			industrial_complex = 1
+			# Kakhovka Dam
+			#737 = { dam = 1 }
+			
+		}
+		
+	}
+	provinces={
+		568 721 737 767 6771 9712 
+	}
+	manpower=728363
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

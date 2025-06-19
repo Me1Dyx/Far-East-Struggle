@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_zelenyi_klyn"
+		textureFile = "gfx/interface/zelenyi_klyn.dds"
+		noOfFrames = 2  
+	} 
+}

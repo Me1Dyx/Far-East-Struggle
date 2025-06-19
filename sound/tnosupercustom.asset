@@ -1,0 +1,39 @@
+category = { ### THIS USES SOUND EFFECTS, NOT SOUND
+ 	name = "TNO_SuperCustom_Effects"
+	soundeffects = {
+		makhnovci_come_back_superevent
+		canadian_ukraine_almost_loose_superevent
+		canadian_ukraine_independent_superevent
+		german_loosing_war_superevent
+		german_start_war_with_poland_superevent
+		japan_take_vladivostok_superevent
+		jews_uprising_superevent
+		klyns_uprising_superevent
+		klyns_win_superevent
+		malynovyi_klyn_superevent
+		siryi_klyn_superevent
+		soviet_union_almost_loose_superevent
+		soviet_union_start_war_with_klyn_superevent
+		soviet_union_take_khabarovsk_superevent
+		spain_civil_war_superevent
+		ukraine_unite_fascist_communist_superevent
+		ukraine_unite_neutral_democratic_superevent
+		upa_uprising_superevent
+		war_with_japan_superevent
+		zhovty_klyn_superevent
+		ukraine_united_all
+		bnr_free
+		crimea_independent
+		sailors
+		jews
+	}
+ 	compressor = {
+		enabled = yes
+		pregain = 3.0
+		postgain = 15.0
+		ratio = 10.0
+		threshold = -15.0
+		attacktime = 0.030
+		releasetime = 1.2
+ 	}
+}

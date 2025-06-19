@@ -1,0 +1,30 @@
+state={
+	id=203
+	name="STATE_203"
+	history={
+		victory_points = {
+			488 5
+		}
+		victory_points = {
+			458 3
+		}
+		victory_points = {
+			9491 2
+		}
+		owner = SOV
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+		}
+		add_core_of = SOV
+		add_claim_by = ANR
+		add_core_of = UKR
+	}
+	provinces={
+		458 488 3468 11438 11454 
+	}
+	manpower=2405190
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

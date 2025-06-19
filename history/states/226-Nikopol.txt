@@ -1,0 +1,32 @@
+state={
+	id=226
+	name="STATE_226"
+	resources={
+		oil=4.000
+	}
+	history={
+		owner = SOV
+		victory_points = {
+			11437 10 
+		}
+		victory_points = {
+			11561 1
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
+		add_core_of = SOV
+		add_core_of = UKR
+		add_core_of = ANR
+	}
+	provinces={
+		 11422 11437 
+	}
+	manpower=2391047
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

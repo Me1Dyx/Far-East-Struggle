@@ -1,0 +1,28 @@
+state={
+	id=1086
+	name="STATE_1086"
+	history = {
+
+		owner = PAL
+		add_core_of = PAL
+		add_core_of = 
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			arms_factory = 1
+		}
+		
+		victory_points = {
+			4088 4
+		}
+		
+		
+	}
+	provinces={
+		4088 
+	}
+	manpower=145674
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

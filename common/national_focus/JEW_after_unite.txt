@@ -1,0 +1,174 @@
+focus_tree = {
+	id = JEW_after_unite
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JEW
+		}
+	}
+	default = no
+	focus = {
+		id = JEW_radiymo_my_voskresly
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = JEW_bida_pryishla
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = JEW_radiymo_my_voskresly
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = JEW_front_z_Ehyptom
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = JEW_bida_pryishla
+		}
+		x = 21
+		y = 4
+
+	}
+	focus = {
+		id = JEW_front_z_Palestynou
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = JEW_bida_pryishla
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = JEW_peremoha_na_sineyi
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = JEW_front_z_Palestynou
+		}
+		prerequisite = {
+			focus = JEW_front_z_Ehyptom
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = JEW_front_z_Levanom
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = JEW_bida_pryishla
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = JEW_vilnyi_fron
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = JEW_front_z_Levanom
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = JEW_front_z_Syriyeu
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = JEW_bida_pryishla
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = JEW_front_z_Yordaniyeu
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = JEW_bida_pryishla
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = JEW_peremoha_pid_mertvym_morem
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = JEW_front_z_Syriyeu
+		}
+		prerequisite = {
+			focus = JEW_front_z_Yordaniyeu
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = JEW_my_pokazaly_yim
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = JEW_peremoha_na_sineyi
+		}
+		prerequisite = {
+			focus = JEW_vilnyi_fron
+		}
+		prerequisite = {
+			focus = JEW_peremoha_pid_mertvym_morem
+		}
+		x = 25
+		y = 6
+
+	}
+	focus = {
+		id = JEW_podavyty_povstanciv
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = JEW_my_pokazaly_yim
+		}
+		x = 25
+		y = 7
+
+	}
+	focus = {
+		id = JEW_Cairska_conferenciya
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = JEW_podavyty_povstanciv
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = JEW_velyka_derzhava_Yevreiv
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = JEW_Cairska_conferenciya
+		}
+		x = 25
+		y = 9
+
+	}
+}

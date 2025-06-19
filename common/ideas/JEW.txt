@@ -1,0 +1,53 @@
+ideas = {
+    country = {
+        Pershyi_Asrael = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = Pershyi_Asrael
+
+			modifier = {
+				army_core_defence_factor = 0.05
+				army_morale_factor = 0.1
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		pogromy = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = pogromy
+
+			modifier = {
+				stability_factor = -0.75
+				monthly_population = -0.1
+				war_support_factor = -0.50
+			}
+		}
+		problema_valuty = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = problema_valuty
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.15
+				consumer_goods_factor = 0.35
+			}
+		}
+    }
+}

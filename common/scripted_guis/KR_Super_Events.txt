@@ -1,0 +1,681 @@
+scripted_gui = {	#### Makhnovci come back ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_makhnovci_come_back_custom_window"
+
+		visible = {
+			has_country_flag = super_event_makhnovci_come_back ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_makhnovci_come_back_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_makhnovci_come_back_custom"
+
+		visible = {
+			has_country_flag = super_event_makhnovci_come_back
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_makhnovci_come_back ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### CUK almost lost ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_canadian_ukraine_almost_loose_custom_window"
+
+		visible = {
+			has_country_flag = super_event_canadian_ukraine_almost_loose ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_canadian_ukraine_almost_loose_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_canadian_ukraine_almost_loose_custom"
+
+		visible = {
+			has_country_flag = super_event_canadian_ukraine_almost_loose
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_canadian_ukraine_almost_loose ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### CUK independent ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_canadian_ukraine_independent_custom_window"
+
+		visible = {
+			has_country_flag = super_event_canadian_ukraine_independent ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_canadian_ukraine_independent_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_canadian_ukraine_independent_custom"
+
+		visible = {
+			has_country_flag = super_event_canadian_ukraine_independent
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_canadian_ukraine_independent ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### german loosing ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_german_loosing_war_custom_window"
+
+		visible = {
+			has_country_flag = super_event_german_loosing_war ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_german_loosing_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_german_loosing_war_custom"
+
+		visible = {
+			has_country_flag = super_event_german_loosing_war
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_german_loosing_war ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### WW2 started ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_german_start_war_with_poland_custom_window"
+
+		visible = {
+			has_country_flag = super_event_german_start_war_with_poland ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_german_start_war_with_poland_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_german_start_war_with_poland_custom"
+
+		visible = {
+			has_country_flag = super_event_german_start_war_with_poland
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_german_start_war_with_poland ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### japan took vladivostok ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_japan_take_vladivostok_custom_window"
+
+		visible = {
+			has_country_flag = super_event_japan_take_vladivostok ### this country flag triggers the #superevent
+		}
+	}
+
+	ssuper_event_japan_take_vladivostok_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "ssuper_event_japan_take_vladivostok_custom"
+
+		visible = {
+			has_country_flag = super_event_japan_take_vladivostok
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_japan_take_vladivostok ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### jews uprised ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_jews_uprising_custom_window"
+
+		visible = {
+			has_country_flag = super_event_jews_uprising ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_jews_uprising_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_jews_uprising_custom"
+
+		visible = {
+			has_country_flag = super_event_jews_uprising
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_jews_uprising ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### klyns uprised ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_klyns_uprising_custom_window"
+
+		visible = {
+			has_country_flag = super_event_klyns_uprising ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_klyns_uprising_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_klyns_uprising_custom"
+
+		visible = {
+			has_country_flag = super_event_klyns_uprising
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_klyns_uprising ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### klyns won ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_klyns_win_custom_window"
+
+		visible = {
+			has_country_flag = super_event_klyns_win ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_klyns_win_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_klyns_win_custom"
+
+		visible = {
+			has_country_flag = super_event_klyns_win
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_klyns_win ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### mln uprised ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_malynovyi_klyn_custom_window"
+
+		visible = {
+			has_country_flag = super_event_malynovyi_klyn ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_malynovyi_klyn_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_malynovyi_klyn_custom"
+
+		visible = {
+			has_country_flag = super_event_malynovyi_klyn
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_malynovyi_klyn ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### sir uprised ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_siryi_klyn_custom_window"
+
+		visible = {
+			has_country_flag = super_event_siryi_klyn ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_siryi_klyn_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_siryi_klyn_custom"
+
+		visible = {
+			has_country_flag = super_event_siryi_klyn
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_siryi_klyn ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### ussr loosing ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_soviet_union_almost_loose_custom_window"
+
+		visible = {
+			has_country_flag = super_event_soviet_union_almost_loose ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_soviet_union_almost_loose_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_soviet_union_almost_loose_custom"
+
+		visible = {
+			has_country_flag = super_event_soviet_union_almost_loose
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_soviet_union_almost_loose ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### war between ussr and klyn ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_soviet_union_start_war_with_klyn_custom_window"
+
+		visible = {
+			has_country_flag = super_event_soviet_union_start_war_with_klyn ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_soviet_union_start_war_with_klyn_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_soviet_union_start_war_with_klyn_custom"
+
+		visible = {
+			has_country_flag = super_event_soviet_union_start_war_with_klyn
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_soviet_union_start_war_with_klyn ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### ussr took Khabarovsk ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_soviet_union_take_khabarovsk_custom_window"
+
+		visible = {
+			has_country_flag = super_event_soviet_union_take_khabarovsk ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_soviet_union_take_khabarovsk_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_soviet_union_take_khabarovsk_custom"
+
+		visible = {
+			has_country_flag = super_event_soviet_union_take_khabarovsk
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_soviet_union_take_khabarovsk ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### spain civilwar ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_spain_civil_war_custom_window"
+
+		visible = {
+			has_country_flag = super_event_spain_civil_war ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_spain_civil_war_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_spain_civil_war_custom"
+
+		visible = {
+			has_country_flag = super_event_spain_civil_war
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_spain_civil_war ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### ukraine unites 1 ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_ukraine_unite_fascist_communist_custom_window"
+
+		visible = {
+			has_country_flag = super_event_ukraine_unite_fascist_communist ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_ukraine_unite_fascist_communist_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_ukraine_unite_fascist_communist_custom"
+
+		visible = {
+			has_country_flag = super_event_ukraine_unite_fascist_communist
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_ukraine_unite_fascist_communist ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### ukraine unites 2 ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_ukraine_unite_neutral_democratic_custom_window"
+
+		visible = {
+			has_country_flag = super_event_ukraine_unite_neutral_democratic ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_ukraine_unite_neutral_democratic_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_ukraine_unite_neutral_democratic_custom"
+
+		visible = {
+			has_country_flag = super_event_ukraine_unite_neutral_democratic
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_ukraine_unite_neutral_democratic ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+scripted_gui = {	#### ukraine unites 3 ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_ukraine_unite_all_custom_window"
+
+		visible = {
+			has_country_flag = super_event_ukraine_unite_all ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_ukraine_unite_all_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_ukraine_unite_all_custom"
+
+		visible = {
+			has_country_flag = super_event_ukraine_unite_all
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_ukraine_unite_all ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### upa uprised ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_upa_uprising_custom_window"
+
+		visible = {
+			has_country_flag = super_event_upa_uprising ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_upa_uprising_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_upa_uprising_custom"
+
+		visible = {
+			has_country_flag = super_event_upa_uprising
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_upa_uprising ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### war with japan ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_war_with_japan_custom_window"
+
+		visible = {
+			has_country_flag = super_event_war_with_japan ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_war_with_japan_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_war_with_japan_custom"
+
+		visible = {
+			has_country_flag = super_event_war_with_japan
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_war_with_japan ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### zho uprised ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_zhovty_klyn_custom_window"
+
+		visible = {
+			has_country_flag = super_event_zhovty_klyn ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_zhovty_klyn_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_zhovty_klyn_custom"
+
+		visible = {
+			has_country_flag = super_event_zhovty_klyn
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_zhovty_klyn ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### bnr uprised ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_bnr_free_custom_window"
+
+		visible = {
+			has_country_flag = super_event_bnr_free ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_bnr_free_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_bnr_free_custom"
+
+		visible = {
+			has_country_flag = super_event_bnr_free
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_bnr_free ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+scripted_gui = {	#### crimea uprised ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_crimea_independent_custom_window"
+
+		visible = {
+			has_country_flag = super_event_crimea_independent ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_crimea_independent_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_crimea_independent_custom"
+
+		visible = {
+			has_country_flag = super_event_crimea_independent
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_crimea_independent ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+
+scripted_gui = {	#### sailors uprised ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_sailors_custom_window"
+
+		visible = {
+			has_country_flag = super_event_sailors ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_sailors_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_sailors_custom"
+
+		visible = {
+			has_country_flag = super_event_sailors
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_sailors ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+
+scripted_gui = {	#### jews unites ####
+
+	TNO_SG_big_event_latin_wars_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "SE_jews_custom_window"
+
+		visible = {
+			has_country_flag = super_event_jews ### this country flag triggers the #superevent
+		}
+	}
+
+	super_event_jews_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "super_event_jews_custom"
+
+		visible = {
+			has_country_flag = super_event_jews
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_jews ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+}
+
+
+
+
+
+

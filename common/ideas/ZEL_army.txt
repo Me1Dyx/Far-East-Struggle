@@ -1,0 +1,23 @@
+ideas = {
+    country = {
+        Armiya_klyna = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = Klyn_army
+
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				cavalry_attack_factor = 0.1
+				cavalry_defence_factor = 0.1
+				experience_gain_army = 0.05
+				conscription = 0.05
+			}
+		}
+    }
+}

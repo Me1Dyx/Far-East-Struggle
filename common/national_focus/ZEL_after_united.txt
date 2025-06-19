@@ -1,0 +1,535 @@
+focus_tree = {
+	id = ZEL_after_united
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZEL
+		}
+	}
+	default = no
+	focus = {
+		id = ZEL_united_Ukraine
+		icon = GFX_focus_united_ukraine
+		cost = 3
+		x = 19
+		y = 0
+		completion_reward = {
+			add_political_power = 300
+			add_stability = 0.90
+			add_war_support = 0.90
+			add_ideas = zapanuyem_my_i_bratya
+		}
+
+	}
+	focus = {
+		id = ZEL_povernuty_Halychynu
+		icon = GFX_focus_halych
+		cost = 5
+		prerequisite = {
+			focus = ZEL_united_Ukraine
+		}
+		x = 17
+		y = 1
+		available = {
+			any_country = {
+				owns_state = 91
+				controls_state = 91
+			}
+		}
+		bypass = {
+			OR = {
+				AND = {
+					OR = {
+						owns_state = 91 
+						91 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+					OR = {
+						owns_state = 89 
+						89 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+					OR = {
+						owns_state = 93 
+						93 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				any_country = {
+					owns_state = 91
+					owns_state = 89
+					owns_state = 93
+					has_war_with = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { 91 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 91
+			}
+			if = {
+				limit = { 89 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 89
+			}
+			if = {
+				limit = { 93 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 93
+			}
+			random_other_country = {
+				limit = { owns_state = 91 }
+				country_event = { id = ZEL.28 }
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						owns_state = 91
+						NOT = {	owns_state = 89 }
+					}
+				}
+				random_other_country = {
+					limit = { 
+						owns_state = 89 
+					}
+					country_event = { id = ZEL.28 }
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						any_other_country = {
+							owns_state = 91
+							NOT = {	owns_state = 93 }
+						}
+						any_other_country = {
+							owns_state = 89
+							NOT = {	owns_state = 93 }
+						}
+					}
+				}
+				random_other_country = {
+					limit = { 
+						owns_state = 93
+					}
+					country_event = { id = ZEL.28  }
+				}
+			}
+		}
+		
+
+	}
+	focus = {
+		id = ZEL_intervenciya_v_CZE
+		icon = GFX_focus_zakarpatya
+		cost = 5
+		prerequisite = {
+			focus = ZEL_povernuty_Halychynu
+		}
+		x = 16
+		y = 2
+		available = {
+			any_country = {
+				owns_state = 73
+				controls_state = 73
+			}
+		}
+		bypass = {
+			OR = {
+				AND = {
+					OR = {
+						owns_state = 73 
+						73 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+					OR = {
+						owns_state = 1043 
+						1043 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				any_country = {
+					owns_state = 73
+					owns_state = 1043
+					has_war_with = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { 73 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 73
+			}
+			if = {
+				limit = { 1043 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 1043
+			}
+			random_other_country = {
+				limit = { owns_state = 73 }
+				country_event = { id = ZEL.31 }
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						owns_state = 73
+						NOT = {	owns_state = 1043 }
+					}
+				}
+				random_other_country = {
+					limit = { 
+						owns_state = 1043 
+					}
+					country_event = { id = ZEL.31 }
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						any_other_country = {
+							owns_state = 73
+							NOT = {	owns_state = 1043 }
+						}
+						any_other_country = {
+							owns_state = 1043
+							NOT = {	owns_state = 73 }
+						}
+					}
+				}
+				
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_Rozhromyty_anarhistiv
+		icon = GFX_focus_makhnovci
+		cost = 5
+		prerequisite = {
+			focus = ZEL_united_Ukraine
+		}
+		x = 19
+		y = 1
+		available = {
+			country_exists = ANR
+		}
+		bypass = {
+			IF = {
+				NOT = {
+					country_exists = ANR
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = ANR
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_viyna_z_jews
+		icon = GFX_focus_jews
+		cost = 5
+		prerequisite = {
+			focus = ZEL_Rozhromyty_anarhistiv
+		}
+		x = 19
+		y = 2
+		available = {
+			country_exists = JEW
+		}
+		bypass = {
+			IF = {
+				NOT = {
+					country_exists = JEW
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = take_core_state
+				target = JEW
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_povernuty_Bocovinu_maramovschinu
+		icon = GFX_focus_romania
+		cost = 5
+		prerequisite = {
+			focus = ZEL_united_Ukraine
+		}
+		x = 21
+		y = 1
+		available = {
+			any_country = {
+				owns_state = 766
+				controls_state = 766
+			}
+		}
+		bypass = {
+			OR = {
+				AND = {
+					OR = {
+						owns_state = 766 
+						766 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+					OR = {
+						owns_state = 1050
+						1050 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+					OR = {
+						owns_state = 1046
+						1046 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+					OR = {
+						owns_state = 80
+						80 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+					OR = {
+						owns_state = 1045
+						1045 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+					OR = {
+						owns_state = 1044
+						1044 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				any_country = {
+					owns_state = 766
+					owns_state = 1050
+					has_war_with = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { 766 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 766
+			}
+			if = {
+				limit = { 1050 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 1050
+			}
+			if = {
+				limit = { 1046 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 1046
+			}
+			if = {
+				limit = { 80 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 80
+			}
+			if = {
+				limit = { 1045 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 1045
+			}
+			if = {
+				limit = { 1044 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 1044
+			}
+			random_other_country = {
+				limit = { owns_state = 766 }
+				country_event = { id = ZEL.37 }
+			}
+			if = {
+				limit = {
+					any_other_country = {
+						owns_state = 766
+						NOT = {	owns_state = 1050 }
+					}
+				}
+				random_other_country = {
+					limit = { 
+						owns_state = 1044
+					}
+					country_event = { id = ZEL.37 }
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						any_other_country = {
+							owns_state = 1046
+							NOT = {	owns_state = 80 }
+						}
+						any_other_country = {
+							owns_state = 1045
+							NOT = {	owns_state = 80 }
+						}
+					}
+				}
+				
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_povernuty_cri
+		icon = GFX_focus_krym
+		cost = 5
+		prerequisite = {
+			focus = ZEL_povernuty_Bocovinu_maramovschinu
+		}
+		x = 22
+		y = 2
+		available = {
+			any_country = {
+				owns_state = 137
+				controls_state = 137
+			}
+		}
+		bypass = {
+			OR = {
+				AND = {
+					OR = {
+						owns_state = 137 
+						137 = {
+							owner = { is_in_faction_with = ROOT }
+						}
+					}
+				}
+				any_country = {
+					owns_state = 137
+					has_war_with = ROOT
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { 137 = { OWNER = { NOT = { is_in_faction_with = ROOT} } } }
+				add_state_core = 137
+			}
+			random_other_country = {
+				limit = { owns_state = 137 }
+				country_event = { id = ZEL.34 }
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_povstanya_candskyh_ukr
+		icon = GFX_focus_canadian_ukr
+		cost = 5
+		prerequisite = {
+			focus = ZEL_intervenciya_v_CZE
+		}
+		prerequisite = {
+			focus = ZEL_viyna_z_jews
+		}
+		prerequisite = {
+			focus = ZEL_povernuty_cri
+		}
+		x = 19
+		y = 3
+		completion_reward = {
+			every_country = { 
+				set_country_flag = super_event_canadian_ukraine_independent
+			}
+			CUK = {
+				transfer_state = 469
+				transfer_state = 467
+			}
+			CUK = {
+				load_oob = CUK_1936
+			}
+			IF = {
+				CAN = {
+					is_puppet = yes
+				}	
+				ENG = {
+					end_puppet = CAN
+				}
+			}
+			IF = {
+				CAN = {
+					is_in_faction_with = ENG
+				}
+				ENG = {
+					remove_from_faction = CAN
+				}
+				
+
+			}
+			CUK = {
+				declare_war_on = {
+					target = CAN
+					type = independence_wargoal
+				}
+			}
+			
+		}
+
+	}
+	focus = {
+		id = ZEL_integruvaty_CUK
+		icon = GFX_focus_cuk
+		cost = 2
+		prerequisite = {
+			focus = ZEL_povstanya_candskyh_ukr
+		}
+		x = 19
+		y = 4
+		available = {
+			NOT = {
+				CUK = {
+					has_war = yes
+				}
+			}
+			country_exists = CUK
+			
+		}
+		completion_reward = {
+			CUK = { country_event = { id = ZEL.27 } }
+			
+		}
+
+	}
+	focus = {
+		id = ZEL_Edyne_Ukrainstvo
+		icon = GFX_focus_all_ukrs
+		cost = 2
+		prerequisite = {
+			focus = ZEL_integruvaty_CUK
+		}
+		x = 19
+		y = 5
+		available = {
+			ZEl = {
+				owns_state = 469
+				owns_state = 467
+			}
+			always = no
+			
+		}
+		completion_reward = {
+			ZEL = {
+				add_state_core = 469
+				add_state_core = 467
+			}
+			every_country = {
+				set_country_flag = super_event_ukraine_unite_all
+			}
+			
+		}
+
+	}
+}

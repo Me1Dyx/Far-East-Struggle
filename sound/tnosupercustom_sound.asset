@@ -1,0 +1,134 @@
+
+sound = {
+	name = "makhnovci_come_back_superevent_sound" #name you're using for the sound
+	file = "customsound/makhnovci_come_back_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "canadian_ukraine_almost_loose_superevent_sound" #name you're using for the sound
+	file = "customsound/canadian_ukraine_almost_loose_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "canadian_ukraine_independent_superevent_sound" #name you're using for the sound
+	file = "customsound/canadian_ukraine_independent_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "german_loosing_war_superevent_sound" #name you're using for the sound
+	file = "customsound/german_loosing_war_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "german_start_war_with_poland_superevent_sound" #name you're using for the sound
+	file = "customsound/german_start_war_with_poland_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "japan_take_vladivostok_superevent_sound" #name you're using for the sound
+	file = "customsound/japan_take_vladivostok_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "jews_uprising_superevent_sound" #name you're using for the sound
+	file = "customsound/jews_uprising_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "klyns_uprising_superevent_sound" #name you're using for the sound
+	file = "customsound/klyns_uprising_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "klyns_win_superevent_sound" #name you're using for the sound
+	file = "customsound/klyns_win_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "malynovyi_klyn_superevent_sound" #name you're using for the sound
+	file = "customsound/malynovyi_klyn_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "siryi_klyn_superevent_sound" #name you're using for the sound
+	file = "customsound/siryi_klyn_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "soviet_union_almost_loose_superevent_sound" #name you're using for the sound
+	file = "customsound/soviet_union_almost_loose_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "soviet_union_start_war_with_klyn_superevent_sound" #name you're using for the sound
+	file = "customsound/soviet_union_start_war_with_klyn_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "soviet_union_take_khabarovsk_superevent_sound" #name you're using for the sound
+	file = "customsound/soviet_union_take_khabarovsk_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "spain_civil_war_superevent_sound" #name you're using for the sound
+	file = "customsound/spain_civil_war_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "ukraine_unite_fascist_communist_superevent_sound" #name you're using for the sound
+	file = "customsound/ukraine_unite_fascist_communist_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "ukraine_unite_neutral_democratic_superevent_sound" #name you're using for the sound
+	file = "customsound/ukraine_unite_neutral_democratic_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "upa_uprising_superevent_sound" #name you're using for the sound
+	file = "customsound/upa_uprising_superevent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "war_with_japan_superevent_sound" #name you're using for the sound
+	file = "customsound/war_with_japan_superevent.wav" ## location of the sound file
+	always_load = no
+}
+
+sound = {
+	name = "zhovty_klyn_superevent_sound" #name you're using for the sound
+	file = "customsound/zhovty_klyn_superevent.wav" ## location of the sound file
+	always_load = no
+}
+
+
+sound = {
+	name = "ukraine_united_all_sound" #name you're using for the sound
+	file = "customsound/ukraine_united_all.wav" ## location of the sound file
+	always_load = no
+}
+
+sound = {
+	name = "bnr_free_sound" #name you're using for the sound
+	file = "customsound/bnr_free.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "crimea_independent_sound" #name you're using for the sound
+	file = "customsound/crimea_independent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "sailors_sound" #name you're using for the sound
+	file = "customsound/sailors.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "jews_sound" #name you're using for the sound
+	file = "customsound/jews.wav" ## location of the sound file
+	always_load = no
+}
+
+
+
+

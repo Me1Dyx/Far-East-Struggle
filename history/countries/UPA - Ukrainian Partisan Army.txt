@@ -1,0 +1,91 @@
+﻿capital = 91 
+
+oob = "UPA_1936"
+
+set_research_slots = 2
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	paratroopers = 1
+	gw_artillery = 1
+	mass_assault = 1
+	fleet_in_being = 1
+	basic_train = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		early_fighter = 1
+		fighter1 = 1
+		early_bomber = 1
+		strategic_bomber1 = 1
+		naval_bomber1 = 1
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.10.14"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 100
+}
+
+add_ideas = {
+	zrodylys_my
+	UPA
+}
+
+recruit_character = UPA_Yevhen_Konovalets
+recruit_character = UPA_Roman_Shukhevych
+recruit_character = UPA_Andryi_Melnyk
+recruit_character = UPA_Stepan_Bandera
+recruit_character = UPA_Mykhailo_Duda
+recruit_character = UPA_Oleksa_Hasyn
+recruit_character = UPA_Dmytro-Roman_Klyachkivskyi
+recruit_character = UPA_Ivan_Lytvynenko
+recruit_character = UPA_Mykola_Tverdohlib
+recruit_character = UPA_Oleksandr_Lutskyi
+recruit_character = UPA_Roman_Mats
+recruit_character = UPA_Stepan_Stebelskyi
+recruit_character = UPA_Vasyl_Ivahiv
+recruit_character = UPA_Vasyl_Kuk
+recruit_character = UPA_Petro_Olyinkyk
+
+
+
+

@@ -1,0 +1,646 @@
+characters = {
+	CRI_Seyitdzhelil_Hattatov = {
+		name = CRI_Seyitdzhelil_Hattatov
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Seyitdzhelil_Hattatov
+				small = GFX_CRI_Seyitdzhelil_Hattatov_advisor
+			}
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CRI_Seyitdzhelil_Hattatov
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				democratic_reformer
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	CRI_Abram_Derman = {
+		name = CRI_Abram_Derman
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Abram_Derman
+				small = GFX_CRI_Abram_Derman_advisor
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CRI_Abram_Derman
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				communist_revolutionary
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	CRI_Jafer_Kyrymer = {
+		name = CRI_Jafer_Kyrymer
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Jafer_Kyrymer
+				small = GFX_CRI_Jafer_Kyrymer_advisor
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CRI_Jafer_Kyrymer
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				fascist_demagogue CRI_milirary_head
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	CRI_Suleyman_Sulkevych = {
+		name = CRI_Suleyman_Sulkevych
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Suleyman_Sulkevych
+				small = GFX_CRI_Suleyman_Sulkevych_advisor
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1980.3.1"
+			id = -1
+			traits = {  }
+		}
+		field_marshal={
+			traits={ politically_connected harsh_leader war_hero infantry_officer }
+			skill = 5
+            attack_skill = 4
+            defense_skill = 6
+            planning_skill = 2
+            logistics_skill = 5
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CRI_Suleyman_Sulkevych
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				social_revolutionary
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	CRI_Ali_Bodaninskyi = {
+		name = CRI_Ali_Bodaninskyi
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Ali_Bodaninskyi
+				small = GFX_CRI_Ali_Bodaninskyi_advisor
+			}
+		}
+		field_marshal={
+			traits={ politically_connected harsh_leader war_hero infantry_officer inflexible_strategist }
+			skill = 5
+            attack_skill = 4
+            defense_skill = 6
+            planning_skill = 2
+            logistics_skill = 5
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = army_chief
+			idea_token = CRI_Ali_Bodaninskyi
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	CRI_Emir_Useyin_Chalbash = {
+		name = CRI_Emir_Useyin_Chalbash
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Emir_Useyin_Chalbash
+				small = GFX_CRI_Emir_Useyin_Chalbash_advisor
+			}
+		}
+		corps_commander={
+			traits={ war_hero infantry_officer }
+			skill = 2
+            attack_skill = 1
+            defense_skill = 2
+            planning_skill = 1
+            logistics_skill = 4
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = air_chief
+			idea_token = CRI_Emir_Useyin_Chalbash
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				air_chief_ground_support_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	CRI_Jzhevdet_Dermendzhy = {
+		name = CRI_Jzhevdet_Dermendzhy
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Jzhevdet_Dermendzhy
+				small = GFX_CRI_Jzhevdet_Dermendzhy_advisor
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer inflexible_strategist }
+			skill = 3
+            attack_skill = 2
+            defense_skill = 5
+            planning_skill = 1
+            logistics_skill = 1
+		
+		}
+		advisor= {
+		    cost = 150
+			slot = theorist
+			idea_token = CRI_Emir_Useyin_Chalbash
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				mass_assault_expert
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	CRI_Agatangel_Krymskyi = {
+		name = CRI_Agatangel_Krymskyi
+		portraits = {
+			civilian = {
+				small = GFX_CRI_Agatangel_Krymskyi_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CRI_Agatangel_Krymskyi
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				CRI_scientist
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	CRI_Asan_Ayvazovi = {
+		name = CRI_Asan_Ayvazovi
+		portraits = {
+			civilian = {
+				small = GFX_CRI_Asan_Ayvazovi_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CRI_Asan_Ayvazovi
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				popular_figurehead
+			}
+			do_effect = {
+				
+			}
+			
+		}
+	}
+	CRI_Amet_Ozenbashly = {
+		name = CRI_Amet_Ozenbashly
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Amet_Ozenbashly
+				small = GFX_CRI_Amet_Ozenbashly_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CRI_Amet_Ozenbashly
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				silent_workhorse
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { war_hero brilliant_strategist scavenger harsh_leader }
+            skill = 5
+            attack_skill = 5
+			defense_skill = 6
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+	}
+	CRI_Osman_Akchokrakli = {
+		name = CRI_Osman_Akchokrakli
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Osman_Akchokrakli
+				small = GFX_CRI_Osman_Akchokrakli_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CRI_Osman_Akchokrakli
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				liberal_journalist
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { war_hero infantry_officer }
+            skill = 4
+            attack_skill = 2
+			defense_skill = 4
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+	}
+	CRI_Useyin_Bodaninskyi = {
+		name = CRI_Useyin_Bodaninskyi
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Useyin_Bodaninskyi
+				small = GFX_CRI_Useyin_Bodaninskyi_advisor
+			}
+		}
+		advisor= {
+		    cost = 200
+			slot = political_advisor
+			idea_token = CRI_Useyin_Bodaninskyi
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				CRI_artist
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { war_hero inflexible_strategist }
+            skill = 6
+            attack_skill = 3
+			defense_skill = 7
+			planning_skill = 2
+			logistics_skill = 6
+            
+        }
+	}
+	CRI_Yakub_Kemal = {
+		name = CRI_Yakub_Kemal
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Yakub_Kemal
+				small = GFX_CRI_Yakub_Kemal_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = CRI_Yakub_Kemal
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				industry_magnate
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { war_hero infantry_officer scavenger }
+            skill = 2
+            attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+            
+        }
+	}
+	CRI_Abdul_Teyfuk = {
+		name = CRI_Abdul_Teyfuk
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Abdul_Teyfuk
+				small = GFX_CRI_Abdul_Teyfuk_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = CRI_Abdul_Teyfuk
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				army_logistics_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { infantry_officer }
+            skill = 5
+            attack_skill = 3
+			defense_skill = 1
+			planning_skill = 7
+			logistics_skill = 8
+            
+        }
+	}
+	CRI_Anatolyi_Abilov = {
+		name = CRI_Anatolyi_Abilov
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Anatolyi_Abilov
+				small = GFX_CRI_Anatolyi_Abilov_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = CRI_Anatolyi_Abilov
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				army_infantry_2
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { infantry_officer inflexible_strategist }
+            skill = 3
+            attack_skill = 1
+			defense_skill = 5
+			planning_skill = 1
+			logistics_skill = 2
+            
+        }
+	}
+	CRI_Dzhafer_Osman_Topchi = {
+		name = CRI_Dzhafer_Osman_Topchi
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Dzhafer_Osman_Topchi
+				small = GFX_CRI_Dzhafer_Osman_Topchi_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = CRI_Dzhafer_Osman_Topchi
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				army_regrouping_1
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { infantry_officer scavenger brilliant_strategist }
+            skill = 5
+            attack_skill = 5
+			defense_skill = 5
+			planning_skill = 8
+			logistics_skill = 2
+            
+        }
+	}
+	CRI_Emir_Luimanov = {
+		name = CRI_Emir_Luimanov
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Emir_Luimanov
+				small = GFX_CRI_Emir_Luimanov_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = CRI_Emir_Luimanov
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { scavenger }
+            skill = 1
+            attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+            
+        }
+	}
+	CRI_Igor_Komnen_Paleolog = {
+		name = CRI_Igor_Komnen_Paleolog
+		portraits = {
+			civilian = {
+				large = GFX_CRI_Igor_Komnen_Paleolog
+				small = GFX_CRI_Igor_Komnen_Paleolog_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = CRI_Igor_Komnen_Paleolog
+			allowed = {
+				original_tag = CRI
+			}
+			available = {
+			   
+				
+			}
+			traits = {
+				army_artillery_3
+			}
+			do_effect = {
+				
+			}
+			
+		}
+		corps_commander = {
+            traits = { war_hero infantry_officer inflexible_strategist }
+            skill = 7
+            attack_skill = 5
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 3
+            
+        }
+	}
+}
+	

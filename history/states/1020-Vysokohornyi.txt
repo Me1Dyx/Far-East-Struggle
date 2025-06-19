@@ -1,0 +1,24 @@
+state={
+	id=1020
+	name="STATE_1020"
+	
+	state_category = town
+
+	history = {
+		owner = ZEL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = SOV
+		add_core_of = FER
+		add_core_of = ZEL
+	}
+	
+	provinces={
+		1267 1325 1343 1397 3756 3963 4404 4841 6774 7249 7309 7868 9589 9604 9733 9749 11575 11719 12136 
+	}
+	manpower=541465
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

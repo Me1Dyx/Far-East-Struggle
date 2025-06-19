@@ -1,0 +1,401 @@
+characters = {
+
+	SIR_Hryhoryi_Koncevych = {
+		name = SIR_Hryhoryi_Koncevych
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SIR_Hryhoryi_Koncevych
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+			
+		}
+		country_leader = {
+			ideology = conservatism
+			expire = "1980.3.1"
+			id = -1
+			traits = { }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = SIR_Hryhoryi_Koncevych
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				democratic_reformer 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+
+	SIR_Pavlo_Potapenko = {
+		name = SIR_Pavlo_Potapenko
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SIR_Pavlo_Potapenko
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+		}
+		country_leader = {
+			ideology = marxism
+			expire = "1970.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = SIR_Pavlo_Potapenko
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				communist_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+
+	SIR_Volodymyr_Yanovyckyi = {
+		name = SIR_Volodymyr_Yanovyckyi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SIR_Volodymyr_Yanovyckyi
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			expire = "1953.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = SIR_Volodymyr_Yanovyckyi
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				fascist_demagogue 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	
+	SIR_Mykola_Novoselskyi = {
+		name = SIR_Mykola_Novoselskyi
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SIR_Volodymyr_Yanovyckyi
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1953.3.1"
+			id = -1
+			traits = {  }
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = SIR_Mykola_Novoselskyi
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				social_revolutionary 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	SIR_Dmytro_Adamovych = {
+		name = SIR_Dmytro_Adamovych
+		portraits = {
+			civilian = {
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = SIR_Dmytro_Adamovych
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				silent_workhorse 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	SIR_Dmytro_Sulyma = {
+		name = SIR_Dmytro_Sulyma
+		portraits = {
+			civilian = {
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+		}
+		advisor= {
+		    cost = 150
+			slot = political_advisor
+			idea_token = SIR_Dmytro_Sulyma
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				SIR_Minister_U_Spravah_Exterytorialnyh_Narodiv 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+		
+	}
+	SIR_Butyrskyi = {
+		name = SIR_Butyrskyi
+		portraits = {
+			army={
+				large = GFX_portrait_SIR_Butyrskyi
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+		}
+		field_marshal = {
+            traits = { infantry_officer }
+            skill = 4
+            attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+            
+        }
+		advisor= {
+		    cost = 100
+			slot = army_chief
+			idea_token = SIR_Butyrskyi
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_chief_defensive_1 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	SIR_Myron = {
+		name = SIR_Myron
+		portraits = {
+			army={
+				large = GFX_portrait_SIR_Myron
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+		}
+		field_marshal = {
+            traits = { infantry_officer }
+            skill = 4
+            attack_skill = 5
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = theorist
+			idea_token = SIR_Myron
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				mass_assault_expert 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	SIR_Doktor_Hryvych = {
+		name = SIR_Doktor_Hryvych
+		portraits = {
+			army={
+				large = GFX_portrait_SIR_Doktor_Hryvych
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+		}
+		corps_commander = {
+            traits = { }
+            skill = 1
+            attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = SIR_Doktor_Hryvych
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_logistics_1 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	SIR_Vladyslav_Strokan = {
+		name = SIR_Vladyslav_Strokan
+		portraits = {
+			army={
+				large = GFX_portrait_SIR_Vladyslav_Strokan
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+		}
+		corps_commander = {
+            traits = { }
+            skill = 3
+            attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = SIR_Vladyslav_Strokan
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_infantry_2 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	SIR_Volodymyr_Nahirnyi = {
+		name = SIR_Volodymyr_Nahirnyi
+		portraits = {
+			army={
+				large = GFX_portrait_SIR_Volodymyr_Nahirnyi
+				small = GFX_SIR_Hryhoryi_Koncevych_advisor
+			}
+		}
+		corps_commander = {
+            traits = { }
+            skill = 2
+            attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+            
+        }
+		advisor= {
+		    cost = 150
+			slot = high_command
+			idea_token = SIR_Volodymyr_Nahirnyi
+			allowed = {
+				original_tag = SIR
+			}
+			available = {
+				
+			}
+			traits = {
+				army_regrouping_2 
+			}
+			do_effect = {
+				NOT = {
+					
+				}
+			}
+			
+		}
+	}
+	
+}
+	

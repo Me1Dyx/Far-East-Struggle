@@ -1,0 +1,52 @@
+state={
+	id=1019
+	name="STATE_1019"
+	history = {
+		owner = ZEL
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			arms_factory = 1
+		}
+		victory_points = {
+			7616 2
+		}
+		victory_points = {
+			12678 5
+		}
+		victory_points = {
+			6833 1
+		}
+		victory_points = {
+			1267 2
+		}
+		victory_points = {
+			12657 1
+		}
+		victory_points = {
+			12559 3
+		}
+		victory_points = {
+			12638 1
+		}
+		victory_points = {
+			7851 1
+		}
+		victory_points = {
+			12622 1
+		}
+		victory_points = {
+			10681 1
+		}
+		add_core_of = SOV
+		add_core_of = FER
+		add_core_of = ZEL
+	}
+	provinces={
+		675 1802 4246 4701 4725 4779 4829 7616 7763 7801 10655 12192 12261 12263 12654 
+	}
+	manpower=308380
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=2.000
+}

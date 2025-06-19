@@ -1,0 +1,37 @@
+state={
+	id=408
+	name="STATE_408"
+	resources={
+		chromium=14.000
+	}
+	
+
+	history={
+		owner = ZEL
+		victory_points = {
+			957 15
+		}
+		buildings = {
+			infrastructure = 2
+			dockyard = 1
+			industrial_complex = 1
+			arms_factory = 1
+			air_base = 5
+			957 = {
+				naval_base = 8
+				coastal_bunker = 3
+			}
+		}
+		add_core_of = SOV
+		add_core_of = FER
+		add_core_of = VLA
+		add_core_of = ZEL
+	}
+	provinces={
+		957 3977 6838 6961 6989 11879 
+	}
+	manpower=841465
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=5.000
+}

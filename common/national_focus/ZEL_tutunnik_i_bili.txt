@@ -1,0 +1,1381 @@
+focus_tree = {
+	id = ZEL_tutunnik_i_bili
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZEL
+		}
+	}
+	default = no
+	focus = {
+		id = ZEL_neochikuvane_povernennya
+		icon = GFX_focus_i_always_come_back
+		cost = 5
+		x = 32
+		y = 0
+
+	}
+	focus = {
+		id = ZEL_reformirovaty_economiku
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = ZEL_armiya
+		icon = GFX_goal_unknown
+		cost = 5
+		completion_reward = {
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+
+		available = {
+			has_completed_focus = ZEL_shkola_oficeriv
+		}
+		x = 20
+		y = 0
+
+	}
+	focus = {
+		id = ZEL_agrarian_reform
+		icon = GFX_goal_generic_production2
+		cost = 3
+		prerequisite = {
+			focus = ZEL_reformirovaty_economiku
+		}
+		x = 7
+		y = 1
+
+	}
+	focus = {
+		id = ZEL_daty_ludyam_zemlu
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_agrarian_reform
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_zavodiki_milit_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 1
+		prerequisite = {
+			focus = ZEL_reformirovaty_economiku
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = ZEL_zavodiki_milit_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 2
+		prerequisite = {
+			focus = ZEL_zavodiki_milit_1
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_vyiskova_economika
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_zavodiki_milit_2
+		}
+		prerequisite = {
+			focus = ZEL_daty_ludyam_zemlu
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_zavodiki_1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 1
+		prerequisite = {
+			focus = ZEL_reformirovaty_economiku
+		}
+		x = 11
+		y = 1
+
+	}
+	focus = {
+		id = ZEL_zavodiki_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 2
+		prerequisite = {
+			focus = ZEL_zavodiki_1
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_infrastructura_derzhavy
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = ZEL_reformirovaty_economiku
+		}
+		x = 13
+		y = 1
+
+	}
+	focus = {
+		id = ZEL_shkoly_po_vsiy_kraini
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_infrastructura_derzhavy
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_investyciyi
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = ZEL_reformirovaty_economiku
+		}
+		x = 15
+		y = 1
+
+	}
+	focus = {
+		id = ZEL_klasni_umovy
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = ZEL_investyciyi
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_slot
+		icon = GFX_focus_research
+		cost = 0
+		prerequisite = {
+			focus = ZEL_klasni_umovy
+		}
+		prerequisite = {
+			focus = ZEL_shkoly_po_vsiy_kraini
+		}
+		prerequisite = {
+			focus = ZEL_zavodiki_2
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_stabilna_economika
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_slot
+		}
+		prerequisite = {
+			focus = ZEL_vyiskova_economika
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_SVU
+		icon = GFX_goal_unknown
+		cost = 3
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Armiya_klyna
+				add_idea = Armiya_klyna_1
+			}
+		}
+		prerequisite = {
+			focus = ZEL_armiya
+		}
+		x = 19
+		y = 1
+
+	}
+	focus = {
+		id = ZEL_ph_spor
+		icon = GFX_goal_generic_military_sphere
+		cost = 2
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+		prerequisite = {
+			focus = ZEL_SVU
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_tanks
+		icon = GFX_goal_generic_army_tanks
+		cost = 1
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+		prerequisite = {
+			focus = ZEL_ph_spor
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_osna
+		icon = GFX_goal_generic_army_artillery
+		cost = 1
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = night_vision
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = hospital_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = logistics_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = support_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = engineers_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = recon_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = military_police_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = logistics_tech
+			}
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 1
+				category = signal_company_tech
+			}
+		}
+		prerequisite = {
+			focus = ZEL_ph_spor
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_art
+		icon = GFX_goal_generic_army_artillery2
+		cost = 1
+		completion_reward = {
+			add_tech_bonus = {
+					name = infantry_artillery_bonus
+					bonus = 1.0
+					uses = 2
+					category = artillery
+				}
+		}
+		prerequisite = {
+			focus = ZEL_osna
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_moto
+		icon = GFX_goal_generic_army_motorized
+		cost = 1
+		completion_reward = {
+			add_tech_bonus = {
+					bonus = 0.75
+					uses = 1
+					category = motorized_equipment
+				}
+		}
+		prerequisite = {
+			focus = ZEL_tanks
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_doctr_1
+		icon = GFX_goal_generic_army_doctrines
+		cost = 1
+		completion_reward = {
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+		prerequisite = {
+			focus = ZEL_SVU
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_doctr_2
+		icon = GFX_goal_generic_army_doctrines
+		cost = 2
+		completion_reward = {
+			army_experience = 20
+			add_doctrine_cost_reduction = {
+					name = land_doc_bonus
+					cost_reduction = 0.5
+					uses = 1
+					category = land_doctrine
+				}
+		}
+		prerequisite = {
+			focus = ZEL_doctr_1
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_doctr_3
+		icon = GFX_goal_generic_army_doctrines
+		cost = 3
+		completion_reward = {
+			army_experience = 25
+			add_doctrine_cost_reduction = {
+					name = land_doc_bonus
+					cost_reduction = 0.5
+					uses = 1
+					category = land_doctrine
+				}
+		}
+		prerequisite = {
+			focus = ZEL_doctr_2
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_mohutnya_armiya
+		icon = GFX_goal_unknown
+		cost = 5
+		completion_reward = {
+			add_political_power = -250
+			add_research_slot = 1
+		}
+		available = {
+			has_political_power > 250
+		}
+		prerequisite = {
+			focus = ZEL_doctr_3
+		}
+		prerequisite = {
+			focus = ZEL_moto
+		}
+		prerequisite = {
+			focus = ZEL_art
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_reformuvaty_oficiren
+		icon = GFX_goal_unknown
+		cost = 4
+		completion_reward = {
+			add_political_power = -200
+			swap_ideas = {
+				remove_idea = Nestacha_officeriv_1
+				add_idea = Nestacha_officeriv_2
+			}
+		}
+
+		available = {
+				has_political_power > 200
+		}
+		prerequisite = {
+			focus = ZEL_armiya
+		}
+		x = 21
+		y = 1
+
+	}
+	focus = {
+		id = ZEL_nabir_oficeriv
+		icon = GFX_goal_unknown
+		cost = 8
+		completion_reward = {
+			add_political_power = -350
+			add_manpower = -10000
+			swap_ideas = {
+				remove_idea = Nestacha_officeriv_2
+				add_idea = Dostatnya_kilkist_officeriv
+			}
+		}
+		available = {
+				has_political_power > 350
+				has_manpower > 10000
+		}
+		prerequisite = {
+			focus = ZEL_reformuvaty_oficiren
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_elite
+		icon = GFX_goal_unknown
+		cost = 2
+		completion_reward = {
+			add_ideas = profesiyna_armiya
+		}
+		prerequisite = {
+			focus = ZEL_nabir_oficeriv
+		}
+		mutually_exclusive = {
+			focus = ZEL_not_elit
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_not_elit
+		icon = GFX_goal_unknown
+		cost = 2
+		completion_reward = {
+			add_ideas = narodna_armiya
+		}
+		prerequisite = {
+			focus = ZEL_nabir_oficeriv
+		}
+		mutually_exclusive = {
+			focus = ZEL_elite
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_fin_of_res
+		icon = GFX_focus_research
+		cost = 5
+		completion_reward = {
+			add_political_power = -250
+			add_research_slot = 1
+		}
+		available = {
+			has_political_power > 250
+		}
+		prerequisite = {
+			focus = ZEL_elite
+			focus = ZEL_not_elit
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_rakety
+		icon = GFX_focus_rocketry
+		cost = 5
+		completion_reward = {
+		    add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 1
+				category = rocketry
+			}
+		}
+		prerequisite = {
+			focus = ZEL_not_elit
+			focus = ZEL_elite
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_atomka
+		icon = GFX_focus_wonderweapons
+		cost = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				ahead_reduction = 2
+				category = nuclear
+			}
+		}
+		prerequisite = {
+			focus = ZEL_rakety
+		}
+		prerequisite = {
+			focus = ZEL_fin_of_res
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_bili_v_Vladivostoki
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_neochikuvane_povernennya
+		}
+		x = 31
+		y = 1
+
+	}
+	focus = {
+		id = ZEL_voenna_dictatura
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = ZEL_bili_v_Vladivostoki
+		}
+		mutually_exclusive = {
+			focus = ZEL_vostanovyty_respubliku
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_vostanovyty_respubliku
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = ZEL_bili_v_Vladivostoki
+		}
+		mutually_exclusive = {
+			focus = ZEL_voenna_dictatura
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_zaprosyty_bilyh
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_vostanovyty_respubliku
+			focus = ZEL_voenna_dictatura
+		}
+		x = 30
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_reformuvaty_krainu_po_novyi
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 2
+		prerequisite = {
+			focus = ZEL_zaprosyty_bilyh
+		}
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_investyciya_soyuznykiv
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_zaprosyty_bilyh
+		}
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_mizhnarodne_pryznannya
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_investyciya_soyuznykiv
+		}
+		x = 30
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_pomsta_za_1905
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_mizhnarodne_pryznannya
+		}
+		x = 30
+		y = 6
+
+	}
+	focus = {
+		id = ZEL_prydushyty_chervonu_zarazu
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_pomsta_za_1905
+		}
+		x = 30
+		y = 7
+
+	}
+	focus = {
+		id = ZEL_velyke_finske_knyazivstvo
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_prydushyty_chervonu_zarazu
+		}
+		x = 30
+		y = 8
+
+	}
+	focus = {
+		id = ZEL_tutunnik_bere_vladu
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_neochikuvane_povernennya
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = {
+		id = ZEL_imperski_ambiciyi
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_tutunnik_bere_vladu
+		}
+		mutually_exclusive = {
+			focus = ZEL_ukrainski_ambiciyi
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_rosiyska_intelehenciya
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_imperski_ambiciyi
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_rosyiski_kapitalisty
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ZEL_rosiyska_intelehenciya
+		}
+		x = 32
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_ukrainski_ambiciyi
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = ZEL_tutunnik_bere_vladu
+		}
+		mutually_exclusive = {
+			focus = ZEL_imperski_ambiciyi
+		}
+		x = 39
+		y = 2
+
+	}
+	focus = {
+		id = ZEL_nova_kraina
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = ZEL_ukrainski_ambiciyi
+			focus = ZEL_imperski_ambiciyi
+		}
+		x = 36
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_rosiyski_ministry
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_rosiyska_intelehenciya
+		}
+		prerequisite = {
+			focus = ZEL_nova_kraina
+		}
+		x = 34
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_ukrainska_intelehenciya
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = ZEL_ukrainski_ambiciyi
+		}
+		x = 39
+		y = 3
+
+	}
+	focus = {
+		id = ZEL_ukrainski_ministry
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_nova_kraina
+		}
+		prerequisite = {
+			focus = ZEL_ukrainska_intelehenciya
+		}
+		x = 38
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_reforma_economiky_Klyna
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_ukrainski_ministry
+		}
+		x = 38
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_reforma_mist_i_sil
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ZEL_reforma_economiky_Klyna
+		}
+		x = 38
+		y = 6
+
+	}
+	focus = {
+		id = ZEL_ukrainska_mova
+		icon = GFX_goal_unknown
+		cost = 1
+		prerequisite = {
+			focus = ZEL_reforma_mist_i_sil
+		}
+		x = 38
+		y = 7
+
+	}
+	focus = {
+		id = ZEL_osvita_ludei
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = ZEL_ukrainska_mova
+		}
+		x = 38
+		y = 8
+
+	}
+	focus = {
+		id = ZEL_ukrainska_kultura
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_ukrainska_intelehenciya
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = ZEL_veterany_kozaky
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_ukrainska_kultura
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_veterany_galickoyi_armiyi
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = ZEL_ukrainska_kultura
+		}
+		x = 44
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_veterany_sichovyh_strilciv
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_ukrainska_kultura
+		}
+		x = 46
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_armiya_novoi_Ukraini
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = ZEL_veterany_kozaky
+		}
+		prerequisite = {
+			focus = ZEL_veterany_galickoyi_armiyi
+		}
+		prerequisite = {
+			focus = ZEL_veterany_sichovyh_strilciv
+		}
+		x = 40
+		y = 6
+
+	}
+	focus = {
+		id = ZEL_derusyfikaciya
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = ZEL_armiya_novoi_Ukraini
+		}
+		x = 40
+		y = 7
+
+	}
+	focus = {
+		id = ZEL_nova_cerkva
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_derusyfikaciya
+		}
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = ZEL_veterany_UNR
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ZEL_ukrainska_kultura
+		}
+		x = 42
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_novi_shkoly
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 4
+		prerequisite = {
+			focus = ZEL_armiya_novoi_Ukraini
+		}
+		x = 42
+		y = 7
+
+	}
+	focus = {
+		id = ZEL_oficerska_academiya
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_novi_shkoly
+		}
+		prerequisite = {
+			focus = ZEL_kult_Shevchenka
+		}
+		x = 42
+		y = 8
+
+	}
+	focus = {
+		id = ZEL_chas_pryishov
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_osvita_ludei
+		}
+		prerequisite = {
+			focus = ZEL_nova_cerkva
+		}
+		prerequisite = {
+			focus = ZEL_oficerska_academiya
+		}
+		mutually_exclusive = {
+			focus = ZEL_nastalo_vremya
+		}
+		x = 39
+		y = 9
+
+	}
+	focus = {
+		id = ZEL_navchanya_rosiyskoyi
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = ZEL_reformuvaty_krainu_po_novyi
+		}
+		x = 28
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_obrazovaniye_kresteyan
+		icon = GFX_focus_research
+		cost = 2
+		prerequisite = {
+			focus = ZEL_navchanya_rosiyskoyi
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = ZEL_anty_bilshovycka_propaganda
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_navchanya_rosiyskoyi
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = ZEL_armiya_narodu
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 6
+		prerequisite = {
+			focus = ZEL_navchanya_rosiyskoyi
+		}
+		x = 28
+		y = 6
+
+	}
+	focus = {
+		id = ZEL_intelehenciya
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = ZEL_obrazovaniye_kresteyan
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = ZEL_universytet_vladivostoku
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 0
+		prerequisite = {
+			focus = ZEL_obrazovaniye_kresteyan
+		}
+		x = 24
+		y = 7
+
+	}
+	focus = {
+		id = ZEL_dosvid_revoluciyi
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = ZEL_anty_bilshovycka_propaganda
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = ZEL_bilohvardiyci
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ZEL_armiya_narodu
+		}
+		x = 28
+		y = 7
+
+	}
+	focus = {
+		id = ZEL_z_namy_boh
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_universytet_vladivostoku
+		}
+		prerequisite = {
+			focus = ZEL_intelehenciya
+		}
+		x = 22
+		y = 8
+
+	}
+	focus = {
+		id = ZEL_z_namy_tsar
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_bilohvardiyci
+		}
+		prerequisite = {
+			focus = ZEL_dosvid_revoluciyi
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = ZEL_peremozhemo_v_cei_raz
+		icon = GFX_goal_unknown
+		cost = 2
+		prerequisite = {
+			focus = ZEL_dosvid_revoluciyi
+		}
+		prerequisite = {
+			focus = ZEL_universytet_vladivostoku
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = ZEL_Russian_Imperia
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_z_namy_boh
+		}
+		prerequisite = {
+			focus = ZEL_peremozhemo_v_cei_raz
+		}
+		prerequisite = {
+			focus = ZEL_z_namy_tsar
+		}
+		mutually_exclusive = {
+			focus = ZEL_nova_Federaciya
+		}
+		x = 23
+		y = 9
+
+	}
+	focus = {
+		id = ZEL_nova_Federaciya
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_z_namy_tsar
+		}
+		prerequisite = {
+			focus = ZEL_peremozhemo_v_cei_raz
+		}
+		prerequisite = {
+			focus = ZEL_z_namy_boh
+		}
+		mutually_exclusive = {
+			focus = ZEL_Russian_Imperia
+		}
+		x = 25
+		y = 9
+
+	}
+	focus = {
+		id = ZEL_povernuty_polshu
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_prydushyty_chervonu_zarazu
+		}
+		x = 28
+		y = 8
+
+	}
+	focus = {
+		id = ZEL_bilohvardiyski_veterany
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = ZEL_rosiyski_ministry
+		}
+		x = 32
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_pryznanya_yak_derzhavy
+		icon = GFX_goal_generic_demand_territory
+		cost = 3
+		prerequisite = {
+			focus = ZEL_bilohvardiyski_veterany
+		}
+		x = 32
+		y = 6
+
+	}
+	focus = {
+		id = ZEL_dalnevostochna_rosiyska_derzhava
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_pryznanya_yak_derzhavy
+		}
+		x = 32
+		y = 7
+
+	}
+	focus = {
+		id = ZEL_reforma_navchanya_v_mistah
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = ZEL_rosiyski_ministry
+		}
+		prerequisite = {
+			focus = ZEL_rosyiski_kapitalisty
+		}
+		x = 34
+		y = 5
+
+	}
+	focus = {
+		id = ZEL_rosyiska_mova
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ZEL_reforma_navchanya_v_mistah
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = ZEL_vykoryty_bilshovykiv
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5
+		prerequisite = {
+			focus = ZEL_dalnevostochna_rosiyska_derzhava
+		}
+		x = 32
+		y = 8
+
+	}
+	focus = {
+		id = ZEL_economichna_reforma
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_rosyiska_mova
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = ZEL_reforma_cerkvy
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = ZEL_economichna_reforma
+		}
+		x = 34
+		y = 8
+
+	}
+	focus = {
+		id = ZEL_velychna_kraina
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_chas_pryishov
+			focus = ZEL_nastalo_vremya
+		}
+		prerequisite = {
+			focus = ZEL_nova_kraina
+		}
+		x = 36
+		y = 10
+
+	}
+	focus = {
+		id = ZEL_nastalo_vremya
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = ZEL_reforma_cerkvy
+		}
+		prerequisite = {
+			focus = ZEL_vykoryty_bilshovykiv
+		}
+		mutually_exclusive = {
+			focus = ZEL_chas_pryishov
+		}
+		x = 33
+		y = 9
+
+	}
+	focus = {
+		id = ZEL_zahopyty_yaponski_zemli
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_velychna_kraina
+		}
+		x = 36
+		y = 11
+
+	}
+	focus = {
+		id = ZEL_pomsta_za_vse
+		icon = GFX_goal_unknown
+		cost = 10
+		prerequisite = {
+			focus = ZEL_zahopyty_yaponski_zemli
+		}
+		x = 36
+		y = 12
+
+	}
+	focus = {
+		id = ZEL_Ukrainska_imperiya
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ZEL_POL
+		}
+		prerequisite = {
+			focus = ZEL_finland
+		}
+		mutually_exclusive = {
+			focus = ZEL_nova_Russo_Ukro_Imperia
+		}
+		x = 37
+		y = 14
+
+	}
+	focus = {
+		id = ZEL_nova_Russo_Ukro_Imperia
+		icon = GFX_goal_unknown
+		cost = 5
+		prerequisite = {
+			focus = ZEL_POL
+		}
+		prerequisite = {
+			focus = ZEL_finland
+		}
+		mutually_exclusive = {
+			focus = ZEL_Ukrainska_imperiya
+		}
+		x = 35
+		y = 14
+
+	}
+	focus = {
+		id = ZEL_finland
+		icon = GFX_goal_unknown
+		cost = 3
+		prerequisite = {
+			focus = ZEL_pomsta_za_vse
+		}
+		x = 35
+		y = 13
+
+	}
+	focus = {
+		id = ZEL_POL
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = ZEL_pomsta_za_vse
+		}
+		x = 37
+		y = 13
+
+	}
+	focus = {
+		id = ZEL_kult_Shevchenka
+		icon = GFX_goal_unknown
+		cost = 4
+		prerequisite = {
+			focus = ZEL_armiya_novoi_Ukraini
+		}
+		x = 44
+		y = 7
+
+	}
+}

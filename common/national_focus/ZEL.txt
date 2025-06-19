@@ -1,0 +1,5610 @@
+focus_tree = {
+	id = ZEL
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ZEL
+		}
+	}
+	default = no
+	focus = {
+		id = ZEL_dolya_klyna
+		icon = GFX_focus_KLYN
+		cost = 10
+		x = 32
+		y = 0
+				completion_reward = {
+						add_political_power = 150
+					}
+
+
+	}
+	focus = {
+		id = ZEL_economika_ZEL
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5
+		x = 54
+		y = 0
+				completion_reward = {
+						add_tech_bonus = {
+								name = industrial_bonus
+								bonus = 2.0
+								uses = 2
+								category = industry
+							}
+					}
+
+				available = {
+						has_completed_focus = ZEL_dolya_klyna
+					}
+
+
+	}
+	focus = {
+		id = ZEL_armiya_ZEL
+		icon = GFX_focus_ZEL_army
+		cost = 5
+		x = 68
+		y = 0
+				completion_reward = {
+						army_experience = 15
+						add_doctrine_cost_reduction = {
+								name = land_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = land_doctrine
+							}
+					}
+
+				available = {
+						has_completed_focus = ZEL_shkola_oficeriv
+					}
+
+
+	}
+	focus = {
+		id = ZEL_aviaciya_ZEL
+		icon = GFX_goal_generic_build_airforce
+		cost = 5
+		x = 76
+		y = 0
+				completion_reward = {
+						air_experience = 25
+						if = {
+								limit = {
+										capital_scope = {
+												NOT = {
+														free_building_slots = {
+																building = air_base
+																size > 2
+															}
+													}
+											}
+									}
+								random_owned_controlled_state = {
+										limit = {
+												free_building_slots = {
+														building = air_base
+														size > 2
+													}
+											}
+										add_building_construction = {
+												type = air_base
+												level = 2
+												instant_build = yes
+											}
+										ROOT = {
+												set_country_flag = aviation_effort_AB
+											}
+									}
+							}
+						if = {
+								limit = {
+										capital_scope = {
+												free_building_slots = {
+														building = air_base
+														size > 2
+													}
+											}
+									}
+								capital_scope = {
+										add_building_construction = {
+												type = air_base
+												level = 3
+												instant_build = yes
+											}
+										ROOT = {
+												set_country_flag = aviation_effort_AB
+											}
+									}
+							}
+						add_doctrine_cost_reduction = {
+								name = air_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = air_doctrine
+							}
+						custom_effect_tooltip = available_political_advisor
+						show_ideas_tooltip = ZEL_Yahno_Pavlo
+					}
+
+				available = {
+						has_completed_focus = ZEL_dolya_klyna
+					}
+
+
+	}
+	focus = {
+		id = ZEL_fleet
+		icon = GFX_goal_generic_build_navy
+		cost = 3
+		x = 82
+		y = 0
+				completion_reward = {
+						navy_experience = 25
+						if = {
+								limit = {
+										NOT = {
+												any_owned_state = {
+														dockyard > 0
+														free_building_slots = {
+																building = dockyard
+																size > 2
+																include_locked = yes
+															}
+													}
+											}
+										any_owned_state = {
+												is_coastal = yes
+											}
+									}
+								random_owned_controlled_state = {
+										limit = {
+												is_coastal = yes
+												free_building_slots = {
+														building = dockyard
+														size > 2
+														include_locked = yes
+													}
+											}
+										add_extra_state_shared_building_slots = 3
+										add_building_construction = {
+												type = dockyard
+												level = 3
+												instant_build = yes
+											}
+									}
+								set_country_flag = naval_effort_built
+							}
+						if = {
+								limit = {
+										NOT = {
+												has_country_flag = naval_effort_built
+											}
+										any_owned_state = {
+												dockyard > 0
+												free_building_slots = {
+														building = dockyard
+														size > 2
+														include_locked = yes
+													}
+											}
+									}
+								random_owned_controlled_state = {
+										limit = {
+												dockyard > 0
+												free_building_slots = {
+														building = dockyard
+														size > 2
+														include_locked = yes
+													}
+											}
+										add_extra_state_shared_building_slots = 3
+										add_building_construction = {
+												type = dockyard
+												level = 3
+												instant_build = yes
+											}
+									}
+								set_country_flag = naval_effort_built
+							}
+						if = {
+								limit = {
+										NOT = {
+												has_country_flag = naval_effort_built
+											}
+										NOT = {
+												any_owned_state = {
+														free_building_slots = {
+																building = dockyard
+																size > 2
+																include_locked = yes
+															}
+													}
+											}
+									}
+								random_state = {
+										limit = {
+												controller = {
+														tag = ROOT
+													}
+												free_building_slots = {
+														building = dockyard
+														size > 2
+														include_locked = yes
+													}
+											}
+										add_extra_state_shared_building_slots = 3
+										add_building_construction = {
+												type = dockyard
+												level = 3
+												instant_build = yes
+											}
+									}
+							}
+					}
+
+				available = {
+						has_completed_focus = ZEL_dolya_klyna
+					}
+
+
+	}
+	focus = {
+		id = ZEL_shkola_oficeriv
+		icon = GFX_focus_officers
+		cost = 5
+		prerequisite = {
+			focus = ZEL_dolya_klyna
+		}
+		x = 30
+		y = 1
+				completion_reward = {
+						swap_ideas = {
+								remove_idea = Nestacha_officeriv
+								add_idea = Nestacha_officeriv_1
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_napysaty_novu_konstituciyu
+		icon = GFX_focus_constituition
+		cost = 5
+		prerequisite = {
+			focus = ZEL_dolya_klyna
+		}
+		x = 32
+		y = 1
+				completion_reward = {
+						add_political_power = -100
+						add_ideas = Constituciya
+					}
+
+
+	}
+	focus = {
+		id = ZEL_novyi_shlyah
+		icon = GFX_focus_new
+		cost = 2
+		prerequisite = {
+			focus = ZEL_shkola_oficeriv
+		}
+		prerequisite = {
+			focus = ZEL_napysaty_novu_konstituciyu
+		}
+		mutually_exclusive = {
+			focus = ZEL_shlyah_svobody
+		}
+		x = 31
+		y = 2
+				completion_reward = {
+						add_ideas = nova_polityka
+					}
+
+
+	}
+	focus = {
+		id = ZEL_daty_robitnykam_svobodu
+		icon = GFX_goal_generic_soviet_construction
+		cost = 5
+		prerequisite = {
+			focus = ZEL_novyi_shlyah
+		}
+		mutually_exclusive = {
+			focus = ZEL_opolchyty_OUN
+		}
+		x = 19
+		y = 3
+				completion_reward = {
+						set_politics = {
+								ruling_party = communism
+								elections_allowed = no
+								last_election = "1936.1.1"
+								election_frequency = 48
+							}
+						set_popularities = {
+								democratic = 10
+								neutrality = 15
+								fascism = 25
+								communism = 50
+							}
+						add_ideas = nedovira_comunistam
+						add_stability = -0.25
+						add_political_power = 150
+					}
+
+
+	}
+	focus = {
+		id = ZEL_Poemy_Bureviya
+		icon = GFX_focus_poems
+		cost = 1
+		prerequisite = {
+			focus = ZEL_daty_robitnykam_svobodu
+		}
+		x = 15
+		y = 4
+				completion_reward = {
+						add_stability = 0.10
+						add_war_support = 0.10
+						swap_ideas = {
+								remove_idea = nedovira_comunistam
+								add_idea = slabka_dovira_comunistam
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_reforma_promyslovosti
+		icon = GFX_goal_generic_consumer_goods
+		cost = 6
+		prerequisite = {
+			focus = ZEL_daty_robitnykam_svobodu
+		}
+		x = 17
+		y = 4
+				completion_reward = {
+						add_political_power = -200
+						add_ideas = reformovana_promyslovist
+						add_tech_bonus = {
+								name = industrial_bonus
+								bonus = 1.0
+								uses = 1
+								category = industry
+							}
+					}
+
+				available = {
+						has_political_power > 200
+					}
+
+
+	}
+	focus = {
+		id = ZEL_pidtrymka_narodu
+		icon = GFX_goal_generic_demand_territory
+		cost = 1
+		prerequisite = {
+			focus = ZEL_Poemy_Bureviya
+		}
+		prerequisite = {
+			focus = ZEL_reforma_promyslovosti
+		}
+		x = 16
+		y = 5
+				completion_reward = {
+						add_stability = 0.1
+						swap_ideas = {
+								remove_idea = slabka_dovira_comunistam
+								add_idea = dovira_comunistam
+							}
+						custom_effect_tooltip = available_political_advisor
+						show_ideas_tooltip = ZEL_Vasyl_Avramenko
+					}
+
+
+	}
+	focus = {
+		id = ZEL_opolchyty_OUN
+		icon = GFX_focus_OUN
+		cost = 5
+		prerequisite = {
+			focus = ZEL_novyi_shlyah
+		}
+		mutually_exclusive = {
+			focus = ZEL_daty_robitnykam_svobodu
+		}
+		x = 28
+		y = 3
+				completion_reward = {
+						set_politics = {
+								ruling_party = fascism
+								elections_allowed = no
+								last_election = "1936.1.1"
+								election_frequency = 48
+							}
+						set_popularities = {
+								democratic = 25
+								neutrality = 5
+								fascism = 60
+								communism = 5
+							}
+						add_ideas = radykaly_pry_vladi_very_low
+						add_stability = -0.10
+						add_political_power = 150
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zrodylys_my
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		prerequisite = {
+			focus = ZEL_opolchyty_OUN
+		}
+		x = 24
+		y = 4
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.10
+			}
+			add_stability = 0.10
+			swap_ideas = {
+				remove_idea = radykaly_pry_vladi_very_low 
+				add_idea = radykaly_pry_vladi_low
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_reformuvaty_opolchenya
+		icon = GFX_goal_generic_small_arms
+		cost = 6
+		prerequisite = {
+			focus = ZEL_zrodylys_my
+		}
+		x = 21
+		y = 5
+		available = {
+			has_army_experience > 25
+		}
+		completion_reward = {
+			army_experience = -25
+			add_ideas = opolchenya_0
+			division_template = {
+								name = "Opolchenya"
+								division_names_group = ZEL_INF_05
+								regiments = {
+										infantry = {
+												x = 0
+												y = 0
+											}
+										infantry = {
+												x = 0
+												y = 1
+											}
+										infantry = {
+												x = 0
+												y = 2
+											}
+										infantry = {
+												x = 1
+												y = 0
+											}
+										infantry = {
+												x = 1
+												y = 1
+											}
+										infantry = {
+												x = 1
+												y = 2
+											}
+									}
+								support = {
+
+}
+							}
+							408 = {
+								create_unit = {
+									division = "name=\"Opolchenya\"division_template=\"Opolchenya\"start_experience_factor=0.5 start_equipment_factor=1"
+									owner = ZEL
+								}
+							}
+							408 = {
+								create_unit = {
+									division = "name=\"Opolchenya\"division_template=\"Opolchenya\"start_experience_factor=0.5 start_equipment_factor=1"
+									owner = ZEL
+								}
+							}
+							409 = {
+								create_unit = {
+									division = "name=\"Opolchenya\"division_template=\"Opolchenya\"start_experience_factor=0.5 start_equipment_factor=1"
+									owner = ZEL
+								}
+							}
+							409 = {
+								create_unit = {
+									division = "name=\"Opolchenya\"division_template=\"Opolchenya\"start_experience_factor=0.5 start_equipment_factor=1"
+									owner = ZEL
+								}
+							}
+		}
+
+	}
+	focus = {
+		id = ZEL_my_znaem_do_choho_ce_pryvelo
+		icon = GFX_focus_mistake
+		cost = 10
+		prerequisite = {
+			focus = ZEL_zrodylys_my
+		}
+		x = 23
+		y = 5
+		completion_reward = {
+			add_timed_idea = {
+				idea = het_democrativ
+				days = 75
+			}
+			add_stability = -0.10
+			add_war_support = 0.10
+		}
+
+	}
+	focus = {
+		id = ZEL_Ukraina
+		icon = GFX_focus_Ukraina
+		cost = 1
+		prerequisite = {
+			focus = ZEL_my_znaem_do_choho_ce_pryvelo
+		}
+		prerequisite = {
+			focus = ZEL_reformuvaty_opolchenya
+		}
+		x = 22
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = opolchenya_0 
+				add_idea = opolchenya_1
+			}
+			ZEL = {
+								add_state_core = 562
+								add_state_core = 574
+								add_state_core = 877
+								add_state_core = 644
+								add_state_core = 822
+								add_state_core = 874
+								add_state_core = 875
+								add_state_core = 565
+								add_state_core = 564
+								add_state_core = 137
+								add_state_core = 196
+								add_state_core = 200
+								add_state_core = 227
+								add_state_core = 228
+								add_state_core = 221
+								add_state_core = 226
+								add_state_core = 197
+								add_state_core = 192
+								add_state_core = 834
+								add_state_core = 198
+								add_state_core = 199
+								add_state_core = 201
+								add_state_core = 202
+								add_state_core = 203
+								add_state_core = 259
+								add_state_core = 193
+								add_state_core = 225
+								add_state_core = 1027
+								add_state_core = 194
+								add_state_core = 94
+								add_state_core = 93
+								add_state_core = 240
+								add_state_core = 220
+								add_state_core = 260
+								add_state_core = 80
+								add_state_core = 766
+								add_state_core = 73
+								add_state_core = 89
+								add_state_core = 91
+								add_state_core = 1038
+								add_state_core = 1039
+								add_state_core = 1040
+								add_state_core = 1041
+								add_state_core = 1042
+								add_state_core = 1043
+								add_state_core = 1044
+								add_state_core = 1045 
+								add_state_core = 1046
+								add_state_core = 1047
+								add_state_core = 1048
+								add_state_core = 1028
+								add_state_core = 1029
+								add_state_core = 1031
+								add_state_core = 1030
+								add_state_core = 1033
+								add_state_core = 1032
+								add_state_core = 1026
+								add_state_core = 1037
+								add_state_core = 1036
+								add_state_core = 1034
+								add_state_core = 1035
+								add_state_core = 1049
+								add_state_core = 1050
+								add_state_core = 1051
+								add_state_core = 1052
+								add_state_core = 1053 
+								add_state_core = 1054
+								add_state_core = 1055
+								add_state_core = 1056
+								add_state_core = 1057
+								add_state_core = 1058
+								add_state_core = 1061
+								add_state_core = 1062
+								add_state_core = 1063
+								add_state_core = 1064
+								add_state_core = 1066
+								add_state_core = 1067
+								add_state_core = 1068
+								add_state_core = 1069
+								add_state_core = 1070
+								add_state_core = 1071
+								add_state_core = 1072
+								add_state_core = 1073
+								add_state_core = 1074
+								add_state_core = 1075
+								add_state_core = 1076
+								add_state_core = 1077
+								add_state_core = 1078
+								add_state_core = 1079
+								add_state_core = 1080
+								add_state_core = 1081
+								add_state_core = 1082
+								add_state_core = 1083
+								add_state_core = 827
+								
+							}
+			add_stability = 0.15
+		}
+
+	}
+	focus = {
+		id = ZEL_prydushyty_comunistiv
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5
+		prerequisite = {
+			focus = ZEL_zrodylys_my
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+			add_stability = -0.10
+			add_war_support = 0.10
+			add_timed_idea = {
+				idea = het_comunistiv
+				days = 75
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_spivpracya_z_Mandzhuriyeu
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 2
+		prerequisite = {
+			focus = ZEL_opolchyty_OUN
+		}
+		x = 30
+		y = 4
+		available = {
+			IF = {
+				JAP = {
+					is_in_faction = yes
+				}
+			}
+			ZEL = {
+								has_army_manpower = {
+										size > 150000
+									}
+							}
+		}
+		completion_reward = {
+			add_political_power = 100
+			JAP = { country_event = { id = ZEL.19 } }
+		}
+
+	}
+	focus = {
+		id = ZEL_vymahaty_nac_terytorii
+		icon = GFX_goal_generic_major_war
+		cost = 5
+		prerequisite = {
+			focus = ZEL_spivpracya_z_Mandzhuriyeu
+		}
+		mutually_exclusive = {
+			focus = ZEL_zakluchyty_souz
+		}
+		x = 29
+		y = 5
+		available = {
+			always = no
+		}
+		completion_reward = {
+			ZEL = {
+								declare_war_on = {
+										target = JAP
+										type = annex_everything
+									}
+							}
+			every_country = {
+								set_country_flag = super_event_war_with_japan
+							}
+		}
+
+	}
+	focus = {
+		id = ZEL_zakluchyty_souz
+		icon = GFX_goal_generic_military_deal
+		cost = 2
+		prerequisite = {
+			focus = ZEL_spivpracya_z_Mandzhuriyeu
+		}
+		mutually_exclusive = {
+			focus = ZEL_vymahaty_nac_terytorii
+		}
+		x = 31
+		y = 5
+		available = {
+			always = no
+		}
+		completion_reward = {
+			JAP = {
+				add_to_faction = ZEL
+			}
+			JAP = {
+								diplomatic_relation = {
+										country = ZEL
+										relation = guarantee
+										active = yes
+									}
+							}
+		}
+
+	}
+	focus = {
+		id = ZEL_reforma_osviti
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 4
+		prerequisite = {
+			focus = ZEL_dolya_klyna
+		}
+		x = 34
+		y = 1
+				completion_reward = {
+						add_political_power = -250
+						add_research_slot = 1
+					}
+
+				available = {
+						has_political_power > 250
+					}
+
+
+	}
+	focus = {
+		id = ZEL_shlyah_svobody
+		icon = GFX_focus_will
+		cost = 2
+		prerequisite = {
+			focus = ZEL_napysaty_novu_konstituciyu
+		}
+		prerequisite = {
+			focus = ZEL_reforma_osviti
+		}
+		mutually_exclusive = {
+			focus = ZEL_novyi_shlyah
+		}
+		x = 33
+		y = 2
+				completion_reward = {
+						add_ideas = duh_voli
+					}
+
+
+	}
+	focus = {
+		id = ZEL_prezydentstvo_Hlushka
+		icon = GFX_focus_Hlushko
+		cost = 5
+		prerequisite = {
+			focus = ZEL_shlyah_svobody
+		}
+		mutually_exclusive = {
+			focus = ZEL_shlyah_Prosvity
+		}
+		x = 36
+		y = 3
+				completion_reward = {
+						set_popularities = {
+								democratic = 25
+								neutrality = 5
+								fascism = 60
+								communism = 5
+							}
+						add_ideas = druhyi_strok
+						add_stability = 0.15
+						add_political_power = 150
+					}
+
+
+	}
+	focus = {
+		id = ZEL_reformuvaty_krainu
+		icon = GFX_focus_ZEL
+		cost = 5
+		prerequisite = {
+			focus = ZEL_prezydentstvo_Hlushka
+		}
+		x = 34
+		y = 4
+				completion_reward = {
+						add_political_power = 100
+						swap_ideas = {
+								remove_idea = druhyi_strok
+								add_idea = druhyi_strok_1
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zadovolnyty_comunistiv
+		icon = GFX_goal_support_communism
+		cost = 2
+		prerequisite = {
+			focus = ZEL_reformuvaty_krainu
+		}
+		x = 33
+		y = 5
+				completion_reward = {
+						add_stability = 0.10
+						add_manpower = 10000
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zadovolnyty_nationalistiv
+		icon = GFX_goal_support_fascism
+		cost = 2
+		prerequisite = {
+			focus = ZEL_reformuvaty_krainu
+		}
+		x = 35
+		y = 5
+				completion_reward = {
+						add_war_support = 0.10
+						add_political_power = 300
+					}
+
+
+	}
+	focus = {
+		id = ZEL_reformuvaty_navchanya_v_kraini
+		icon = GFX_focus_research
+		cost = 10
+		prerequisite = {
+			focus = ZEL_zadovolnyty_comunistiv
+			focus = ZEL_zadovolnyty_nationalistiv
+		}
+		x = 34
+		y = 6
+				completion_reward = {
+						add_political_power = -100
+						add_research_slot = 1
+					}
+
+				available = {
+						has_political_power > 100
+					}
+
+
+	}
+	focus = {
+		id = ZEL_pobuduvaty_universytet_v_Khabarovsku
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 12
+		prerequisite = {
+			focus = ZEL_reformuvaty_navchanya_v_kraini
+		}
+		x = 34
+		y = 7
+				completion_reward = {
+						add_political_power = -250
+						add_research_slot = 1
+						409 = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 1
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 1
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 1
+										instant_build = yes
+									}
+							}
+					}
+
+				available = {
+						has_political_power > 250
+					}
+
+
+	}
+	focus = {
+		id = ZEL_da_bude_Ukraina
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		prerequisite = {
+			focus = ZEL_pobuduvaty_universytet_v_Khabarovsku
+		}
+		x = 35
+		y = 8
+				completion_reward = {
+						custom_effect_tooltip = available_political_advisor
+						show_ideas_tooltip = ZEL_Vasyl_Avramenko
+						ZEL = {
+								add_state_core = 562
+								add_state_core = 574
+								add_state_core = 877
+								add_state_core = 644
+								add_state_core = 822
+								add_state_core = 874
+								add_state_core = 875
+								add_state_core = 565
+								add_state_core = 564
+								add_state_core = 137
+								add_state_core = 196
+								add_state_core = 200
+								add_state_core = 227
+								add_state_core = 228
+								add_state_core = 221
+								add_state_core = 226
+								add_state_core = 197
+								add_state_core = 192
+								add_state_core = 834
+								add_state_core = 198
+								add_state_core = 199
+								add_state_core = 201
+								add_state_core = 202
+								add_state_core = 203
+								add_state_core = 259
+								add_state_core = 193
+								add_state_core = 225
+								add_state_core = 1027
+								add_state_core = 194
+								add_state_core = 94
+								add_state_core = 93
+								add_state_core = 240
+								add_state_core = 220
+								add_state_core = 260
+								add_state_core = 80
+								add_state_core = 766
+								add_state_core = 73
+								add_state_core = 89
+								add_state_core = 91
+								add_state_core = 1038
+								add_state_core = 1039
+								add_state_core = 1040
+								add_state_core = 1041
+								add_state_core = 1042
+								add_state_core = 1043
+								add_state_core = 1044
+								add_state_core = 1045 
+								add_state_core = 1046
+								add_state_core = 1047
+								add_state_core = 1048
+								add_state_core = 1028
+								add_state_core = 1029
+								add_state_core = 1031
+								add_state_core = 1030
+								add_state_core = 1033
+								add_state_core = 1032
+								add_state_core = 1026
+								add_state_core = 1037
+								add_state_core = 1036
+								add_state_core = 1034
+								add_state_core = 1035
+								add_state_core = 1049
+								add_state_core = 1050
+								add_state_core = 1051
+								add_state_core = 1052
+								add_state_core = 1054
+								add_state_core = 1055
+								add_state_core = 1056
+								add_state_core = 1057
+								add_state_core = 1058
+								add_state_core = 1061
+								add_state_core = 1062
+								add_state_core = 1063
+								add_state_core = 1064
+								add_state_core = 1053
+								add_state_core = 1066
+								add_state_core = 1067
+								add_state_core = 1068
+								add_state_core = 1069
+								add_state_core = 1070
+								add_state_core = 1071
+								add_state_core = 1072
+								add_state_core = 1073
+								add_state_core = 1074
+								add_state_core = 1075
+								add_state_core = 1076
+								add_state_core = 1077
+								add_state_core = 1078
+								add_state_core = 1079
+								add_state_core = 1080
+								add_state_core = 1081
+								add_state_core = 1082
+								add_state_core = 1083
+								add_state_core = 827
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_balans_rivnovahy
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 1
+		prerequisite = {
+			focus = ZEL_pobuduvaty_universytet_v_Khabarovsku
+		}
+		x = 33
+		y = 8
+				completion_reward = {
+						swap_ideas = {
+								remove_idea = druhyi_strok_1
+								add_idea = druhyi_strok_2
+							}
+						add_political_power = 200
+					}
+
+
+	}
+	focus = {
+		id = ZEL_stanmo_v_Kupi
+		icon = GFX_focus_stanmo_v_kupi
+		cost = 5
+		prerequisite = {
+			focus = ZEL_da_bude_Ukraina
+		}
+		prerequisite = {
+			focus = ZEL_balans_rivnovahy
+		}
+		x = 34
+		y = 9
+				completion_reward = {
+						add_ideas = stanmo_zh_my_v_kupi
+					}
+
+
+	}
+	focus = {
+		id = ZEL_reformuvaty_vladu
+		icon = GFX_goal_generic_major_alliance
+		cost = 1
+		prerequisite = {
+			focus = ZEL_prezydentstvo_Hlushka
+		}
+		x = 37
+		y = 4
+				completion_reward = {
+						add_political_power = -250
+						swap_ideas = {
+								remove_idea = druhyi_strok_2
+								add_idea = druhyi_strok_3
+							}
+					}
+
+				available = {
+						has_idea = druhyi_strok_2
+						has_political_power > 250
+					}
+
+
+	}
+	focus = {
+		id = ZEL_narostyty_oboronu
+		icon = GFX_goal_generic_defence
+		cost = 10
+		prerequisite = {
+			focus = ZEL_reformuvaty_vladu
+		}
+		x = 37
+		y = 5
+				completion_reward = {
+						add_political_power = 100
+						add_war_support = 0.05
+						add_stability = 0.05
+						army_experience = 25
+						air_experience = 25
+						navy_experience = 25
+						add_manpower = 250000
+						division_template = {
+								name = "Dobrovolcha Dyviziya"
+								division_names_group = ZEL_INF_03
+								regiments = {
+										infantry = {
+												x = 0
+												y = 0
+											}
+										infantry = {
+												x = 0
+												y = 1
+											}
+										infantry = {
+												x = 0
+												y = 2
+											}
+										infantry = {
+												x = 0
+												y = 3
+											}
+									}
+								support = {
+										artillery = {
+												x = 0
+												y = 0
+											}
+									}
+							}
+						409 = {
+								create_unit = {
+										division = "name=\"Dobrovolcha Dyviziya\"division_template=\"Dobrovolcha Dyviziya\"start_experience_factor=0.5start_equipment_factor=1"
+										owner = ZEL
+									}
+							}
+						409 = {
+								create_unit = {
+										division = "name=\"Dobrovolcha Dyviziya\"division_template=\"Dobrovolcha Dyviziya\"start_experience_factor=0.5start_equipment_factor=1"
+										owner = ZEL
+									}
+							}
+						409 = {
+								create_unit = {
+										division = "name=\"Dobrovolcha Dyviziya\"division_template=\"Dobrovolcha Dyviziya\"start_experience_factor=0.5start_equipment_factor=1"
+										owner = ZEL
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zaluchytys_dopomohou_USA
+		icon = GFX_focus_USA
+		cost = 5
+		prerequisite = {
+			focus = ZEL_narostyty_oboronu
+		}
+		x = 36
+		y = 6
+				completion_reward = {
+						add_political_power = 1000
+						army_experience = 100
+						air_experience = 100
+						navy_experience = 100
+						USA = {
+								diplomatic_relation = {
+										country = ZEL
+										relation = guarantee
+										active = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zaluchytys_dopomohou_UK
+		icon = GFX_focus_UK
+		cost = 5
+		prerequisite = {
+			focus = ZEL_narostyty_oboronu
+		}
+		x = 38
+		y = 6
+				completion_reward = {
+						division_template = {
+								name = "Dobrovolciz Canada"
+								division_names_group = ZEL_INF_04
+								regiments = {
+										infantry = {
+												x = 0
+												y = 0
+											}
+										infantry = {
+												x = 0
+												y = 1
+											}
+										infantry = {
+												x = 0
+												y = 2
+											}
+										infantry = {
+												x = 1
+												y = 0
+											}
+										infantry = {
+												x = 1
+												y = 1
+											}
+										infantry = {
+												x = 1
+												y = 2
+											}
+									}
+								support = {
+										recon = {
+												x = 0
+												y = 0
+											}
+										artillery = {
+												x = 0
+												y = 1
+											}
+									}
+							}
+						408 = {
+								create_unit = {
+										division = "name=\"Dobrovolciz Canada\"division_template=\"Dobrovolciz Canada\"start_experience_factor=0.8start_equipment_factor=1"
+										owner = ZEL
+									}
+							}
+						408 = {
+								create_unit = {
+										division = "name=\"Dobrovolciz Canada\"division_template=\"Dobrovolciz Canada\"start_experience_factor=0.8start_equipment_factor=1"
+										owner = ZEL
+									}
+							}
+						add_manpower = 2500
+						add_war_support = 0.10
+						ENG = {
+								diplomatic_relation = {
+										country = ZEL
+										relation = guarantee
+										active = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_torhova_volya
+		icon = GFX_goal_generic_trade
+		cost = 10
+		prerequisite = {
+			focus = ZEL_zaluchytys_dopomohou_UK
+		}
+		prerequisite = {
+			focus = ZEL_zaluchytys_dopomohou_USA
+		}
+		x = 37
+		y = 7
+				completion_reward = {
+						add_ideas = svoboda_v_torhivli
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zaluchytys_dopomohou_FRA
+		icon = GFX_focus_FRA
+		cost = 5
+		prerequisite = {
+			focus = ZEL_narostyty_oboronu
+		}
+		x = 40
+		y = 6
+				completion_reward = {
+						ZEL = {
+								add_equipment_to_stockpile = {
+										type = infantry_equipment
+										amount = 25000
+										producer = FRA
+									}
+							}
+						FRA = {
+								diplomatic_relation = {
+										country = ZEL
+										relation = guarantee
+										active = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_importna_zbroya_i_tehnika
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		prerequisite = {
+			focus = ZEL_zaluchytys_dopomohou_FRA
+		}
+		prerequisite = {
+			focus = ZEL_zaluchytys_dopomohou_UK
+		}
+		x = 39
+		y = 7
+				completion_reward = {
+						add_ideas = import_weapon
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zovnishnya_polityka_ZEL
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		prerequisite = {
+			focus = ZEL_importna_zbroya_i_tehnika
+		}
+		prerequisite = {
+			focus = ZEL_torhova_volya
+		}
+		x = 38
+		y = 8
+				completion_reward = {
+						add_political_power = 150
+						remove_ideas = Z_usih_storin
+					}
+
+
+	}
+	focus = {
+		id = ZEL_torhivlya_v_zamin_na_Sakhalin
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 2
+		prerequisite = {
+			focus = ZEL_zovnishnya_polityka_ZEL
+		}
+		x = 37
+		y = 9
+				completion_reward = {
+						JAP = {
+								country_event = {
+										id = ZEL.4
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_army_manpower = {
+										size > 150000
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_pomstytys_za_hnit
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10
+		prerequisite = {
+			focus = ZEL_zovnishnya_polityka_ZEL
+		}
+		x = 39
+		y = 9
+				completion_reward = {
+						SOV = {
+								declare_war_on = {
+										target = ZEL
+										type = annex_everything
+									}
+							}
+							every_country = { 
+					set_country_flag = super_event_soviet_union_start_war_with_klyn
+				}
+					}
+
+				available = {
+						ZEL = {
+								has_army_manpower = {
+										size > 450000
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_povstanya_Klyniv
+		icon = GFX_focus_Pryyshla_pora
+		cost = 3
+		prerequisite = {
+			focus = ZEL_pomstytys_za_hnit
+		}
+		x = 39
+		y = 10
+				completion_reward = {
+						every_country = { 
+							set_country_flag = super_event_klyns_uprising
+						}
+						SIR = {
+								transfer_state = 571
+								transfer_state = 570
+								transfer_state = 40
+								transfer_state = 882
+								transfer_state = 583
+								transfer_state = 590
+								transfer_state = 1025
+							}
+						SIR = {
+								load_oob = SIR_1936
+							}
+						SIR = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+						MLN = {
+								transfer_state = 245
+								transfer_state = 218
+								transfer_state = 238
+								transfer_state = 235
+								transfer_state = 233
+								transfer_state = 234
+								transfer_state = 1028
+								transfer_state = 1029
+								transfer_state = 1030
+								transfer_state = 1048
+								transfer_state = 1052
+								transfer_state = 1051
+								transfer_state = 827
+								transfer_state = 1082
+							}
+						MLN = {
+								load_oob = MLN_1936
+								if = {
+										limit = {
+												has_dlc = "MantheGuns"
+											}
+										load_oob = "MLN_1936_naval_mtg"
+										else = {
+												load_oob = "MLN_1936_naval"
+											}
+									}
+							}
+						MLN = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+						ZHO = {
+								transfer_state = 401
+								transfer_state = 250
+								transfer_state = 239
+								transfer_state = 829
+								transfer_state = 265
+								transfer_state = 251
+								transfer_state = 237
+								transfer_state = 217
+								transfer_state = 236
+								transfer_state = 1081
+								transfer_state = 1083
+								
+							}
+						ZHO = {
+								load_oob = ZHO_1936
+							}
+						ZHO = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_war_with = SOV
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_shlyah_Prosvity
+		icon = GFX_focus_Andruschenko
+		cost = 5
+		prerequisite = {
+			focus = ZEL_shlyah_svobody
+		}
+		mutually_exclusive = {
+			focus = ZEL_prezydentstvo_Hlushka
+		}
+		x = 46
+		y = 3
+				completion_reward = {
+						set_politics = {
+								ruling_party = neutrality
+								elections_allowed = yes
+								last_election = "1936.1.1"
+								election_frequency = 48
+							}
+						set_popularities = {
+								democratic = 25
+								neutrality = 50
+								fascism = 20
+								communism = 5
+							}
+						add_ideas = prosvitnyctvo_klyna
+						add_stability = 0.10
+						add_political_power = 250
+					}
+
+
+	}
+	focus = {
+		id = ZEL_reformuvaty_osvitu_v_mistah
+		icon = GFX_focus_research
+		cost = 2
+		prerequisite = {
+			focus = ZEL_shlyah_Prosvity
+		}
+		x = 40
+		y = 4
+				completion_reward = {
+						add_political_power = -250
+						add_research_slot = 1
+						swap_ideas = {
+								remove_idea = prosvitnyctvo_klyna
+								add_idea = prosvitnyctvo_klyna_1
+							}
+					}
+
+				available = {
+						has_political_power > 250
+					}
+
+
+	}
+	focus = {
+		id = ZEL_reformvaty_znanya_pro_svoi_korni
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 3
+		prerequisite = {
+			focus = ZEL_shlyah_Prosvity
+		}
+		x = 42
+		y = 4
+				completion_reward = {
+						custom_effect_tooltip = available_political_advisor
+						show_ideas_tooltip = ZEL_Vasyl_Avramenko
+						add_stability = 0.10
+						add_war_support = 0.10
+						swap_ideas = {
+								remove_idea = prosvitnyctvo_klyna_1
+								add_idea = prosvitnyctvo_klyna_2
+							}
+					}
+
+				available = {
+						has_idea = prosvitnyctvo_klyna_1
+					}
+
+
+	}
+	focus = {
+		id = ZEL_den_svobody
+		icon = GFX_goal_support_democracy
+		cost = 1
+		prerequisite = {
+			focus = ZEL_reformuvaty_osvitu_v_mistah
+		}
+		prerequisite = {
+			focus = ZEL_reformvaty_znanya_pro_svoi_korni
+		}
+		x = 41
+		y = 5
+				completion_reward = {
+						add_ideas = day_of_will
+						swap_ideas = {
+								remove_idea = prosvitnyctvo_klyna_2
+								add_idea = prosvitnyctvo_klyna_3
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_hramotnist_naselenya
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 15
+		prerequisite = {
+			focus = ZEL_den_svobody
+		}
+		x = 42
+		y = 6
+				completion_reward = {
+						add_stability = 0.10
+						add_research_slot = 1
+						swap_ideas = {
+								remove_idea = prosvitnyctvo_klyna_3
+								add_idea = prosvitnyctvo_klyna_4
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_nezalezhna_polityka
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = ZEL_shlyah_Prosvity
+		}
+		x = 44
+		y = 4
+				completion_reward = {
+						add_political_power = 250
+					}
+
+				available = {
+						has_idea = prosvitnyctvo_klyna_4
+					}
+
+
+	}
+	focus = {
+		id = ZEL_nasha_zemya
+		icon = GFX_goal_generic_attack_allies
+		cost = 10
+		prerequisite = {
+			focus = ZEL_nezalezhna_polityka
+		}
+		x = 43
+		y = 5
+				completion_reward = {
+						ZEL = {
+								add_state_core = 562
+								add_state_core = 574
+								add_state_core = 877
+								add_state_core = 644
+								add_state_core = 822
+								add_state_core = 874
+								add_state_core = 875
+								add_state_core = 565
+								add_state_core = 564
+								add_state_core = 137
+								add_state_core = 196
+								add_state_core = 200
+								add_state_core = 227
+								add_state_core = 228
+								add_state_core = 221
+								add_state_core = 226
+								add_state_core = 197
+								add_state_core = 192
+								add_state_core = 834
+								add_state_core = 198
+								add_state_core = 199
+								add_state_core = 201
+								add_state_core = 202
+								add_state_core = 203
+								add_state_core = 259
+								add_state_core = 193
+								add_state_core = 225
+								add_state_core = 1027
+								add_state_core = 194
+								add_state_core = 94
+								add_state_core = 93
+								add_state_core = 240
+								add_state_core = 220
+								add_state_core = 260
+								add_state_core = 80
+								add_state_core = 766
+								add_state_core = 73
+								add_state_core = 89
+								add_state_core = 91
+								add_state_core = 1038
+								add_state_core = 1039
+								add_state_core = 1040
+								add_state_core = 1041
+								add_state_core = 1042
+								add_state_core = 1043
+								add_state_core = 1044
+								add_state_core = 1045 
+								add_state_core = 1046
+								add_state_core = 1047
+								add_state_core = 1048
+								add_state_core = 1028
+								add_state_core = 1029
+								add_state_core = 1031
+								add_state_core = 1030
+								add_state_core = 1033
+								add_state_core = 1032
+								add_state_core = 1026
+								add_state_core = 1037
+								add_state_core = 1036
+								add_state_core = 1034
+								add_state_core = 1035
+								add_state_core = 1049
+								add_state_core = 1050
+								add_state_core = 1051
+								add_state_core = 1052
+								add_state_core = 1054
+								add_state_core = 1055
+								add_state_core = 1056
+								add_state_core = 1057
+								add_state_core = 1058
+								add_state_core = 1061
+								add_state_core = 1062
+								add_state_core = 1063
+								add_state_core = 1064
+								add_state_core = 1053
+								add_state_core = 1066
+								add_state_core = 1067
+								add_state_core = 1068
+								add_state_core = 1069
+								add_state_core = 1070
+								add_state_core = 1071
+								add_state_core = 1072
+								add_state_core = 1073
+								add_state_core = 1074
+								add_state_core = 1075
+								add_state_core = 1076
+								add_state_core = 1077
+								add_state_core = 1078
+								add_state_core = 1079
+								add_state_core = 1080
+								add_state_core = 1081
+								add_state_core = 1082
+								add_state_core = 1083
+								add_state_core = 827
+							}
+						add_stability = 0.10
+						add_war_support = 0.10
+					}
+
+
+	}
+	focus = {
+		id = ZEL_prydushyty_radykaliv
+		icon = GFX_focus_radykaly
+		cost = 5
+		prerequisite = {
+			focus = ZEL_nezalezhna_polityka
+		}
+		x = 45
+		y = 5
+				completion_reward = {
+						add_popularity = {
+								ideology = communism
+								popularity = -1
+							}
+						add_popularity = {
+								ideology = fascism
+								popularity = -1
+							}
+						add_stability = -0.10
+						add_war_support = -0.10
+						add_political_power = 250
+					}
+
+
+	}
+	focus = {
+		id = ZEL_fakel_voli
+		icon = GFX_goal_support_democracy
+		cost = 5
+		prerequisite = {
+			focus = ZEL_prydushyty_radykaliv
+		}
+		prerequisite = {
+			focus = ZEL_nasha_zemya
+		}
+		x = 44
+		y = 6
+				completion_reward = {
+						add_ideas = torch_of_will
+					}
+
+
+	}
+	focus = {
+		id = ZEL_rozibratys_z_Yaponiyeu
+		icon = GFX_focus_destroy_japan
+		cost = 5
+		prerequisite = {
+			focus = ZEL_fakel_voli
+		}
+		x = 45
+		y = 7
+				completion_reward = {
+						ZEL = {
+								declare_war_on = {
+										target = JAP
+										type = annex_everything
+									}
+							}
+						remove_ideas = Z_usih_storin
+						every_country = {
+								set_country_flag = super_event_war_with_japan
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_army_manpower = {
+										size > 150000
+									}
+							}
+						has_completed_focus = ZEL_armiya_iz_narodu
+					}
+
+
+	}
+	focus = {
+		id = ZEL_pidtrymka_povstanciv
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 5
+		prerequisite = {
+			focus = ZEL_rozibratys_z_Yaponiyeu
+		}
+		x = 44
+		y = 8
+				completion_reward = {
+						SOV = {
+								declare_war_on = {
+										target = ZEL
+										type = annex_everything
+									}
+							}
+							every_country = { 
+					set_country_flag = super_event_soviet_union_start_war_with_klyn
+				}
+					}
+
+				available = {
+						ZEL = {
+								has_army_manpower = {
+										size > 450000
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_SIR
+		icon = GFX_focus_SIR
+		cost = 1
+		prerequisite = {
+			focus = ZEL_pidtrymka_povstanciv
+		}
+		x = 42
+		y = 9
+				completion_reward = {
+					every_country = { 
+							set_country_flag = super_event_klyns_uprising
+						}
+						SIR = {
+								transfer_state = 571
+								transfer_state = 570
+								transfer_state = 40
+								transfer_state = 882
+								transfer_state = 583
+								transfer_state = 590
+								transfer_state = 1025
+							}
+						SIR = {
+								load_oob = SIR_1936
+							}
+						SIR = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_war_with = SOV
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_ZHO
+		icon = GFX_focus_ZHO
+		cost = 1
+		prerequisite = {
+			focus = ZEL_pidtrymka_povstanciv
+		}
+		x = 44
+		y = 9
+				completion_reward = {
+						ZHO = {
+								transfer_state = 401
+								transfer_state = 250
+								transfer_state = 239
+								transfer_state = 829
+								transfer_state = 265
+								transfer_state = 251
+								transfer_state = 237
+								transfer_state = 217
+								transfer_state = 236
+								transfer_state = 1081
+								transfer_state = 1083
+							}
+						ZHO = {
+								load_oob = ZHO_1936
+							}
+						ZHO = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_war_with = SOV
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_vid_krau_do_krau
+		icon = GFX_focus_only_we
+		cost = 5
+		prerequisite = {
+			focus = ZEL_ZHO
+		}
+		prerequisite = {
+			focus = ZEL_SIR
+		}
+		x = 43
+		y = 10
+				completion_reward = {
+						add_ideas = ot_kraya_do_krau
+					}
+
+
+	}
+	focus = {
+		id = ZEL_MLN
+		icon = GFX_focus_MLN
+		cost = 1
+		prerequisite = {
+			focus = ZEL_pidtrymka_povstanciv
+		}
+		x = 46
+		y = 9
+				completion_reward = {
+						MLN = {
+								transfer_state = 245
+								transfer_state = 218
+								transfer_state = 238
+								transfer_state = 235
+								transfer_state = 233
+								transfer_state = 234
+								transfer_state = 1028
+								transfer_state = 1029
+								transfer_state = 1030
+								transfer_state = 1048
+								transfer_state = 1052
+								transfer_state = 1051
+								transfer_state = 827
+								transfer_state = 1082
+							}
+						MLN = {
+								load_oob = MLN_1936
+								if = {
+										limit = {
+												has_dlc = "MantheGuns"
+											}
+										load_oob = "MLN_1936_naval_mtg"
+										else = {
+												load_oob = "MLN_1936_naval"
+											}
+									}
+							}
+						MLN = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_war_with = SOV
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_ukrainski_polky_na_voroha_ydut
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 5
+		prerequisite = {
+			focus = ZEL_MLN
+		}
+		prerequisite = {
+			focus = ZEL_ZHO
+		}
+		x = 45
+		y = 10
+				completion_reward = {
+						add_ideas = ukrainski_polky
+					}
+
+
+	}
+	focus = {
+		id = ZEL_Ukrainska_hehemoniya
+		icon = GFX_goal_generic_demand_territory
+		cost = 1
+		prerequisite = {
+			focus = ZEL_ukrainski_polky_na_voroha_ydut
+		}
+		prerequisite = {
+			focus = ZEL_vid_krau_do_krau
+		}
+		x = 44
+		y = 11
+		available = {
+			ZEL = {
+				NOT = {
+					has_war = yes
+				}
+			}
+			country_exists = MLN
+			country_exists = SIR
+			country_exists = ZHO
+		}
+		completion_reward = {
+			MLN = { country_event = { id = ZEL.26 } }
+			SIR = { country_event = { id = ZEL.42 } }
+			ZHO = { country_event = { id = ZEL.43 } }
+		}
+
+	}
+	focus = {
+		id = ZEL_viyskova_economika
+		icon = GFX_goal_generic_small_arms
+		cost = 5
+		prerequisite = {
+			focus = ZEL_economika_ZEL
+		}
+		mutually_exclusive = {
+			focus = ZEL_zbalansovana_economika
+			focus = ZEL_civilna_economika
+		}
+		x = 52
+		y = 1
+				completion_reward = {
+						add_ideas = war_economy
+						add_ideas = viyskova_economika
+					}
+
+
+	}
+	focus = {
+		id = ZEL_vyiskova_potuzhnist
+		icon = GFX_goal_generic_army_artillery
+		cost = 5
+		prerequisite = {
+			focus = ZEL_viyskova_economika
+		}
+		x = 50
+		y = 2
+				completion_reward = {
+						add_ideas = vyiskova_potuzhnist
+					}
+
+
+	}
+	focus = {
+		id = ZEL_reformuvaty_stanky
+		icon = GFX_goal_generic_production2
+		cost = 3
+		prerequisite = {
+			focus = ZEL_vyiskova_potuzhnist
+		}
+		x = 48
+		y = 3
+				completion_reward = {
+						add_political_power = -100
+						add_tech_bonus = {
+								name = industrial_bonus
+								bonus = 1.0
+								uses = 1
+								category = industry
+							}
+					}
+
+				available = {
+						has_political_power > 100
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zadovolnyty_robitnykiv
+		icon = GFX_goal_generic_improve_relations
+		cost = 2
+		prerequisite = {
+			focus = ZEL_vyiskova_potuzhnist
+		}
+		x = 50
+		y = 3
+				completion_reward = {
+						add_political_power = 250
+						add_stability = 0.05
+						add_popularity = {
+								ideology = communism
+								popularity = -0.25
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_infrastructura_Klyna
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 3
+		prerequisite = {
+			focus = ZEL_reformuvaty_stanky
+		}
+		prerequisite = {
+			focus = ZEL_zadovolnyty_robitnykiv
+		}
+		x = 49
+		y = 4
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 0
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 0
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 1
+										instant_build = yes
+									}
+							}
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 0
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 0
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 1
+										instant_build = yes
+									}
+							}
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 1
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 1
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 2
+										instant_build = yes
+									}
+							}
+					}
+
+				bypass = {
+						custom_trigger_tooltip = {
+								tooltip = infrastructure_effort_tt
+								all_owned_state = {
+										free_building_slots = {
+												building = infrastructure
+												size < 1
+											}
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_viyskova_fabryka_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 2
+		prerequisite = {
+			focus = ZEL_viyskova_economika
+		}
+		x = 52
+		y = 2
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = arms_factory
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = {
+										type = arms_factory
+										level = 1
+										instant_build = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_viyskova_fabryka_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = ZEL_viyskova_fabryka_1
+		}
+		x = 52
+		y = 3
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = arms_factory
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+										type = arms_factory
+										level = 2
+										instant_build = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_viyskova_fabryka
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10
+		prerequisite = {
+			focus = ZEL_viyskova_fabryka_2
+		}
+		prerequisite = {
+			focus = ZEL_zadovolnyty_robitnykiv
+		}
+		x = 51
+		y = 4
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = arms_factory
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 3
+								add_building_construction = {
+										type = arms_factory
+										level = 3
+										instant_build = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_yach
+		icon = GFX_focus_research
+		cost = 1
+		prerequisite = {
+			focus = ZEL_viyskova_fabryka
+		}
+		prerequisite = {
+			focus = ZEL_infrastructura_Klyna
+		}
+		x = 51
+		y = 5
+				completion_reward = {
+						add_research_slot = 1
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zbalansovana_economika
+		icon = GFX_goal_generic_production
+		cost = 5
+		prerequisite = {
+			focus = ZEL_economika_ZEL
+		}
+		mutually_exclusive = {
+			focus = ZEL_viyskova_economika
+			focus = ZEL_civilna_economika
+		}
+		x = 54
+		y = 1
+				completion_reward = {
+						add_ideas = partial_economic_mobilisation
+						add_ideas = zbalansovana_economika
+					}
+
+
+	}
+	focus = {
+		id = ZEL_rozshyryty_robitnychu_sylu
+		icon = GFX_goal_generic_consumer_goods
+		cost = 5
+		prerequisite = {
+			focus = ZEL_zbalansovana_economika
+		}
+		x = 54
+		y = 2
+				completion_reward = {
+						add_tech_bonus = {
+								name = industrial_bonus
+								bonus = 1.0
+								uses = 1
+								category = industry
+							}
+						add_ideas = robitnycha_syla
+					}
+
+
+	}
+	focus = {
+		id = ZEL_voenni_zavody
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5
+		prerequisite = {
+			focus = ZEL_rozshyryty_robitnychu_sylu
+		}
+		x = 54
+		y = 3
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = arms_factory
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = arms_factory
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 5
+								add_building_construction = {
+										type = arms_factory
+										level = 5
+										instant_build = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_rozhyryty_budivnyctvo
+		icon = GFX_goal_generic_construction
+		cost = 5
+		prerequisite = {
+			focus = ZEL_voenni_zavody
+		}
+		x = 53
+		y = 4
+				completion_reward = {
+						add_ideas = budivnyctvo
+					}
+
+
+	}
+	focus = {
+		id = ZEL_infrastructura_mist
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = ZEL_voenni_zavody
+		}
+		x = 55
+		y = 4
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 0
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 0
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 1
+										instant_build = yes
+									}
+							}
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 0
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 0
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 1
+										instant_build = yes
+									}
+							}
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 1
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 1
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 2
+										instant_build = yes
+									}
+							}
+					}
+
+				bypass = {
+						custom_trigger_tooltip = {
+								tooltip = infrastructure_effort_tt
+								all_owned_state = {
+										free_building_slots = {
+												building = infrastructure
+												size < 1
+											}
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_civilni_fabryky
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = ZEL_infrastructura_mist
+			focus = ZEL_rozhyryty_budivnyctvo
+		}
+		x = 54
+		y = 5
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = industrial_complex
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 5
+								add_building_construction = {
+										type = industrial_complex
+										level = 5
+										instant_build = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_yach_1
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = ZEL_civilni_fabryky
+		}
+		x = 54
+		y = 6
+				completion_reward = {
+						add_research_slot = 1
+					}
+
+
+	}
+	focus = {
+		id = ZEL_civilna_economika
+		icon = GFX_goal_generic_construction2
+		cost = 5
+		prerequisite = {
+			focus = ZEL_economika_ZEL
+		}
+		mutually_exclusive = {
+			focus = ZEL_zbalansovana_economika
+			focus = ZEL_viyskova_economika
+		}
+		x = 56
+		y = 1
+				completion_reward = {
+						add_ideas = partial_economic_mobilisation
+						add_ideas = civilna_economika
+					}
+
+
+	}
+	focus = {
+		id = ZEL_civilniy_zavod_1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 2
+		prerequisite = {
+			focus = ZEL_civilna_economika
+		}
+		x = 56
+		y = 2
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = industrial_complex
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 1
+								add_building_construction = {
+										type = industrial_complex
+										level = 1
+										instant_build = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_civilniy_zavod_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5
+		prerequisite = {
+			focus = ZEL_civilniy_zavod_1
+		}
+		x = 56
+		y = 3
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = industrial_complex
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 2
+								add_building_construction = {
+										type = industrial_complex
+										level = 2
+										instant_build = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_harni_umovy_praci
+		icon = GFX_goal_generic_production
+		cost = 5
+		prerequisite = {
+			focus = ZEL_civilna_economika
+		}
+		x = 58
+		y = 2
+				completion_reward = {
+						add_ideas = harni_umovy_praci
+					}
+
+
+	}
+	focus = {
+		id = ZEL_ahrarna_reforma
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 5
+		prerequisite = {
+			focus = ZEL_harni_umovy_praci
+		}
+		x = 58
+		y = 3
+				completion_reward = {
+						add_political_power = 250
+						add_stability = 0.05
+						add_popularity = {
+								ideology = communism
+								popularity = -0.25
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_civilniy_zavod_3
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10
+		prerequisite = {
+			focus = ZEL_civilniy_zavod_2
+		}
+		prerequisite = {
+			focus = ZEL_ahrarna_reforma
+		}
+		x = 57
+		y = 4
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = industrial_complex
+												size > 0
+												include_locked = yes
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = industrial_complex
+																				size > 0
+																				include_locked = yes
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_extra_state_shared_building_slots = 3
+								add_building_construction = {
+										type = industrial_complex
+										level = 3
+										instant_build = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_obmezhyty_vplyv_Prosvity
+		icon = GFX_focus_Prosvita_ban
+		cost = 10
+		prerequisite = {
+			focus = ZEL_economika_ZEL
+		}
+		mutually_exclusive = {
+			focus = ZEL_pidtrymaty_Prosvitu
+		}
+		x = 59
+		y = 1
+				completion_reward = {
+						add_ideas = ban_prosvita
+						add_popularity = {
+								ideology = neutrality
+								popularity = -1
+							}
+					}
+
+				available = {
+						NOT = {
+								has_government = neutrality
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_novishi_tehnolohii
+		icon = GFX_goal_generic_production2
+		cost = 5
+		prerequisite = {
+			focus = ZEL_harni_umovy_praci
+		}
+		x = 60
+		y = 3
+				completion_reward = {
+						add_political_power = -100
+						add_tech_bonus = {
+								name = industrial_bonus
+								bonus = 1.0
+								uses = 1
+								category = industry
+							}
+					}
+
+				available = {
+						has_political_power > 100
+					}
+
+
+	}
+	focus = {
+		id = ZEL_infrastructura_krainy
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 5
+		prerequisite = {
+			focus = ZEL_novishi_tehnolohii
+		}
+		prerequisite = {
+			focus = ZEL_ahrarna_reforma
+		}
+		x = 59
+		y = 4
+				completion_reward = {
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 0
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 0
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 1
+										instant_build = yes
+									}
+							}
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 0
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 0
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 1
+										instant_build = yes
+									}
+							}
+						random_owned_controlled_state = {
+								limit = {
+										free_building_slots = {
+												building = infrastructure
+												size > 1
+											}
+										OR = {
+												is_in_home_area = yes
+												NOT = {
+														owner = {
+																any_owned_state = {
+																		free_building_slots = {
+																				building = infrastructure
+																				size > 1
+																			}
+																		is_in_home_area = yes
+																	}
+															}
+													}
+											}
+									}
+								add_building_construction = {
+										type = infrastructure
+										level = 2
+										instant_build = yes
+									}
+							}
+					}
+
+				bypass = {
+						custom_trigger_tooltip = {
+								tooltip = infrastructure_effort_tt
+								all_owned_state = {
+										free_building_slots = {
+												building = infrastructure
+												size < 1
+											}
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_yach_2
+		icon = GFX_focus_research
+		cost = 5
+		prerequisite = {
+			focus = ZEL_civilniy_zavod_3
+		}
+		prerequisite = {
+			focus = ZEL_infrastructura_krainy
+		}
+		x = 58
+		y = 5
+				completion_reward = {
+						add_research_slot = 1
+					}
+
+
+	}
+	focus = {
+		id = ZEL_sylna_economika
+		icon = GFX_focus_strong_economy
+		cost = 3
+		prerequisite = {
+			focus = ZEL_yach_2
+			focus = ZEL_yach_1
+			focus = ZEL_yach
+		}
+		x = 54
+		y = 7
+				completion_reward = {
+						swap_ideas = {
+								remove_idea = Economica_non_stable
+								add_idea = sylna_economika
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_pidtrymaty_Prosvitu
+		icon = GFX_focus_Prosvita
+		cost = 5
+		prerequisite = {
+			focus = ZEL_economika_ZEL
+		}
+		mutually_exclusive = {
+			focus = ZEL_obmezhyty_vplyv_Prosvity
+		}
+		x = 61
+		y = 1
+				completion_reward = {
+						add_ideas = Prosvita_1
+					}
+
+
+	}
+	focus = {
+		id = ZEL_bilshe_finansuvanya
+		icon = GFX_focus_Prosvita_fin_1
+		cost = 2
+		prerequisite = {
+			focus = ZEL_pidtrymaty_Prosvitu
+		}
+		x = 62
+		y = 2
+				completion_reward = {
+						add_political_power = -500
+						swap_ideas = {
+								remove_idea = Prosvita_1
+								add_idea = Prosvita_2
+							}
+					}
+
+				available = {
+						has_political_power > 500
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zaluchyty_bilshe_ludu
+		icon = GFX_focus_Prosvita_ludi
+		cost = 5
+		prerequisite = {
+			focus = ZEL_bilshe_finansuvanya
+		}
+		x = 62
+		y = 3
+				completion_reward = {
+						add_manpower = 2500
+						swap_ideas = {
+								remove_idea = Prosvita_2
+								add_idea = Prosvita_3
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_intehruvaty_Prosvitu
+		icon = GFX_focus_Prosvita_intehrate
+		cost = 15
+		prerequisite = {
+			focus = ZEL_zaluchyty_bilshe_ludu
+		}
+		x = 62
+		y = 4
+				completion_reward = {
+						swap_ideas = {
+								remove_idea = Prosvita_3
+								add_idea = Prosvita_4
+							}
+						custom_effect_tooltip = available_political_advisor
+						show_ideas_tooltip = ZEL_Ivan_Svit_advisor
+					}
+
+				available = {
+						has_political_power > 1000
+					}
+
+
+	}
+	focus = {
+		id = ZEL_reforma_viysk
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5
+		prerequisite = {
+			focus = ZEL_armiya_ZEL
+		}
+		x = 67
+		y = 1
+				completion_reward = {
+						swap_ideas = {
+								remove_idea = Armiya_klyna
+								add_idea = Armiya_klyna_1
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_pihotka
+		icon = GFX_goal_generic_military_sphere
+		cost = 3
+		prerequisite = {
+			focus = ZEL_reforma_viysk
+		}
+		x = 66
+		y = 2
+				completion_reward = {
+						add_tech_bonus = {
+								name = infantry_artillery_bonus
+								bonus = 0.5
+								uses = 2
+								category = infantry_weapons
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_tanky
+		icon = GFX_goal_generic_army_tanks
+		cost = 2
+		prerequisite = {
+			focus = ZEL_pihotka
+		}
+		x = 64
+		y = 3
+				completion_reward = {
+						add_tech_bonus = {
+								name = armor_bonus
+								bonus = 1.0
+								uses = 2
+								category = armor
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_snaryaha
+		icon = GFX_goal_generic_army_artillery
+		cost = 2
+		prerequisite = {
+			focus = ZEL_pihotka
+		}
+		x = 66
+		y = 3
+				completion_reward = {
+						add_tech_bonus = {
+								bonus = 0.5
+								uses = 1
+								category = night_vision
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = hospital_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = logistics_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = support_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = engineers_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = recon_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = military_police_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = logistics_tech
+							}
+						add_tech_bonus = {
+								bonus = 0.25
+								uses = 1
+								category = signal_company_tech
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_artyleriya
+		icon = GFX_goal_generic_army_artillery2
+		cost = 2
+		prerequisite = {
+			focus = ZEL_snaryaha
+		}
+		x = 66
+		y = 4
+				completion_reward = {
+						add_tech_bonus = {
+								name = infantry_artillery_bonus
+								bonus = 1.0
+								uses = 2
+								category = artillery
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_motoryzaciya
+		icon = GFX_goal_generic_army_motorized
+		cost = 2
+		prerequisite = {
+			focus = ZEL_tanky
+		}
+		x = 64
+		y = 4
+				completion_reward = {
+						add_tech_bonus = {
+								bonus = 0.75
+								uses = 1
+								category = motorized_equipment
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_doctrine_1
+		icon = GFX_goal_generic_army_doctrines
+		cost = 2
+		prerequisite = {
+			focus = ZEL_reforma_viysk
+		}
+		x = 68
+		y = 2
+				completion_reward = {
+						army_experience = 15
+						add_doctrine_cost_reduction = {
+								name = land_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = land_doctrine
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_doctrine_2
+		icon = GFX_goal_generic_army_doctrines
+		cost = 2
+		prerequisite = {
+			focus = ZEL_doctrine_1
+		}
+		x = 68
+		y = 3
+				completion_reward = {
+						army_experience = 20
+						add_doctrine_cost_reduction = {
+								name = land_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = land_doctrine
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_doctrine_3
+		icon = GFX_goal_generic_army_doctrines
+		cost = 2
+		prerequisite = {
+			focus = ZEL_doctrine_2
+		}
+		x = 68
+		y = 4
+				completion_reward = {
+						army_experience = 25
+						add_doctrine_cost_reduction = {
+								name = land_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = land_doctrine
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_nova_armiya
+		icon = GFX_goal_rhineland
+		cost = 5
+		prerequisite = {
+			focus = ZEL_doctrine_3
+		}
+		prerequisite = {
+			focus = ZEL_artyleriya
+		}
+		prerequisite = {
+			focus = ZEL_motoryzaciya
+		}
+		x = 66
+		y = 5
+			completion_reward = {
+					swap_ideas = {
+							remove_idea = Armiya_klyna_1
+							add_idea = Nova_armiya
+						}
+					custom_effect_tooltip = available_political_advisor
+					show_ideas_tooltip = ZEL_Yuriy_Tutunnik
+				}
+
+
+	}
+	focus = {
+		id = ZEL_reforma_oficeriv
+		icon = GFX_focus_new_officers
+		cost = 5
+		prerequisite = {
+			focus = ZEL_armiya_ZEL
+		}
+		x = 69
+		y = 1
+				completion_reward = {
+						add_political_power = -200
+						swap_ideas = {
+								remove_idea = Nestacha_officeriv_1
+								add_idea = Nestacha_officeriv_2
+							}
+					}
+
+				available = {
+						has_political_power > 200
+					}
+
+
+	}
+	focus = {
+		id = ZEL_pidvyschyty_nabir_oficeriv
+		icon = GFX_focus_more_officers
+		cost = 5
+		prerequisite = {
+			focus = ZEL_reforma_oficeriv
+		}
+		x = 70
+		y = 2
+				completion_reward = {
+						add_political_power = -350
+						add_manpower = -10000
+						swap_ideas = {
+								remove_idea = Nestacha_officeriv_2
+								add_idea = Dostatnya_kilkist_officeriv
+							}
+					}
+
+				available = {
+						has_political_power > 350
+						has_manpower > 10000
+					}
+
+
+	}
+	focus = {
+		id = ZEL_profesiyna_armiya
+		icon = GFX_focus_prof_army
+		cost = 5
+		prerequisite = {
+			focus = ZEL_pidvyschyty_nabir_oficeriv
+		}
+		mutually_exclusive = {
+			focus = ZEL_narodna_armiya
+		}
+		x = 70
+		y = 3
+				completion_reward = {
+						add_ideas = profesiyna_armiya
+					}
+
+
+	}
+	focus = {
+		id = ZEL_narodna_armiya
+		icon = GFX_focus_nar_army
+		cost = 2
+		prerequisite = {
+			focus = ZEL_pidvyschyty_nabir_oficeriv
+		}
+		mutually_exclusive = {
+			focus = ZEL_profesiyna_armiya
+		}
+		x = 72
+		y = 3
+				completion_reward = {
+						add_ideas = narodna_armiya
+					}
+
+
+	}
+	focus = {
+		id = ZEL_finansuvanya_vyvchen
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 3
+		prerequisite = {
+			focus = ZEL_narodna_armiya
+			focus = ZEL_profesiyna_armiya
+		}
+		x = 71
+		y = 4
+				completion_reward = {
+						add_political_power = -250
+						add_research_slot = 1
+					}
+
+				available = {
+						has_political_power > 250
+					}
+
+
+	}
+	focus = {
+		id = ZEL_atom
+		icon = GFX_focus_wonderweapons
+		cost = 3
+		prerequisite = {
+			focus = ZEL_finansuvanya_vyvchen
+		}
+		x = 71
+		y = 5
+				completion_reward = {
+						add_tech_bonus = {
+								name = nuclear_bonus
+								ahead_reduction = 2
+								category = nuclear
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_yacheika
+		icon = GFX_focus_research
+		cost = 3
+		prerequisite = {
+			focus = ZEL_atom
+		}
+		x = 71
+		y = 6
+				completion_reward = {
+						add_research_slot = 1
+					}
+
+
+	}
+	focus = {
+		id = ZEL_litak
+		icon = GFX_goal_generic_air_fighter
+		cost = 1
+		prerequisite = {
+			focus = ZEL_aviaciya_ZEL
+		}
+		x = 75
+		y = 1
+				completion_reward = {
+						add_tech_bonus = {
+								name = fighter_bonus
+								bonus = 1.0
+								uses = 1
+								category = light_fighter
+							}
+						add_tech_bonus = {
+								name = fighter_bonus
+								bonus = 1.0
+								uses = 1
+								category = cat_heavy_fighter
+							}
+						add_tech_bonus = {
+								name = CAS_bonus
+								bonus = 1.0
+								ahead_reduction = 2
+								uses = 1
+								category = cas_bomber
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_bomb
+		icon = GFX_goal_generic_air_bomber
+		cost = 3
+		prerequisite = {
+			focus = ZEL_aviaciya_ZEL
+		}
+		x = 77
+		y = 1
+				completion_reward = {
+						add_tech_bonus = {
+								name = bomber_bonus
+								bonus = 1.0
+								uses = 1
+								category = tactical_bomber
+							}
+						add_tech_bonus = {
+								name = bomber_bonus
+								bonus = 1.0
+								uses = 1
+								category = cat_strategic_bomber
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_air_doctrine
+		icon = GFX_goal_generic_air_doctrine
+		cost = 3
+		prerequisite = {
+			focus = ZEL_litak
+		}
+		prerequisite = {
+			focus = ZEL_bomb
+		}
+		x = 76
+		y = 2
+				completion_reward = {
+						air_experience = 10
+						add_doctrine_cost_reduction = {
+								name = air_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = air_doctrine
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_air_doctrine_2
+		icon = GFX_goal_generic_air_doctrine
+		cost = 2
+		prerequisite = {
+			focus = ZEL_air_doctrine
+		}
+		x = 76
+		y = 3
+				completion_reward = {
+						air_experience = 15
+						add_doctrine_cost_reduction = {
+								name = air_doc_bonus
+								cost_reduction = 0.5
+								uses = 1
+								category = air_doctrine
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_nova_aviaciya
+		icon = GFX_goal_generic_CAS
+		cost = 2
+		prerequisite = {
+			focus = ZEL_air_doctrine_2
+		}
+		x = 76
+		y = 4
+				completion_reward = {
+						add_ideas = nova_aviaciya
+						air_experience = 10
+					}
+
+
+	}
+	focus = {
+		id = ZEL_submarine
+		icon = GFX_goal_generic_navy_submarine
+		cost = 2
+		prerequisite = {
+			focus = ZEL_fleet
+		}
+		x = 80
+		y = 1
+				completion_reward = {
+						add_tech_bonus = {
+								name = ss_bonus
+								bonus = 1.0
+								ahead_reduction = 2
+								uses = 1
+								category = ss_tech
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_linkors
+		icon = GFX_goal_generic_navy_battleship
+		cost = 2
+		prerequisite = {
+			focus = ZEL_fleet
+		}
+		x = 82
+		y = 1
+				completion_reward = {
+						navy_experience = 25
+						add_tech_bonus = {
+								name = capital_ships_bonus
+								bonus = 1.0
+								ahead_reduction = 2
+								uses = 3
+								category = bc_tech
+								category = bb_tech
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_sea_doctrine_1
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 2
+		prerequisite = {
+			focus = ZEL_submarine
+		}
+		prerequisite = {
+			focus = ZEL_linkors
+		}
+		x = 81
+		y = 2
+				completion_reward = {
+						navy_experience = 20
+						add_doctrine_cost_reduction = {
+								name = fleet_in_being_bonus
+								cost_reduction = 0.25
+								uses = 2
+								category = fleet_in_being_tree
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_reformovana_taktyka
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5
+		prerequisite = {
+			focus = ZEL_fleet
+		}
+		x = 84
+		y = 1
+				completion_reward = {
+						custom_effect_tooltip = available_political_advisor
+						show_ideas_tooltip = ZEL_Volodymyr_Savchenko_Bilskyi
+						army_experience = -50
+						navy_experience = 50
+					}
+
+				available = {
+						has_army_experience > 50
+					}
+
+
+	}
+	focus = {
+		id = ZEL_sea_doctrine_2
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 2
+		prerequisite = {
+			focus = ZEL_reformovana_taktyka
+		}
+		prerequisite = {
+			focus = ZEL_linkors
+		}
+		x = 83
+		y = 2
+				completion_reward = {
+						navy_experience = 25
+						add_doctrine_cost_reduction = {
+								name = fleet_in_being_bonus
+								cost_reduction = 0.25
+								uses = 2
+								category = fleet_in_being_tree
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_sea_doctrine_3
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 3
+		prerequisite = {
+			focus = ZEL_sea_doctrine_2
+		}
+		prerequisite = {
+			focus = ZEL_sea_doctrine_1
+		}
+		x = 82
+		y = 3
+				completion_reward = {
+						navy_experience = 30
+						add_doctrine_cost_reduction = {
+								name = fleet_in_being_bonus
+								cost_reduction = 0.25
+								uses = 2
+								category = fleet_in_being_tree
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_vid_vladyvostoku_do_zakarpatya
+		icon = GFX_focus_klyn_ukraina
+		cost = 5
+		prerequisite = {
+			focus = ZEL_pidtrymka_narodu
+		}
+		x = 15
+		y = 6
+				completion_reward = {
+						ZEL = {
+								add_state_core = 562
+								add_state_core = 574
+								add_state_core = 877
+								add_state_core = 644
+								add_state_core = 822
+								add_state_core = 874
+								add_state_core = 875
+								add_state_core = 565
+								add_state_core = 564
+								add_state_core = 137
+								add_state_core = 196
+								add_state_core = 200
+								add_state_core = 227
+								add_state_core = 228
+								add_state_core = 221
+								add_state_core = 226
+								add_state_core = 197
+								add_state_core = 192
+								add_state_core = 834
+								add_state_core = 198
+								add_state_core = 199
+								add_state_core = 201
+								add_state_core = 202
+								add_state_core = 203
+								add_state_core = 259
+								add_state_core = 193
+								add_state_core = 225
+								add_state_core = 1027
+								add_state_core = 194
+								add_state_core = 94
+								add_state_core = 93
+								add_state_core = 240
+								add_state_core = 220
+								add_state_core = 260
+								add_state_core = 80
+								add_state_core = 766
+								add_state_core = 73
+								add_state_core = 89
+								add_state_core = 91
+								add_state_core = 1038
+								add_state_core = 1039
+								add_state_core = 1040
+								add_state_core = 1041
+								add_state_core = 1042
+								add_state_core = 1043
+								add_state_core = 1044
+								add_state_core = 1045 
+								add_state_core = 1046
+								add_state_core = 1047
+								add_state_core = 1048
+								add_state_core = 1028
+								add_state_core = 1029
+								add_state_core = 1031
+								add_state_core = 1030
+								add_state_core = 1033
+								add_state_core = 1032
+								add_state_core = 1026
+								add_state_core = 1037
+								add_state_core = 1036
+								add_state_core = 1034
+								add_state_core = 1035
+								add_state_core = 1049
+								add_state_core = 1050
+								add_state_core = 1051
+								add_state_core = 1052
+								add_state_core = 1054
+								add_state_core = 1055
+								add_state_core = 1056
+								add_state_core = 1057
+								add_state_core = 1058
+								add_state_core = 1061
+								add_state_core = 1062
+								add_state_core = 1063
+								add_state_core = 1064
+								add_state_core = 1053
+								add_state_core = 1066
+								add_state_core = 1067
+								add_state_core = 1068
+								add_state_core = 1069
+								add_state_core = 1070
+								add_state_core = 1071
+								add_state_core = 1072
+								add_state_core = 1073
+								add_state_core = 1074
+								add_state_core = 1075
+								add_state_core = 1076
+								add_state_core = 1077
+								add_state_core = 1078
+								add_state_core = 1079
+								add_state_core = 1080
+								add_state_core = 1081
+								add_state_core = 1082
+								add_state_core = 1083
+								add_state_core = 827
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_splotyty_robitnykiv
+		icon = GFX_goal_generic_small_arms
+		cost = 1
+		prerequisite = {
+			focus = ZEL_pidtrymka_narodu
+		}
+		x = 17
+		y = 6
+				completion_reward = {
+						add_stability = 0.10
+						add_war_support = 0.10
+						division_template = {
+								name = "Robitnycha Dyviziya"
+								division_names_group = ZEL_INF_02
+								regiments = {
+										infantry = {
+												x = 0
+												y = 0
+											}
+										infantry = {
+												x = 0
+												y = 1
+											}
+										infantry = {
+												x = 0
+												y = 2
+											}
+										infantry = {
+												x = 1
+												y = 0
+											}
+										infantry = {
+												x = 1
+												y = 1
+											}
+										infantry = {
+												x = 1
+												y = 2
+											}
+									}
+								support = {
+
+}
+							}
+						409 = {
+								create_unit = {
+										division = "name=\"Robitnycha Dyviziya\"division_template=\"Robitnycha Dyviziya\"start_experience_factor=0.5start_equipment_factor=1"
+										owner = ZEL
+									}
+							}
+						409 = {
+								create_unit = {
+										division = "name=\"Robitnycha Dyviziya\"division_template=\"Robitnycha Dyviziya\"start_experience_factor=0.5start_equipment_factor=1"
+										owner = ZEL
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_adzhe_tilky_my
+		icon = GFX_focus_only_we
+		cost = 10
+		prerequisite = {
+			focus = ZEL_splotyty_robitnykiv
+		}
+		prerequisite = {
+			focus = ZEL_vid_vladyvostoku_do_zakarpatya
+		}
+		x = 16
+		y = 7
+				completion_reward = {
+						add_stability = 0.10
+						add_war_support = 0.10
+						add_ideas = tilky_my
+						add_political_power = 100
+					}
+
+
+	}
+	focus = {
+		id = ZEL_social_democraty
+		icon = GFX_focus_soc_dem
+		cost = 5
+		prerequisite = {
+			focus = ZEL_daty_robitnykam_svobodu
+		}
+		x = 19
+		y = 4
+				completion_reward = {
+						add_ideas = soc_dem
+					}
+
+				available = {
+						has_idea = dovira_comunistam
+					}
+
+
+	}
+	focus = {
+		id = ZEL_Burevyi_nash_batko
+		icon = GFX_focus_Burevyi
+		cost = 5
+		prerequisite = {
+			focus = ZEL_social_democraty
+		}
+		x = 19
+		y = 5
+				completion_reward = {
+						add_stability = 0.10
+						add_political_power = 250
+						swap_ideas = {
+								remove_idea = dovira_comunistam
+								add_idea = povna_dovira_comunistam
+							}
+						add_trait = {
+								character = ZEL_Kost_Soplyak
+								ideology = marxism
+								trait = ZEL_Batko_Dalekoho_Shodu
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_finansuvanya_shkil
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 2
+		prerequisite = {
+			focus = ZEL_Burevyi_nash_batko
+		}
+		x = 19
+		y = 6
+				completion_reward = {
+						add_research_slot = 1
+						add_political_power = -150
+					}
+
+				available = {
+						has_political_power > 150
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zovnishnya_polityka_klyna
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10
+		prerequisite = {
+			focus = ZEL_finansuvanya_shkil
+		}
+		mutually_exclusive = {
+			focus = ZEL_pomyrytys_z_ussr
+		}
+		x = 21
+		y = 7
+				completion_reward = {
+						add_political_power = 300
+					}
+
+
+	}
+	focus = {
+		id = ZEL_pomyrytys_z_ussr
+		icon = GFX_focus_ussr_peace
+		cost = 2
+		prerequisite = {
+			focus = ZEL_finansuvanya_shkil
+		}
+		mutually_exclusive = {
+			focus = ZEL_zovnishnya_polityka_klyna
+		}
+		x = 19
+		y = 7
+				completion_reward = {
+						add_political_power = 150
+						add_opinion_modifier = {
+								target = SOV
+								modifier = ZEL_myr_z_ussr
+							}
+						remove_ideas = Z_usih_storin
+					}
+
+
+	}
+	focus = {
+		id = ZEL_znyschyt_vplyv_yaponii
+		icon = GFX_focus_destroy_japan
+		cost = 2
+		prerequisite = {
+			focus = ZEL_zovnishnya_polityka_klyna
+		}
+		x = 21
+		y = 8
+				completion_reward = {
+						add_opinion_modifier = {
+								target = JAP
+								modifier = ZEL_vplyv_yaponii_znyschenyi
+							}
+						add_opinion_modifier = {
+								target = MAN
+								modifier = ZEL_vplyv_yaponii_znyschenyi
+							}
+						add_opinion_modifier = {
+								target = MEN
+								modifier = ZEL_vplyv_yaponii_znyschenyi
+							}
+						remove_ideas = Z_usih_storin
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zaluchytys_pidtrymkou_sovetiv
+		icon = GFX_goal_generic_defence
+		cost = 2
+		prerequisite = {
+			focus = ZEL_pomyrytys_z_ussr
+		}
+		x = 19
+		y = 8
+				completion_reward = {
+						SOV = {
+								add_to_faction = ZEL
+							}
+						SOV = {
+								diplomatic_relation = {
+										country = ZEL
+										relation = guarantee
+										active = yes
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_zahopyty_Manzhuriyu
+		icon = GFX_focus_Mandzhuriya
+		cost = 6
+		prerequisite = {
+			focus = ZEL_zaluchytys_pidtrymkou_sovetiv
+		}
+		x = 17
+		y = 9
+				completion_reward = {
+						ZEL = {
+								declare_war_on = {
+										target = JAP
+										type = annex_everything
+									}
+							}
+							every_country = {
+								set_country_flag = super_event_war_with_japan
+							}
+					}
+
+				available = {
+						IF = {
+								ZEL = {
+										is_in_faction_with = SOV
+									}
+								ZEL = {
+										has_army_manpower = {
+												size > 150000
+											}
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_vymahaty_sakhalin
+		icon = GFX_focus_Sakhalin
+		cost = 3
+		prerequisite = {
+			focus = ZEL_znyschyt_vplyv_yaponii
+		}
+		x = 20
+		y = 9
+				completion_reward = {
+						JAP = {
+								country_event = {
+										id = ZEL.4
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_army_manpower = {
+										size > 150000
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_vymahaty_Manzhuriyu
+		icon = GFX_focus_Mandzhuriya
+		cost = 3
+		prerequisite = {
+			focus = ZEL_znyschyt_vplyv_yaponii
+		}
+		x = 22
+		y = 9
+				completion_reward = {
+						JAP = {
+								country_event = {
+										id = ZEL.1
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_army_manpower = {
+										size > 150000
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_poprosyty_shid_v_ussr
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 2
+		prerequisite = {
+			focus = ZEL_zahopyty_Manzhuriyu
+		}
+		x = 17
+		y = 10
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+			has_completed_focus = ZEL_vid_vladyvostoku_do_zakarpatya
+		}
+		bypass = {
+			has_war_with = SOV
+		}
+					completion_reward = {
+						SOV = {	country_event = { id = ZEL.7 } }
+					}
+
+
+	}
+	focus = {
+		id = ZEL_pomsta
+		icon = GFX_goal_anti_comintern_pact
+		cost = 5
+		prerequisite = {
+			focus = ZEL_vymahaty_sakhalin
+		}
+		prerequisite = {
+			focus = ZEL_vymahaty_Manzhuriyu
+		}
+		x = 21
+		y = 10
+				completion_reward = {
+						SOV = {
+								declare_war_on = {
+										target = ZEL
+										type = annex_everything
+									}
+							}
+							every_country = { 
+					set_country_flag = super_event_soviet_union_start_war_with_klyn
+				}
+					}
+
+				available = {
+						ZEL = {
+								has_army_manpower = {
+										size > 450000
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_vyzvolyty_siryi_klyn
+		icon = GFX_focus_SIR
+		cost = 1
+		prerequisite = {
+			focus = ZEL_pomsta
+		}
+		x = 19
+		y = 11
+				completion_reward = {
+						every_country = { 
+							set_country_flag = super_event_klyns_uprising
+						}
+						SIR = {
+								transfer_state = 571
+								transfer_state = 570
+								transfer_state = 40
+								transfer_state = 882
+								transfer_state = 583
+								transfer_state = 590
+								transfer_state = 1025
+							}
+						SIR = {
+								load_oob = SIR_1936
+							}
+						SIR = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_war_with = SOV
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_vyzvolyty_zhovtyi_klyn
+		icon = GFX_focus_ZHO
+		cost = 1
+		prerequisite = {
+			focus = ZEL_pomsta
+		}
+		x = 21
+		y = 11
+				completion_reward = {
+						ZHO = {
+								transfer_state = 401
+								transfer_state = 250
+								transfer_state = 239
+								transfer_state = 829
+								transfer_state = 265
+								transfer_state = 251
+								transfer_state = 237
+								transfer_state = 217
+								transfer_state = 236
+								transfer_state = 1081
+								transfer_state = 1083
+							}
+						ZHO = {
+								load_oob = ZHO_1936
+							}
+						ZHO = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_war_with = SOV
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_vyzvolyty_malynovyi_klyn
+		icon = GFX_focus_MLN
+		cost = 1
+		prerequisite = {
+			focus = ZEL_pomsta
+		}
+		x = 23
+		y = 11
+				completion_reward = {
+						MLN = {
+								transfer_state = 245
+								transfer_state = 218
+								transfer_state = 238
+								transfer_state = 235
+								transfer_state = 233
+								transfer_state = 234
+								transfer_state = 1028
+								transfer_state = 1029
+								transfer_state = 1030
+								transfer_state = 1048
+								transfer_state = 1052
+								transfer_state = 1051
+								transfer_state = 827
+								transfer_state = 1082
+							}
+						MLN = {
+								load_oob = MLN_1936
+								if = {
+										limit = {
+												has_dlc = "MantheGuns"
+											}
+										load_oob = "MLN_1936_naval_mtg"
+										else = {
+												load_oob = "MLN_1936_naval"
+											}
+									}
+							}
+						MLN = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_war_with = SOV
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_poprosyty_klyny
+		icon = GFX_goal_generic_improve_relations
+		cost = 10
+		prerequisite = {
+			focus = ZEL_poprosyty_shid_v_ussr
+		}
+		x = 17
+		y = 11
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+		}
+		bypass = {
+			has_war_with = SOV
+		}
+		completion_reward = {
+			SOV = {	country_event = { id = ZEL.10 } }
+		}
+
+	}
+	focus = {
+		id = ZEL_vozyednatys_z_Ukrainoyu
+		icon = GFX_focus_Ukraine
+		cost = 10
+		prerequisite = {
+			focus = ZEL_vyzvolyty_siryi_klyn
+		}
+		prerequisite = {
+			focus = ZEL_vyzvolyty_malynovyi_klyn
+		}
+		prerequisite = {
+			focus = ZEL_vyzvolyty_zhovtyi_klyn
+		}
+		x = 21
+		y = 12
+		available = {
+			ZEL = {
+				owns_state = 202
+			}
+			country_exists = MLN
+			country_exists = ZHO
+			country_exists = SIR
+			ZEL = {
+				NOT = {
+					has_war = yes
+				}
+			}
+		}
+		completion_reward = {
+			MLN = { country_event = { id = ZEL.26 } }
+			SIR = { country_event = { id = ZEL.42 } }
+			ZHO = { country_event = { id = ZEL.43 } }
+			set_cosmetic_tag = ZEL_Ukraine_united_communism
+			set_capital = {
+				state = 202
+				remember_old_capital = no
+			}
+			every_country = { 
+				set_country_flag = super_event_ukraine_unite_fascist_communist
+			}
+			load_focus_tree = {
+				tree = ZEL_after_united
+				keep_completed = yes
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEL_povernyty_batkivschinu
+		icon = GFX_goal_generic_national_unity
+		cost = 5
+		prerequisite = {
+			focus = ZEL_poprosyty_klyny
+		}
+		x = 17
+		y = 12
+		available = {
+			NOT = {
+				has_war_with = SOV
+			}
+		}
+		bypass = {
+			has_war_with = SOV
+		}
+		completion_reward = {
+			SOV = {	country_event = { id = ZEL.13 } }
+		}
+
+	}
+	focus = {
+		id = ZEL_odna_nerozdilna_rodyna
+		icon = GFX_focus_Ukraine
+		cost = 5
+		prerequisite = {
+			focus = ZEL_povernyty_batkivschinu
+		}
+		x = 17
+		y = 13
+		available = {
+			ZEL = {
+				owns_state = 202
+				owns_state = 234
+				owns_state = 217
+				owns_state = 571 
+				owns_state = 409
+			}
+			ZEL = {
+				NOT = {
+					has_war = yes
+				}
+			}
+		}
+		completion_reward = {
+			set_cosmetic_tag = ZEL_Ukraine_united_communism
+			set_capital = {
+				state = 202
+				remember_old_capital = no
+			}
+			every_country = { 
+				set_country_flag = super_event_ukraine_unite_fascist_communist
+			}
+			load_focus_tree = {
+				tree = ZEL_after_united
+				keep_completed = yes
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_ukrainskyi_nacionalism
+		icon = GFX_focus_nationalism
+		cost = 5
+		prerequisite = {
+			focus = ZEL_opolchyty_OUN
+		}
+		x = 28
+		y = 4
+		available = {
+			has_idea = radykaly_pry_vladi_medium
+		}
+		completion_reward = {
+			add_political_power = 150
+			swap_ideas = {
+				remove_idea = radykaly_pry_vladi_medium
+				add_idea = radykaly_pry_vladi_high
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_poprosyty_dopomohu_v_OUN
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 5
+		prerequisite = {
+			focus = ZEL_ukrainskyi_nacionalism
+		}
+		x = 27
+		y = 5
+		completion_reward = {
+			UPA = {	country_event = { id = ZEL.22 } }
+		}
+
+	}
+	focus = {
+		id = ZEL_perenesty_stab_OUN_v_Habarovsk
+		icon = GFX_focus_OUN_stab
+		cost = 5
+		prerequisite = {
+			focus = ZEL_poprosyty_dopomohu_v_OUN
+		}
+		mutually_exclusive = {
+			focus = ZEL_zalyshyty_Faidu
+		}
+		x = 28
+		y = 6
+		available = {
+			always = no
+		}
+		completion_reward = {
+			UPA = { 
+				every_unit_leader = {
+					set_nationality = ZEL
+				}
+			}
+			division_template = {
+	name = "Partysanska Armiya Ukrainy"			
+	division_names_group = ZEL_INF_06
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }		
+	}
+}
+409 = {
+				create_unit = {
+					division = "name=\"Partysanska Armiya Ukrainy\"division_template=\"Partysanska Armiya Ukrainy\"start_experience_factor=9 start_equipment_factor=9"
+					owner = ZEL
+				}
+			}
+			409 = {
+				create_unit = {
+					division = "name=\"Partysanska Armiya Ukrainy\"division_template=\"Partysanska Armiya Ukrainy\"start_experience_factor=9 start_equipment_factor=9"
+					owner = ZEL
+				}
+			}
+			409 = {
+				create_unit = {
+					division = "name=\"Partysanska Armiya Ukrainy\"division_template=\"Partysanska Armiya Ukrainy\"start_experience_factor=9 start_equipment_factor=9"
+					owner = ZEL
+				}
+			}
+			409 = {
+				create_unit = {
+					division = "name=\"Partysanska Armiya Ukrainy\"division_template=\"Partysanska Armiya Ukrainy\"start_experience_factor=9 start_equipment_factor=9"
+					owner = ZEL
+				}
+			}
+			409 = {
+				create_unit = {
+					division = "name=\"Partysanska Armiya Ukrainy\"division_template=\"Partysanska Armiya Ukrainy\"start_experience_factor=9 start_equipment_factor=9"
+					owner = ZEL
+				}
+			}
+			409 = {
+				create_unit = {
+					division = "name=\"Partysanska Armiya Ukrainy\"division_template=\"Partysanska Armiya Ukrainy\"start_experience_factor=9 start_equipment_factor=9"
+					owner = ZEL
+				}
+			}
+			409 = {
+				create_unit = {
+					division = "name=\"Partysanska Armiya Ukrainy\"division_template=\"Partysanska Armiya Ukrainy\"start_experience_factor=9 start_equipment_factor=9"
+					owner = ZEL
+				}
+			}
+			409 = {
+				create_unit = {
+					division = "name=\"Partysanska Armiya Ukrainy\"division_template=\"Partysanska Armiya Ukrainy\"start_experience_factor=9 start_equipment_factor=9"
+					owner = ZEL
+				}
+			}
+			ZEL = {	country_event = { id = ZEL.25 } }
+		}
+		
+
+	}
+	focus = {
+		id = ZEL_poprosyty_Sakhalin
+		icon = GFX_focus_Sakhalin
+		cost = 5
+		prerequisite = {
+			focus = ZEL_zakluchyty_souz
+		}
+		x = 31
+		y = 6
+		available = {
+			ZEL = {
+				is_in_faction_with = JAP
+			}
+		}
+		completion_reward = {
+			ZEL = {
+				transfer_state = 655
+				transfer_state = 537
+			
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_poprosyty_Mandzhuriyu
+		icon = GFX_focus_Mandzhuriya
+		cost = 2
+		prerequisite = {
+			focus = ZEL_poprosyty_Sakhalin
+		}
+		x = 32
+		y = 7
+		available = {
+			ZEL = {
+				is_in_faction_with = JAP
+			}
+		}
+		
+		completion_reward = {
+			ZEL = {
+				transfer_state = 1022
+				transfer_state = 717
+				transfer_state = 714
+				transfer_state = 761
+			
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_zalyshyty_Faidu
+		icon = GFX_focus_Faida
+		cost = 10
+		prerequisite = {
+			focus = ZEL_poprosyty_dopomohu_v_OUN
+		}
+		mutually_exclusive = {
+			focus = ZEL_perenesty_stab_OUN_v_Habarovsk
+		}
+		x = 26
+		y = 6
+		available = {
+			always = no
+		}
+		completion_reward = {
+			add_political_power = 1000
+			add_war_support = 0.10
+			add_stability = 0.10
+			add_trait = {
+				character = ZEL_Hryhoriy_Faida
+				ideology = fascism_ideology
+				trait = ZEL_Batko_Dalekoho_Shodu
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_Konovalets
+		icon = GFX_focus_Konovalets
+		cost = 5
+		prerequisite = {
+			focus = ZEL_perenesty_stab_OUN_v_Habarovsk
+		}
+		mutually_exclusive = {
+			focus = ZEL_Melnyk
+			focus = ZEL_Bandera
+		}
+		x = 27
+		y = 8
+		available = {
+			always = no
+		}
+		completion_reward = {
+			retire_ideology_leader = fascism
+			create_country_leader = {
+			name = "Yevhen Konovalets"
+			desc = ""
+			picture = "gfx/leaders/UPA/Yevhen_Konovalets.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = { ZEL_Batko_Dalekoho_Shodu
+			}
+		}
+		}
+		
+
+	}
+	focus = {
+		id = ZEL_Melnyk
+		icon = GFX_focus_Melnyk
+		cost = 5
+		prerequisite = {
+			focus = ZEL_perenesty_stab_OUN_v_Habarovsk
+		}
+		mutually_exclusive = {
+			focus = ZEL_Konovalets
+			focus = ZEL_Bandera
+		}
+		x = 29
+		y = 8
+		available = {
+			always = no
+		}
+		completion_reward = {
+			retire_ideology_leader = fascism
+			create_country_leader = {
+			name = "Andryi Melnyk"
+			desc = ""
+			picture = "gfx/leaders/UPA/Andryi_Melnyk.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = { ZEL_Batko_Dalekoho_Shodu
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = ZEL_Bandera
+		icon = GFX_focus_Bandera
+		cost = 5
+		prerequisite = {
+			focus = ZEL_perenesty_stab_OUN_v_Habarovsk
+		}
+		mutually_exclusive = {
+			focus = ZEL_Konovalets
+			focus = ZEL_Melnyk
+		}
+		x = 31
+		y = 8
+		available = {
+			always = no
+		}
+		completion_reward = {
+			retire_ideology_leader = fascism
+			create_country_leader = {
+			name = "Stepan Bandera"
+			desc = ""
+			picture = "gfx/leaders/UPA/Stepan_Bandera.dds"
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = { ZEL_Batko_Dalekoho_Shodu
+			}
+		}
+		}
+
+	}
+	focus = {
+		id = ZEL_chas_dlya_zovnishnyoi_polityky
+		icon = GFX_goal_generic_demand_territory
+		cost = 5
+		prerequisite = {
+			focus = ZEL_Konovalets
+			focus = ZEL_Melnyk
+			focus = ZEL_Bandera
+			focus = ZEL_zalyshyty_Faidu
+		}
+		x = 26
+		y = 9
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.10
+			add_war_support = 0.10
+			remove_ideas = Z_usih_storin
+		}
+
+	}
+	focus = {
+		id = ZEL_orhanizuvaty_povstanya_v_Klynah
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		prerequisite = {
+			focus = ZEL_chas_dlya_zovnishnyoi_polityky
+		}
+		x = 26
+		y = 10
+		available = {
+			has_army_manpower = {
+										size > 250000
+									}
+		}
+		completion_reward = {
+					every_country = { 
+							set_country_flag = super_event_klyns_uprising
+						}
+						SIR = {
+								transfer_state = 571
+								transfer_state = 570
+								transfer_state = 40
+								transfer_state = 882
+								transfer_state = 583
+								transfer_state = 590
+								transfer_state = 1025
+							}
+						SIR = {
+								load_oob = SIR_1936
+							}
+						SIR = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+						MLN = {
+								transfer_state = 245
+								transfer_state = 218
+								transfer_state = 238
+								transfer_state = 235
+								transfer_state = 233
+								transfer_state = 234
+								transfer_state = 1028
+								transfer_state = 1029
+								transfer_state = 1030
+								transfer_state = 1048
+								transfer_state = 1052
+								transfer_state = 1051
+								transfer_state = 827
+								transfer_state = 1082
+							}
+						MLN = {
+								load_oob = MLN_1936
+								if = {
+										limit = {
+												has_dlc = "MantheGuns"
+											}
+										load_oob = "MLN_1936_naval_mtg"
+										else = {
+												load_oob = "MLN_1936_naval"
+											}
+									}
+							}
+						MLN = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+						ZHO = {
+								transfer_state = 401
+								transfer_state = 250
+								transfer_state = 239
+								transfer_state = 829
+								transfer_state = 265
+								transfer_state = 251
+								transfer_state = 237
+								transfer_state = 217
+								transfer_state = 236
+								transfer_state = 1081
+								transfer_state = 1083
+
+							}
+						ZHO = {
+								load_oob = ZHO_1936
+							}
+						ZHO = {
+								declare_war_on = {
+										target = SOV
+										type = independence_wargoal
+									}
+							}
+					}
+
+	}
+	focus = {
+		id = ZEL_dopomohty_Klynam
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 2
+		prerequisite = {
+			focus = ZEL_orhanizuvaty_povstanya_v_Klynah
+		}
+		x = 26
+		y = 11
+		available = {
+			has_army_manpower = {
+				size > 250000
+			}
+		}
+		completion_reward = {
+			SOV = {
+								declare_war_on = {
+										target = ZEL
+										type = annex_everything
+									}
+							}
+							every_country = { 
+					set_country_flag = super_event_soviet_union_start_war_with_klyn
+				}
+		}
+
+	}
+	focus = {
+		id = ZEL_obyednatys_z_Klynamy
+		icon = GFX_goal_generic_national_unity
+		cost = 1
+		prerequisite = {
+			focus = ZEL_dopomohty_Klynam
+		}
+		x = 26
+		y = 12
+		available = {
+			ZEL = {
+				NOT = {
+					has_war = yes
+				}
+			}
+			country_exists = MLN
+			country_exists = SIR
+			country_exists = ZHO
+		}
+		completion_reward = {
+			MLN = { country_event = { id = ZEL.26 } }
+			SIR = { country_event = { id = ZEL.42 } }
+			ZHO = { country_event = { id = ZEL.43 } }
+		}
+
+	}
+	focus = {
+		id = ZEL_Nova_Ukraina
+		icon = GFX_focus_Ukraine
+		cost = 1
+		prerequisite = {
+			focus = ZEL_obyednatys_z_Klynamy
+		}
+		x = 26
+		y = 13
+		available = {
+			ZEL = {
+				owns_state = 202
+				owns_state = 234
+				owns_state = 217
+				owns_state = 571 
+				owns_state = 409
+			}
+			ZEL = {
+				NOT = {
+					has_war = yes
+				}
+			}
+		}
+		completion_reward = {
+			set_cosmetic_tag = ZEL_Ukraine_united_fascism
+			set_capital = {
+				state = 202
+				remember_old_capital = no
+			}
+			every_country = { 
+				set_country_flag = super_event_ukraine_unite_fascist_communist
+			}
+			load_focus_tree = {
+				tree = ZEL_after_united
+				keep_completed = yes
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_poprosyty_Mandzhuriyu_v_Yaponii
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		prerequisite = {
+			focus = ZEL_torhivlya_v_zamin_na_Sakhalin
+		}
+		x = 37
+		y = 10
+				completion_reward = {
+						JAP = {
+								country_event = {
+										id = ZEL.1
+									}
+							}
+					}
+
+				available = {
+						ZEL = {
+								has_army_manpower = {
+										size > 150000
+									}
+							}
+					}
+
+
+	}
+	focus = {
+		id = ZEL_vozyednatys_z_ukraincyamy
+		icon = GFX_goal_generic_national_unity
+		cost = 2
+		prerequisite = {
+			focus = ZEL_povstanya_Klyniv
+		}
+		prerequisite = {
+			focus = ZEL_poprosyty_Mandzhuriyu_v_Yaponii
+		}
+		x = 38
+		y = 11
+		available = {
+			ZEL = {
+				NOT = {
+					has_war = yes
+				}
+			}
+			country_exists = MLN
+			country_exists = SIR
+			country_exists = ZHO
+		}
+		completion_reward = {
+			MLN = { country_event = { id = ZEL.26 } }
+			SIR = { country_event = { id = ZEL.42 } }
+			ZHO = { country_event = { id = ZEL.43 } }
+		}
+		
+
+	}
+	focus = {
+		id = ZEL_vid_syanu_po_Khabarovsk
+		icon = GFX_focus_Ukraine
+		cost = 1
+		prerequisite = {
+			focus = ZEL_vozyednatys_z_ukraincyamy
+		}
+		x = 38
+		y = 12
+		available = {
+			ZEL = {
+				owns_state = 202
+				owns_state = 234
+				owns_state = 217
+				owns_state = 571 
+				owns_state = 409
+			}
+			ZEL = {
+				NOT = {
+					has_war = yes
+				}
+			}
+		}
+		completion_reward = {
+			set_cosmetic_tag = ZEL_Ukraine_united_democratic
+			set_capital = {
+				state = 202
+				remember_old_capital = no
+			}
+			every_country = { 
+				set_country_flag = super_event_ukraine_unite_neutral_democratic
+			}
+			load_focus_tree = {
+				tree = ZEL_after_united
+				keep_completed = yes
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_Naciya
+		icon = GFX_focus_Narod
+		cost = 5
+		prerequisite = {
+			focus = ZEL_prydushyty_comunistiv
+		}
+		prerequisite = {
+			focus = ZEL_my_znaem_do_choho_ce_pryvelo
+		}
+		x = 24
+		y = 6
+		available = {
+			has_idea = opolchenya_1
+		}
+				completion_reward = {
+						custom_effect_tooltip = available_political_advisor
+						show_ideas_tooltip = ZEL_Vasyl_Avramenko
+						swap_ideas = {
+							remove_idea = opolchenya_1
+							add_idea = opolchenya_2
+						}
+						add_war_support = 0.15
+					}
+
+
+	}
+	focus = {
+		id = ZEL_podolaty_nedolu
+		icon = GFX_goal_generic_demand_territory
+		cost = 1
+		prerequisite = {
+			focus = ZEL_Ukraina
+		}
+		prerequisite = {
+			focus = ZEL_Naciya
+		}
+		x = 23
+		y = 7
+		completion_reward = {
+			add_stability = 0.10
+			add_political_power = 125
+		}
+
+	}
+	focus = {
+		id = ZEL_odni_i_tilki_odni
+		icon = GFX_goal_generic_military_sphere
+		cost = 5
+		prerequisite = {
+			focus = ZEL_Naciya
+		}
+		prerequisite = {
+			focus = ZEL_Ukraina
+		}
+		x = 25
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+							remove_idea = opolchenya_2
+							add_idea = opolchenya_3
+						}
+		}
+
+	}
+	focus = {
+		id = ZEL_pryyshla_pora
+		icon = GFX_focus_Pryyshla_pora
+		cost = 10
+		prerequisite = {
+			focus = ZEL_podolaty_nedolu
+		}
+		prerequisite = {
+			focus = ZEL_odni_i_tilki_odni
+		}
+		x = 24
+		y = 8
+		completion_reward = {
+			swap_ideas = {
+							remove_idea = opolchenya_3
+							add_idea = opolchenya_4
+						}
+						swap_ideas = {
+							remove_idea = radykaly_pry_vladi_low
+							add_idea = radykaly_pry_vladi_medium
+						}
+			408 = {
+				create_unit = {
+					division = "name=\"Opolchenya\"division_template=\"Opolchenya\"start_experience_factor=0.5 start_equipment_factor=1"
+					owner = ZEL
+				}
+			}
+			408 = {
+				create_unit = {
+					division = "name=\"Opolchenya\"division_template=\"Opolchenya\"start_experience_factor=0.5 start_equipment_factor=1"
+					owner = ZEL
+				}
+			}
+			408 = {
+				create_unit = {
+					division = "name=\"Opolchenya\"division_template=\"Opolchenya\"start_experience_factor=0.5 start_equipment_factor=1"
+					owner = ZEL
+				}
+			}
+			408 = {
+				create_unit = {
+					division = "name=\"Opolchenya\"division_template=\"Opolchenya\"start_experience_factor=0.5 start_equipment_factor=1"
+					owner = ZEL
+				}
+			}
+			408 = {
+				create_unit = {
+					division = "name=\"Opolchenya\"division_template=\"Opolchenya\"start_experience_factor=0.5 start_equipment_factor=1"
+					owner = ZEL
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = ZEL_zorya_svobody
+		icon = GFX_focus_Ukraine
+		cost = 1
+		prerequisite = {
+			focus = ZEL_Ukrainska_hehemoniya
+		}
+		x = 44
+		y = 12
+		available = {
+			ZEL = {
+				owns_state = 202
+				owns_state = 234
+				owns_state = 217
+				owns_state = 571 
+				owns_state = 409
+			}
+			ZEL = {
+				NOT = {
+					has_war = yes
+				}
+			}
+		}
+		completion_reward = {
+			set_cosmetic_tag = ZEL_Ukraine_united_neutrality
+			set_capital = {
+				state = 202
+				remember_old_capital = no
+			}
+			every_country = { 
+				set_country_flag = super_event_ukraine_unite_neutral_democratic
+			}
+			load_focus_tree = {
+				tree = ZEL_after_united
+				keep_completed = yes
+			}
+		}
+		
+
+	}
+	focus = {
+		id = ZEL_nashe_more
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 2
+		prerequisite = {
+			focus = ZEL_sea_doctrine_3
+		}
+		x = 82
+		y = 4
+				completion_reward = {
+						add_ideas = nashe_more
+						navy_experience = 15
+					}
+
+
+	}
+	
+	focus = {
+		id = ZEL_nationalni_shkoly
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 2
+		prerequisite = {
+			focus = ZEL_opolchyty_OUN
+		}
+		x = 26
+		y = 4
+		completion_reward = {
+			add_ideas = shkoly_nationalnoi_svidomosti
+			add_research_slot = 1
+		}
+
+
+	}
+	focus = {
+		id = ZEL_nashe_pravo_na_zhyttya
+		icon = GFX_focus_pravo_na_zhyttya
+		cost = 2
+		prerequisite = {
+			focus = ZEL_shlyah_Prosvity
+		}
+		x = 46
+		y = 4
+		completion_reward = {
+			add_stability = 0.10
+			add_ideas = Ukrainska_derzhavnist
+		}
+
+
+	}
+	focus = {
+		id = ZEL_opolchyty_naselenya
+		icon = GFX_focus_opolchyty
+		cost = 2
+		prerequisite = {
+			focus = ZEL_nashe_pravo_na_zhyttya
+		}
+		x = 47
+		y = 5
+		available = {
+			has_completed_focus = ZEL_Ukraina_ponad_use
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Ukrainska_derzhavnist_1
+				add_idea = Ukrainska_derzhavnist_2
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEL_Ukraina_ponad_use
+		icon = GFX_focus_ukraine_above_all
+		cost = 2
+		prerequisite = {
+			focus = ZEL_nashe_pravo_na_zhyttya
+		}
+		x = 49
+		y = 5
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Ukrainska_derzhavnist
+				add_idea = Ukrainska_derzhavnist_1
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEL_Ukrainska_samoidentychnist
+		icon = GFX_focus_ukrainska_samoidentychnist
+		cost = 2
+		prerequisite = {
+			focus = ZEL_Ukraina_ponad_use
+		}
+		prerequisite = {
+			focus = ZEL_opolchyty_naselenya
+		}
+		x = 48
+		y = 6
+		available = {
+			has_completed_focus = ZEL_ce_nasha_zemlya
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Ukrainska_derzhavnist_3
+				add_idea = Ukrainska_derzhavnist_4
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEL_ce_nasha_zemlya
+		icon = GFX_focus_nash_krai
+		cost = 5
+		prerequisite = {
+			focus = ZEL_Ukraina_ponad_use
+		}
+		x = 46
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Ukrainska_derzhavnist_2
+				add_idea = Ukrainska_derzhavnist_3
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEL_sylnyi_lider
+		icon = GFX_focus_Sylnyi_lider
+		cost = 10
+		prerequisite = {
+			focus = ZEL_ce_nasha_zemlya
+		}
+		prerequisite = {
+			focus = ZEL_Ukrainska_samoidentychnist
+		}
+		x = 47
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Ukrainska_derzhavnist_4
+				add_idea = Ukrainska_derzhavnist_5
+			}
+			add_trait = {
+				character = ZEL_Kost_Andruschenko
+				ideology = despotism
+				trait = ZEL_Batko_Dalekoho_Shodu
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEL_armiya_iz_narodu
+		icon = GFX_focus_armiya_narodu
+		cost = 5
+		prerequisite = {
+			focus = ZEL_sylnyi_lider
+		}
+		x = 47
+		y = 8
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = Ukrainska_derzhavnist_5
+				add_idea = Ukrainska_derzhavnist_6
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEL_tehnocratychne_suspilctov
+		icon = GFX_focus_tehnokraty
+		cost = 10
+		mutually_exclusive = {
+			focus = ZEL_stara_Prosvita
+		}
+		prerequisite = {
+			focus = ZEL_hramotnist_naselenya
+		}
+		x = 41
+		y = 7
+		completion_reward = {
+			add_stability = -0.25
+			add_political_power = 1000
+			add_ideas = tehnokratiya
+		}
+
+
+	}
+	focus = {
+		id = ZEL_perevyhovaty_naselenya
+		icon = GFX_focus_vchyss
+		cost = 10
+		prerequisite = {
+			focus = ZEL_tehnocratychne_suspilctov
+		}
+		x = 40
+		y = 8
+		available = {
+			has_political_power > 250
+		}
+		completion_reward = {
+			add_political_power = -250
+			swap_ideas = {
+				remove_idea = tehnokratiya
+				add_idea = tehnokratiya_2
+			}
+		}
+
+
+	}
+	focus = {
+		id = ZEL_stara_Prosvita
+		icon = GFX_focus_Prosvita
+		cost = 5
+		mutually_exclusive = {
+			focus = ZEL_tehnocratychne_suspilctov
+		}
+		prerequisite = {
+			focus = ZEL_hramotnist_naselenya
+		}
+		x = 43
+		y = 7
+		completion_reward = {
+			add_stability = 0.25
+			add_political_power = -250
+		}
+
+
+	}
+	
+	focus = {
+		id = ZEL_Ukrainska_nauka
+		icon = GFX_focus_ukr_nauka
+		cost = 5
+		prerequisite = {
+			focus = ZEL_stara_Prosvita
+		}
+		x = 42
+		y = 8
+		completion_reward = {
+			add_ideas = Ukrainska_academiya_nauk
+		}
+
+
+	}
+	
+}
+

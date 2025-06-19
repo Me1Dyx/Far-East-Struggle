@@ -1,0 +1,30 @@
+state={
+	id=1088
+	name="STATE_1088"
+	provinces={
+		4206 11970 
+	}
+	history = {
+
+		owner = PAL
+		add_core_of = PAL
+		add_core_of = 
+
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			arms_factory=2
+			air_base = 5
+		}
+		
+		victory_points = {
+			4206 10 
+		}
+		
+		
+	}
+	manpower=732473
+	state_category=large_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
