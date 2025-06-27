@@ -282,7 +282,7 @@ UPA = "countries/Ukrainian Partisan Army.txt"
 JEW = "countries/Jewish Army of Ukraine.txt"
 MAT = "countries/Matrosy Severnoi Rossiyi.txt"
 DYR = "countries/Ukrainska Dyrectoriya.txt"
-
+PLS	= "countries/Plasteline.txt"
 
 
 # REICHSKOMMISSARIATS (no cores) (European)

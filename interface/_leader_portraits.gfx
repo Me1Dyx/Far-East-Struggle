@@ -9638,5 +9638,22 @@ spriteTypes = {
 		texturefile = "gfx/leaders/DYR/Vsevolod_Petriv.dds"
 	}
 	
-
+	## PLS ##
+	
+	spriteType = {
+	    name = GFX_Abd_Al-Kadyr
+		texturefile = "gfx/leaders/PLS/Abd_Al-Kadyr.dds"
+	}
+	spriteType = {
+	    name = GFX_Amin_Al-Huseini
+		texturefile = "gfx/leaders/PLS/Amin_Al-Huseini.dds"
+	}
+	spriteType = {
+	    name = GFX_Hasan_Salameh
+		texturefile = "gfx/leaders/PLS/Hasan_Salameh.dds"
+	}
+	spriteType = {
+	    name = GFX_Jamal_al_Huseini
+		texturefile = "gfx/leaders/PLS/Jamal_al_Huseini.dds"
+	}
 }

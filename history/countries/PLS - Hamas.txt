@@ -1,0 +1,77 @@
+capital = 1085
+
+oob = "PLS_1936"
+
+set_convoys = 10
+
+set_research_slots = 2
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	basic_train = 1
+	tech_recon = 2
+	tech_support = 2
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	mass_assault = 2
+	fleet_in_being = 1
+	iw_small_airframe = 1
+	aa_lmg = 1
+	aa_cannon_1 = 1
+	early_bombs = 1
+	engines_1 = 1
+	engines_2 = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
+	basic_small_airframe = 1
+	basic_medium_airframe = 1
+	aircraft_construction = 1
+	air_torpedoe_1 = 1
+	bba_early_transport_plane = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 8
+	fascism = 60
+	communism = 12
+	neutrality = 20
+}
+
+add_ideas = {
+}
+
+recruit_character = PLS_Amin_Al-Huseini
+recruit_character = PLS_Abd_Al-Kadyr
+recruit_character = PLS_Hasan_Salameh
+recruit_character = PLS_Jamal_al_Huseini

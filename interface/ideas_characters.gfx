@@ -4516,6 +4516,23 @@ spriteTypes = {
 		texturefile = "gfx/leaders/DYR/Advisors/DYR_Vsevolod_Petriv_advisor.dds"
 	}
 	
+	## PLS ##
 	
+	spriteType = {
+		name = "GFX_Abd_Al-Kadyr_advisor"
+		texturefile = "gfx/leaders/PLS/Advisors/Abd_Al-Kadyr_advisor.png"
+	}
+	spriteType = {
+		name = "GFX_Amin_Al-Huseini_advisor"
+		texturefile = "gfx/leaders/PLS/Advisors/Amin_Al-Huseini_advisor.png"
+	}
+	spriteType = {
+		name = "GFX_Hasan_Salameh_advisor"
+		texturefile = "gfx/leaders/PLS/Advisors/Hasan_Salameh_advisor.png"
+	}
+	spriteType = {
+		name = "GFX_Jamal_al_Huseini_advisor"
+		texturefile = "gfx/leaders/PLS/Advisors/Jamal_al_Huseini_advisor.png"
+	}
 
 }

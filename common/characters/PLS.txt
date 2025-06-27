@@ -1,0 +1,127 @@
+characters = {
+	
+	PLS_Amin_Al-Huseini = {
+        name = PLS_Amin_Al-Huseini
+        portraits = {
+            civilian = {
+				small = GFX_Amin_Al-Huseini_advisor
+                large = GFX_Amin_Al-Huseini
+            }
+        }
+        country_leader = {
+			ideology = nazism
+			expire = "1980.3.1"
+			id = -1
+			traits = {   }
+		}
+		field_marshal={
+			traits={ politically_connected Militia_Officer Infantry_Leader Desert_Fox }
+			skill = 4
+            attack_skill = 6
+            defense_skill = 5
+            planning_skill = 4
+            logistics_skill = 5
+		}
+		advisor={
+			slot = army_chief
+			cost = 100
+			idea_token = PLS_Amin_Al-Huseini
+			allowed = {
+				original_tag = PLS
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+		}
+    }
+	PLS_Abd_Al-Kadyr = {
+		name = PLS_Abd_Al-Kadyr
+		portraits = {
+			army = {
+				small = GFX_Abd_Al-Kadyr_advisor
+				large = GFX_Abd_Al-Kadyr
+			}
+		}
+		corps_commander = {
+            traits = { infantry_officer war_hero Desert_Fox }
+            skill = 3
+            attack_skill = 3
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+            
+        }
+		advisor = {
+			slot = high_command
+			idea_token = PLS_Abd_Al-Kadyr
+			ledger = army
+			allowed = {
+				original_tag = PLS
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+		}
+	}
+	PLS_Hasan_Salameh = {
+		name = PLS_Hasan_Salameh
+		portraits = {
+			army = {
+				small = GFX_Hasan_Salameh_advisor
+				large = GFX_Hasan_Salameh
+			}
+		}
+		corps_commander = {
+            traits = { infantry_officer war_hero Desert_Fox }
+            skill = 4
+            attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+            
+        }
+		advisor = {
+			slot = high_command
+			idea_token = PLS_Hasan_Salameh
+			ledger = army
+			allowed = {
+				original_tag = PLS
+			}
+			traits = {
+				army_regrouping_2
+			}
+			cost = 100
+		}
+	}
+	PLS_Jamal_al_Huseini = {
+		name = PLS_Jamal_al_Huseini
+		portraits = {
+			army = {
+				small = GFX_Jamal_al_Huseini_advisor
+				large = GFX_Jamal_al_Huseini
+			}
+		}
+		corps_commander = {
+            traits = { infantry_officer Desert_Fox }
+            skill = 3
+            attack_skill = 2
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 4
+            
+        }
+		advisor = {
+			slot = high_command
+			idea_token = PLS_Jamal_al_Huseini
+			ledger = army
+			allowed = {
+				original_tag = PLS
+			}
+			traits = {
+				army_entrenchment_3
+			}
+			cost = 100
+		}
+	}
+}
